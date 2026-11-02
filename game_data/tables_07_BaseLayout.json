@@ -1,0 +1,545 @@
+{
+ "Base Layout Overview": {
+  "Fully free placement on a square grid. Grid expands with CC level. No zone restrictions.": [
+   {
+    "TOPIC": "Grid System",
+    "DETAIL": "The base is a square tile grid. Each tile is one unit. Buildings occupy 1x1 to 4x4 tile footprints depending on size. Walls occupy 1x1 tiles. No terrain features - clean grid like Clash of Clans."
+   },
+   {
+    "TOPIC": "Starting Grid",
+    "DETAIL": "CC1 starts with a 20x20 grid (400 tiles). Each CC level expands the grid by 2-4 tiles per side up to a maximum of 40x40 (1600 tiles) at CC10."
+   },
+   {
+    "TOPIC": "Free Placement",
+    "DETAIL": "All buildings can be placed on any open tile. No zone restrictions. Players decide their own layout strategy - cluster defenses, spread resources, create kill corridors, or mix freely."
+   },
+   {
+    "TOPIC": "Building Footprints",
+    "DETAIL": "Small buildings (mines, towers): 1x1 or 2x2. Medium buildings (barracks, vaults): 2x2 or 3x3. Large buildings (CC, Dark Barracks, THAAD): 3x3 or 4x4. Footprint listed per building."
+   },
+   {
+    "TOPIC": "Perimeter Wall",
+    "DETAIL": "A fixed outer wall ring automatically forms along the edge of the current grid boundary. This perimeter is always present and upgrades with the wall tier. Players cannot remove it."
+   },
+   {
+    "TOPIC": "Placeable Walls",
+    "DETAIL": "Additional wall tiles are placed freely inside the grid to create internal compartments, funnels, and kill corridors. Players start with 50 tiles at CC1 scaling to 200 at CC10."
+   },
+   {
+    "TOPIC": "Dead Zone",
+    "DETAIL": "A 3-tile wide strip just inside the perimeter is the Dead Zone. Mines and wall tiles can go here but no buildings. This prevents buildings from being placed on the outer edge where they cannot be defended."
+   },
+   {
+    "TOPIC": "No-Fly Buffer",
+    "DETAIL": "Deployment zones sit 5 tiles outside the base grid on all 4 sides. This is open ground where attacking units form up before advancing. No buildings or walls allowed in this buffer."
+   },
+   {
+    "TOPIC": "Base Copy",
+    "DETAIL": "Players can copy and save up to 3 full base layouts. Useful for switching between a farming layout (resources exposed) and a trophy layout (CC protected). Switching takes 5 seconds."
+   },
+   {
+    "TOPIC": "Building Rotation",
+    "DETAIL": "All buildings and walls can be rotated 90 degrees. Primarily cosmetic but affects which direction tower animations face. Useful for visual clarity in planning."
+   }
+  ]
+ },
+ "Grid Size by CC Level": {
+  "Grid grows with each CC upgrade. More space means more buildings, more walls, and more complex base design.": [
+   {
+    "CC Level": "CC 1",
+    "Grid Size": "20x20",
+    "Total Tiles": 400,
+    "Usable Tiles": 340,
+    "Wall Tiles Available": 50,
+    "New Space vs Previous": "Starting grid",
+    "Designer Note": "Tutorial size. Tight. Forces simple layouts. Limited building count."
+   },
+   {
+    "CC Level": "CC 2",
+    "Grid Size": "22x22",
+    "Total Tiles": 484,
+    "Usable Tiles": 408,
+    "Wall Tiles Available": 55,
+    "New Space vs Previous": "+84 tiles",
+    "Designer Note": "First expansion. Room for first defenses and second collector."
+   },
+   {
+    "CC Level": "CC 3",
+    "Grid Size": "24x24",
+    "Total Tiles": 576,
+    "Usable Tiles": 480,
+    "Wall Tiles Available": 65,
+    "New Space vs Previous": "+92 tiles",
+    "Designer Note": "Tier II unlocks. Second Barracks fits comfortably now."
+   },
+   {
+    "CC Level": "CC 4",
+    "Grid Size": "26x26",
+    "Total Tiles": 676,
+    "Usable Tiles": 560,
+    "Wall Tiles Available": 75,
+    "New Space vs Previous": "+100 tiles",
+    "Designer Note": "Mid-early game. Resource buildings need more protection space."
+   },
+   {
+    "CC Level": "CC 5",
+    "Grid Size": "28x28",
+    "Total Tiles": 784,
+    "Usable Tiles": 648,
+    "Wall Tiles Available": 90,
+    "New Space vs Previous": "+108 tiles",
+    "Designer Note": "Tier III. Research Lab and Alliance Hall add significant footprint."
+   },
+   {
+    "CC Level": "CC 6",
+    "Grid Size": "30x30",
+    "Total Tiles": 900,
+    "Usable Tiles": 740,
+    "Wall Tiles Available": 105,
+    "New Space vs Previous": "+116 tiles",
+    "Designer Note": "Mid-game. Base getting large enough for inner and outer compartments."
+   },
+   {
+    "CC Level": "CC 7",
+    "Grid Size": "33x33",
+    "Total Tiles": 1089,
+    "Usable Tiles": 893,
+    "Wall Tiles Available": 125,
+    "New Space vs Previous": "+189 tiles",
+    "Designer Note": "Tier IV. Larger jump in size. Cold War units need more staging room."
+   },
+   {
+    "CC Level": "CC 8",
+    "Grid Size": "35x35",
+    "Total Tiles": 1225,
+    "Usable Tiles": 1001,
+    "Wall Tiles Available": 145,
+    "New Space vs Previous": "+136 tiles",
+    "Designer Note": "Dark Barracks placed. THAAD takes 4x4 footprint. Plan space carefully."
+   },
+   {
+    "CC Level": "CC 9",
+    "Grid Size": "38x38",
+    "Total Tiles": 1444,
+    "Usable Tiles": 1176,
+    "Wall Tiles Available": 170,
+    "New Space vs Previous": "+219 tiles",
+    "Designer Note": "Tier V. Near-maximum size. Full late-game defense layering now possible."
+   },
+   {
+    "CC Level": "CC 10",
+    "Grid Size": "40x40",
+    "Total Tiles": 1600,
+    "Usable Tiles": 1300,
+    "Wall Tiles Available": 200,
+    "New Space vs Previous": "+156 tiles",
+    "Designer Note": "Maximum grid. 1300 usable tiles. Full 200 wall tiles. Complete base."
+   }
+  ]
+ },
+ "Building Footprints": {
+  "Footprint is how many grid tiles a building occupies. Plan your base layout around these sizes.": [
+   {
+    "Building": "Command Center",
+    "Footprint": "4x4",
+    "Tiles Used": 16,
+    "Category": "Command",
+    "Unlocked CC": "CC 1",
+    "Placement Note": "Largest single building. Place in your most protected inner compartment."
+   },
+   {
+    "Building": "Barracks",
+    "Footprint": "3x3",
+    "Tiles Used": 9,
+    "Category": "Training",
+    "Unlocked CC": "CC 1",
+    "Placement Note": "Needs road access. Place near Army Camp for visual clarity."
+   },
+   {
+    "Building": "Air Hangar",
+    "Footprint": "3x3",
+    "Tiles Used": 9,
+    "Category": "Training",
+    "Unlocked CC": "CC 2",
+    "Placement Note": "Same size as Barracks. Pair together in a training district."
+   },
+   {
+    "Building": "Dark Barracks",
+    "Footprint": "4x4",
+    "Tiles Used": 16,
+    "Category": "Training",
+    "Unlocked CC": "CC 8",
+    "Placement Note": "Same footprint as CC. Protect it - losing it disables Tier V training."
+   },
+   {
+    "Building": "Gold Mine",
+    "Footprint": "2x2",
+    "Tiles Used": 4,
+    "Category": "Resource",
+    "Unlocked CC": "CC 1",
+    "Placement Note": "Small. Can be placed on base perimeter as bait or deep inside for protection."
+   },
+   {
+    "Building": "Oil Derrick",
+    "Footprint": "2x2",
+    "Tiles Used": 4,
+    "Category": "Resource",
+    "Unlocked CC": "CC 1",
+    "Placement Note": "Lowest HP. Many players leave Oil Derricks exposed intentionally to avoid wall tile waste."
+   },
+   {
+    "Building": "Steel Mill",
+    "Footprint": "3x3",
+    "Tiles Used": 9,
+    "Category": "Resource",
+    "Unlocked CC": "CC 1",
+    "Placement Note": "Medium. Generates slowly so placement flexibility is high."
+   },
+   {
+    "Building": "Gold Vault",
+    "Footprint": "3x3",
+    "Tiles Used": 9,
+    "Category": "Resource",
+    "Unlocked CC": "CC 1",
+    "Placement Note": "Protect this. Contains most stealable Gold. Inner ring placement recommended."
+   },
+   {
+    "Building": "Oil Tank",
+    "Footprint": "2x2",
+    "Tiles Used": 4,
+    "Category": "Resource",
+    "Unlocked CC": "CC 2",
+    "Placement Note": "Lowest HP storage. Consider placing near defenses since attackers prioritize this."
+   },
+   {
+    "Building": "Steel Depot",
+    "Footprint": "3x3",
+    "Tiles Used": 9,
+    "Category": "Resource",
+    "Unlocked CC": "CC 2",
+    "Placement Note": "Large. Lowest steal rate so can sit in mid-ring safely."
+   },
+   {
+    "Building": "Machine Gun Nest",
+    "Footprint": "1x1",
+    "Tiles Used": 1,
+    "Category": "Defense",
+    "Unlocked CC": "CC 2",
+    "Placement Note": "Smallest defense. Fill gaps between larger buildings freely."
+   },
+   {
+    "Building": "Cannon Tower",
+    "Footprint": "2x2",
+    "Tiles Used": 4,
+    "Category": "Defense",
+    "Unlocked CC": "CC 2",
+    "Placement Note": "Core defense. Space evenly for full base coverage."
+   },
+   {
+    "Building": "Mortar Tower",
+    "Footprint": "2x2",
+    "Tiles Used": 4,
+    "Category": "Defense",
+    "Unlocked CC": "CC 3",
+    "Placement Note": "Place in center. Mortar has blind spot up close so protect with walls."
+   },
+   {
+    "Building": "Sniper Tower",
+    "Footprint": "1x1",
+    "Tiles Used": 1,
+    "Category": "Defense",
+    "Unlocked CC": "CC 3",
+    "Placement Note": "Compact. Place on walls or at range choke points."
+   },
+   {
+    "Building": "AA Gun Tower",
+    "Footprint": "2x2",
+    "Tiles Used": 4,
+    "Category": "Defense",
+    "Unlocked CC": "CC 4",
+    "Placement Note": "Place on perimeter or flanks. Air units approach from deployment zones."
+   },
+   {
+    "Building": "Bomb Tower",
+    "Footprint": "2x2",
+    "Tiles Used": 4,
+    "Category": "Defense",
+    "Unlocked CC": "CC 4",
+    "Placement Note": "High splash. Place where enemy clusters - wall funnels and choke points."
+   },
+   {
+    "Building": "Flame Tower",
+    "Footprint": "2x2",
+    "Tiles Used": 4,
+    "Category": "Defense",
+    "Unlocked CC": "CC 6",
+    "Placement Note": "Short range. Place inside compartments not on perimeter."
+   },
+   {
+    "Building": "Rocket Battery",
+    "Footprint": "2x2",
+    "Tiles Used": 4,
+    "Category": "Defense",
+    "Unlocked CC": "CC 5",
+    "Placement Note": "Dual purpose. Place centrally for maximum coverage arc."
+   },
+   {
+    "Building": "CIWS Tower",
+    "Footprint": "2x2",
+    "Tiles Used": 4,
+    "Category": "Defense",
+    "Unlocked CC": "CC 7",
+    "Placement Note": "Last-ditch air defense. Place near high-value buildings."
+   },
+   {
+    "Building": "Patriot SAM Battery",
+    "Footprint": "3x3",
+    "Tiles Used": 9,
+    "Category": "Defense",
+    "Unlocked CC": "CC 8",
+    "Placement Note": "Large footprint. Place in rear ring with clear sky coverage."
+   },
+   {
+    "Building": "THAAD Battery",
+    "Footprint": "4x4",
+    "Tiles Used": 16,
+    "Category": "Defense",
+    "Unlocked CC": "CC 9",
+    "Placement Note": "Massive. Requires significant space. Plan around it at CC9+."
+   },
+   {
+    "Building": "Laser Tower",
+    "Footprint": "2x2",
+    "Tiles Used": 4,
+    "Category": "Defense",
+    "Unlocked CC": "CC 9",
+    "Placement Note": "Medium. Place anywhere with clear sightlines."
+   },
+   {
+    "Building": "S-400 SAM",
+    "Footprint": "3x3",
+    "Tiles Used": 9,
+    "Category": "Defense",
+    "Unlocked CC": "CC 10",
+    "Placement Note": "Large. Outer ring placement for maximum engagement range."
+   },
+   {
+    "Building": "EW Jamming Tower",
+    "Footprint": "2x2",
+    "Tiles Used": 4,
+    "Category": "Defense",
+    "Unlocked CC": "CC 10",
+    "Placement Note": "Place centrally - its jamming effect radiates from its position."
+   },
+   {
+    "Building": "88mm Flak Tower",
+    "Footprint": "2x2",
+    "Tiles Used": 4,
+    "Category": "Defense",
+    "Unlocked CC": "CC 3",
+    "Placement Note": "Dual purpose. Good mid-ring placement for both air and ground threats."
+   },
+   {
+    "Building": "Minefield Zone",
+    "Footprint": "2x2",
+    "Tiles Used": 4,
+    "Category": "Defense",
+    "Unlocked CC": "CC 1",
+    "Placement Note": "Place just inside perimeter at likely breach points and choke corridors."
+   },
+   {
+    "Building": "Research Lab",
+    "Footprint": "3x3",
+    "Tiles Used": 9,
+    "Category": "Support",
+    "Unlocked CC": "CC 1",
+    "Placement Note": "Non-combat. Safe inner placement. Does not need perimeter access."
+   },
+   {
+    "Building": "Army Camp",
+    "Footprint": "3x3",
+    "Tiles Used": 9,
+    "Category": "Support",
+    "Unlocked CC": "CC 1",
+    "Placement Note": "Non-combat. Group Army Camps together in one district."
+   },
+   {
+    "Building": "Intel Center",
+    "Footprint": "2x2",
+    "Tiles Used": 4,
+    "Category": "Support",
+    "Unlocked CC": "CC 2",
+    "Placement Note": "Non-combat. Inner placement. Low HP so keep protected."
+   },
+   {
+    "Building": "Alliance Hall",
+    "Footprint": "3x3",
+    "Tiles Used": 9,
+    "Category": "Alliance",
+    "Unlocked CC": "CC 5",
+    "Placement Note": "Non-combat. Inner ring. Losing it does not disable alliance features mid-raid."
+   },
+   {
+    "Building": "War Bunker",
+    "Footprint": "2x2",
+    "Tiles Used": 4,
+    "Category": "Alliance",
+    "Unlocked CC": "CC 6",
+    "Placement Note": "Place near center. Garrison deploys from here when base hits 50% destruction."
+   },
+   {
+    "Building": "Alliance Research Lab",
+    "Footprint": "3x3",
+    "Tiles Used": 9,
+    "Category": "Alliance",
+    "Unlocked CC": "CC 7",
+    "Placement Note": "Non-combat. Inner ring. Large footprint - plan space at CC7+."
+   },
+   {
+    "Building": "Wall Tile",
+    "Footprint": "1x1",
+    "Tiles Used": 1,
+    "Category": "Wall",
+    "Unlocked CC": "CC 1",
+    "Placement Note": "Connects to adjacent wall tiles automatically. Plan compartments not just single lines."
+   },
+   {
+    "Building": "Perimeter Wall Section",
+    "Footprint": "1x1",
+    "Tiles Used": 1,
+    "Category": "Wall",
+    "Unlocked CC": "CC 1",
+    "Placement Note": "Fixed outer ring. Cannot be moved. Upgrades in place with wall tier upgrades."
+   }
+  ]
+ },
+ "Layout Strategies": {
+  "These are not templates - they are strategic philosophies players can adapt to their own style.": [
+   {
+    "Strategy": "Concentric Rings",
+    "Best For": "Trophy protection",
+    "Weakness": "Resource raids from South",
+    "Key Buildings Placement": "CC in center ring. Defenses in middle ring. Resources in outer ring as bait.",
+    "Design Principle": "Classic layered defense. Attacker must breach 2-3 wall rings to reach CC. Each ring is a separate compartment. Bomb Towers at ring transitions. Mortar in center."
+   },
+   {
+    "Strategy": "Anti-3-Star Base",
+    "Best For": "Preventing 100% destruction",
+    "Weakness": "Easier to get 50% destruction",
+    "Key Buildings Placement": "Spread buildings evenly. No clusters. CC in one corner. Resources in opposite corner.",
+    "Design Principle": "Forces attacker to cover the entire grid to reach 100%. Splitting CC and resources means attacker must choose between trophy win and resource steal."
+   },
+   {
+    "Strategy": "Funnel Base",
+    "Best For": "Maximizing defense tower effectiveness",
+    "Weakness": "Pincer attacks bypass funnels",
+    "Key Buildings Placement": "Walls create a single corridor leading to center. Bomb Towers and Mortars line the corridor.",
+    "Design Principle": "Channel all attacking units into a single kill corridor. Bomb Towers shred clusters. Flame Towers finish off survivors. Only works against single-zone attacks."
+   },
+   {
+    "Strategy": "Resource Fortress",
+    "Best For": "Farming - protecting resources",
+    "Weakness": "Sacrifices trophy protection",
+    "Key Buildings Placement": "All storage buildings in innermost compartment. CC on outer ring deliberately.",
+    "Design Principle": "Accept trophy loss in exchange for protecting Gold Vault and Oil Tank. Works at lower trophy ranges where resource generation matters more than rank."
+   },
+   {
+    "Strategy": "Turtle Base",
+    "Best For": "Maximum wall coverage",
+    "Weakness": "Wastes tiles on walls not defenses",
+    "Key Buildings Placement": "Use all 200 wall tiles to create 4-5 concentric compartments. Defense towers inside each compartment.",
+    "Design Principle": "Every compartment requires a wall breach. Heavy Tanks slow down. SPGs and TDs pick them off while stationary. Best against formation-heavy attacks."
+   },
+   {
+    "Strategy": "Air Trap Base",
+    "Best For": "Punishing air-heavy attackers",
+    "Weakness": "Weak vs pure ground assault",
+    "Key Buildings Placement": "CIWS Towers and AA Guns on all 4 perimeters. Patriot SAM in center. S-400 at CC10.",
+    "Design Principle": "Layered anti-air destroys the second wave before it can contribute. Ground units must carry the entire raid alone. Very effective vs players who rely on air trigger."
+   },
+   {
+    "Strategy": "Honeypot Base",
+    "Best For": "Tricking attackers",
+    "Weakness": "Requires careful planning",
+    "Key Buildings Placement": "Exposed resource buildings surrounded by hidden Minefields and Bomb Towers.",
+    "Design Principle": "Resource buildings look unprotected but are surrounded by Minefields and flanked by Bomb Towers. Light Tank rushes hit the minefield and cluster perfectly for Bomb Tower splash."
+   },
+   {
+    "Strategy": "War Base",
+    "Best For": "Alliance wars only",
+    "Weakness": "Not optimal for regular raids",
+    "Key Buildings Placement": "All defenses facing expected attack vectors. War Bunker centrally placed. Intel Center upgraded.",
+    "Design Principle": "War bases are designed specifically for alliance war raids where the attacker is a known strong player. Maximize defensive synergies over resource protection."
+   }
+  ]
+ },
+ "Base Snapshots by CC": {
+  "Descriptive snapshot of a well-built base at each CC level. Use as a design reference.": [
+   {
+    "CC Level": "CC 1",
+    "Grid Size": "20x20",
+    "Typical Well-Built Base Description": "Single Gold Mine, Oil Derrick, and Steel Mill on outer ring. Gold Vault in center. One Barracks and Army Camp grouped together. Perimeter wall with 50 tile inner wall creating one compartment around the CC. One Machine Gun Nest and one Cannon Tower. Basic Minefield at likely breach point. Very vulnerable - expected at this stage."
+   },
+   {
+    "CC Level": "CC 2",
+    "Grid Size": "22x22",
+    "Typical Well-Built Base Description": "First Air Hangar placed next to Barracks. Intel Center near CC. Second collector set coming online. Inner compartment wall around CC and Gold Vault together. Two Cannon Towers on North and South perimeter. AA Gun Tower on East flank. Minefield on West. Starting to look like a real base."
+   },
+   {
+    "CC Level": "CC 3",
+    "Grid Size": "24x24",
+    "Typical Well-Built Base Description": "Second Barracks allows faster training. Mortar Tower placed in center of inner compartment. Sniper Tower on perimeter for range coverage. 88mm Flak Tower dual-covering air and ground. Two wall rings now established. Resource buildings in outer ring acting as buffer. Tier II units available making raids stronger."
+   },
+   {
+    "CC Level": "CC 4",
+    "Grid Size": "26x26",
+    "Typical Well-Built Base Description": "Two Oil Derricks and Steel Mills producing steadily. Steel Depot placed in mid-ring. Bomb Tower placed at main wall funnel point. Rocket Battery covers center. Three distinct rings: outer resource buffer, mid defense ring, inner CC and vault compartment. AA Guns on East and West flanks specifically. Minefield clusters at North and South chokepoints."
+   },
+   {
+    "CC Level": "CC 5",
+    "Grid Size": "28x28",
+    "Typical Well-Built Base Description": "Alliance Hall placed in inner ring. Research Lab central. Army Camp cluster of two in dedicated corner. Air Hangar upgraded for jet training. Four Cannon Towers evenly spaced. Two Mortar Towers cross-covering the base. Rocket Battery near center. Tier III units make this base a real raiding threat. Fifth of wall tile budget used for inner compartment subdivisions."
+   },
+   {
+    "CC Level": "CC 6",
+    "Grid Size": "30x30",
+    "Typical Well-Built Base Description": "Third Barracks operational. Flame Tower placed inside main compartment entrance. War Bunker centrally located for maximum garrison coverage. Gold Vault upgraded to Lv4 - now major raid target. Second Gold Vault placed in opposite inner compartment. Six defense towers on perimeter. Two inner compartments now fully walled. EW Jamming Tower purchased."
+   },
+   {
+    "CC Level": "CC 7",
+    "Grid Size": "33x33",
+    "Typical Well-Built Base Description": "CIWS Tower placed near CC and Gold Vaults. Third Air Hangar allows full air roster. Alliance Research Lab placed in inner ring. Cold War unit roster fully available. Dedicated AA defense corridor along all 4 perimeters. Three walled compartments now fully subdivided. Dragon Teeth placed at North perimeter chokepoint. Base beginning to look militarily credible."
+   },
+   {
+    "CC Level": "CC 8",
+    "Grid Size": "35x35",
+    "Typical Well-Built Base Description": "Dark Barracks takes 4x4 footprint - placed in inner ring with CC. Patriot SAM Battery placed in rear center. Tier IV units fully researched. Two CIWS Towers flanking CC. Inner triple-compartment protecting CC, Dark Barracks, and both Gold Vaults together. Minefield honeypot around Oil Tank on outer ring. War Bunker fully upgraded."
+   },
+   {
+    "CC Level": "CC 9",
+    "Grid Size": "38x38",
+    "Typical Well-Built Base Description": "THAAD Battery installed - takes dedicated 4x4 space in rear quadrant. Laser Tower pair flanking THAAD. Tier V modern units available. Three Gold Vaults and Oil Tanks placed in distributed inner locations. S-400 planned but not yet purchased. Full 170 wall tiles deployed creating maximum compartmentalization. Base now genuinely difficult to 3-star."
+   },
+   {
+    "CC Level": "CC 10",
+    "Grid Size": "40x40",
+    "Typical Well-Built Base Description": "Maximum base. S-400 and EW Jamming Tower installed. Second Dark Barracks unlocked. All buildings at or near max level. 200 wall tiles fully deployed in 4-5 concentric compartments. Dedicated AA corridor. Minefield honeypots. THAAD plus Patriot plus CIWS plus Laser Tower air defense stack. Alliance Research Lab maxed. A fully maxed CC10 base should resist most non-max attackers."
+   }
+  ]
+ },
+ "Wall Design Guide": {
+  "_notes": {
+   "PRINCIPLE": "EXPLANATION",
+   "Compartmentalization": "Divide the base into separate walled sections. When attackers breach one compartment they face another wall before reaching the next. Each breach costs time and exposes units to defenses. Aim for at least 3 compartments at CC5 and 5 compartments at CC10.",
+   "Funnel Points": "Create deliberate gaps or weak points in walls that channel attackers into kill zones. Place Bomb Towers and Mortar Towers covering these funnel points. Attackers path toward the gap and cluster perfectly for splash damage.",
+   "Defense Coverage": "Every defense tower should cover at least 2 compartments. Towers placed deep inside a compartment only cover that compartment. Towers near compartment edges can fire into adjacent areas through wall gaps.",
+   "Resource Positioning": "Early game: place resources in outer compartments as a sacrifice layer. Mid game: move resources to inner compartments once you have enough defenses to punish attackers who go deep. Late game: protect all storage in innermost ring.",
+   "Dragon Teeth Usage": "Dragon Teeth cannot be destroyed. Place them at the North perimeter to force Heavy Tanks to path around them. This delays wall breaching and channels attackers into specific entry points covered by Bomb Towers.",
+   "Wall Tile Budget": "Do not spend all wall tiles on the outer perimeter. The perimeter wall already exists automatically. Use placeable tiles for internal compartments. A common mistake is walling the perimeter twice wasting tiles.",
+   "Minefield Placement": "Place Minefields 2-3 tiles inside the perimeter not on the perimeter itself. Attackers breach the outer wall then hit the Minefield as they flood in. Catching units post-breach maximizes kill count.",
+   "Anti-SPG Design": "SPGs fire from the rear without entering the base. Counter by placing high-HP buildings like CC and Dark Barracks away from the South perimeter where SPG rear attacks originate. Sniper Towers can target SPGs before they establish position.",
+   "CIWS Placement": "CIWS Towers have very short range. Place them directly next to your highest value buildings - CC, Gold Vault, Dark Barracks. They are a last-resort intercept system not a perimeter defense.",
+   "War Bunker Location": "War Bunker garrison deploys when base hits 50% destruction. Place the Bunker centrally so donated troops can reach any part of the base. A Bunker in a corner means garrison units have to cross the entire base under fire."
+  }
+ }
+}

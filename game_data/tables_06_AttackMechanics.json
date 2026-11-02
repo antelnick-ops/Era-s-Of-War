@@ -1,0 +1,463 @@
+{
+ "Attack Overview": {
+  "Pre-set formations, 4 deployment zones, 3-minute time limit, air units as second wave.": [
+   {
+    "SYSTEM": "PRE-RAID PLANNING PHASE",
+    "DESCRIPTION": "Before launching a raid the attacker enters a Planning Phase. Here they view the enemy base layout (based on Intel Center level), assign units to deployment zones, arrange custom grid formations, and confirm the attack. No changes can be made once the raid launches."
+   },
+   {
+    "SYSTEM": "4 DEPLOYMENT ZONES",
+    "DESCRIPTION": "The map has 4 deployment zones - North, South, East, West - one on each side of the enemy base. Attacker distributes their army across any combination of zones. Each zone can hold units up to its capacity. Splitting forces creates multi-front pressure but thins each wave."
+   },
+   {
+    "SYSTEM": "CUSTOM GRID FORMATION",
+    "DESCRIPTION": "Within each deployment zone the attacker arranges units on a formation grid before launch. The grid is typically 5 columns wide. Unit placement determines attack order - front row units engage first, rear row units follow. Players can place any mix of unit classes in any position."
+   },
+   {
+    "SYSTEM": "RAID LAUNCH",
+    "DESCRIPTION": "Once confirmed all units advance simultaneously from their deployment zones toward the enemy base. Units follow pathfinding AI toward target priority buildings. The 3-minute countdown begins the moment the first unit crosses the base perimeter."
+   },
+   {
+    "SYSTEM": "GROUND PHASE",
+    "DESCRIPTION": "Ground units advance and attack based on their Target Priority stat - Defenses, Resources, or Buildings. Units pathfind around walls until a breach is made. Heavy Tanks and SPGs can breach walls directly. Units engage defenses that fire on them."
+   },
+   {
+    "SYSTEM": "AIR TRIGGER - 50% LOSSES",
+    "DESCRIPTION": "When 50% of deployed ground units are destroyed the air units automatically launch from all active deployment zones simultaneously. This is the second wave. Air units fly over walls and defenses ignoring ground obstacles. Fighters engage AA towers first. Attack aircraft and helicopters hit buildings and armor."
+   },
+   {
+    "SYSTEM": "TIME LIMIT - 3 MINUTES",
+    "DESCRIPTION": "3 minutes from first perimeter breach. When time expires all surviving units are recalled. Destruction percentage at time of expiry determines outcome. A well-planned attack should be able to reach 75-100% destruction in 3 minutes if formations and zones are chosen correctly."
+   },
+   {
+    "SYSTEM": "RETREAT OPTION",
+    "DESCRIPTION": "Players can manually trigger retreat at any point during the raid. Surviving units return to their deployment zones and the raid ends immediately. Outcome is calculated on destruction at time of retreat. Retreating early preserves Oil since surviving units cost less to redeploy."
+   },
+   {
+    "SYSTEM": "SIMULTANEOUS DEFENSE",
+    "DESCRIPTION": "The defending base fights back automatically using all placed defense towers and the War Bunker garrison. The defender is not present during the raid. Defense towers fire on the nearest valid target within range automatically. Mines trigger on contact. The EW Jamming Tower affects all incoming guided units."
+   },
+   {
+    "SYSTEM": "POST-RAID SUMMARY",
+    "DESCRIPTION": "After the raid ends both attacker and defender see a full summary: destruction percentage, buildings destroyed, resources stolen, Oil spent, trophies gained or lost, and a replay option. The attacker can watch a full replay of the raid from any deployment zone angle."
+   }
+  ]
+ },
+ "Deployment Zones": {
+  "Attacker chooses which zones to use and how many units to assign to each. Zones can be left empty.": [
+   {
+    "Zone": "North Zone",
+    "Direction": "Front approach",
+    "Default Target": "Command Center and Gold Vault (nearest high-value targets)",
+    "Formation Grid Size": "5x4 grid (20 slots)",
+    "Max Units": "20 housing capacity",
+    "Flanking Bonus": "None - primary zone",
+    "Tactical Note": "The default main attack vector. Most defenses face North. Highest resistance but shortest path to Command Center."
+   },
+   {
+    "Zone": "South Zone",
+    "Direction": "Rear approach",
+    "Default Target": "Resource collectors and storage buildings",
+    "Formation Grid Size": "5x4 grid (20 slots)",
+    "Max Units": "20 housing capacity",
+    "Flanking Bonus": "+10% steal bonus on resources",
+    "Tactical Note": "Rear approach. Defenders often place fewer defenses here. Good for resource-focused raids. Longer path to Command Center."
+   },
+   {
+    "Zone": "East Zone",
+    "Direction": "Right flank",
+    "Default Target": "AA Towers and right-side defenses",
+    "Formation Grid Size": "4x3 grid (12 slots)",
+    "Max Units": "12 housing capacity",
+    "Flanking Bonus": "+15% speed on first 30 seconds",
+    "Tactical Note": "Flanking zone. Smaller capacity. Best used to split defender attention or overwhelm one side. Pairs well with West pincer."
+   },
+   {
+    "Zone": "West Zone",
+    "Direction": "Left flank",
+    "Default Target": "SPG emplacements and left-side defenses",
+    "Formation Grid Size": "4x3 grid (12 slots)",
+    "Max Units": "12 housing capacity",
+    "Flanking Bonus": "+15% speed on first 30 seconds",
+    "Tactical Note": "Mirror of East Zone. Flanking from both East and West simultaneously creates a two-front assault that overwhelms most base designs."
+   }
+  ]
+ },
+ "Formation Grid": {
+  "GRID RULES": [
+   {
+    "Rule": "Grid Size",
+    "col1": "North and South zones: 5 columns x 4 rows (20 slots). East and West zones: 4 columns x 3 rows (12 slots). Each slot holds one unit.",
+    "Detail": null,
+    "col3": null,
+    "col4": null,
+    "col5": null
+   },
+   {
+    "Rule": "Row Advancement",
+    "col1": "Row 1 (front) advances first and takes initial fire. Row 2 advances when Row 1 reaches the wall. Rows 3 and 4 follow sequentially. Rear rows are shielded by front rows.",
+    "Detail": null,
+    "col3": null,
+    "col4": null,
+    "col5": null
+   },
+   {
+    "Rule": "Column Spacing",
+    "col1": "Units in the same row advance side by side. Column position determines which part of the base each unit targets - left column targets left side defenses, right column targets right side.",
+    "Detail": null,
+    "col3": null,
+    "col4": null,
+    "col5": null
+   },
+   {
+    "Rule": "Unit Stacking",
+    "col1": "Only one unit per grid slot. Housing cost still applies - a Heavy Tank costs more housing so fewer fit in the same formation than Light Tanks.",
+    "Detail": null,
+    "col3": null,
+    "col4": null,
+    "col5": null
+   },
+   {
+    "Rule": "Formation Lock",
+    "col1": "Once the raid launches the formation is locked. Units follow their programmed path. No changes mid-raid except the retreat command.",
+    "Detail": null,
+    "col3": null,
+    "col4": null,
+    "col5": null
+   },
+   {
+    "Rule": "Air Units in Grid",
+    "col1": "Air units placed in the formation grid do NOT deploy at raid start. Their grid position determines launch order when the 50% loss trigger fires. Front row air units launch first.",
+    "Detail": null,
+    "col3": null,
+    "col4": null,
+    "col5": null
+   },
+   {
+    "Rule": "Empty Slots",
+    "col1": "Empty slots are valid. A sparse formation with wide spacing reduces splash damage taken from Mortar and Bomb towers.",
+    "Detail": null,
+    "col3": null,
+    "col4": null,
+    "col5": null
+   },
+   {
+    "Rule": "Formation Save",
+    "col1": "Players can save up to 5 named formation templates per deployment zone. Reuse successful formations without rebuilding from scratch each raid.",
+    "Detail": null,
+    "col3": null,
+    "col4": null,
+    "col5": null
+   }
+  ],
+  "UNIT PLACEMENT STRATEGY GUIDE": [
+   {
+    "Unit Class": "Heavy Tank",
+    "Best Grid Position": "Row 1 center",
+    "Role in Formation": "Absorb damage and breach walls",
+    "Pairs Well With": "SPG behind in Row 3",
+    "Avoid Pairing With": "Light Tanks in same row",
+    "Tactical Reason": "Heavies soak fire so lighter units survive. SPGs provide indirect support from rear."
+   },
+   {
+    "Unit Class": "Medium Tank",
+    "Best Grid Position": "Row 1 or 2 flanks",
+    "Role in Formation": "Balanced damage and advance speed",
+    "Pairs Well With": "Tank Destroyer in Row 2",
+    "Avoid Pairing With": "Other Mediums in same slot",
+    "Tactical Reason": "Flanking Mediums create width. TDs behind pick off armored defenses at range."
+   },
+   {
+    "Unit Class": "Tank Destroyer",
+    "Best Grid Position": "Row 2 center",
+    "Role in Formation": "Long-range fire support from mid-grid",
+    "Pairs Well With": "Heavy Tank in Row 1",
+    "Avoid Pairing With": "Other TDs in same row",
+    "Tactical Reason": "TDs need distance to use range advantage. Place behind Heavies for protection."
+   },
+   {
+    "Unit Class": "Light Tank",
+    "Best Grid Position": "Row 1 flanks",
+    "Role in Formation": "Fast flanking and resource targeting",
+    "Pairs Well With": "Other Light Tanks",
+    "Avoid Pairing With": "Heavy Tanks",
+    "Tactical Reason": "Lights move fast and split defender attention. Pack the flanks for speed raids."
+   },
+   {
+    "Unit Class": "SPG",
+    "Best Grid Position": "Row 3 or 4 rear",
+    "Role in Formation": "Indirect fire over front-line units",
+    "Pairs Well With": "Any front-line tank",
+    "Avoid Pairing With": "Other SPGs in same column",
+    "Tactical Reason": "SPGs fire over allies hitting buildings and defenses behind walls from safety."
+   },
+   {
+    "Unit Class": "AA Tank",
+    "Best Grid Position": "Row 2 or 3",
+    "Role in Formation": "Protect ground units from AA towers",
+    "Pairs Well With": "Any ground unit",
+    "Avoid Pairing With": "Nothing - essential role",
+    "Tactical Reason": "AA Tanks suppress enemy AA defenses. Without them air units take heavy losses on second wave."
+   },
+   {
+    "Unit Class": "Fighter",
+    "Best Grid Position": "Any row - air grid",
+    "Role in Formation": "Intercept enemy AA on second wave",
+    "Pairs Well With": "Attack aircraft behind",
+    "Avoid Pairing With": "Bombers in same row",
+    "Tactical Reason": "Fighters launch first in air wave and clear AA towers before attack aircraft arrive."
+   },
+   {
+    "Unit Class": "Helicopter",
+    "Best Grid Position": "Row 1 air grid",
+    "Role in Formation": "Fast anti-armor on second wave",
+    "Pairs Well With": "Fighters to clear AA first",
+    "Avoid Pairing With": "Bombers",
+    "Tactical Reason": "Helicopters are fast but fragile. Fighters must suppress AA before helis engage."
+   },
+   {
+    "Unit Class": "Ground Attack",
+    "Best Grid Position": "Row 2 air grid",
+    "Role in Formation": "Strafe buildings and defenses",
+    "Pairs Well With": "Fighters in Row 1",
+    "Avoid Pairing With": "Other attack aircraft",
+    "Tactical Reason": "Strafing runs are devastating if AA is suppressed. Always launch after fighters."
+   },
+   {
+    "Unit Class": "Jet Fighter",
+    "Best Grid Position": "Row 1 air grid",
+    "Role in Formation": "Air superiority and AA suppression",
+    "Pairs Well With": "Any attack aircraft",
+    "Avoid Pairing With": "Nothing - air anchor unit",
+    "Tactical Reason": "Jets move fastest and clear the airspace. Essential if enemy has CIWS or Patriot."
+   }
+  ]
+ },
+ "Unit AI Behavior": {
+  "Units follow programmed AI once deployed. Understanding AI behavior is key to formation design.": [
+   {
+    "Unit Class": "Light Tank",
+    "Primary Target": "Resource buildings",
+    "Secondary Target": "Nearest building",
+    "Wall Behavior": "Pathfinds around walls. Does not breach.",
+    "AI Notes": "Fast and greedy. Beelines to Gold Mines and Oil Tanks. Ignores defenses unless fired upon."
+   },
+   {
+    "Unit Class": "Medium Tank",
+    "Primary Target": "Defenses",
+    "Secondary Target": "Nearest building",
+    "Wall Behavior": "Pathfinds around walls. Does not breach.",
+    "AI Notes": "Balanced aggressor. Attacks defenses that fire on it. Will divert to resources if no defenses nearby."
+   },
+   {
+    "Unit Class": "Heavy Tank",
+    "Primary Target": "Defenses",
+    "Secondary Target": "Walls then buildings",
+    "Wall Behavior": "BREACHES walls directly. Slow but unstoppable.",
+    "AI Notes": "Wall-breaker. Prioritizes destroying walls to open paths for following units. Then attacks defenses."
+   },
+   {
+    "Unit Class": "Tank Destroyer",
+    "Primary Target": "Defenses at range",
+    "Secondary Target": "Heavy targets",
+    "Wall Behavior": "Stops at max range and fires. Never charges.",
+    "AI Notes": "Sniper behavior. Halts outside wall range and fires at defenses. Moves up only when target is destroyed."
+   },
+   {
+    "Unit Class": "SPG",
+    "Primary Target": "Buildings indirect",
+    "Secondary Target": "Nearest valid target",
+    "Wall Behavior": "Fires OVER walls from rear. Never advances far.",
+    "AI Notes": "Stays near deployment zone. Lobs shells over walls. Switches to nearest building if all defenses down."
+   },
+   {
+    "Unit Class": "AA Tank",
+    "Primary Target": "AA defense towers",
+    "Secondary Target": "Any air defense",
+    "Wall Behavior": "Pathfinds around walls toward AA towers.",
+    "AI Notes": "Single-minded AA suppressor. Hunts Phalanx CIWS, AA Gun Towers and SAM sites first."
+   },
+   {
+    "Unit Class": "Fighter",
+    "Primary Target": "Enemy air defenses",
+    "Secondary Target": "AA towers",
+    "Wall Behavior": "Flies over all terrain and walls.",
+    "AI Notes": "Launches on 50% trigger. Immediately targets CIWS towers, SAM batteries, and AA Guns. Clears sky for others."
+   },
+   {
+    "Unit Class": "Helicopter",
+    "Primary Target": "Armored defenses",
+    "Secondary Target": "Cannon towers",
+    "Wall Behavior": "Flies over all terrain. Vulnerable to AA.",
+    "AI Notes": "Anti-armor specialist. Targets Cannon Towers and heavy defenses. Suppressed by AA tanks and CIWS."
+   },
+   {
+    "Unit Class": "Ground Attack",
+    "Primary Target": "Buildings and troops",
+    "Secondary Target": "Resource buildings",
+    "Wall Behavior": "Flies over all terrain. Strafe path is linear.",
+    "AI Notes": "Flies a straight strafing line across the base. Path set by column position in air formation grid."
+   },
+   {
+    "Unit Class": "Bomber",
+    "Primary Target": "Highest HP building",
+    "Secondary Target": "Clustered buildings",
+    "Wall Behavior": "Flies over all terrain. Drops bombs on target.",
+    "AI Notes": "Seeks the highest HP building and drops payload. One pass only. Cannot retarget mid-flight."
+   },
+   {
+    "Unit Class": "Jet Fighter",
+    "Primary Target": "All air defenses",
+    "Secondary Target": "CIWS and SAM first",
+    "Wall Behavior": "Fastest unit in game. Flies over all terrain.",
+    "AI Notes": "Fastest air unit. Neutralizes CIWS and SAM systems before other air units arrive. Essential vs modern bases."
+   },
+   {
+    "Unit Class": "Jet Attack",
+    "Primary Target": "Key structures",
+    "Secondary Target": "Command Center",
+    "Wall Behavior": "Precision strike. Single target per pass.",
+    "AI Notes": "Targets the Command Center or highest-value structure. High damage single pass. Cannot be intercepted by guns."
+   }
+  ]
+ },
+ "Raid Timeline": {
+  "A typical 3-minute raid broken into phases. Understanding the timeline helps players design formations.": [
+   {
+    "Phase": "Pre-Raid Planning",
+    "Timestamp": "Before launch",
+    "Trigger": "Player action",
+    "What Happens": "Player views enemy base. Assigns units to zones. Arranges formation grids. Reviews Intel Center data on enemy resources and defenses. Confirms attack."
+   },
+   {
+    "Phase": "Deployment",
+    "Timestamp": "T minus 5 seconds",
+    "Trigger": "Auto",
+    "What Happens": "Units appear in their deployment zones in formation order. Countdown begins. No changes possible."
+   },
+   {
+    "Phase": "Advance",
+    "Timestamp": "0:00 - 0:20",
+    "Trigger": "Auto",
+    "What Happens": "All units advance from all active zones simultaneously. Light and Fast units reach outer perimeter first. Heavy Tanks and SPGs follow."
+   },
+   {
+    "Phase": "First Contact",
+    "Timestamp": "0:15 - 0:30",
+    "Trigger": "Auto",
+    "What Happens": "Lead units reach outer wall or first mines. Mines detonate on contact. Heavy Tanks begin wall breach. TDs open fire at max range. Defenses begin engaging."
+   },
+   {
+    "Phase": "Wall Breach",
+    "Timestamp": "0:25 - 0:45",
+    "Trigger": "Heavy Tank AI",
+    "What Happens": "First wall sections breached. Ground units begin flooding through gaps. Defenses pivot to new threats. Mortar towers begin splash fire on clusters."
+   },
+   {
+    "Phase": "Mid-Battle",
+    "Timestamp": "0:45 - 1:30",
+    "Trigger": "Auto",
+    "What Happens": "Main engagement. Ground units fighting across the base. Defenses taking damage. Resources being stolen by Light Tanks. SPGs lobbing shells from rear."
+   },
+   {
+    "Phase": "Air Trigger",
+    "Timestamp": "Variable",
+    "Trigger": "50% ground losses",
+    "What Happens": "When half the deployed ground units are destroyed all air units launch simultaneously from their zones. Fighters arrive first clearing AA. Attack aircraft follow."
+   },
+   {
+    "Phase": "Air Wave",
+    "Timestamp": "Air trigger + 10s",
+    "Trigger": "Auto",
+    "What Happens": "Full air assault underway. Fighters suppressing CIWS and SAM. Helicopters engaging armor. Ground Attack strafing buildings. Bombers on high-value targets."
+   },
+   {
+    "Phase": "Final Push",
+    "Timestamp": "1:45 - 2:45",
+    "Trigger": "Auto",
+    "What Happens": "Combined arms assault. Surviving ground plus full air wave pushing through remaining defenses. Command Center targeted if not already destroyed."
+   },
+   {
+    "Phase": "Time Expiry",
+    "Timestamp": "3:00",
+    "Trigger": "Auto",
+    "What Happens": "All surviving units recalled to deployment zones. Raid ends. Destruction percentage calculated. Resources stolen confirmed. Trophies adjusted."
+   },
+   {
+    "Phase": "Post-Raid",
+    "Timestamp": "After expiry",
+    "Trigger": "Auto",
+    "What Happens": "Summary screen shown to attacker. Defender notified of attack with full replay. Shield applied to defender. Resources deducted from defender storage."
+   }
+  ]
+ },
+ "Win Conditions": {
+  "Outcome determined by destruction percentage at time of expiry or retreat.": [
+   {
+    "Outcome": "Perfect Victory",
+    "Condition": "100% destruction",
+    "Resources Stolen": "Full steal amount",
+    "Oil Cost Refund": "Full Oil refund",
+    "Trophy Change": "+30 trophies",
+    "Designer Note": "Rare. Requires excellent formation and zone choice. All buildings destroyed."
+   },
+   {
+    "Outcome": "Major Victory",
+    "Condition": "75% or more destroyed",
+    "Resources Stolen": "Full steal amount",
+    "Oil Cost Refund": "50% Oil refund",
+    "Trophy Change": "+20 trophies",
+    "Designer Note": "Strong outcome. Most resources recovered. Defender seriously hurt."
+   },
+   {
+    "Outcome": "Victory",
+    "Condition": "Command Center destroyed",
+    "Resources Stolen": "Full steal amount",
+    "Oil Cost Refund": "25% Oil refund",
+    "Trophy Change": "+15 trophies",
+    "Designer Note": "Core win condition. Destroying the CC ends effective resistance."
+   },
+   {
+    "Outcome": "Partial Victory",
+    "Condition": "50% or more destroyed",
+    "Resources Stolen": "50% of steal amount",
+    "Oil Cost Refund": "No Oil refund",
+    "Trophy Change": "+5 trophies",
+    "Designer Note": "Salvage outcome. Some resources gained. Weak trophy gain."
+   },
+   {
+    "Outcome": "Defeat",
+    "Condition": "Less than 50% destroyed",
+    "Resources Stolen": "No resources stolen",
+    "Oil Cost Refund": "No Oil refund",
+    "Trophy Change": "-10 trophies",
+    "Designer Note": "Failed raid. Full Oil cost still paid. Defender gains shield."
+   },
+   {
+    "Outcome": "Timeout Defeat",
+    "Condition": "Time expired under 50%",
+    "Resources Stolen": "No resources stolen",
+    "Oil Cost Refund": "No Oil refund",
+    "Trophy Change": "-5 trophies",
+    "Designer Note": "Slow attack or tough base. Lighter penalty than full defeat."
+   },
+   {
+    "Outcome": "Retreat Win",
+    "Condition": "Player retreats above 50%",
+    "Resources Stolen": "50% of steal amount",
+    "Oil Cost Refund": "Oil refund for survivors",
+    "Trophy Change": "Based on %",
+    "Designer Note": "Smart retreat above 50% still counts as Partial Victory. Saves Oil on survivors."
+   },
+   {
+    "Outcome": "Retreat Loss",
+    "Condition": "Player retreats below 50%",
+    "Resources Stolen": "No resources stolen",
+    "Oil Cost Refund": "Oil refund for survivors",
+    "Trophy Change": "-5 trophies",
+    "Designer Note": "Cutting losses. No steal but Oil recovered for surviving units."
+   }
+  ]
+ },
+ "Defense Counter-Play": {}
+}

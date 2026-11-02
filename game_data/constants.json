@@ -1,0 +1,96 @@
+{
+ "nations": [
+  "Germany",
+  "USSR",
+  "USA",
+  "Britain",
+  "Japan"
+ ],
+ "nation_bonuses": {
+  "Germany": {
+   "armor_pct": 15
+  },
+  "USSR": {
+   "hp_pct": 20,
+   "cost_pct": -10
+  },
+  "USA": {
+   "air_effectiveness_pct": 15
+  },
+  "Britain": {
+   "td_range_pct": 10
+  },
+  "Japan": {
+   "speed_pct": 20,
+   "hp_pct": -10
+  }
+ },
+ "tiers": 5,
+ "units_per_tier_per_nation": 7,
+ "steal_rates": {
+  "gold": 0.2,
+  "oil": 0.25,
+  "steel": 0.15
+ },
+ "raid_time_seconds": 180,
+ "deployment_zones": 4,
+ "formation_slots": {
+  "north": 20,
+  "south": 20,
+  "east": 12,
+  "west": 12
+ },
+ "air_trigger_ground_losses_pct": 50,
+ "max_generals_per_raid": 2,
+ "wounded_raids": 1,
+ "cc_levels": 10,
+ "grid_by_cc": {
+  "cc1": 20,
+  "cc2": 22,
+  "cc3": 24,
+  "cc4": 26,
+  "cc5": 28,
+  "cc6": 30,
+  "cc7": 33,
+  "cc8": 35,
+  "cc9": 38,
+  "cc10": 40
+ },
+ "tier_requires_cc": {
+  "I": 1,
+  "II": 3,
+  "III": 5,
+  "IV": 7,
+  "V": 9
+ },
+ "shield_hours": 12,
+ "new_player_shield_days": 3,
+ "housing": {
+  "Light Tank": 2,
+  "Medium Tank": 5,
+  "Heavy Tank": 8,
+  "Tank Destroyer": 5,
+  "SPG": 6,
+  "AA Tank": 4,
+  "Fighter": 5,
+  "Ground Attack": 6,
+  "Bomber": 8,
+  "Jet Fighter": 8,
+  "Jet Attack": 9,
+  "Helicopter": 8
+ },
+ "oil_factor": {
+  "Light Tank": 0.65,
+  "Medium Tank": 0.6,
+  "Heavy Tank": 0.58,
+  "Tank Destroyer": 0.62,
+  "SPG": 0.6,
+  "AA Tank": 0.5,
+  "Fighter": 0.6,
+  "Ground Attack": 0.7,
+  "Bomber": 0.7,
+  "Jet Fighter": 0.75,
+  "Jet Attack": 0.75,
+  "Helicopter": 0.7
+ }
+}

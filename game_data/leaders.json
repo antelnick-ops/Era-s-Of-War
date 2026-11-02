@@ -1,0 +1,252 @@
+[
+ {
+  "nation": "Germany",
+  "name": "Erwin Rommel",
+  "nick": "The Desert Fox",
+  "passive": "+20% speed to all ground units. +10% DPS to Tank Destroyers.",
+  "active": "Ghost Division: All German units become invisible to enemy defenses for 8 seconds after breaching the first wall. Defenses cannot target them during this window.",
+  "unlock": "500 trophies",
+  "tier": "Tier III required",
+  "note": "Rommel was famous for rapid unpredictable advances that outpaced enemy intelligence. His 7th Panzer Division moved so fast it was called the Ghost Division."
+ },
+ {
+  "nation": "Germany",
+  "name": "Heinz Guderian",
+  "nick": "Father of Blitzkrieg",
+  "passive": "+25% movement speed to all tanks. Barracks trains ground units 15% faster.",
+  "active": "Blitzkrieg Master: For 20 seconds all German tanks ignore walls entirely - they pass through as if walls do not exist. Destroys wall HP on passage.",
+  "unlock": "1500 trophies",
+  "tier": "Tier III required",
+  "note": "Guderian invented and perfected armored warfare doctrine. His concept of fast deep penetration warfare became the foundation of modern armored tactics."
+ },
+ {
+  "nation": "Germany",
+  "name": "Erich von Manstein",
+  "nick": "Master of Maneuver",
+  "passive": "+15% HP to all Heavy Tanks. +10% DPS to all ground units when attacking from the flank zones.",
+  "active": "Backhand Blow: Instantly teleports all units in one deployment zone to an adjacent zone. Catches defenders off guard and reshuffles attack vectors mid-raid.",
+  "unlock": "3000 trophies",
+  "tier": "Tier IV required",
+  "note": "Manstein was considered the finest operational mind of WW2. His Backhand Blow tactic - allowing enemy advance then striking flanks - was tactically brilliant."
+ },
+ {
+  "nation": "Germany",
+  "name": "Albert Kesselring",
+  "nick": "Smiling Albert",
+  "passive": "+20% HP to all German air units. AA Towers on home base gain +15% fire rate.",
+  "active": "Mediterranean Iron: All German air units in the second wave arrive 10 seconds early bypassing the 50% ground loss trigger if ground losses reach 35% instead.",
+  "unlock": "3000 trophies",
+  "tier": "Tier IV required",
+  "note": "Kesselring commanded Luftwaffe forces and later Italian theater ground forces. Famous for conducting brilliant defensive campaigns with limited resources."
+ },
+ {
+  "nation": "Germany",
+  "name": "Otto Carius",
+  "nick": "Tiger Ace",
+  "passive": "+30% DPS to all Heavy Tanks. Heavy Tanks gain immunity to the first Critical Hit taken.",
+  "active": "Tiger Ace: Select one Heavy Tank in the formation. That tank becomes Otto Carius himself - gains 3x HP, 2x DPS, and an aura that boosts adjacent units +20% DPS for the entire raid.",
+  "unlock": "Nation Prestige required",
+  "tier": "Tier V required",
+  "note": "Otto Carius was one of the most successful tank commanders in history with over 150 confirmed kills. His Tiger I became legendary on the Eastern Front."
+ },
+ {
+  "nation": "USSR",
+  "name": "Georgy Zhukov",
+  "nick": "Marshal of Victory",
+  "passive": "+20% HP to all Soviet units. Resource buildings gain +15% HP on home base.",
+  "active": "Soviet Hammer: Call in an artillery barrage on the enemy base. 5 random buildings take 2000 damage each. Happens instantly at raid start before units advance.",
+  "unlock": "500 trophies",
+  "tier": "Tier II required",
+  "note": "Zhukov was the most decorated Soviet commander and architect of the great offensives that crushed Nazi Germany. The Battle of Kursk and Berlin fell under his direction."
+ },
+ {
+  "nation": "USSR",
+  "name": "Ivan Konev",
+  "nick": "Marshal of the Tanks",
+  "passive": "+15% DPS to all Medium and Heavy Tanks. +10% movement speed to all ground units.",
+  "active": "Steel Flood: Deploy 5 additional T-34/85 units for free from the North zone. These units do not count toward Army Camp capacity for this raid only.",
+  "unlock": "500 trophies",
+  "tier": "Tier III required",
+  "note": "Konev commanded the First Ukrainian Front and raced Zhukov to Berlin. His armored offensives were characterized by massive tank concentrations and relentless pressure."
+ },
+ {
+  "nation": "USSR",
+  "name": "Vasily Chuikov",
+  "nick": "Defender of Stalingrad",
+  "passive": "+25% HP to all Soviet units. Home base defense towers gain +10% DPS.",
+  "active": "Not One Step Back: For 30 seconds all Soviet ground units cannot be killed - they fight at 1 HP until the ability expires then any unit below 100 HP is destroyed simultaneously.",
+  "unlock": "1500 trophies",
+  "tier": "Tier III required",
+  "note": "Chuikov commanded the 62nd Army at Stalingrad and refused to yield the city. His close-quarters tactics - hugging the enemy to neutralize artillery - were revolutionary."
+ },
+ {
+  "nation": "USSR",
+  "name": "Konstantin Rokossovsky",
+  "nick": "The Gentleman Marshal",
+  "passive": "+20% DPS to all units. SPG units gain +25% range.",
+  "active": "Operation Bagration: All four deployment zones activate simultaneously with a speed boost - units from all active zones gain +30% speed for the first 45 seconds of the raid.",
+  "unlock": "3000 trophies",
+  "tier": "Tier IV required",
+  "note": "Rokossovsky planned and executed Operation Bagration - the largest Soviet offensive of WW2 that destroyed Army Group Centre. Coordinated multi-front attacks were his specialty."
+ },
+ {
+  "nation": "USSR",
+  "name": "Alexander Vasilevsky",
+  "nick": "Chief of the General Staff",
+  "passive": "+15% to all unit stats simultaneously. Research Point gains increased by 10%.",
+  "active": "Strategic Reserve: Once per raid call in 3 units of any type already in your roster as emergency reinforcements from the East zone regardless of which zones are active.",
+  "unlock": "Nation Prestige required",
+  "tier": "Tier V required",
+  "note": "Vasilevsky coordinated Soviet strategic operations across multiple fronts simultaneously. He planned more major operations than any other Soviet commander."
+ },
+ {
+  "nation": "USA",
+  "name": "George S. Patton",
+  "nick": "Old Blood and Guts",
+  "passive": "+25% movement speed to all ground units. +15% DPS to Medium and Heavy Tanks.",
+  "active": "Ivory Handle Pistols: Patton personally leads the charge - all US ground units gain +30% DPS and +20% speed for 15 seconds. Cannot be blocked or countered.",
+  "unlock": "500 trophies",
+  "tier": "Tier II required",
+  "note": "Patton was the fastest-moving army commander in history. His Third Army advanced faster than any force in the European Theater. Feared by German commanders above all others."
+ },
+ {
+  "nation": "USA",
+  "name": "Dwight D. Eisenhower",
+  "nick": "Supreme Commander",
+  "passive": "+10% to all unit stats. Alliance war raid bonuses increased by 15%.",
+  "active": "Supreme Command: Choose any one enemy defense tower and disable it completely for the entire raid. It cannot fire. Represents Eisenhower coordinating precision intelligence strikes.",
+  "unlock": "500 trophies",
+  "tier": "Tier III required",
+  "note": "Eisenhower coordinated the largest military alliance in history. His ability to manage competing personalities and direct resources made Operation Overlord possible."
+ },
+ {
+  "nation": "USA",
+  "name": "Omar Bradley",
+  "nick": "The Soldier General",
+  "passive": "+20% HP to all US ground units. Army Camp capacity increased by 10 for the raid.",
+  "active": "GI Doctrine: Medium Tanks cost 50% less Oil this raid. All ground units gain +15% HP from Bradley inspiring the common soldier.",
+  "unlock": "1500 trophies",
+  "tier": "Tier III required",
+  "note": "Bradley commanded 1.3 million men - the largest American field army ever. He was beloved by his troops for understanding the common soldier perspective."
+ },
+ {
+  "nation": "USA",
+  "name": "Curtis LeMay",
+  "nick": "Iron Eagle",
+  "passive": "+30% DPS to all US air units. Air units trigger at 40% ground losses instead of 50%.",
+  "active": "Strategic Air Command: All US air units arrive simultaneously in one massive wave rather than in launch order. Every aircraft hits the base at the same second.",
+  "unlock": "3000 trophies",
+  "tier": "Tier IV required",
+  "note": "LeMay transformed US strategic bombing into a precision science. His doctrine of maximum concentrated air power in minimum time defined US air doctrine through the Cold War."
+ },
+ {
+  "nation": "USA",
+  "name": "Creighton Abrams",
+  "nick": "Father of the Abrams",
+  "passive": "+25% DPS and +20% HP to all Heavy Tanks. The M1A2 Abrams gains a unique gold commander hatch skin.",
+  "active": "Abrams Doctrine: The heaviest tank in your formation becomes the Commander Tank - it gains 4x HP, spawns with full armor, and its destruction triggers a free replacement unit mid-raid.",
+  "unlock": "Nation Prestige required",
+  "tier": "Tier V required",
+  "note": "Abrams was the finest American tank commander of WW2 and later Army Chief of Staff. The M1 Abrams MBT was named in his honor - the highest tribute to an armor officer."
+ },
+ {
+  "nation": "Britain",
+  "name": "Bernard Montgomery",
+  "nick": "Monty",
+  "passive": "+15% DPS to all British units. Defense towers on home base gain +10% HP.",
+  "active": "Master of the Set Piece: Before raid launch reveal the exact HP of every enemy defense tower. Formation planning becomes perfectly informed. Lasts for the planning phase only.",
+  "unlock": "500 trophies",
+  "tier": "Tier II required",
+  "note": "Montgomery was the most methodical British commander of WW2. His set-piece battle doctrine involved meticulous preparation and overwhelming force at the chosen point of attack."
+ },
+ {
+  "nation": "Britain",
+  "name": "Winston Churchill",
+  "nick": "The Bulldog",
+  "passive": "+20% HP to all British units. Finest Hour mechanic triggers at 30% CC HP instead of 25%.",
+  "active": "We Shall Never Surrender: When any British building is destroyed this raid all remaining British defense towers gain +5% fire rate stacking up to +40% total. Punishes attackers for every building they take.",
+  "unlock": "500 trophies",
+  "tier": "Tier III required",
+  "note": "Churchill was not a battlefield commander but his Iron will shaped British military doctrine. As a young man he participated in the last British cavalry charge. His defiance defined the British war effort."
+ },
+ {
+  "nation": "Britain",
+  "name": "Harold Alexander",
+  "nick": "The Diplomat General",
+  "passive": "+15% to all unit stats when fighting alongside alliance members in war raids.",
+  "active": "Coalition Warfare: Request one donated unit from alliance War Bunker to deploy in your formation for this raid at no Oil cost. The unit fights alongside your army.",
+  "unlock": "1500 trophies",
+  "tier": "Tier III required",
+  "note": "Alexander commanded Allied forces in the Mediterranean and was famous for his ability to coordinate fractious Allied commanders. He was the consummate coalition warfare officer."
+ },
+ {
+  "nation": "Britain",
+  "name": "Arthur Harris",
+  "nick": "Bomber Harris",
+  "passive": "+35% DPS to all British bomber and ground attack aircraft.",
+  "active": "Area Bombing: British bombers in this raid each make two passes instead of one. Each bomber drops payload twice on different targets. Doubles bomber raid effectiveness.",
+  "unlock": "3000 trophies",
+  "tier": "Tier IV required",
+  "note": "Air Chief Marshal Harris commanded RAF Bomber Command and prosecuted the strategic bombing campaign against Germany. His doctrine of area bombing remains controversial but effective."
+ },
+ {
+  "nation": "Britain",
+  "name": "Francis de Guingand",
+  "nick": "The Staff Officer",
+  "passive": "+10% to all unit stats. RP earned from this raid increased by 25%.",
+  "active": "Operational Planning: The enemy base Intel is fully revealed for this raid regardless of Intel Center level. See exact resource amounts defense HP and building positions.",
+  "unlock": "Nation Prestige required",
+  "tier": "Tier V required",
+  "note": "De Guingand was Montgomery chief of staff and one of the finest operational planners of WW2. His behind-the-scenes coordination made Montgomery battlefield successes possible."
+ },
+ {
+  "nation": "Japan",
+  "name": "Isoroku Yamamoto",
+  "nick": "Admiral of the Fleet",
+  "passive": "+25% DPS to all Japanese air units. Kamikaze Strike available from Air Hangar Lv1 instead of Lv3.",
+  "active": "Tora Tora Tora: All Japanese air units deploy at raid start simultaneously with the ground units rather than waiting for the 50% trigger. Full combined arms from second zero.",
+  "unlock": "500 trophies",
+  "tier": "Tier II required",
+  "note": "Yamamoto planned and executed the Pearl Harbor attack and the Midway operation. He understood airpower before any other naval commander. Famous quote: I fear we have awakened a sleeping giant."
+ },
+ {
+  "nation": "Japan",
+  "name": "Tomoyuki Yamashita",
+  "nick": "Tiger of Malaya",
+  "passive": "+20% speed to all Japanese ground units. +15% DPS when attacking from flank zones.",
+  "active": "Lightning Conquest: All Japanese units in the formation gain free movement through the enemy outer wall for 10 seconds. The wall is not damaged - units phase through it. Represents Yamashita outflanking Singapore defenses.",
+  "unlock": "500 trophies",
+  "tier": "Tier III required",
+  "note": "Yamashita conquered Malaya and Singapore in 70 days with a force half the size of the defenders. His Lightning War through difficult jungle terrain was considered impossible by British commanders."
+ },
+ {
+  "nation": "Japan",
+  "name": "Hideki Tojo",
+  "nick": "The Razor",
+  "passive": "+15% to all Japanese unit stats. Training time for all units reduced by 20%.",
+  "active": "Iron Will: Japanese units cannot trigger Banzai Charge involuntarily this raid. Instead the player manually activates Banzai Charge on all units simultaneously at a chosen moment dealing maximum coordinated damage.",
+  "unlock": "1500 trophies",
+  "tier": "Tier III required",
+  "note": "Tojo was Prime Minister and Army Minister simultaneously. His administrative iron discipline kept Japanese military production running under extreme resource constraints throughout the war."
+ },
+ {
+  "nation": "Japan",
+  "name": "Mitsuru Ushijima",
+  "nick": "Defender of Okinawa",
+  "passive": "+30% HP to all Japanese units. Home base defense towers gain +20% HP.",
+  "active": "Last Stronghold: All Japanese units in the raid gain regenerating HP - recovering 2% max HP per second for the first 60 seconds of the raid. Represents Ushijima tenacious defense doctrine.",
+  "unlock": "3000 trophies",
+  "tier": "Tier IV required",
+  "note": "Ushijima commanded the defense of Okinawa and inflicted the heaviest US naval casualties of the Pacific War. His in-depth defense doctrine made Okinawa the bloodiest Pacific battle."
+ },
+ {
+  "nation": "Japan",
+  "name": "Jinichi Kusaka",
+  "nick": "Eagle of the Pacific",
+  "passive": "+30% DPS to all Japanese air units. Air units gain +15% speed.",
+  "active": "Divine Wind: The Kamikaze Strike this raid deals 8x damage instead of 5x and cannot be intercepted by CIWS or SAM systems. The sacrifice is absolute.",
+  "unlock": "Nation Prestige required",
+  "tier": "Tier V required",
+  "note": "Kusaka commanded Japanese naval air forces and oversaw the formal Kamikaze program. Under his direction the Kamikaze corps became the most effective anti-ship weapon Japan possessed in the final year of the war."
+ }
+]

@@ -1,0 +1,164 @@
+{
+ "Nation System Overview": {
+  "5 nations. No lock-in. Each has independent progression, unique mechanics, and full visual identity.": [
+   {
+    "TOPIC": "No Lock-In",
+    "DETAIL": "Players are never locked into a nation. All 5 nations have independent tech trees and progression. Players can field units from any nation they have unlocked simultaneously. There is no penalty for switching active nations between raids."
+   },
+   {
+    "TOPIC": "Starting Nation",
+    "DETAIL": "At account creation players choose one nation to start with. That nation gets Tier I unlocked for free. All other nations require 500 RP activation cost plus the standard tier unlock requirements. The starting choice is meaningful but not permanent."
+   },
+   {
+    "TOPIC": "Active Nation",
+    "DETAIL": "The Active Nation is the one currently selected in the base UI. The base visual theme, building skins, and nation-specific mechanics all reflect the active nation. Players switch active nation instantly at no cost from the base menu."
+   },
+   {
+    "TOPIC": "Mixed Rosters",
+    "DETAIL": "Players can include vehicles from multiple nations in a single raid formation. However nation-specific mechanics (Blitzkrieg Protocol, Banzai Charge etc) only apply to vehicles of that specific nation. Mixed raids sacrifice mechanic synergy for unit flexibility."
+   },
+   {
+    "TOPIC": "Nation Affects",
+    "DETAIL": "Nation determines: unit roster available, stat bonuses on all units, 2 unique gameplay mechanics, full base visual theme, all building skins, and prestige rewards. Switching active nation changes all visual and mechanic elements immediately."
+   },
+   {
+    "TOPIC": "Prestige System",
+    "DETAIL": "After completing all 5 tiers of a nation (all vehicles researched) players can Prestige that nation. Prestige resets the tech tree to Tier I but grants a permanent enhanced stat bonus, enhanced unique mechanics, and a unique Prestige flag cosmetic."
+   },
+   {
+    "TOPIC": "Alliance Nations",
+    "DETAIL": "Alliance members can be from any nation. There is no nation restriction on alliances. However Alliance Research Lab bonuses apply to all members regardless of nation. Diverse-nation alliances have no disadvantage."
+   },
+   {
+    "TOPIC": "Nation vs Nation Meta",
+    "DETAIL": "Each nation is designed to counter at least one other nation. Germany armor counters USSR HP races. USA air counters Japan speed. Britain range counters Germany armor. Japan speed counters USA slow ground. Creates a meta without any nation being universally dominant."
+   }
+  ]
+ },
+ "Nation Comparison": {
+  "Quick reference for all 5 nations side by side.": [
+   {
+    "Nation": "Germany",
+    "Stat Bonus": "+15% Armor",
+    "Playstyle": "Engineering Excellence",
+    "Unique Mechanic 1": "Blitzkrieg Protocol (speed burst)",
+    "Unique Mechanic 2": "Iron Cross Doctrine (berserk Heavies)",
+    "Best For": "Defensive armor-focused players",
+    "Countered By": "USA air wave and Britain long range"
+   },
+   {
+    "Nation": "USSR",
+    "Stat Bonus": "+20% HP -10% Cost",
+    "Playstyle": "Numbers and Endurance",
+    "Unique Mechanic 1": "Soviet Steel Wave (free reserve squad)",
+    "Unique Mechanic 2": "Scorched Earth (storage explosions)",
+    "Best For": "Aggressive swarm players",
+    "Countered By": "Japan speed flanking"
+   },
+   {
+    "Nation": "USA",
+    "Stat Bonus": "+15% Air",
+    "Playstyle": "Air Power Doctrine",
+    "Unique Mechanic 1": "Combined Arms (manual air trigger)",
+    "Unique Mechanic 2": "Forward Operating Base (3-tile head start)",
+    "Best For": "Air-dominant timing players",
+    "Countered By": "Germany armor absorbing air damage"
+   },
+   {
+    "Nation": "Britain",
+    "Stat Bonus": "+10% TD Range",
+    "Playstyle": "Precision and Patience",
+    "Unique Mechanic 1": "Deadeye Doctrine (critical hits)",
+    "Unique Mechanic 2": "Finest Hour (last stand burst fire)",
+    "Best For": "Long-range defensive players",
+    "Countered By": "USSR numbers overwhelming range"
+   },
+   {
+    "Nation": "Japan",
+    "Stat Bonus": "+20% Speed -10% HP",
+    "Playstyle": "Banzai Spirit",
+    "Unique Mechanic 1": "Banzai Charge (auto berserk)",
+    "Unique Mechanic 2": "Kamikaze Strike (sacrifice for 5x damage)",
+    "Best For": "High-risk aggressive players",
+    "Countered By": "Germany armor soaking speed rushes"
+   }
+  ]
+ },
+ "Germany": {
+  "_notes": {
+   "ATTRIBUTE": "DETAIL",
+   "Stat Bonus": "+15% Armor on all vehicles",
+   "Playstyle": "Engineering Excellence - thick armor and precise engineering",
+   "Unique Mechanic 1": "Blitzkrieg Protocol: Once per raid Germany can activate Blitzkrieg. All German vehicles gain +40% movement speed and +20% attack speed for 15 seconds. Cooldown: once per raid only. Best used when breach is made and units flood through a gap.",
+   "Unique Mechanic 2": "Iron Cross Doctrine: German Heavy Tanks that fall below 20% HP enter Berserk mode - they stop retreating and deal +30% damage until destroyed. Makes German Heavies extremely dangerous when cornered.",
+   "Base Visual Theme": "Wehrmacht aesthetic. Concrete bunkers. Iron cross markings. Grey stone walls. Feldgrau color scheme on all buildings.",
+   "Building Skins": "Command Center becomes German HQ Bunker. Barracks becomes Wehrmacht Kaserne. Gold Vault becomes Reichsbank. Oil Tank becomes Wehrmacht Fuel Depot.",
+   "Nation Weakness": "Slow unit speed across most classes. Blitzkrieg Protocol compensates but has a cooldown.",
+   "Best For": "Defensive-minded players who prefer engineering and armor over speed.",
+   "Prestige Bonus": "+5% armor stacks with base bonus for +20% total armor at prestige.",
+   "Lore and Identity": "The German engineering tradition. From the Tiger to the Leopard 2A7 - precision manufacture and battlefield dominance through superior armor."
+  }
+ },
+ "USSR": {
+  "_notes": {
+   "ATTRIBUTE": "DETAIL",
+   "Stat Bonus": "+20% HP on all vehicles and -10% training cost",
+   "Playstyle": "Mother Russia - overwhelm through numbers and raw durability",
+   "Unique Mechanic 1": "Soviet Steel Wave: Once per raid the USSR player can call in a free reserve squad - 3 T-34/76 units deploy from the North zone regardless of Army Camp capacity. These units are free but count toward the 3-minute time limit. Cannot be upgraded. Represents Soviet reserve doctrine.",
+   "Unique Mechanic 2": "Scorched Earth: When a USSR storage building is destroyed by an attacker it explodes dealing splash damage to nearby attacking units. Gold Vault explosion: 500 damage 3-tile radius. Oil Tank explosion: 800 damage 4-tile radius. Punishes attackers who focus resources.",
+   "Base Visual Theme": "Soviet Red Army aesthetic. Red star markings. Brutalist concrete. Propaganda posters on buildings. Khaki and olive drab color scheme.",
+   "Building Skins": "Command Center becomes Soviet Stavka HQ. Barracks becomes Red Army Barracks. Gold Vault becomes Soviet Treasury. Research Lab becomes Soviet Science Bunker.",
+   "Nation Weakness": "Lower speed on most units. Relies on HP advantage to absorb damage rather than avoid it.",
+   "Best For": "Aggressive players who want to overwhelm with numbers and punish resource raiders.",
+   "Prestige Bonus": "+5% HP stacks for +25% total HP and -15% cost at prestige.",
+   "Lore and Identity": "The Soviet doctrine of mass production and expendable reserves. Quantity has a quality all its own. From the T-34 to the T-90M - volume and endurance win wars."
+  }
+ },
+ "USA": {
+  "_notes": {
+   "ATTRIBUTE": "DETAIL",
+   "Stat Bonus": "+15% effectiveness on all air units",
+   "Playstyle": "Air Power Doctrine - dominate through air superiority and precision strikes",
+   "Unique Mechanic 1": "Combined Arms Superiority: USA air units do not wait for the 50% ground loss trigger. Instead USA players can manually call in their air wave at ANY point during the raid by pressing the Air Strike button. Ground losses still trigger air automatically as backup. Gives USA players total control over the air timing.",
+   "Unique Mechanic 2": "Forward Operating Base: USA players can designate one deployment zone as their FOB before a raid. Units deployed from the FOB zone have a 3-tile head start - they begin 3 tiles inside the enemy perimeter rather than outside. Represents US rapid deployment doctrine. Costs 500 Gold to activate per raid.",
+   "Base Visual Theme": "US Military aesthetic. Stars and stripes. Tan and green camouflage. NATO markings. Modern military base architecture.",
+   "Building Skins": "Command Center becomes Pentagon-style HQ. Barracks becomes US Army Barracks. Air Hangar becomes USAF Hangar. Gold Vault becomes Fort Knox.",
+   "Nation Weakness": "Ground units slightly less durable than Germany and USSR. Relies on air wave carrying significant damage.",
+   "Best For": "Players who prefer air-dominant tactics and timing-based strategic play.",
+   "Prestige Bonus": "+5% air effectiveness stacks for +20% total and FOB costs 250 Gold at prestige.",
+   "Lore and Identity": "American military doctrine built on air supremacy and rapid force projection. From the P-51 Mustang to the F-22 Raptor and A-10 Warthog - own the sky and win the battle."
+  }
+ },
+ "Britain": {
+  "_notes": {
+   "ATTRIBUTE": "DETAIL",
+   "Stat Bonus": "+10% Range on all Tank Destroyers",
+   "Playstyle": "Precision and Patience - long-range dominance and defensive depth",
+   "Unique Mechanic 1": "Deadeye Doctrine: British Tank Destroyers and Sniper Towers have a 15% chance per shot to deal a Critical Hit - 2x damage on that shot. This applies in both offense and defense. The Firefly and FV4005 become terrifying with Critical Hit capability. Sniper Towers with Critical Hit can one-shot Tier III vehicles.",
+   "Unique Mechanic 2": "Finest Hour: When the British Command Center falls below 25% HP it activates Finest Hour - all nearby British defense towers within 5 tiles gain +50% fire rate for the remainder of the raid. Named after Churchill's famous speech. Makes the last stand genuinely dangerous for attackers.",
+   "Base Visual Theme": "British Army aesthetic. Union Jack markings. Khaki and olive green. Brick and stone architecture. RAF roundel on Air Hangar.",
+   "Building Skins": "Command Center becomes Whitehall War Rooms. Barracks becomes British Regimental HQ. Gold Vault becomes Bank of England Vault. Research Lab becomes Bletchley Park.",
+   "Nation Weakness": "Smallest stat bonus of the five nations. Relies on Critical Hit RNG and Finest Hour timing.",
+   "Best For": "Patient players who enjoy long-range play and defensive counter-attacks.",
+   "Prestige Bonus": "+5% range on TDs stacks for +15% and Critical Hit chance increases to 20% at prestige.",
+   "Lore and Identity": "Britain's military tradition of precision engineering and stubborn defense. From the Spitfire to the Challenger 2 - quality over quantity and a refusal to yield."
+  }
+ },
+ "Japan": {
+  "_notes": {
+   "ATTRIBUTE": "DETAIL",
+   "Stat Bonus": "+20% Speed on all vehicles and -10% HP",
+   "Playstyle": "Banzai Spirit - extreme speed, aggression, and kamikaze sacrifice mechanics",
+   "Unique Mechanic 1": "Banzai Charge: Any Japanese ground unit below 30% HP automatically activates Banzai Charge - movement speed doubles and damage increases by 40% but the unit can no longer retreat and will fight to destruction. This triggers automatically with no player input. A dying Japanese army becomes its most dangerous.",
+   "Unique Mechanic 2": "Kamikaze Strike: Once per raid Japan can sacrifice one air unit as a Kamikaze Strike. The player selects a target building and the sacrificed unit flies directly at it dealing 5x normal damage on impact then is destroyed. Devastating against high-HP buildings like the enemy Command Center or Gold Vault. Unlocked at Air Hangar Lv3.",
+   "Base Visual Theme": "Imperial Japanese aesthetic. Rising sun markings. Red and white color scheme. Traditional Japanese architectural elements mixed with military structures.",
+   "Building Skins": "Command Center becomes Imperial HQ. Barracks becomes IJA Barracks. Air Hangar becomes IJAF Airfield. Gold Vault becomes Imperial Treasury.",
+   "Nation Weakness": "10% HP penalty makes all Japanese units more fragile. High risk high reward play style.",
+   "Best For": "Aggressive high-risk players who prefer speed and spectacular moments over consistency.",
+   "Prestige Bonus": "+5% speed stacks for +25% total speed. Kamikaze Strike available twice per raid at prestige.",
+   "Lore and Identity": "The Imperial Japanese spirit of Bushido - absolute commitment, overwhelming speed, and the willingness to sacrifice for victory. From the Zero to the Type 10 - honor through action."
+  }
+ },
+ "Player Selection Guide": {},
+ "Nation Meta Matchups": {}
+}

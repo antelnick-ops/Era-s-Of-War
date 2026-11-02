@@ -1,0 +1,696 @@
+{
+ "Monetization Overview": {
+  "Free-to-play. Premium currency is called War Bonds (WB). Working numbers, all tunable. Yellow cells in other tabs are inputs.": [
+   {
+    "TOPIC": "Model",
+    "RULE": "Free to play with optional purchases. No ads at launch (can be added later as optional rewarded ads)."
+   },
+   {
+    "TOPIC": "Premium currency",
+    "RULE": "War Bonds (WB). Bought with real money, also earned slowly in play. Gold, Oil, Steel and RP keep working exactly as designed."
+   },
+   {
+    "TOPIC": "What WB can buy",
+    "RULE": "Time (speed-ups), extra Engineer Crews, resource packs (capped), peace shields, cosmetics, convenience slots, Season Pass."
+   },
+   {
+    "TOPIC": "What WB can NOT buy",
+    "RULE": "Research Points (RP stay earned-only per the tech tree rule), trophies, units directly, stat boosts, or anything that skips matchmaking."
+   },
+   {
+    "TOPIC": "No random paid boxes",
+    "RULE": "Nothing paid is randomized (no loot boxes or gacha). Every purchase shows exactly what you get. This also avoids loot-box laws in several countries."
+   },
+   {
+    "TOPIC": "Anti pay-to-win",
+    "RULE": "Money buys speed and looks. Tier gates (trophies, CC level, Research Lab, Dark Barracks) cannot be bought. A free player reaches the same content, just later."
+   },
+   {
+    "TOPIC": "Resource pack caps",
+    "RULE": "Bought resources only fill free storage, and each resource can be bought with WB once per 24 hours."
+   },
+   {
+    "TOPIC": "Store rules",
+    "RULE": "All purchases go through Apple and Google billing. Subscriptions and passes use store subscriptions. Always include a Restore Purchases button."
+   },
+   {
+    "TOPIC": "Audience",
+    "RULE": "Rate for ages 13+ (avoids children's privacy rules for under-13). Optional spend limit in settings."
+   },
+   {
+    "TOPIC": "Where numbers live",
+    "RULE": "Top-Up Packs, WB Prices, Loot Caps, Offers, Revenue Model tabs. Same values are exported to game_data/economy.json."
+   }
+  ]
+ },
+ "Top-Up Packs": {
+  "Change price, bonus or base rate and everything recalculates. First purchase of each pack gives a one-time bonus equal to the base WB.": [
+   {
+    "Setting": "Base rate: WB per $1",
+    "Value": 100,
+    "col2": null,
+    "col3": null,
+    "col4": null,
+    "col5": null,
+    "col6": null,
+    "col7": null,
+    "col8": null
+   },
+   {
+    "Setting": "Store fee (small-business rate)",
+    "Value": 0.15,
+    "col2": null,
+    "col3": null,
+    "col4": null,
+    "col5": null,
+    "col6": null,
+    "col7": null,
+    "col8": null
+   },
+   {
+    "Pack": "Pocket Change",
+    "Price USD": 0.99,
+    "Base WB": 99,
+    "Bonus %": 0.0,
+    "Total WB": 99,
+    "WB per $": 100.0,
+    "First-purchase WB": 198,
+    "You keep (USD)": 0.8415,
+    "Best for": "Impulse buy"
+   },
+   {
+    "Pack": "Ammo Crate",
+    "Price USD": 4.99,
+    "Base WB": 499,
+    "Bonus %": 0.1,
+    "Total WB": 549,
+    "WB per $": 110.02004008016031,
+    "First-purchase WB": 1048,
+    "You keep (USD)": 4.2415,
+    "Best for": "Starter top-up"
+   },
+   {
+    "Pack": "Supply Truck",
+    "Price USD": 9.99,
+    "Base WB": 999,
+    "Bonus %": 0.2,
+    "Total WB": 1199,
+    "WB per $": 120.02002002002001,
+    "First-purchase WB": 2198,
+    "You keep (USD)": 8.4915,
+    "Best for": "Mid-game crew purchase"
+   },
+   {
+    "Pack": "Armored Convoy",
+    "Price USD": 19.99,
+    "Base WB": 1999,
+    "Bonus %": 0.25,
+    "Total WB": 2499,
+    "WB per $": 125.01250625312657,
+    "First-purchase WB": 4498,
+    "You keep (USD)": 16.9915,
+    "Best for": "Most popular"
+   },
+   {
+    "Pack": "War Chest",
+    "Price USD": 49.99,
+    "Base WB": 4999,
+    "Bonus %": 0.3,
+    "Total WB": 6499,
+    "WB per $": 130.00600120024004,
+    "First-purchase WB": 11498,
+    "You keep (USD)": 42.4915,
+    "Best for": "Big upgrades"
+   },
+   {
+    "Pack": "Strategic Reserve",
+    "Price USD": 99.99,
+    "Base WB": 9999,
+    "Bonus %": 0.4,
+    "Total WB": 13999,
+    "WB per $": 140.00400040004,
+    "First-purchase WB": 23998,
+    "You keep (USD)": 84.99149999999999,
+    "Best for": "Whale pack"
+   }
+  ],
+  "_notes": {
+   "Notes": "Price points use standard store tiers ($0.99 to $99.99). Verify the exact tiers when you create products in App Store Connect and Google Play Console. Subscriptions are on the Offers tab."
+  }
+ },
+ "WB Prices": {
+  "Speed-up cost follows a curve: 1 min = 1 WB, 1 hr = 20, 1 day = 260, 7 days = 1000, 30 days = 3600. Costs between anchors are interpolated. Speed-ups apply to building upgrades, research timers, unit training queues and tier unlock timers.": [
+   {
+    "Time remaining": "5 min",
+    "Minutes": 5,
+    "WB cost": 3,
+    "Approx USD (at $9.99 pack)": 0.02
+   },
+   {
+    "Time remaining": "30 min",
+    "Minutes": 30,
+    "WB cost": 11,
+    "Approx USD (at $9.99 pack)": 0.09
+   },
+   {
+    "Time remaining": "1 hr",
+    "Minutes": 60,
+    "WB cost": 20,
+    "Approx USD (at $9.99 pack)": 0.17
+   },
+   {
+    "Time remaining": "2 hr",
+    "Minutes": 120,
+    "WB cost": 31,
+    "Approx USD (at $9.99 pack)": 0.26
+   },
+   {
+    "Time remaining": "6 hr",
+    "Minutes": 360,
+    "WB cost": 73,
+    "Approx USD (at $9.99 pack)": 0.61
+   },
+   {
+    "Time remaining": "12 hr",
+    "Minutes": 720,
+    "WB cost": 135,
+    "Approx USD (at $9.99 pack)": 1.12
+   },
+   {
+    "Time remaining": "1 day",
+    "Minutes": 1440,
+    "WB cost": 260,
+    "Approx USD (at $9.99 pack)": 2.16
+   },
+   {
+    "Time remaining": "2 day",
+    "Minutes": 2880,
+    "WB cost": 384,
+    "Approx USD (at $9.99 pack)": 3.2
+   },
+   {
+    "Time remaining": "3 day",
+    "Minutes": 4320,
+    "WB cost": 507,
+    "Approx USD (at $9.99 pack)": 4.22
+   },
+   {
+    "Time remaining": "4 day",
+    "Minutes": 5760,
+    "WB cost": 630,
+    "Approx USD (at $9.99 pack)": 5.24
+   },
+   {
+    "Time remaining": "6 day",
+    "Minutes": 8640,
+    "WB cost": 877,
+    "Approx USD (at $9.99 pack)": 7.3
+   },
+   {
+    "Time remaining": "7 day",
+    "Minutes": 10080,
+    "WB cost": 1000,
+    "Approx USD (at $9.99 pack)": 8.32
+   }
+  ],
+  "ENGINEER CREWS (parallel builders)": [
+   {
+    "Crew": "Crew 1",
+    "Needs CC": 1,
+    "WB cost": 0,
+    "Note": "Included"
+   },
+   {
+    "Crew": "Crew 2",
+    "Needs CC": 1,
+    "WB cost": 0,
+    "Note": "Included"
+   },
+   {
+    "Crew": "Crew 3",
+    "Needs CC": 3,
+    "WB cost": 250,
+    "Note": "Permanent. One-time purchase per account."
+   },
+   {
+    "Crew": "Crew 4",
+    "Needs CC": 5,
+    "WB cost": 500,
+    "Note": "Permanent. One-time purchase per account."
+   },
+   {
+    "Crew": "Crew 5",
+    "Needs CC": 7,
+    "WB cost": 1000,
+    "Note": "Permanent. One-time purchase per account."
+   }
+  ],
+  "PEACE SHIELDS": [
+   {
+    "Shield": "1 day shield",
+    "Days": 1,
+    "WB cost": 100,
+    "Note": "Cannot attack while shielded. Attacking removes it."
+   },
+   {
+    "Shield": "2 day shield",
+    "Days": 2,
+    "WB cost": 150,
+    "Note": "Cannot attack while shielded. Attacking removes it."
+   },
+   {
+    "Shield": "7 day shield",
+    "Days": 7,
+    "WB cost": 400,
+    "Note": "Cannot attack while shielded. Attacking removes it."
+   }
+  ],
+  "RESOURCE PACKS (amount per 100 WB)": [
+   {
+    "CC bracket": "CC 1-2",
+    "Gold per 100 WB": 10000,
+    "Oil per 100 WB": 6670,
+    "Steel per 100 WB": 4000
+   },
+   {
+    "CC bracket": "CC 3-4",
+    "Gold per 100 WB": 30000,
+    "Oil per 100 WB": 20000,
+    "Steel per 100 WB": 12000
+   },
+   {
+    "CC bracket": "CC 5-6",
+    "Gold per 100 WB": 120000,
+    "Oil per 100 WB": 80000,
+    "Steel per 100 WB": 48000
+   },
+   {
+    "CC bracket": "CC 7-8",
+    "Gold per 100 WB": 400000,
+    "Oil per 100 WB": 266670,
+    "Steel per 100 WB": 160000
+   },
+   {
+    "CC bracket": "CC 9-10",
+    "Gold per 100 WB": 1200000,
+    "Oil per 100 WB": 800000,
+    "Steel per 100 WB": 480000
+   },
+   {
+    "CC bracket": "Rules",
+    "Gold per 100 WB": "Pack only fills FREE storage space. Each resource: once per 24 hours. Prices scale with CC bracket so bought amounts stay meaningful but never unlock a gate.",
+    "Oil per 100 WB": null,
+    "Steel per 100 WB": null
+   }
+  ],
+  "COSMETICS AND CONVENIENCE": [
+   {
+    "Item": "Vehicle camo (single)",
+    "WB cost": 300,
+    "Type": "Cosmetic",
+    "Note": "Per vehicle model. Nation-themed."
+   },
+   {
+    "Item": "Vehicle camo set (one tier)",
+    "WB cost": 1200,
+    "Type": "Cosmetic",
+    "Note": "All vehicles of one nation tier."
+   },
+   {
+    "Item": "Base skin",
+    "WB cost": 800,
+    "Type": "Cosmetic",
+    "Note": "Ground texture and building trim."
+   },
+   {
+    "Item": "Wall skin",
+    "WB cost": 400,
+    "Type": "Cosmetic",
+    "Note": "Visual only."
+   },
+   {
+    "Item": "Commander portrait",
+    "WB cost": 600,
+    "Type": "Cosmetic",
+    "Note": "Leader and general alternate portraits."
+   },
+   {
+    "Item": "Raid victory banner",
+    "WB cost": 250,
+    "Type": "Cosmetic",
+    "Note": "Shown to defender in replay."
+   },
+   {
+    "Item": "Extra formation templates (+5)",
+    "WB cost": 150,
+    "Type": "Convenience",
+    "Note": "Adds saved formation slots."
+   },
+   {
+    "Item": "Name change",
+    "WB cost": 200,
+    "Type": "Convenience",
+    "Note": "Once per 30 days."
+   }
+  ]
+ },
+ "Free WB": {
+  "Free players should be able to afford Engineer Crew 3 in the first month and Crew 4 by about CC6 without paying.": [
+   {
+    "Source": "Tutorial completion",
+    "WB": 100,
+    "Frequency": "Once",
+    "Note": "Teaches Engineer Crews."
+   },
+   {
+    "Source": "Daily mission set",
+    "WB": 5,
+    "Frequency": "Daily",
+    "Note": "About 150 WB per month."
+   },
+   {
+    "Source": "League promotion (each)",
+    "WB": 50,
+    "Frequency": "Per league",
+    "Note": "Trophy leagues."
+   },
+   {
+    "Source": "Achievement chest",
+    "WB": 25,
+    "Frequency": "Per achievement",
+    "Note": "About 60 achievements = 1,500 WB over the game."
+   },
+   {
+    "Source": "Alliance war win",
+    "WB": 20,
+    "Frequency": "Per war",
+    "Note": "Small, keeps alliances active."
+   },
+   {
+    "Source": "Season Pass free track",
+    "WB": 100,
+    "Frequency": "Per season",
+    "Note": "Free players still get a small reward."
+   },
+   {
+    "Source": "Clear storage cluttering (obstacles)",
+    "WB": 3,
+    "Frequency": "Per obstacle",
+    "Note": "Optional if you add map obstacles later."
+   }
+  ]
+ },
+ "Loot Caps": {
+  "Loot = MIN(steal% x lootable, cap). Lootable = stored minus protected amount (10% of storage capacity is never lootable). Starting values, tune in playtests.": [
+   {
+    "Defender CC": "CC 1",
+    "Gold cap": 8000,
+    "Oil cap": 6000,
+    "Steel cap": 3000,
+    "Note": null
+   },
+   {
+    "Defender CC": "CC 2",
+    "Gold cap": 20000,
+    "Oil cap": 15000,
+    "Steel cap": 8000,
+    "Note": null
+   },
+   {
+    "Defender CC": "CC 3",
+    "Gold cap": 60000,
+    "Oil cap": 45000,
+    "Steel cap": 20000,
+    "Note": null
+   },
+   {
+    "Defender CC": "CC 4",
+    "Gold cap": 150000,
+    "Oil cap": 110000,
+    "Steel cap": 50000,
+    "Note": null
+   },
+   {
+    "Defender CC": "CC 5",
+    "Gold cap": 400000,
+    "Oil cap": 300000,
+    "Steel cap": 130000,
+    "Note": null
+   },
+   {
+    "Defender CC": "CC 6",
+    "Gold cap": 800000,
+    "Oil cap": 600000,
+    "Steel cap": 250000,
+    "Note": null
+   },
+   {
+    "Defender CC": "CC 7",
+    "Gold cap": 1800000,
+    "Oil cap": 1300000,
+    "Steel cap": 550000,
+    "Note": null
+   },
+   {
+    "Defender CC": "CC 8",
+    "Gold cap": 3500000,
+    "Oil cap": 2500000,
+    "Steel cap": 1100000,
+    "Note": null
+   },
+   {
+    "Defender CC": "CC 9",
+    "Gold cap": 6000000,
+    "Oil cap": 4400000,
+    "Steel cap": 2000000,
+    "Note": null
+   },
+   {
+    "Defender CC": "CC 10",
+    "Gold cap": 10000000,
+    "Oil cap": 7500000,
+    "Steel cap": 3500000,
+    "Note": null
+   }
+  ],
+  "EXAMPLE CALCULATOR (CC 10 defender)": [
+   {
+    "Item": "Stored amount",
+    "Gold": 9000000,
+    "Oil": 5000000,
+    "Steel": 4000000,
+    "col4": null
+   },
+   {
+    "Item": "Storage capacity",
+    "Gold": 18000000,
+    "Oil": 9000000,
+    "Steel": 9000000,
+    "col4": null
+   },
+   {
+    "Item": "Protected (10% of capacity)",
+    "Gold": 1800000.0,
+    "Oil": 900000.0,
+    "Steel": 900000.0,
+    "col4": null
+   },
+   {
+    "Item": "Lootable",
+    "Gold": 7200000.0,
+    "Oil": 4100000.0,
+    "Steel": 3100000.0,
+    "col4": null
+   },
+   {
+    "Item": "Steal rate",
+    "Gold": 0.2,
+    "Oil": 0.25,
+    "Steel": 0.15,
+    "col4": null
+   },
+   {
+    "Item": "Loot cap (CC 10)",
+    "Gold": 10000000,
+    "Oil": 7500000,
+    "Steel": 3500000,
+    "col4": null
+   },
+   {
+    "Item": "STOLEN THIS RAID",
+    "Gold": 1440000.0,
+    "Oil": 1025000.0,
+    "Steel": 465000.0,
+    "col4": "Steal rate applies first; cap only bites for very rich bases."
+   }
+  ]
+ },
+ "Offers": {
+  "Every offer lists exactly what is inside. Nothing is random. Show price in local currency from the store.": [
+   {
+    "Offer": "Starter Pack",
+    "Price USD": 2.99,
+    "Contents": "300 WB + 50,000 Gold + 25,000 Oil + 8,000 Steel + 1 free speed-up token (1 hr) + Starter camo",
+    "Shown when": "After tutorial, CC2",
+    "Limit": "Once per account",
+    "Type": "One-time"
+   },
+   {
+    "Offer": "Engineer Bundle",
+    "Price USD": 6.99,
+    "Contents": "Engineer Crew 3 + 150 WB + 12h shield token",
+    "Shown when": "CC3 reached",
+    "Limit": "Once per account",
+    "Type": "One-time"
+   },
+   {
+    "Offer": "First Purchase Bonus",
+    "Price USD": 0.0,
+    "Contents": "Each top-up pack gives double base WB the first time it is bought",
+    "Shown when": "In shop",
+    "Limit": "Once per pack",
+    "Type": "Bonus"
+   },
+   {
+    "Offer": "War Pass (Season Pass)",
+    "Price USD": 4.99,
+    "Contents": "30-day season. Premium track: 600 WB drip, exclusive camo, 3 resource packs, +5 formation templates, 2 shield tokens. Free track still exists.",
+    "Shown when": "Always in shop",
+    "Limit": "1 per season",
+    "Type": "Pass"
+   },
+   {
+    "Offer": "Quartermaster Subscription",
+    "Price USD": 4.99,
+    "Contents": "20 WB per day for 30 days (600 WB) + 1 free 12h shield per week + badge. Cosmetic and convenience only.",
+    "Shown when": "Always in shop",
+    "Limit": "Auto-renews, cancel anytime",
+    "Type": "Subscription"
+   },
+   {
+    "Offer": "Command Bundle",
+    "Price USD": 19.99,
+    "Contents": "Choice of leader alternate portrait + nation camo set (1 tier) + 1,500 WB",
+    "Shown when": "CC5 reached",
+    "Limit": "Once per nation",
+    "Type": "One-time"
+   },
+   {
+    "Offer": "Comeback Pack",
+    "Price USD": 3.99,
+    "Contents": "200 WB + 100,000 resources scaled to CC + 24h shield",
+    "Shown when": "Returning after 14 days away",
+    "Limit": "Once per return",
+    "Type": "One-time"
+   },
+   {
+    "Offer": "Event Bundle",
+    "Price USD": 9.99,
+    "Contents": "Seasonal limited camo + 700 WB",
+    "Shown when": "Events",
+    "Limit": "Once per event",
+    "Type": "Limited"
+   }
+  ],
+  "_notes": {
+   "Guardrails": "Never show an offer during a raid or right after a defeat. Max 1 popup per session. Always include a clear close button. Show offers by player need (for example Crew bundle at CC3), not by pressure."
+  }
+ },
+ "Revenue Model": {
+  "Yellow cells are inputs. Use this to sanity-check the business before spending months building. All dollar values in USD per month unless noted.": [
+   {
+    "Input or result": "New installs per month",
+    "Low": 3000,
+    "Base": 10000,
+    "High": 30000
+   },
+   {
+    "Input or result": "Average months a player stays active",
+    "Low": 2.5,
+    "Base": 3.0,
+    "High": 3.5
+   },
+   {
+    "Input or result": "Monthly active players (MAU)",
+    "Low": 7500.0,
+    "Base": 30000.0,
+    "High": 105000.0
+   },
+   {
+    "Input or result": "Payer conversion",
+    "Low": 0.015,
+    "Base": 0.025,
+    "High": 0.035
+   },
+   {
+    "Input or result": "Average spend per paying player per month",
+    "Low": 15,
+    "Base": 22,
+    "High": 30
+   },
+   {
+    "Input or result": "Paying players per month",
+    "Low": 112.5,
+    "Base": 750.0,
+    "High": 3675.0000000000005
+   },
+   {
+    "Input or result": "Gross revenue per month",
+    "Low": 1687.5,
+    "Base": 16500.0,
+    "High": 110250.00000000001
+   },
+   {
+    "Input or result": "Store fee",
+    "Low": 0.15,
+    "Base": 0.15,
+    "High": 0.15
+   },
+   {
+    "Input or result": "Net revenue after store fee",
+    "Low": 1434.375,
+    "Base": 14025.0,
+    "High": 93712.50000000001
+   },
+   {
+    "Input or result": "Share of installs bought with ads",
+    "Low": 0.0,
+    "Base": 0.3,
+    "High": 0.5
+   },
+   {
+    "Input or result": "Cost per install (CPI)",
+    "Low": 2.5,
+    "Base": 2.5,
+    "High": 2.5
+   },
+   {
+    "Input or result": "Ad spend per month",
+    "Low": 0.0,
+    "Base": 7500.0,
+    "High": 37500.0
+   },
+   {
+    "Input or result": "Servers and tools per month",
+    "Low": 50,
+    "Base": 150,
+    "High": 600
+   },
+   {
+    "Input or result": "MONTHLY PROFIT (before your own pay)",
+    "Low": 1384.375,
+    "Base": 6375.0,
+    "High": 55612.500000000015
+   },
+   {
+    "Input or result": "Yearly profit",
+    "Low": 16612.5,
+    "Base": 76500.0,
+    "High": 667350.0000000002
+   }
+  ],
+  "_notes": {
+   "Reading guide": "Low = quiet launch, no marketing. Base = modest organic plus some ads. High = featured or viral. Most games land at or below Low, so build a small first version (vertical slice) and measure real numbers before scaling."
+  }
+ }
+}

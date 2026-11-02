@@ -1,0 +1,1573 @@
+{
+ "Command Center": {
+  "COMMAND CENTER LEVELS": [
+   {
+    "CC Level": "CC 1",
+    "HP": 2000,
+    "Upgrade Cost G": 0,
+    "Upgrade Cost S": 0,
+    "Upgrade Time": "Start",
+    "Buildings Unlocked": "Gold Mine x1; Oil Derrick x1; Steel Mill x1; Gold Vault x1; Barracks x1; Research Lab x1; Army Camp x1; Minefield Zone x1",
+    "Max Unit Tier": "Tier I",
+    "New Slots Unlocked": "Grid 20x20 (340 usable tiles). 50 placeable wall tiles.",
+    "Designer Note": "Tutorial base. Very limited."
+   },
+   {
+    "CC Level": "CC 2",
+    "HP": 3500,
+    "Upgrade Cost G": 10000,
+    "Upgrade Cost S": 5000,
+    "Upgrade Time": "10 min",
+    "Buildings Unlocked": "Oil Tank x1; Steel Depot x1; Air Hangar x1; Intel Center x1; Machine Gun Nest x1; Cannon Tower x1; Minefield Zone up to x2",
+    "Max Unit Tier": "Tier I",
+    "New Slots Unlocked": "Grid 22x22 (408 usable tiles). 55 placeable wall tiles.",
+    "Designer Note": "First defenses come online."
+   },
+   {
+    "CC Level": "CC 3",
+    "HP": 5000,
+    "Upgrade Cost G": 40000,
+    "Upgrade Cost S": 15000,
+    "Upgrade Time": "1 hr",
+    "Buildings Unlocked": "Gold Mine up to x2; Barracks up to x2; Machine Gun Nest up to x2; Cannon Tower up to x2; Mortar Tower x1; Sniper Tower x1; 88mm Flak Tower x1",
+    "Max Unit Tier": "Tier II",
+    "New Slots Unlocked": "Grid 24x24 (480 usable tiles). 65 placeable wall tiles.",
+    "Designer Note": "Tier II units unlock. Second barracks."
+   },
+   {
+    "CC Level": "CC 4",
+    "HP": 7500,
+    "Upgrade Cost G": 120000,
+    "Upgrade Cost S": 40000,
+    "Upgrade Time": "4 hr",
+    "Buildings Unlocked": "Oil Derrick up to x2; Steel Mill up to x2; Mortar Tower up to x2; Sniper Tower up to x2; AA Gun Tower x1; Bomb Tower x1; 88mm Flak Tower up to x2; Minefield Zone up to x3",
+    "Max Unit Tier": "Tier II",
+    "New Slots Unlocked": "Grid 26x26 (560 usable tiles). 75 placeable wall tiles.",
+    "Designer Note": "Resource economy expands."
+   },
+   {
+    "CC Level": "CC 5",
+    "HP": 11000,
+    "Upgrade Cost G": 400000,
+    "Upgrade Cost S": 120000,
+    "Upgrade Time": "12 hr",
+    "Buildings Unlocked": "Air Hangar up to x2; Army Camp up to x2; Machine Gun Nest up to x3; Cannon Tower up to x3; AA Gun Tower up to x2; Rocket Battery x1; Minefield Zone up to x4; Alliance Hall x1",
+    "Max Unit Tier": "Tier III",
+    "New Slots Unlocked": "Grid 28x28 (648 usable tiles). 90 placeable wall tiles.",
+    "Designer Note": "Tier III and alliance features unlock."
+   },
+   {
+    "CC Level": "CC 6",
+    "HP": 16000,
+    "Upgrade Cost G": 1000000,
+    "Upgrade Cost S": 300000,
+    "Upgrade Time": "1 day",
+    "Buildings Unlocked": "Gold Vault up to x2; Oil Tank up to x2; Barracks up to x3; Machine Gun Nest up to x4; Mortar Tower up to x3; Sniper Tower up to x3; Bomb Tower up to x2; Flame Tower x1; Rocket Battery up to x2; 88mm Flak Tower up to x3; War Bunker x1",
+    "Max Unit Tier": "Tier III",
+    "New Slots Unlocked": "Grid 30x30 (740 usable tiles). 105 placeable wall tiles.",
+    "Designer Note": "Mid-game. Base getting serious."
+   },
+   {
+    "CC Level": "CC 7",
+    "HP": 22000,
+    "Upgrade Cost G": 2500000,
+    "Upgrade Cost S": 700000,
+    "Upgrade Time": "2 days",
+    "Buildings Unlocked": "Steel Depot up to x2; Air Hangar up to x3; Cannon Tower up to x4; AA Gun Tower up to x3; Flame Tower up to x2; CIWS Tower x1; Minefield Zone up to x5; Alliance Research Lab x1",
+    "Max Unit Tier": "Tier IV",
+    "New Slots Unlocked": "Grid 33x33 (893 usable tiles). 125 placeable wall tiles.",
+    "Designer Note": "Tier IV Cold War units unlock."
+   },
+   {
+    "CC Level": "CC 8",
+    "HP": 30000,
+    "Upgrade Cost G": 5000000,
+    "Upgrade Cost S": 1500000,
+    "Upgrade Time": "3 days",
+    "Buildings Unlocked": "Dark Barracks x1; Army Camp up to x3; Rocket Battery up to x3; CIWS Tower up to x2; Patriot SAM x1; Intel Center Lv5",
+    "Max Unit Tier": "Tier IV",
+    "New Slots Unlocked": "Grid 35x35 (1001 usable tiles). 145 placeable wall tiles.",
+    "Designer Note": "Dark Barracks opens premium units."
+   },
+   {
+    "CC Level": "CC 9",
+    "HP": 40000,
+    "Upgrade Cost G": 9000000,
+    "Upgrade Cost S": 3000000,
+    "Upgrade Time": "4 days",
+    "Buildings Unlocked": "Gold Vault up to x3; Oil Tank up to x3; Steel Depot up to x3; AA Gun Tower up to x4; Patriot SAM up to x2; THAAD Battery x1; Laser Tower x1; Minefield Zone up to x6",
+    "Max Unit Tier": "Tier V",
+    "New Slots Unlocked": "Grid 38x38 (1176 usable tiles). 170 placeable wall tiles.",
+    "Designer Note": "Tier V modern units. Late game."
+   },
+   {
+    "CC Level": "CC 10",
+    "HP": 55000,
+    "Upgrade Cost G": 15000000,
+    "Upgrade Cost S": 6000000,
+    "Upgrade Time": "6 days",
+    "Buildings Unlocked": "Dark Barracks up to x2; Laser Tower up to x2; S-400 SAM x1; EW Jamming Tower x1; Alliance Research Lab Lv5",
+    "Max Unit Tier": "Tier V",
+    "New Slots Unlocked": "Grid 40x40 (1300 usable tiles). 200 placeable wall tiles.",
+    "Designer Note": "Max CC. Full base unlocked. Endgame."
+   }
+  ]
+ },
+ "Training Buildings": {
+  "Max count: CC3=2, CC6=3. Each Barracks runs an independent training queue.": [
+   {
+    "Level": "Lv 1",
+    "Units Available": "Tier I ground only",
+    "Queue Slots": "2 queue slots",
+    "Building HP": 500,
+    "Upgrade Cost G": 2000,
+    "Upgrade Time": "5 min",
+    "col6": null,
+    "Designer Note": "Basic training. Slow queue."
+   },
+   {
+    "Level": "Lv 2",
+    "Units Available": "Tier I-II ground",
+    "Queue Slots": "3 queue slots",
+    "Building HP": 1200,
+    "Upgrade Cost G": 8000,
+    "Upgrade Time": "30 min",
+    "col6": null,
+    "Designer Note": "Tier II unlocks at CC3."
+   },
+   {
+    "Level": "Lv 3",
+    "Units Available": "Tier I-II ground",
+    "Queue Slots": "4 queue slots",
+    "Building HP": 2500,
+    "Upgrade Cost G": 25000,
+    "Upgrade Time": "2 hr",
+    "col6": null,
+    "Designer Note": "Training speed +10%."
+   },
+   {
+    "Level": "Lv 4",
+    "Units Available": "Tier I-III ground",
+    "Queue Slots": "5 queue slots",
+    "Building HP": 5000,
+    "Upgrade Cost G": 80000,
+    "Upgrade Time": "6 hr",
+    "col6": null,
+    "Designer Note": "Tier III units available."
+   },
+   {
+    "Level": "Lv 5",
+    "Units Available": "Tier I-III ground",
+    "Queue Slots": "6 queue slots",
+    "Building HP": 9000,
+    "Upgrade Cost G": 200000,
+    "Upgrade Time": "12 hr",
+    "col6": null,
+    "Designer Note": "Training speed +20%."
+   },
+   {
+    "Level": "Lv 6",
+    "Units Available": "Tier I-IV ground",
+    "Queue Slots": "7 queue slots",
+    "Building HP": 16000,
+    "Upgrade Cost G": 500000,
+    "Upgrade Time": "1 day",
+    "col6": null,
+    "Designer Note": "Cold War Tier IV units."
+   },
+   {
+    "Level": "Lv 7",
+    "Units Available": "Tier I-IV ground",
+    "Queue Slots": "8 queue slots",
+    "Building HP": 25000,
+    "Upgrade Cost G": 1200000,
+    "Upgrade Time": "2 days",
+    "col6": null,
+    "Designer Note": "Training speed +30%."
+   },
+   {
+    "Level": "Lv 8",
+    "Units Available": "Tier I-IV ground",
+    "Queue Slots": "10 queue slots",
+    "Building HP": 38000,
+    "Upgrade Cost G": 3000000,
+    "Upgrade Time": "3 days",
+    "col6": null,
+    "Designer Note": "Max. Tier V ground units train in Dark Barracks only."
+   }
+  ],
+  "Max count: CC2=1, CC5=2, CC7=3. Aircraft train slower than ground units.": [
+   {
+    "Level": "Lv 1",
+    "Units Available": "Prop fighters only",
+    "Queue Slots": "1 queue slot",
+    "Building HP": 600,
+    "Upgrade Cost G": 3000,
+    "Upgrade Time": "5 min",
+    "col6": null,
+    "Designer Note": "Basic prop fighters only."
+   },
+   {
+    "Level": "Lv 2",
+    "Units Available": "Prop + Ground Attack",
+    "Queue Slots": "2 queue slots",
+    "Building HP": 1400,
+    "Upgrade Cost G": 10000,
+    "Upgrade Time": "30 min",
+    "col6": null,
+    "Designer Note": "Ground attack aircraft unlock."
+   },
+   {
+    "Level": "Lv 3",
+    "Units Available": "Prop + Bomber",
+    "Queue Slots": "2 queue slots",
+    "Building HP": 3000,
+    "Upgrade Cost G": 30000,
+    "Upgrade Time": "2 hr",
+    "col6": null,
+    "Designer Note": "Bombers available."
+   },
+   {
+    "Level": "Lv 4",
+    "Units Available": "All WW2 aircraft",
+    "Queue Slots": "3 queue slots",
+    "Building HP": 6000,
+    "Upgrade Cost G": 90000,
+    "Upgrade Time": "6 hr",
+    "col6": null,
+    "Designer Note": "Full WW2 air roster."
+   },
+   {
+    "Level": "Lv 5",
+    "Units Available": "Early jets + Heli",
+    "Queue Slots": "4 queue slots",
+    "Building HP": 11000,
+    "Upgrade Cost G": 250000,
+    "Upgrade Time": "12 hr",
+    "col6": null,
+    "Designer Note": "Jets and helicopters unlock."
+   },
+   {
+    "Level": "Lv 6",
+    "Units Available": "All Cold War aircraft",
+    "Queue Slots": "5 queue slots",
+    "Building HP": 18000,
+    "Upgrade Cost G": 600000,
+    "Upgrade Time": "1 day",
+    "col6": null,
+    "Designer Note": "Full Cold War air."
+   },
+   {
+    "Level": "Lv 7",
+    "Units Available": "All Tier I-IV aircraft",
+    "Queue Slots": "6 queue slots",
+    "Building HP": 28000,
+    "Upgrade Cost G": 1500000,
+    "Upgrade Time": "2 days",
+    "col6": null,
+    "Designer Note": "Tier V aircraft train in Dark Barracks Lv2+."
+   },
+   {
+    "Level": "Lv 8",
+    "Units Available": "All Tier I-IV aircraft",
+    "Queue Slots": "8 queue slots",
+    "Building HP": 42000,
+    "Upgrade Cost G": 3500000,
+    "Upgrade Time": "3 days",
+    "col6": null,
+    "Designer Note": "Max. Tier V aircraft still train in Dark Barracks."
+   }
+  ],
+  "Max count: CC8=1, CC10=2. Trains the most powerful units. Costs Oil AND Gold to train.": [
+   {
+    "Level": "Lv 1",
+    "Units Available": "Tier V ground only",
+    "Queue Slots": "1 queue slot",
+    "Building HP": 8000,
+    "Upgrade Cost G": 500000,
+    "Upgrade Time": "1 day",
+    "col6": null,
+    "Designer Note": "First Dark Barracks. Tier V ground (needs CC9 to train)."
+   },
+   {
+    "Level": "Lv 2",
+    "Units Available": "Tier V ground + air",
+    "Queue Slots": "2 queue slots",
+    "Building HP": 18000,
+    "Upgrade Cost G": 1200000,
+    "Upgrade Time": "2 days",
+    "col6": null,
+    "Designer Note": "Tier V air units added."
+   },
+   {
+    "Level": "Lv 3",
+    "Units Available": "Tier V all classes",
+    "Queue Slots": "3 queue slots",
+    "Building HP": 32000,
+    "Upgrade Cost G": 2500000,
+    "Upgrade Time": "3 days",
+    "col6": null,
+    "Designer Note": "Full Tier V roster."
+   },
+   {
+    "Level": "Lv 4",
+    "Units Available": "Tier V + nation bonus",
+    "Queue Slots": "4 queue slots",
+    "Building HP": 50000,
+    "Upgrade Cost G": 5000000,
+    "Upgrade Time": "4 days",
+    "col6": null,
+    "Designer Note": "Nation bonus units get +5% stats."
+   },
+   {
+    "Level": "Lv 5",
+    "Units Available": "Tier V + prestige skins",
+    "Queue Slots": "5 queue slots",
+    "Building HP": 75000,
+    "Upgrade Cost G": 9000000,
+    "Upgrade Time": "5 days",
+    "col6": null,
+    "Designer Note": "Max Dark Barracks. Prestige cosmetics."
+   }
+  ]
+ },
+ "Resource Buildings": {
+  "Full level tables for collectors and storage are in WTBB_03_ResourceSystem.xlsx (Passive Generation and Storage Buildings tabs). They are no longer duplicated here because the two copies disagreed on HP and upgrade cost.": [
+   {
+    "Building": "Gold Mine",
+    "Count at CC1 / CC3 / CC5 / CC7 / CC10": "1 / 2 / 2 / 2 / 2",
+    "Role": "Collector - Gold"
+   },
+   {
+    "Building": "Oil Derrick",
+    "Count at CC1 / CC3 / CC5 / CC7 / CC10": "1 / 1 / 2 / 2 / 2",
+    "Role": "Collector - Oil (lowest HP)"
+   },
+   {
+    "Building": "Steel Mill",
+    "Count at CC1 / CC3 / CC5 / CC7 / CC10": "1 / 1 / 2 / 2 / 2",
+    "Role": "Collector - Steel"
+   },
+   {
+    "Building": "Gold Vault",
+    "Count at CC1 / CC3 / CC5 / CC7 / CC10": "1 / 1 / 1 / 2 / 3",
+    "Role": "Storage - 20% steal rate"
+   },
+   {
+    "Building": "Oil Tank",
+    "Count at CC1 / CC3 / CC5 / CC7 / CC10": "0 / 1 / 1 / 2 / 3",
+    "Role": "Storage - 25% steal rate"
+   },
+   {
+    "Building": "Steel Depot",
+    "Count at CC1 / CC3 / CC5 / CC7 / CC10": "0 / 1 / 1 / 2 / 3",
+    "Role": "Storage - 15% steal rate"
+   }
+  ]
+ },
+ "Defense Buildings": {
+  "Each defense tower is a placeable building on your base grid. Unlocked by CC level.": [
+   {
+    "Building Name": "Machine Gun Nest",
+    "Unlocked CC": "CC 2",
+    "Max Count": "x4",
+    "Max Level": "Lv 8",
+    "Targets": "Ground / Light vehicles",
+    "DPS Range": "40-180 DPS",
+    "HP Range": "800-4000 HP",
+    "Designer Purpose": "Cheapest defense. Weak vs armor but fast attack speed. Spammable.",
+    "Nation Skins": "See Defense Variant Map"
+   },
+   {
+    "Building Name": "Cannon Tower",
+    "Unlocked CC": "CC 2",
+    "Max Count": "x4",
+    "Max Level": "Lv 8",
+    "Targets": "Ground vehicles",
+    "DPS Range": "80-400 DPS",
+    "HP Range": "1200-6000 HP",
+    "Designer Purpose": "Core anti-armor defense. Slow fire rate but high damage per shot.",
+    "Nation Skins": "See Defense Variant Map"
+   },
+   {
+    "Building Name": "Mortar Tower",
+    "Unlocked CC": "CC 3",
+    "Max Count": "x3",
+    "Max Level": "Lv 8",
+    "Targets": "Ground (splash)",
+    "DPS Range": "60-350 DPS",
+    "HP Range": "1000-5000 HP",
+    "Designer Purpose": "Splash damage hits clusters. Cannot target air. Blind spot up close.",
+    "Nation Skins": "See Defense Variant Map"
+   },
+   {
+    "Building Name": "Sniper Tower",
+    "Unlocked CC": "CC 3",
+    "Max Count": "x3",
+    "Max Level": "Lv 8",
+    "Targets": "Ground (long range)",
+    "DPS Range": "100-500 DPS",
+    "HP Range": "900-4500 HP",
+    "Designer Purpose": "Extreme range single target. Prioritizes high-HP units.",
+    "Nation Skins": "See Defense Variant Map"
+   },
+   {
+    "Building Name": "AA Gun Tower",
+    "Unlocked CC": "CC 4",
+    "Max Count": "x4",
+    "Max Level": "Lv 8",
+    "Targets": "Air only",
+    "DPS Range": "70-320 DPS",
+    "HP Range": "700-3500 HP",
+    "Designer Purpose": "Counters all aircraft. Useless vs ground. Must place in air corridors.",
+    "Nation Skins": "See Defense Variant Map"
+   },
+   {
+    "Building Name": "Bomb Tower",
+    "Unlocked CC": "CC 4",
+    "Max Count": "x2",
+    "Max Level": "Lv 8",
+    "Targets": "Ground (massive splash)",
+    "DPS Range": "150-800 DPS",
+    "HP Range": "1500-7000 HP",
+    "Designer Purpose": "Slow reload but huge AoE. Wrecks tank clusters.",
+    "Nation Skins": "See Defense Variant Map"
+   },
+   {
+    "Building Name": "Flame Tower",
+    "Unlocked CC": "CC 6",
+    "Max Count": "x2",
+    "Max Level": "Lv 8",
+    "Targets": "Ground (close range)",
+    "DPS Range": "120-600 DPS",
+    "HP Range": "1100-5500 HP",
+    "Designer Purpose": "Short range but continuous damage. Melts light armor and exposed crews.",
+    "Nation Skins": "See Defense Variant Map"
+   },
+   {
+    "Building Name": "Rocket Battery",
+    "Unlocked CC": "CC 5",
+    "Max Count": "x3",
+    "Max Level": "Lv 8",
+    "Targets": "Air + Ground",
+    "DPS Range": "130-650 DPS",
+    "HP Range": "1300-6500 HP",
+    "Designer Purpose": "Dual-purpose rocket launcher. Medium range. Good all-rounder.",
+    "Nation Skins": "See Defense Variant Map"
+   },
+   {
+    "Building Name": "CIWS Tower",
+    "Unlocked CC": "CC 7",
+    "Max Count": "x2",
+    "Max Level": "Lv 6",
+    "Targets": "Air / Missiles",
+    "DPS Range": "200-900 DPS",
+    "HP Range": "800-4000 HP",
+    "Designer Purpose": "Phalanx-based. Auto-intercepts aircraft and incoming missiles.",
+    "Nation Skins": "See Defense Variant Map"
+   },
+   {
+    "Building Name": "Patriot SAM Battery",
+    "Unlocked CC": "CC 8",
+    "Max Count": "x2",
+    "Max Level": "Lv 5",
+    "Targets": "Air / Missiles / Ballistic",
+    "DPS Range": "1 shot kill",
+    "HP Range": "2000-8000 HP",
+    "Designer Purpose": "Fires on any airborne threat. Long cooldown between shots.",
+    "Nation Skins": null
+   },
+   {
+    "Building Name": "THAAD Battery",
+    "Unlocked CC": "CC 9",
+    "Max Count": "x1",
+    "Max Level": "Lv 3",
+    "Targets": "Ballistic missiles only",
+    "DPS Range": "Instant kill",
+    "HP Range": "3000-10000 HP",
+    "Designer Purpose": "Ultimate anti-missile defense. Cannot target aircraft or ground.",
+    "Nation Skins": "See Defense Variant Map"
+   },
+   {
+    "Building Name": "Laser Tower",
+    "Unlocked CC": "CC 9",
+    "Max Count": "x2",
+    "Max Level": "Lv 5",
+    "Targets": "Air / Drones / Missiles",
+    "DPS Range": "300-1200 DPS",
+    "HP Range": "1000-5000 HP",
+    "Designer Purpose": "No reload. Fires continuously. Best vs helicopters and drone swarms.",
+    "Nation Skins": "See Defense Variant Map"
+   },
+   {
+    "Building Name": "S-400 SAM",
+    "Unlocked CC": "CC 10",
+    "Max Count": "x1",
+    "Max Level": "Lv 3",
+    "Targets": "Air / Stealth / Missiles",
+    "DPS Range": "1 shot kill",
+    "HP Range": "2500-9000 HP",
+    "Designer Purpose": "Detects and kills stealth aircraft. Longest range SAM in game.",
+    "Nation Skins": "See Defense Variant Map"
+   },
+   {
+    "Building Name": "EW Jamming Tower",
+    "Unlocked CC": "CC 10",
+    "Max Count": "x1",
+    "Max Level": "Lv 3",
+    "Targets": "Electronic Warfare",
+    "DPS Range": "Area effect",
+    "HP Range": "600-2400 HP",
+    "Designer Purpose": "Jams guided missiles -50% accuracy. Slows enemy air units -20%.",
+    "Nation Skins": "See Defense Variant Map"
+   },
+   {
+    "Building Name": "88mm Flak Tower",
+    "Unlocked CC": "CC 3",
+    "Max Count": "x3",
+    "Max Level": "Lv 8",
+    "Targets": "Air + Heavy Ground",
+    "DPS Range": "90-450 DPS",
+    "HP Range": "1400-7000 HP",
+    "Designer Purpose": "+40% dmg vs Heavy Tanks. WW2-era dual purpose icon.",
+    "Nation Skins": "See Defense Variant Map"
+   },
+   {
+    "Building Name": "Minefield Zone",
+    "Unlocked CC": "CC 1",
+    "Max Count": "x6",
+    "Max Level": "Lv 5",
+    "Targets": "Ground vehicles",
+    "DPS Range": "On-contact",
+    "HP Range": "N/A",
+    "Designer Purpose": "Placeable mine cluster. One-time trigger. Immobilizes or kills on contact.",
+    "Nation Skins": "See Defense Variant Map"
+   }
+  ]
+ },
+ "Defense Variant Map": {
+  "Skins are cosmetic plus flavor. Gameplay stats come from the Defense Buildings tab.": [
+   {
+    "Game Slot": "Machine Gun Nest",
+    "Germany": "Generic (art TBD)",
+    "USSR": "Generic (art TBD)",
+    "USA": "Generic (art TBD)",
+    "Britain": "Generic (art TBD)",
+    "Japan": "Generic (art TBD)",
+    "Notes": null
+   },
+   {
+    "Game Slot": "Cannon Tower",
+    "Germany": "Generic (art TBD)",
+    "USSR": "Generic (art TBD)",
+    "USA": "Generic (art TBD)",
+    "Britain": "Generic (art TBD)",
+    "Japan": "Generic (art TBD)",
+    "Notes": null
+   },
+   {
+    "Game Slot": "Mortar Tower",
+    "Germany": "Generic (art TBD)",
+    "USSR": "Generic (art TBD)",
+    "USA": "Generic (art TBD)",
+    "Britain": "Generic (art TBD)",
+    "Japan": "Generic (art TBD)",
+    "Notes": null
+   },
+   {
+    "Game Slot": "Sniper Tower",
+    "Germany": "Generic (art TBD)",
+    "USSR": "Generic (art TBD)",
+    "USA": "Generic (art TBD)",
+    "Britain": "Generic (art TBD)",
+    "Japan": "Generic (art TBD)",
+    "Notes": null
+   },
+   {
+    "Game Slot": "AA Gun Tower",
+    "Germany": "Oerlikon 35mm GDF",
+    "USSR": "ZU-23-2 Autocannon",
+    "USA": "M167 Vulcan 20mm",
+    "Britain": "Bofors 40mm L70",
+    "Japan": "Bofors 40mm L70",
+    "Notes": null
+   },
+   {
+    "Game Slot": "Bomb Tower",
+    "Germany": "Generic (art TBD)",
+    "USSR": "Generic (art TBD)",
+    "USA": "Generic (art TBD)",
+    "Britain": "Generic (art TBD)",
+    "Japan": "Generic (art TBD)",
+    "Notes": null
+   },
+   {
+    "Game Slot": "Flame Tower",
+    "Germany": "Generic (art TBD)",
+    "USSR": "Generic (art TBD)",
+    "USA": "Generic (art TBD)",
+    "Britain": "Generic (art TBD)",
+    "Japan": "Generic (art TBD)",
+    "Notes": null
+   },
+   {
+    "Game Slot": "Rocket Battery",
+    "Germany": "Generic (art TBD)",
+    "USSR": "Generic (art TBD)",
+    "USA": "Stinger SAM Nest",
+    "Britain": "Rapier SAM",
+    "Japan": "Stinger SAM Nest",
+    "Notes": null
+   },
+   {
+    "Game Slot": "CIWS Tower",
+    "Germany": "Goalkeeper 30mm",
+    "USSR": "Generic (art TBD)",
+    "USA": "Phalanx CIWS 20mm",
+    "Britain": "Goalkeeper 30mm",
+    "Japan": "Phalanx CIWS 20mm",
+    "Notes": null
+   },
+   {
+    "Game Slot": "THAAD Battery",
+    "Germany": "THAAD Battery",
+    "USSR": "THAAD Battery",
+    "USA": "THAAD Battery",
+    "Britain": "THAAD Battery",
+    "Japan": "THAAD Battery",
+    "Notes": null
+   },
+   {
+    "Game Slot": "Laser Tower",
+    "Germany": "Iron Beam Laser",
+    "USSR": "Iron Beam Laser",
+    "USA": "HEL Laser Tower",
+    "Britain": "HEL Laser Tower",
+    "Japan": "Iron Beam Laser",
+    "Notes": null
+   },
+   {
+    "Game Slot": "S-400 SAM",
+    "Germany": "Generic (art TBD)",
+    "USSR": "S-400 Triumf",
+    "USA": "Generic (art TBD)",
+    "Britain": "Generic (art TBD)",
+    "Japan": "Generic (art TBD)",
+    "Notes": null
+   },
+   {
+    "Game Slot": "EW Jamming Tower",
+    "Germany": "EW Jamming Tower",
+    "USSR": "EW Jamming Tower",
+    "USA": "EW Jamming Tower",
+    "Britain": "EW Jamming Tower",
+    "Japan": "EW Jamming Tower",
+    "Notes": null
+   },
+   {
+    "Game Slot": "88mm Flak Tower",
+    "Germany": "88mm Flak Gun",
+    "USSR": "88mm Flak Gun",
+    "USA": "88mm Flak Gun",
+    "Britain": "88mm Flak Gun",
+    "Japan": "88mm Flak Gun",
+    "Notes": null
+   },
+   {
+    "Game Slot": "Minefield Zone",
+    "Germany": "Schu-Mine 42",
+    "USSR": "TM-62 AT Mine",
+    "USA": "M15 Anti-Tank Mine, Claymore M18A1",
+    "Britain": "M19 Plastic AT Mine, Claymore M18A1",
+    "Japan": "M15 Anti-Tank Mine",
+    "Notes": null
+   },
+   {
+    "Game Slot": "Intel Center",
+    "Germany": "Flycatcher Radar",
+    "USSR": "Generic (art TBD)",
+    "USA": "AN/TPY-2 Radar",
+    "Britain": "Flycatcher Radar",
+    "Japan": "AN/TPY-2 Radar",
+    "Notes": "Radar skins for the Intel Center support building."
+   }
+  ]
+ },
+ "Support Buildings": {
+  "ARMY CAMP - Housing for your army. Every unit uses housing by class (see roster Housing column). Raid formations are also capped at 64 grid slots.": [
+   {
+    "Level": "Lv 1",
+    "Capability": "20 housing",
+    "CC Required": "CC1",
+    "Building HP": 1500,
+    "Upgrade Cost G": 2000,
+    "Upgrade Time": "5 min",
+    "Designer Note": "Starting capacity. Small raid force."
+   },
+   {
+    "Level": "Lv 2",
+    "Capability": "30 housing",
+    "CC Required": "CC2",
+    "Building HP": 2500,
+    "Upgrade Cost G": 6000,
+    "Upgrade Time": "30 min",
+    "Designer Note": null
+   },
+   {
+    "Level": "Lv 3",
+    "Capability": "40 housing",
+    "CC Required": "CC3",
+    "Building HP": 3500,
+    "Upgrade Cost G": 15000,
+    "Upgrade Time": "2 hr",
+    "Designer Note": null
+   },
+   {
+    "Level": "Lv 4",
+    "Capability": "55 housing",
+    "CC Required": "CC4",
+    "Building HP": 5000,
+    "Upgrade Cost G": 40000,
+    "Upgrade Time": "6 hr",
+    "Designer Note": null
+   },
+   {
+    "Level": "Lv 5",
+    "Capability": "70 housing",
+    "CC Required": "CC5",
+    "Building HP": 7000,
+    "Upgrade Cost G": 100000,
+    "Upgrade Time": "12 hr",
+    "Designer Note": null
+   },
+   {
+    "Level": "Lv 6",
+    "Capability": "90 housing",
+    "CC Required": "CC6",
+    "Building HP": 10000,
+    "Upgrade Cost G": 250000,
+    "Upgrade Time": "1 day",
+    "Designer Note": null
+   },
+   {
+    "Level": "Lv 7",
+    "Capability": "115 housing",
+    "CC Required": "CC7",
+    "Building HP": 14000,
+    "Upgrade Cost G": 600000,
+    "Upgrade Time": "2 days",
+    "Designer Note": null
+   },
+   {
+    "Level": "Lv 8",
+    "Capability": "140 housing",
+    "CC Required": "CC8",
+    "Building HP": 20000,
+    "Upgrade Cost G": 1500000,
+    "Upgrade Time": "3 days",
+    "Designer Note": "Max. Large raid army capacity."
+   }
+  ],
+  "RESEARCH LAB - Unlocks tech tree progression between unit tiers. Required to access new tiers.": [
+   {
+    "Level": "Lv 1",
+    "Capability": "Tier I only",
+    "CC Required": "CC1",
+    "Building HP": 1000,
+    "Upgrade Cost G": 5000,
+    "Upgrade Time": "5 min",
+    "Designer Note": "Starting lab. Tier I available from start."
+   },
+   {
+    "Level": "Lv 2",
+    "Capability": "Tier II unlock",
+    "CC Required": "CC3",
+    "Building HP": 2000,
+    "Upgrade Cost G": 20000,
+    "Upgrade Time": "2 hr",
+    "Designer Note": "Unlocks Tier II for Gold + time investment."
+   },
+   {
+    "Level": "Lv 3",
+    "Capability": "Tier III unlock",
+    "CC Required": "CC5",
+    "Building HP": 4000,
+    "Upgrade Cost G": 80000,
+    "Upgrade Time": "8 hr",
+    "Designer Note": "Tier III Late War era begins."
+   },
+   {
+    "Level": "Lv 4",
+    "Capability": "Tier IV unlock",
+    "CC Required": "CC7",
+    "Building HP": 8000,
+    "Upgrade Cost G": 300000,
+    "Upgrade Time": "1 day",
+    "Designer Note": "Tier IV Cold War era."
+   },
+   {
+    "Level": "Lv 5",
+    "Capability": "Tier V unlock",
+    "CC Required": "CC9",
+    "Building HP": 15000,
+    "Upgrade Cost G": 1000000,
+    "Upgrade Time": "3 days",
+    "Designer Note": "Max lab. Modern era fully unlocked."
+   }
+  ],
+  "INTEL CENTER - Reveals enemy base layout before raids. Unlocks spy and scouting features.": [
+   {
+    "Level": "Lv 1",
+    "Capability": "Basic scout: reveals building count",
+    "CC Required": "CC2",
+    "Building HP": 800,
+    "Upgrade Cost G": 3000,
+    "Upgrade Time": "10 min",
+    "Designer Note": "Shows how many buildings enemy has."
+   },
+   {
+    "Level": "Lv 2",
+    "Capability": "Reveals resource amounts",
+    "CC Required": "CC3",
+    "Building HP": 1400,
+    "Upgrade Cost G": 8000,
+    "Upgrade Time": "1 hr",
+    "Designer Note": "Shows Gold/Oil/Steel stored before raiding."
+   },
+   {
+    "Level": "Lv 3",
+    "Capability": "Reveals defense types",
+    "CC Required": "CC4",
+    "Building HP": 2500,
+    "Upgrade Cost G": 25000,
+    "Upgrade Time": "4 hr",
+    "Designer Note": "Shows what defense towers are placed."
+   },
+   {
+    "Level": "Lv 4",
+    "Capability": "Full base layout preview",
+    "CC Required": "CC6",
+    "Building HP": 4000,
+    "Upgrade Cost G": 80000,
+    "Upgrade Time": "12 hr",
+    "Designer Note": "See entire enemy base before attacking."
+   },
+   {
+    "Level": "Lv 5",
+    "Capability": "Spy mission: disable 1 defense for 30s on raid",
+    "CC Required": "CC8",
+    "Building HP": 7000,
+    "Upgrade Cost G": 250000,
+    "Upgrade Time": "2 days",
+    "Designer Note": "Active ability in raid. High value."
+   }
+  ]
+ },
+ "Alliance Buildings": {
+  "ALLIANCE HALL - Join or create an alliance. Enables troop donations and chat.": [
+   {
+    "Level": "Lv 1",
+    "Capability": "Join alliance. Request 1 unit donation",
+    "CC Required": "CC5",
+    "Building HP": 1500,
+    "Upgrade Cost G": 20000,
+    "Upgrade Time": "1 hr",
+    "Designer Note": "Entry-level alliance feature."
+   },
+   {
+    "Level": "Lv 2",
+    "Capability": "Request 2 units. See alliance war log",
+    "CC Required": "CC5",
+    "Building HP": 2500,
+    "Upgrade Cost G": 50000,
+    "Upgrade Time": "4 hr",
+    "Designer Note": null
+   },
+   {
+    "Level": "Lv 3",
+    "Capability": "Request 3 units. Alliance chat channels",
+    "CC Required": "CC6",
+    "Building HP": 4000,
+    "Upgrade Cost G": 120000,
+    "Upgrade Time": "12 hr",
+    "Designer Note": null
+   },
+   {
+    "Level": "Lv 4",
+    "Capability": "Request 5 units. Alliance leaderboard",
+    "CC Required": "CC7",
+    "Building HP": 6000,
+    "Upgrade Cost G": 300000,
+    "Upgrade Time": "1 day",
+    "Designer Note": null
+   },
+   {
+    "Level": "Lv 5",
+    "Capability": "Request 8 units. Alliance missions unlock",
+    "CC Required": "CC8",
+    "Building HP": 9000,
+    "Upgrade Cost G": 700000,
+    "Upgrade Time": "2 days",
+    "Designer Note": null
+   },
+   {
+    "Level": "Lv 6",
+    "Capability": "Request 10 units. Alliance market access",
+    "CC Required": "CC9",
+    "Building HP": 13000,
+    "Upgrade Cost G": 1500000,
+    "Upgrade Time": "3 days",
+    "Designer Note": null
+   },
+   {
+    "Level": "Lv 7",
+    "Capability": "Request 12 units. Elite alliance tag",
+    "CC Required": "CC10",
+    "Building HP": 18000,
+    "Upgrade Cost G": 3000000,
+    "Upgrade Time": "4 days",
+    "Designer Note": null
+   },
+   {
+    "Level": "Lv 8",
+    "Capability": "Request 15 units. Max donation capacity",
+    "CC Required": "CC10",
+    "Building HP": 25000,
+    "Upgrade Cost G": 6000000,
+    "Upgrade Time": "5 days",
+    "Designer Note": "Max. Full alliance feature set."
+   }
+  ],
+  "WAR BUNKER - Stores donated troops that defend your base when you are offline.": [
+   {
+    "Level": "Lv 1",
+    "Capability": "Holds 5 housing worth of troops",
+    "CC Required": "CC6",
+    "Building HP": 1200,
+    "Upgrade Cost G": 30000,
+    "Upgrade Time": "2 hr",
+    "Designer Note": "First line of donated defense."
+   },
+   {
+    "Level": "Lv 2",
+    "Capability": "Holds 10 housing worth of troops",
+    "CC Required": "CC6",
+    "Building HP": 2200,
+    "Upgrade Cost G": 70000,
+    "Upgrade Time": "6 hr",
+    "Designer Note": null
+   },
+   {
+    "Level": "Lv 3",
+    "Capability": "Holds 15 housing worth of troops",
+    "CC Required": "CC7",
+    "Building HP": 3500,
+    "Upgrade Cost G": 160000,
+    "Upgrade Time": "12 hr",
+    "Designer Note": null
+   },
+   {
+    "Level": "Lv 4",
+    "Capability": "Holds 20 housing worth of troops",
+    "CC Required": "CC8",
+    "Building HP": 5000,
+    "Upgrade Cost G": 400000,
+    "Upgrade Time": "1 day",
+    "Designer Note": null
+   },
+   {
+    "Level": "Lv 5",
+    "Capability": "Holds 30 housing worth of troops",
+    "CC Required": "CC9",
+    "Building HP": 7500,
+    "Upgrade Cost G": 900000,
+    "Upgrade Time": "2 days",
+    "Designer Note": null
+   },
+   {
+    "Level": "Lv 6",
+    "Capability": "Holds 40 housing worth of troops",
+    "CC Required": "CC10",
+    "Building HP": 11000,
+    "Upgrade Cost G": 2000000,
+    "Upgrade Time": "3 days",
+    "Designer Note": "Max. Significant defensive garrison."
+   }
+  ],
+  "ALLIANCE RESEARCH LAB - Shared research that benefits all alliance members simultaneously.": [
+   {
+    "Level": "Lv 1",
+    "Capability": "Unlocks alliance research tree. +2% unit HP for all members",
+    "CC Required": "CC7",
+    "Building HP": 2000,
+    "Upgrade Cost G": 100000,
+    "Upgrade Time": "1 day",
+    "Designer Note": "Alliance-wide passive bonus."
+   },
+   {
+    "Level": "Lv 2",
+    "Capability": "+4% unit HP. Unlocks resource sharing between members",
+    "CC Required": "CC7",
+    "Building HP": 4000,
+    "Upgrade Cost G": 250000,
+    "Upgrade Time": "2 days",
+    "Designer Note": null
+   },
+   {
+    "Level": "Lv 3",
+    "Capability": "+6% unit HP. +5% unit DPS alliance-wide",
+    "CC Required": "CC8",
+    "Building HP": 8000,
+    "Upgrade Cost G": 600000,
+    "Upgrade Time": "3 days",
+    "Designer Note": null
+   },
+   {
+    "Level": "Lv 4",
+    "Capability": "+8% HP. +8% DPS. Alliance war matchmaking bonus",
+    "CC Required": "CC9",
+    "Building HP": 14000,
+    "Upgrade Cost G": 1400000,
+    "Upgrade Time": "4 days",
+    "Designer Note": null
+   },
+   {
+    "Level": "Lv 5",
+    "Capability": "+10% HP. +10% DPS. +5% resource steal on war raids",
+    "CC Required": "CC10",
+    "Building HP": 22000,
+    "Upgrade Cost G": 3000000,
+    "Upgrade Time": "5 days",
+    "Designer Note": "Max. Major alliance warfare advantage."
+   }
+  ]
+ },
+ "Walls": {
+  "WALL TIER STATS - Applies to both perimeter sections and placeable tiles": [
+   {
+    "Wall Tier": "Tier 1 - Sandbag",
+    "CC Required": "CC1",
+    "HP per Section": 500,
+    "Cost per Tile G": 50,
+    "Cost per Tile S": 0,
+    "Visual Style": "Sand colored bags stacked",
+    "Special Property": "No special property.",
+    "col7": null,
+    "col8": null
+   },
+   {
+    "Wall Tier": "Tier 2 - Wood Barricade",
+    "CC Required": "CC2",
+    "HP per Section": 1200,
+    "Cost per Tile G": 150,
+    "Cost per Tile S": 0,
+    "Visual Style": "Wooden logs and wire",
+    "Special Property": "Slows units that breach by 20%.",
+    "col7": null,
+    "col8": null
+   },
+   {
+    "Wall Tier": "Tier 3 - Chain Link",
+    "CC Required": "CC3",
+    "HP per Section": 2500,
+    "Cost per Tile G": 400,
+    "Cost per Tile S": 200,
+    "Visual Style": "Metal chain fence with razor wire",
+    "Special Property": null,
+    "col7": null,
+    "col8": null
+   },
+   {
+    "Wall Tier": "Tier 4 - Concrete Wall",
+    "CC Required": "CC4",
+    "HP per Section": 5000,
+    "Cost per Tile G": 1000,
+    "Cost per Tile S": 600,
+    "Visual Style": "Reinforced grey concrete slabs",
+    "Special Property": "Requires Heavy Tank or TD to breach.",
+    "col7": null,
+    "col8": null
+   },
+   {
+    "Wall Tier": "Tier 5 - Steel Wall",
+    "CC Required": "CC5",
+    "HP per Section": 9000,
+    "Cost per Tile G": 2500,
+    "Cost per Tile S": 1500,
+    "Visual Style": "Thick steel plating with rivets",
+    "Special Property": null,
+    "col7": null,
+    "col8": null
+   },
+   {
+    "Wall Tier": "Tier 6 - Fortified Wall",
+    "CC Required": "CC6",
+    "HP per Section": 15000,
+    "Cost per Tile G": 6000,
+    "Cost per Tile S": 3500,
+    "Visual Style": "Concrete plus steel reinforcement",
+    "Special Property": "Absorbs first 1000 damage free per raid.",
+    "col7": null,
+    "col8": null
+   },
+   {
+    "Wall Tier": "Tier 7 - Dragon Teeth",
+    "CC Required": "CC7",
+    "HP per Section": 22000,
+    "Cost per Tile G": 12000,
+    "Cost per Tile S": 7000,
+    "Visual Style": "Pyramid concrete anti-tank blocks",
+    "Special Property": "Immune to splash damage. Slows vehicles 50%. Only direct fire can damage it.",
+    "col7": null,
+    "col8": null
+   },
+   {
+    "Wall Tier": "Tier 8 - HESCO Barrier",
+    "CC Required": "CC8",
+    "HP per Section": 26000,
+    "Cost per Tile G": 15000,
+    "Cost per Tile S": 8500,
+    "Visual Style": "Modern sand-filled wire containers",
+    "Special Property": "Fast repair - 50% cheaper repair cost.",
+    "col7": null,
+    "col8": null
+   },
+   {
+    "Wall Tier": "Tier 9 - Blast Wall",
+    "CC Required": "CC9",
+    "HP per Section": 32000,
+    "Cost per Tile G": 20000,
+    "Cost per Tile S": 12000,
+    "Visual Style": "Massive reinforced blast barriers",
+    "Special Property": "Explosion splash damage reduced by 60% behind wall.",
+    "col7": null,
+    "col8": null
+   },
+   {
+    "Wall Tier": "Tier 10 - Titan Wall",
+    "CC Required": "CC10",
+    "HP per Section": 50000,
+    "Cost per Tile G": 40000,
+    "Cost per Tile S": 25000,
+    "Visual Style": "Composite armor plating endgame",
+    "Special Property": "Max wall. Requires Tier V Heavy Tank or SPG to breach.",
+    "col7": null,
+    "col8": null
+   }
+  ],
+  "_notes": {
+   "Perimeter Wall": "Fixed outer ring around entire base. Cannot be moved. Upgrades as a set. Breached walls create gaps enemy units path through.",
+   "Placeable Wall Tiles": "Individual tiles placed freely inside the base grid. Used to create internal compartments and funnel enemy movement.",
+   "Wall HP Scaling": "Each CC level unlocks a new wall tier. All placed walls can be upgraded to the new tier at cost. Old walls retain HP until upgraded.",
+   "Breaching Mechanic": "Walls with 0 HP create a gap. Enemy units pathfind through gaps. Repairing a wall during raid costs Gold and takes 5 seconds.",
+   "Max Wall Tiles": "Placeable tiles start at 50 (CC1) and increase by 5-30 per CC level up to 200 tiles at CC10. Perimeter tiles do not count."
+  }
+ },
+ "Building Count by CC": {
+  "How many of each building a player can have at each CC level. Dash means not yet unlocked.": [
+   {
+    "Building": "Gold Mine",
+    "CC 1": "1",
+    "CC 2": "1",
+    "CC 3": "2",
+    "CC 4": "2",
+    "CC 5": "2",
+    "CC 6": "2",
+    "CC 7": "2",
+    "CC 8": "2",
+    "CC 9": "2",
+    "CC 10": "2"
+   },
+   {
+    "Building": "Oil Derrick",
+    "CC 1": "1",
+    "CC 2": "1",
+    "CC 3": "1",
+    "CC 4": "2",
+    "CC 5": "2",
+    "CC 6": "2",
+    "CC 7": "2",
+    "CC 8": "2",
+    "CC 9": "2",
+    "CC 10": "2"
+   },
+   {
+    "Building": "Steel Mill",
+    "CC 1": "1",
+    "CC 2": "1",
+    "CC 3": "1",
+    "CC 4": "2",
+    "CC 5": "2",
+    "CC 6": "2",
+    "CC 7": "2",
+    "CC 8": "2",
+    "CC 9": "2",
+    "CC 10": "2"
+   },
+   {
+    "Building": "Gold Vault",
+    "CC 1": "1",
+    "CC 2": "1",
+    "CC 3": "1",
+    "CC 4": "1",
+    "CC 5": "1",
+    "CC 6": "2",
+    "CC 7": "2",
+    "CC 8": "2",
+    "CC 9": "3",
+    "CC 10": "3"
+   },
+   {
+    "Building": "Oil Tank",
+    "CC 1": "-",
+    "CC 2": "1",
+    "CC 3": "1",
+    "CC 4": "1",
+    "CC 5": "1",
+    "CC 6": "2",
+    "CC 7": "2",
+    "CC 8": "2",
+    "CC 9": "3",
+    "CC 10": "3"
+   },
+   {
+    "Building": "Steel Depot",
+    "CC 1": "-",
+    "CC 2": "1",
+    "CC 3": "1",
+    "CC 4": "1",
+    "CC 5": "1",
+    "CC 6": "1",
+    "CC 7": "2",
+    "CC 8": "2",
+    "CC 9": "3",
+    "CC 10": "3"
+   },
+   {
+    "Building": "Barracks",
+    "CC 1": "1",
+    "CC 2": "1",
+    "CC 3": "2",
+    "CC 4": "2",
+    "CC 5": "2",
+    "CC 6": "3",
+    "CC 7": "3",
+    "CC 8": "3",
+    "CC 9": "3",
+    "CC 10": "3"
+   },
+   {
+    "Building": "Air Hangar",
+    "CC 1": "-",
+    "CC 2": "1",
+    "CC 3": "1",
+    "CC 4": "1",
+    "CC 5": "2",
+    "CC 6": "2",
+    "CC 7": "3",
+    "CC 8": "3",
+    "CC 9": "3",
+    "CC 10": "3"
+   },
+   {
+    "Building": "Dark Barracks",
+    "CC 1": "-",
+    "CC 2": "-",
+    "CC 3": "-",
+    "CC 4": "-",
+    "CC 5": "-",
+    "CC 6": "-",
+    "CC 7": "-",
+    "CC 8": "1",
+    "CC 9": "1",
+    "CC 10": "2"
+   },
+   {
+    "Building": "Research Lab",
+    "CC 1": "1",
+    "CC 2": "1",
+    "CC 3": "1",
+    "CC 4": "1",
+    "CC 5": "1",
+    "CC 6": "1",
+    "CC 7": "1",
+    "CC 8": "1",
+    "CC 9": "1",
+    "CC 10": "1"
+   },
+   {
+    "Building": "Army Camp",
+    "CC 1": "1",
+    "CC 2": "1",
+    "CC 3": "1",
+    "CC 4": "1",
+    "CC 5": "2",
+    "CC 6": "2",
+    "CC 7": "2",
+    "CC 8": "3",
+    "CC 9": "3",
+    "CC 10": "3"
+   },
+   {
+    "Building": "Intel Center",
+    "CC 1": "-",
+    "CC 2": "1",
+    "CC 3": "1",
+    "CC 4": "1",
+    "CC 5": "1",
+    "CC 6": "1",
+    "CC 7": "1",
+    "CC 8": "1",
+    "CC 9": "1",
+    "CC 10": "1"
+   },
+   {
+    "Building": "Machine Gun Nest",
+    "CC 1": "-",
+    "CC 2": "1",
+    "CC 3": "2",
+    "CC 4": "2",
+    "CC 5": "3",
+    "CC 6": "4",
+    "CC 7": "4",
+    "CC 8": "4",
+    "CC 9": "4",
+    "CC 10": "4"
+   },
+   {
+    "Building": "Cannon Tower",
+    "CC 1": "-",
+    "CC 2": "1",
+    "CC 3": "2",
+    "CC 4": "2",
+    "CC 5": "3",
+    "CC 6": "3",
+    "CC 7": "4",
+    "CC 8": "4",
+    "CC 9": "4",
+    "CC 10": "4"
+   },
+   {
+    "Building": "Mortar Tower",
+    "CC 1": "-",
+    "CC 2": "-",
+    "CC 3": "1",
+    "CC 4": "2",
+    "CC 5": "2",
+    "CC 6": "3",
+    "CC 7": "3",
+    "CC 8": "3",
+    "CC 9": "3",
+    "CC 10": "3"
+   },
+   {
+    "Building": "Sniper Tower",
+    "CC 1": "-",
+    "CC 2": "-",
+    "CC 3": "1",
+    "CC 4": "2",
+    "CC 5": "2",
+    "CC 6": "3",
+    "CC 7": "3",
+    "CC 8": "3",
+    "CC 9": "3",
+    "CC 10": "3"
+   },
+   {
+    "Building": "AA Gun Tower",
+    "CC 1": "-",
+    "CC 2": "-",
+    "CC 3": "-",
+    "CC 4": "1",
+    "CC 5": "2",
+    "CC 6": "2",
+    "CC 7": "3",
+    "CC 8": "3",
+    "CC 9": "4",
+    "CC 10": "4"
+   },
+   {
+    "Building": "Bomb Tower",
+    "CC 1": "-",
+    "CC 2": "-",
+    "CC 3": "-",
+    "CC 4": "1",
+    "CC 5": "1",
+    "CC 6": "2",
+    "CC 7": "2",
+    "CC 8": "2",
+    "CC 9": "2",
+    "CC 10": "2"
+   },
+   {
+    "Building": "Flame Tower",
+    "CC 1": "-",
+    "CC 2": "-",
+    "CC 3": "-",
+    "CC 4": "-",
+    "CC 5": "-",
+    "CC 6": "1",
+    "CC 7": "2",
+    "CC 8": "2",
+    "CC 9": "2",
+    "CC 10": "2"
+   },
+   {
+    "Building": "Rocket Battery",
+    "CC 1": "-",
+    "CC 2": "-",
+    "CC 3": "-",
+    "CC 4": "-",
+    "CC 5": "1",
+    "CC 6": "2",
+    "CC 7": "2",
+    "CC 8": "3",
+    "CC 9": "3",
+    "CC 10": "3"
+   },
+   {
+    "Building": "CIWS Tower",
+    "CC 1": "-",
+    "CC 2": "-",
+    "CC 3": "-",
+    "CC 4": "-",
+    "CC 5": "-",
+    "CC 6": "-",
+    "CC 7": "1",
+    "CC 8": "2",
+    "CC 9": "2",
+    "CC 10": "2"
+   },
+   {
+    "Building": "Patriot SAM",
+    "CC 1": "-",
+    "CC 2": "-",
+    "CC 3": "-",
+    "CC 4": "-",
+    "CC 5": "-",
+    "CC 6": "-",
+    "CC 7": "-",
+    "CC 8": "1",
+    "CC 9": "2",
+    "CC 10": "2"
+   },
+   {
+    "Building": "THAAD Battery",
+    "CC 1": "-",
+    "CC 2": "-",
+    "CC 3": "-",
+    "CC 4": "-",
+    "CC 5": "-",
+    "CC 6": "-",
+    "CC 7": "-",
+    "CC 8": "-",
+    "CC 9": "1",
+    "CC 10": "1"
+   },
+   {
+    "Building": "Laser Tower",
+    "CC 1": "-",
+    "CC 2": "-",
+    "CC 3": "-",
+    "CC 4": "-",
+    "CC 5": "-",
+    "CC 6": "-",
+    "CC 7": "-",
+    "CC 8": "-",
+    "CC 9": "1",
+    "CC 10": "2"
+   },
+   {
+    "Building": "S-400 SAM",
+    "CC 1": "-",
+    "CC 2": "-",
+    "CC 3": "-",
+    "CC 4": "-",
+    "CC 5": "-",
+    "CC 6": "-",
+    "CC 7": "-",
+    "CC 8": "-",
+    "CC 9": "-",
+    "CC 10": "1"
+   },
+   {
+    "Building": "EW Jamming Tower",
+    "CC 1": "-",
+    "CC 2": "-",
+    "CC 3": "-",
+    "CC 4": "-",
+    "CC 5": "-",
+    "CC 6": "-",
+    "CC 7": "-",
+    "CC 8": "-",
+    "CC 9": "-",
+    "CC 10": "1"
+   },
+   {
+    "Building": "88mm Flak Tower",
+    "CC 1": "-",
+    "CC 2": "-",
+    "CC 3": "1",
+    "CC 4": "2",
+    "CC 5": "2",
+    "CC 6": "3",
+    "CC 7": "3",
+    "CC 8": "3",
+    "CC 9": "3",
+    "CC 10": "3"
+   },
+   {
+    "Building": "Minefield Zone",
+    "CC 1": "1",
+    "CC 2": "2",
+    "CC 3": "2",
+    "CC 4": "3",
+    "CC 5": "4",
+    "CC 6": "4",
+    "CC 7": "5",
+    "CC 8": "5",
+    "CC 9": "6",
+    "CC 10": "6"
+   },
+   {
+    "Building": "Alliance Hall",
+    "CC 1": "-",
+    "CC 2": "-",
+    "CC 3": "-",
+    "CC 4": "-",
+    "CC 5": "1",
+    "CC 6": "1",
+    "CC 7": "1",
+    "CC 8": "1",
+    "CC 9": "1",
+    "CC 10": "1"
+   },
+   {
+    "Building": "War Bunker",
+    "CC 1": "-",
+    "CC 2": "-",
+    "CC 3": "-",
+    "CC 4": "-",
+    "CC 5": "-",
+    "CC 6": "1",
+    "CC 7": "1",
+    "CC 8": "1",
+    "CC 9": "1",
+    "CC 10": "1"
+   },
+   {
+    "Building": "Alliance Research Lab",
+    "CC 1": "-",
+    "CC 2": "-",
+    "CC 3": "-",
+    "CC 4": "-",
+    "CC 5": "-",
+    "CC 6": "-",
+    "CC 7": "1",
+    "CC 8": "1",
+    "CC 9": "1",
+    "CC 10": "1"
+   }
+  ]
+ }
+}

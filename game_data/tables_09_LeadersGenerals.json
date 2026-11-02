@@ -1,0 +1,1248 @@
+{
+ "System Overview": {
+  "Each nation has 5 Leaders to choose from and 7 Generals available. Historical figures. Real stakes.": [
+   {
+    "TOPIC": "Leaders",
+    "DETAIL": "Each nation has 5 historical leaders to choose from. Only one Leader is active at a time. The active Leader provides passive army-wide buffs AND one active ability usable once per raid. Leaders are unlocked through trophy milestones and RP investment."
+   },
+   {
+    "TOPIC": "Generals",
+    "DETAIL": "Each nation has 7 historical Generals available. Players select up to 3 Generals for their roster. Up to 2 Generals can be brought into any single raid. Generals are placed directly in the formation grid like regular units and fight alongside the army."
+   },
+   {
+    "TOPIC": "General Stats",
+    "DETAIL": "Each General has HP, DPS, Speed, Range, Armor, a special ability and an aura. Standard aura: +10% DPS and +10% HP to the General's two classes within 2 tiles (tunable). Generals are among the toughest units in the game but are not invincible."
+   },
+   {
+    "TOPIC": "Wounded System",
+    "DETAIL": "If a General is destroyed during a raid they are Wounded. A Wounded General cannot be deployed in the next raid but recovers automatically. There is no permanent death. Players must manage General risk carefully - bringing both Generals into a difficult raid risks losing both."
+   },
+   {
+    "TOPIC": "Leader Active Ability",
+    "DETAIL": "The Leader active ability is triggered manually by the player once per raid during the Planning Phase or first 30 seconds of the raid. It cannot be saved for later - if not used in the first 30 seconds it triggers automatically. Each Leader ability is unique and tied to their historical doctrine."
+   },
+   {
+    "TOPIC": "Unlock Requirements",
+    "DETAIL": "Leader 1 of each nation is unlocked free with the nation. Leaders 2-4 require trophy milestones (500, 1500, 3000 trophies). Leader 5 requires nation Prestige. Generals 1-3 unlock with Tier II III IV respectively. Generals 4-6 require specific trophy counts. General 7 requires nation Prestige."
+   },
+   {
+    "TOPIC": "Historical Accuracy",
+    "DETAIL": "All Leaders and Generals are real historical commanders. Stats and abilities are inspired by their documented historical doctrine and battlefield reputation. Germany gets Rommel and Guderian. USSR gets Zhukov and Konev. USA gets Patton and Eisenhower. Britain gets Montgomery and Churchill. Japan gets Yamamoto and Yamashita."
+   },
+   {
+    "TOPIC": "Formation Placement",
+    "DETAIL": "Generals are placed in the formation grid before launch. They occupy one grid slot like a regular unit. Their aura buff applies to all units within their aura radius in the grid - front and rear. A General in Row 2 center buffs the most units. Generals in Row 1 lead the charge but take more damage."
+   },
+   {
+    "TOPIC": "Max 2 Per Raid",
+    "DETAIL": "Bringing 2 Generals doubles the buff coverage but doubles the risk. If both are destroyed in the same raid both sit out the next raid. Players must weigh the tactical benefit of 2 Generals against the risk of both being wounded simultaneously."
+   },
+   {
+    "TOPIC": "Special class",
+    "DETAIL": "A general-only class for air-landed commanders (Student, Gavin). Special units are delivered by air into the base interior. There is no infantry in the game."
+   },
+   {
+    "TOPIC": "Original statement",
+    "DETAIL": "Historical figures only. Fictional commanders are not used."
+   }
+  ]
+ },
+ "Leader Comparison": {
+  "5 leaders per nation. One active at a time. Passive buff plus one active ability per raid.": [
+   {
+    "Nation": "Germany",
+    "Leader": "Erwin Rommel",
+    "Nickname": "The Desert Fox",
+    "Passive Buff": "+20% speed to all ground units. +10% DPS to Tank Destroyers.",
+    "Active Ability": "Ghost Division: All German units become invisible to enemy defenses for 8 seconds after breaching the first wall. Defenses cannot target them during this window.",
+    "Unlock": "500 trophies",
+    "Tier Req": "Tier III required"
+   },
+   {
+    "Nation": "Germany",
+    "Leader": "Heinz Guderian",
+    "Nickname": "Father of Blitzkrieg",
+    "Passive Buff": "+25% movement speed to all tanks. Barracks trains ground units 15% faster.",
+    "Active Ability": "Blitzkrieg Master: For 20 seconds all German tanks ignore walls entirely - they pass through as if walls do not exist. Destroys wall HP on passage.",
+    "Unlock": "1500 trophies",
+    "Tier Req": "Tier III required"
+   },
+   {
+    "Nation": "Germany",
+    "Leader": "Erich von Manstein",
+    "Nickname": "Master of Maneuver",
+    "Passive Buff": "+15% HP to all Heavy Tanks. +10% DPS to all ground units when attacking from the flank zones.",
+    "Active Ability": "Backhand Blow: Instantly teleports all units in one deployment zone to an adjacent zone. Catches defenders off guard and reshuffles attack vectors mid-raid.",
+    "Unlock": "3000 trophies",
+    "Tier Req": "Tier IV required"
+   },
+   {
+    "Nation": "Germany",
+    "Leader": "Albert Kesselring",
+    "Nickname": "Smiling Albert",
+    "Passive Buff": "+20% HP to all German air units. AA Towers on home base gain +15% fire rate.",
+    "Active Ability": "Mediterranean Iron: All German air units in the second wave arrive 10 seconds early bypassing the 50% ground loss trigger if ground losses reach 35% instead.",
+    "Unlock": "3000 trophies",
+    "Tier Req": "Tier IV required"
+   },
+   {
+    "Nation": "Germany",
+    "Leader": "Otto Carius",
+    "Nickname": "Tiger Ace",
+    "Passive Buff": "+30% DPS to all Heavy Tanks. Heavy Tanks gain immunity to the first Critical Hit taken.",
+    "Active Ability": "Tiger Ace: Select one Heavy Tank in the formation. That tank becomes Otto Carius himself - gains 3x HP, 2x DPS, and an aura that boosts adjacent units +20% DPS for the entire raid.",
+    "Unlock": "Nation Prestige required",
+    "Tier Req": "Tier V required"
+   },
+   {
+    "Nation": "USSR",
+    "Leader": "Georgy Zhukov",
+    "Nickname": "Marshal of Victory",
+    "Passive Buff": "+20% HP to all Soviet units. Resource buildings gain +15% HP on home base.",
+    "Active Ability": "Soviet Hammer: Call in an artillery barrage on the enemy base. 5 random buildings take 2000 damage each. Happens instantly at raid start before units advance.",
+    "Unlock": "500 trophies",
+    "Tier Req": "Tier II required"
+   },
+   {
+    "Nation": "USSR",
+    "Leader": "Ivan Konev",
+    "Nickname": "Marshal of the Tanks",
+    "Passive Buff": "+15% DPS to all Medium and Heavy Tanks. +10% movement speed to all ground units.",
+    "Active Ability": "Steel Flood: Deploy 5 additional T-34/85 units for free from the North zone. These units do not count toward Army Camp capacity for this raid only.",
+    "Unlock": "500 trophies",
+    "Tier Req": "Tier III required"
+   },
+   {
+    "Nation": "USSR",
+    "Leader": "Vasily Chuikov",
+    "Nickname": "Defender of Stalingrad",
+    "Passive Buff": "+25% HP to all Soviet units. Home base defense towers gain +10% DPS.",
+    "Active Ability": "Not One Step Back: For 30 seconds all Soviet ground units cannot be killed - they fight at 1 HP until the ability expires then any unit below 100 HP is destroyed simultaneously.",
+    "Unlock": "1500 trophies",
+    "Tier Req": "Tier III required"
+   },
+   {
+    "Nation": "USSR",
+    "Leader": "Konstantin Rokossovsky",
+    "Nickname": "The Gentleman Marshal",
+    "Passive Buff": "+20% DPS to all units. SPG units gain +25% range.",
+    "Active Ability": "Operation Bagration: All four deployment zones activate simultaneously with a speed boost - units from all active zones gain +30% speed for the first 45 seconds of the raid.",
+    "Unlock": "3000 trophies",
+    "Tier Req": "Tier IV required"
+   },
+   {
+    "Nation": "USSR",
+    "Leader": "Alexander Vasilevsky",
+    "Nickname": "Chief of the General Staff",
+    "Passive Buff": "+15% to all unit stats simultaneously. Research Point gains increased by 10%.",
+    "Active Ability": "Strategic Reserve: Once per raid call in 3 units of any type already in your roster as emergency reinforcements from the East zone regardless of which zones are active.",
+    "Unlock": "Nation Prestige required",
+    "Tier Req": "Tier V required"
+   },
+   {
+    "Nation": "USA",
+    "Leader": "George S. Patton",
+    "Nickname": "Old Blood and Guts",
+    "Passive Buff": "+25% movement speed to all ground units. +15% DPS to Medium and Heavy Tanks.",
+    "Active Ability": "Ivory Handle Pistols: Patton personally leads the charge - all US ground units gain +30% DPS and +20% speed for 15 seconds. Cannot be blocked or countered.",
+    "Unlock": "500 trophies",
+    "Tier Req": "Tier II required"
+   },
+   {
+    "Nation": "USA",
+    "Leader": "Dwight D. Eisenhower",
+    "Nickname": "Supreme Commander",
+    "Passive Buff": "+10% to all unit stats. Alliance war raid bonuses increased by 15%.",
+    "Active Ability": "Supreme Command: Choose any one enemy defense tower and disable it completely for the entire raid. It cannot fire. Represents Eisenhower coordinating precision intelligence strikes.",
+    "Unlock": "500 trophies",
+    "Tier Req": "Tier III required"
+   },
+   {
+    "Nation": "USA",
+    "Leader": "Omar Bradley",
+    "Nickname": "The Soldier General",
+    "Passive Buff": "+20% HP to all US ground units. Army Camp capacity increased by 10 for the raid.",
+    "Active Ability": "GI Doctrine: Medium Tanks cost 50% less Oil this raid. All ground units gain +15% HP from Bradley inspiring the common soldier.",
+    "Unlock": "1500 trophies",
+    "Tier Req": "Tier III required"
+   },
+   {
+    "Nation": "USA",
+    "Leader": "Curtis LeMay",
+    "Nickname": "Iron Eagle",
+    "Passive Buff": "+30% DPS to all US air units. Air units trigger at 40% ground losses instead of 50%.",
+    "Active Ability": "Strategic Air Command: All US air units arrive simultaneously in one massive wave rather than in launch order. Every aircraft hits the base at the same second.",
+    "Unlock": "3000 trophies",
+    "Tier Req": "Tier IV required"
+   },
+   {
+    "Nation": "USA",
+    "Leader": "Creighton Abrams",
+    "Nickname": "Father of the Abrams",
+    "Passive Buff": "+25% DPS and +20% HP to all Heavy Tanks. The M1A2 Abrams gains a unique gold commander hatch skin.",
+    "Active Ability": "Abrams Doctrine: The heaviest tank in your formation becomes the Commander Tank - it gains 4x HP, spawns with full armor, and its destruction triggers a free replacement unit mid-raid.",
+    "Unlock": "Nation Prestige required",
+    "Tier Req": "Tier V required"
+   },
+   {
+    "Nation": "Britain",
+    "Leader": "Bernard Montgomery",
+    "Nickname": "Monty",
+    "Passive Buff": "+15% DPS to all British units. Defense towers on home base gain +10% HP.",
+    "Active Ability": "Master of the Set Piece: Before raid launch reveal the exact HP of every enemy defense tower. Formation planning becomes perfectly informed. Lasts for the planning phase only.",
+    "Unlock": "500 trophies",
+    "Tier Req": "Tier II required"
+   },
+   {
+    "Nation": "Britain",
+    "Leader": "Winston Churchill",
+    "Nickname": "The Bulldog",
+    "Passive Buff": "+20% HP to all British units. Finest Hour mechanic triggers at 30% CC HP instead of 25%.",
+    "Active Ability": "We Shall Never Surrender: When any British building is destroyed this raid all remaining British defense towers gain +5% fire rate stacking up to +40% total. Punishes attackers for every building they take.",
+    "Unlock": "500 trophies",
+    "Tier Req": "Tier III required"
+   },
+   {
+    "Nation": "Britain",
+    "Leader": "Harold Alexander",
+    "Nickname": "The Diplomat General",
+    "Passive Buff": "+15% to all unit stats when fighting alongside alliance members in war raids.",
+    "Active Ability": "Coalition Warfare: Request one donated unit from alliance War Bunker to deploy in your formation for this raid at no Oil cost. The unit fights alongside your army.",
+    "Unlock": "1500 trophies",
+    "Tier Req": "Tier III required"
+   },
+   {
+    "Nation": "Britain",
+    "Leader": "Arthur Harris",
+    "Nickname": "Bomber Harris",
+    "Passive Buff": "+35% DPS to all British bomber and ground attack aircraft.",
+    "Active Ability": "Area Bombing: British bombers in this raid each make two passes instead of one. Each bomber drops payload twice on different targets. Doubles bomber raid effectiveness.",
+    "Unlock": "3000 trophies",
+    "Tier Req": "Tier IV required"
+   },
+   {
+    "Nation": "Britain",
+    "Leader": "Francis de Guingand",
+    "Nickname": "The Staff Officer",
+    "Passive Buff": "+10% to all unit stats. RP earned from this raid increased by 25%.",
+    "Active Ability": "Operational Planning: The enemy base Intel is fully revealed for this raid regardless of Intel Center level. See exact resource amounts defense HP and building positions.",
+    "Unlock": "Nation Prestige required",
+    "Tier Req": "Tier V required"
+   },
+   {
+    "Nation": "Japan",
+    "Leader": "Isoroku Yamamoto",
+    "Nickname": "Admiral of the Fleet",
+    "Passive Buff": "+25% DPS to all Japanese air units. Kamikaze Strike available from Air Hangar Lv1 instead of Lv3.",
+    "Active Ability": "Tora Tora Tora: All Japanese air units deploy at raid start simultaneously with the ground units rather than waiting for the 50% trigger. Full combined arms from second zero.",
+    "Unlock": "500 trophies",
+    "Tier Req": "Tier II required"
+   },
+   {
+    "Nation": "Japan",
+    "Leader": "Tomoyuki Yamashita",
+    "Nickname": "Tiger of Malaya",
+    "Passive Buff": "+20% speed to all Japanese ground units. +15% DPS when attacking from flank zones.",
+    "Active Ability": "Lightning Conquest: All Japanese units in the formation gain free movement through the enemy outer wall for 10 seconds. The wall is not damaged - units phase through it. Represents Yamashita outflanking Singapore defenses.",
+    "Unlock": "500 trophies",
+    "Tier Req": "Tier III required"
+   },
+   {
+    "Nation": "Japan",
+    "Leader": "Hideki Tojo",
+    "Nickname": "The Razor",
+    "Passive Buff": "+15% to all Japanese unit stats. Training time for all units reduced by 20%.",
+    "Active Ability": "Iron Will: Japanese units cannot trigger Banzai Charge involuntarily this raid. Instead the player manually activates Banzai Charge on all units simultaneously at a chosen moment dealing maximum coordinated damage.",
+    "Unlock": "1500 trophies",
+    "Tier Req": "Tier III required"
+   },
+   {
+    "Nation": "Japan",
+    "Leader": "Mitsuru Ushijima",
+    "Nickname": "Defender of Okinawa",
+    "Passive Buff": "+30% HP to all Japanese units. Home base defense towers gain +20% HP.",
+    "Active Ability": "Last Stronghold: All Japanese units in the raid gain regenerating HP - recovering 2% max HP per second for the first 60 seconds of the raid. Represents Ushijima tenacious defense doctrine.",
+    "Unlock": "3000 trophies",
+    "Tier Req": "Tier IV required"
+   },
+   {
+    "Nation": "Japan",
+    "Leader": "Jinichi Kusaka",
+    "Nickname": "Eagle of the Pacific",
+    "Passive Buff": "+30% DPS to all Japanese air units. Air units gain +15% speed.",
+    "Active Ability": "Divine Wind: The Kamikaze Strike this raid deals 8x damage instead of 5x and cannot be intercepted by CIWS or SAM systems. The sacrifice is absolute.",
+    "Unlock": "Nation Prestige required",
+    "Tier Req": "Tier V required"
+   }
+  ]
+ },
+ "General Comparison": {
+  "7 generals per nation. Max 2 per raid. Wounded generals sit out 1 raid if destroyed.": [
+   {
+    "Nation": "Germany",
+    "General": "Hermann Balck",
+    "Primary Class": "Medium Tank",
+    "Secondary Class": "Heavy Tank",
+    "HP": 4500,
+    "DPS": 180,
+    "Speed": "Fast",
+    "Range": "Long",
+    "Armor": "35%",
+    "Aura Buff": "+10% DPS and +10% HP to Medium Tank and Heavy Tank units within 2 tiles",
+    "Special Ability": "Balck Maneuver: Once per raid all Medium Tanks in the formation immediately reposition to the opposite flank. Catches defenses targeting them off guard."
+   },
+   {
+    "Nation": "Germany",
+    "General": "Hans-Ulrich Rudel",
+    "Primary Class": "Ground Attack",
+    "Secondary Class": "Jet Attack",
+    "HP": 3000,
+    "DPS": 280,
+    "Speed": "Very Fast",
+    "Range": "Long",
+    "Armor": "10%",
+    "Aura Buff": "+10% DPS and +10% HP to Ground Attack and Jet Attack units within 2 tiles",
+    "Special Ability": "Tank Buster: Rudel targets the highest-HP enemy defense tower and destroys it in a single diving attack before the main raid begins. Air unit only."
+   },
+   {
+    "Nation": "Germany",
+    "General": "Michael Wittmann",
+    "Primary Class": "Heavy Tank",
+    "Secondary Class": "Tank Destroyer",
+    "HP": 6000,
+    "DPS": 220,
+    "Speed": "Medium",
+    "Range": "Medium",
+    "Armor": "55%",
+    "Aura Buff": "+10% DPS and +10% HP to Heavy Tank and Tank Destroyer units within 2 tiles",
+    "Special Ability": "Villers-Bocage: Wittmann unit fires on ALL enemy units within range simultaneously once per raid dealing 500 damage to each. Represents his single-handed destruction of an entire British column."
+   },
+   {
+    "Nation": "Germany",
+    "General": "Erich Hartmann",
+    "Primary Class": "Fighter",
+    "Secondary Class": "Jet Fighter",
+    "HP": 2800,
+    "DPS": 320,
+    "Speed": "Extreme",
+    "Range": "Long",
+    "Armor": "5%",
+    "Aura Buff": "+10% DPS and +10% HP to Fighter and Jet Fighter units within 2 tiles",
+    "Special Ability": "Black Devil: Hartmann unit is invisible to enemy AA systems for the first 20 seconds of the air wave. Enemy AA cannot target him during this window."
+   },
+   {
+    "Nation": "Germany",
+    "General": "Hasso von Manteuffel",
+    "Primary Class": "Medium Tank",
+    "Secondary Class": "Heavy Tank",
+    "HP": 5000,
+    "DPS": 200,
+    "Speed": "Fast",
+    "Range": "Medium",
+    "Armor": "40%",
+    "Aura Buff": "+10% DPS and +10% HP to Medium Tank and Heavy Tank units within 2 tiles",
+    "Special Ability": "Night Attack: All units in Manteuffel aura radius gain +25% attack speed for the first 30 seconds of the raid representing his famous night assault doctrine."
+   },
+   {
+    "Nation": "Germany",
+    "General": "Kurt Student",
+    "Primary Class": "Light Tank",
+    "Secondary Class": "Special",
+    "HP": 2600,
+    "DPS": 150,
+    "Speed": "Very Fast",
+    "Range": "Short",
+    "Armor": "12%",
+    "Aura Buff": "+10% DPS and +10% HP to Light Tank and Special units within 2 tiles",
+    "Special Ability": "Fallschirmjager Drop: Student's transports air-land 3 Light Tanks directly inside the enemy base at a random interior location, bypassing all walls and perimeter defenses."
+   },
+   {
+    "Nation": "Germany",
+    "General": "Sepp Dietrich",
+    "Primary Class": "Heavy Tank",
+    "Secondary Class": "Medium Tank",
+    "HP": 5500,
+    "DPS": 210,
+    "Speed": "Medium",
+    "Range": "Medium",
+    "Armor": "45%",
+    "Aura Buff": "+10% DPS and +10% HP to Heavy Tank and Medium Tank units within 2 tiles",
+    "Special Ability": "SS Leibstandarte: All Heavy Tanks within aura radius gain immunity to the first 3 hits taken. Represents the elite SS armored formations fanatical resistance."
+   },
+   {
+    "Nation": "USSR",
+    "General": "Pavel Rotmistrov",
+    "Primary Class": "Medium Tank",
+    "Secondary Class": "Heavy Tank",
+    "HP": 5000,
+    "DPS": 195,
+    "Speed": "Medium",
+    "Range": "Medium",
+    "Armor": "38%",
+    "Aura Buff": "+10% DPS and +10% HP to Medium Tank and Heavy Tank units within 2 tiles",
+    "Special Ability": "Prokhorovka Charge: All Soviet tanks in formation gain +40% DPS for 15 seconds at the cost of losing all armor bonus during that window. All or nothing attack."
+   },
+   {
+    "Nation": "USSR",
+    "General": "Vasily Zaitsev",
+    "Primary Class": "Tank Destroyer",
+    "Secondary Class": "SPG",
+    "HP": 2500,
+    "DPS": 350,
+    "Speed": "Slow",
+    "Range": "Extreme",
+    "Armor": "15%",
+    "Aura Buff": "+10% DPS and +10% HP to Tank Destroyer and SPG units within 2 tiles",
+    "Special Ability": "One Shot One Kill: Zaitsev unit fires once at the highest-HP enemy building dealing 5000 flat damage regardless of armor or HP. One guaranteed critical strike per raid."
+   },
+   {
+    "Nation": "USSR",
+    "General": "Dmitry Lelyushenko",
+    "Primary Class": "Light Tank",
+    "Secondary Class": "Medium Tank",
+    "HP": 4000,
+    "DPS": 170,
+    "Speed": "Fast",
+    "Range": "Medium",
+    "Armor": "25%",
+    "Aura Buff": "+10% DPS and +10% HP to Light Tank and Medium Tank units within 2 tiles",
+    "Special Ability": "Speed of Lightning: All Light Tanks in formation gain +50% movement speed for 45 seconds. They reach the enemy base before defenses can fully respond."
+   },
+   {
+    "Nation": "USSR",
+    "General": "Alexander Pokryshkin",
+    "Primary Class": "Fighter",
+    "Secondary Class": "Ground Attack",
+    "HP": 3200,
+    "DPS": 300,
+    "Speed": "Very Fast",
+    "Range": "Long",
+    "Armor": "8%",
+    "Aura Buff": "+10% DPS and +10% HP to Fighter and Ground Attack units within 2 tiles",
+    "Special Ability": "Falcon Tactics: All Soviet fighter units in the air wave gain +30% DPS and attack in a coordinated formation that clears all AA gun towers simultaneously."
+   },
+   {
+    "Nation": "USSR",
+    "General": "Semyon Timoshenko",
+    "Primary Class": "Heavy Tank",
+    "Secondary Class": "SPG",
+    "HP": 4800,
+    "DPS": 185,
+    "Speed": "Slow",
+    "Range": "Long",
+    "Armor": "42%",
+    "Aura Buff": "+10% DPS and +10% HP to Heavy Tank and SPG units within 2 tiles",
+    "Special Ability": "Soviet Doctrine: All SPG units in formation fire a coordinated barrage at the start of the raid dealing 1000 damage to 3 randomly selected enemy defense towers before ground units advance."
+   },
+   {
+    "Nation": "USSR",
+    "General": "Ivan Kozhedub",
+    "Primary Class": "Fighter",
+    "Secondary Class": "Jet Fighter",
+    "HP": 3000,
+    "DPS": 310,
+    "Speed": "Extreme",
+    "Range": "Long",
+    "Armor": "6%",
+    "Aura Buff": "+10% DPS and +10% HP to Fighter and Jet Fighter units within 2 tiles",
+    "Special Ability": "La-7 Master: Kozhedub unit deals +50% damage to enemy air defense towers (CIWS, SAM, AA Guns) specifically. The ultimate air defense suppressor."
+   },
+   {
+    "Nation": "USSR",
+    "General": "Mikhail Katukov",
+    "Primary Class": "Medium Tank",
+    "Secondary Class": "Heavy Tank",
+    "HP": 5200,
+    "DPS": 205,
+    "Speed": "Medium",
+    "Range": "Medium",
+    "Armor": "40%",
+    "Aura Buff": "+10% DPS and +10% HP to Medium Tank and Heavy Tank units within 2 tiles",
+    "Special Ability": "Elastic Defense: When Katukov unit falls below 50% HP it retreats to the rear of the formation grid and the unit directly behind moves to the front automatically."
+   },
+   {
+    "Nation": "USA",
+    "General": "John S. Wood",
+    "Primary Class": "Heavy Tank",
+    "Secondary Class": "Medium Tank",
+    "HP": 5800,
+    "DPS": 215,
+    "Speed": "Fast",
+    "Range": "Medium",
+    "Armor": "50%",
+    "Aura Buff": "+10% DPS and +10% HP to Heavy Tank and Medium Tank units within 2 tiles",
+    "Special Ability": "Lead from the Front: Wood unit always places itself in the front row of the formation regardless of where the player positions it. All units within aura gain +20% DPS."
+   },
+   {
+    "Nation": "USA",
+    "General": "Jimmy Doolittle",
+    "Primary Class": "Ground Attack",
+    "Secondary Class": "Bomber",
+    "HP": 2500,
+    "DPS": 290,
+    "Speed": "Very Fast",
+    "Range": "Long",
+    "Armor": "5%",
+    "Aura Buff": "+10% DPS and +10% HP to Ground Attack and Bomber units within 2 tiles",
+    "Special Ability": "Doolittle Raid: One ground attack unit in the formation makes an additional solo strike run on the enemy Command Center specifically dealing 3000 direct damage before the main raid begins."
+   },
+   {
+    "Nation": "USA",
+    "General": "John Gavin",
+    "Primary Class": "Light Tank",
+    "Secondary Class": "Special",
+    "HP": 3500,
+    "DPS": 165,
+    "Speed": "Very Fast",
+    "Range": "Short",
+    "Armor": "15%",
+    "Aura Buff": "+10% DPS and +10% HP to Light Tank and Special units within 2 tiles",
+    "Special Ability": "All American: three air-landed Light Tanks deploy inside the enemy base at a random interior location at raid start and attack from within. Represents 82nd Airborne glider landings."
+   },
+   {
+    "Nation": "USA",
+    "General": "John Boyd",
+    "Primary Class": "Fighter",
+    "Secondary Class": "Jet Fighter",
+    "HP": 3200,
+    "DPS": 295,
+    "Speed": "Extreme",
+    "Range": "Long",
+    "Armor": "8%",
+    "Aura Buff": "+10% DPS and +10% HP to Fighter and Jet Fighter units within 2 tiles",
+    "Special Ability": "OODA Loop: US air units in this raid react 2 seconds faster to AA fire - they begin evasive maneuvers before defenses can lock on reducing air unit losses by 30%."
+   },
+   {
+    "Nation": "USA",
+    "General": "Lewis Chesty Puller",
+    "Primary Class": "Heavy Tank",
+    "Secondary Class": "Medium Tank",
+    "HP": 6200,
+    "DPS": 195,
+    "Speed": "Medium",
+    "Range": "Medium",
+    "Armor": "48%",
+    "Aura Buff": "+10% DPS and +10% HP to Heavy Tank and Medium Tank units within 2 tiles",
+    "Special Ability": "Never Retreat: All US units within Puller aura radius cannot trigger retreat behavior. They fight to destruction. DPS increases +5% for every unit destroyed within the aura radius."
+   },
+   {
+    "Nation": "USA",
+    "General": "Francis Gabreski",
+    "Primary Class": "Fighter",
+    "Secondary Class": "Jet Fighter",
+    "HP": 2800,
+    "DPS": 305,
+    "Speed": "Extreme",
+    "Range": "Long",
+    "Armor": "6%",
+    "Aura Buff": "+10% DPS and +10% HP to Fighter and Jet Fighter units within 2 tiles",
+    "Special Ability": "Double Ace: Gabreski unit destroys the first two air defense towers it encounters instantly before engaging subsequent targets. Clears the path for all following air units."
+   },
+   {
+    "Nation": "USA",
+    "General": "Matthew Ridgway",
+    "Primary Class": "Heavy Tank",
+    "Secondary Class": "Medium Tank",
+    "HP": 5500,
+    "DPS": 200,
+    "Speed": "Medium",
+    "Range": "Medium",
+    "Armor": "42%",
+    "Aura Buff": "+10% DPS and +10% HP to Heavy Tank and Medium Tank units within 2 tiles",
+    "Special Ability": "Steady the Line: All US units within aura radius that fall below 25% HP automatically receive a one-time 500 HP repair. Ridgway steadies the line when the battle is hardest."
+   },
+   {
+    "Nation": "Britain",
+    "General": "William Slim",
+    "Primary Class": "Medium Tank",
+    "Secondary Class": "Heavy Tank",
+    "HP": 5200,
+    "DPS": 190,
+    "Speed": "Medium",
+    "Range": "Medium",
+    "Armor": "38%",
+    "Aura Buff": "+10% DPS and +10% HP to Medium Tank and Heavy Tank units within 2 tiles",
+    "Special Ability": "Forgotten Army: British units within Slim aura radius continue fighting at full effectiveness even when overall army losses exceed 60%. No morale penalty."
+   },
+   {
+    "Nation": "Britain",
+    "General": "Douglas Bader",
+    "Primary Class": "Fighter",
+    "Secondary Class": "Ground Attack",
+    "HP": 3000,
+    "DPS": 285,
+    "Speed": "Very Fast",
+    "Range": "Long",
+    "Armor": "8%",
+    "Aura Buff": "+10% DPS and +10% HP to Fighter and Ground Attack units within 2 tiles",
+    "Special Ability": "Big Wing: All British fighter and ground attack aircraft launch simultaneously in the first wave rather than sequentially. Maximum concentrated air power at the opening moment."
+   },
+   {
+    "Nation": "Britain",
+    "General": "David Stirling",
+    "Primary Class": "Tank Destroyer",
+    "Secondary Class": "Light Tank",
+    "HP": 3500,
+    "DPS": 220,
+    "Speed": "Fast",
+    "Range": "Long",
+    "Armor": "20%",
+    "Aura Buff": "+10% DPS and +10% HP to Tank Destroyer and Light Tank units within 2 tiles",
+    "Special Ability": "Who Dares Wins: Stirling unit bypasses all walls and mines entirely - it is never affected by terrain obstacles. Moves directly to its target regardless of layout."
+   },
+   {
+    "Nation": "Britain",
+    "General": "Guy Gibson",
+    "Primary Class": "Bomber",
+    "Secondary Class": "Ground Attack",
+    "HP": 2800,
+    "DPS": 340,
+    "Speed": "Fast",
+    "Range": "Very Long",
+    "Armor": "5%",
+    "Aura Buff": "+10% DPS and +10% HP to Bomber and Ground Attack units within 2 tiles",
+    "Special Ability": "Bouncing Bomb: Gibson bomber unit targets enemy walls specifically and destroys a 3-tile section of wall in a single pass. Creates a massive breach for following ground units."
+   },
+   {
+    "Nation": "Britain",
+    "General": "Orde Wingate",
+    "Primary Class": "Light Tank",
+    "Secondary Class": "Tank Destroyer",
+    "HP": 4000,
+    "DPS": 175,
+    "Speed": "Fast",
+    "Range": "Medium",
+    "Armor": "22%",
+    "Aura Buff": "+10% DPS and +10% HP to Light Tank and Tank Destroyer units within 2 tiles",
+    "Special Ability": "Long Range Penetration: Wingate unit and adjacent units in the formation grid enter the enemy base from the rear zone automatically regardless of which zones the player has deployed from."
+   },
+   {
+    "Nation": "Britain",
+    "General": "Richard O Connor",
+    "Primary Class": "Tank Destroyer",
+    "Secondary Class": "Medium Tank",
+    "HP": 4800,
+    "DPS": 205,
+    "Speed": "Fast",
+    "Range": "Long",
+    "Armor": "30%",
+    "Aura Buff": "+10% DPS and +10% HP to Tank Destroyer and Medium Tank units within 2 tiles",
+    "Special Ability": "Operation Compass: All Tank Destroyers in formation gain +25% range and +20% DPS for the first 60 seconds of the raid representing O Connor stunning desert offensive."
+   },
+   {
+    "Nation": "Britain",
+    "General": "Colin Campbell Mitchell",
+    "Primary Class": "Heavy Tank",
+    "Secondary Class": "Medium Tank",
+    "HP": 5000,
+    "DPS": 195,
+    "Speed": "Medium",
+    "Range": "Medium",
+    "Armor": "40%",
+    "Aura Buff": "+10% DPS and +10% HP to Heavy Tank and Medium Tank units within 2 tiles",
+    "Special Ability": "Pipes of War: Mitchell unit enters with bagpipe audio cue (cosmetic) and all British Heavy Tanks within aura gain +15% attack speed and +10% DPS."
+   },
+   {
+    "Nation": "Japan",
+    "General": "Saburo Sakai",
+    "Primary Class": "Fighter",
+    "Secondary Class": "Jet Fighter",
+    "HP": 3200,
+    "DPS": 310,
+    "Speed": "Extreme",
+    "Range": "Long",
+    "Armor": "5%",
+    "Aura Buff": "+10% DPS and +10% HP to Fighter and Jet Fighter units within 2 tiles",
+    "Special Ability": "Zero Master: Sakai unit is immune to all AA ground fire. Only SAM systems and CIWS can target him. Represents his ability to take extreme damage and survive."
+   },
+   {
+    "Nation": "Japan",
+    "General": "Tadamichi Kuribayashi",
+    "Primary Class": "Heavy Tank",
+    "Secondary Class": "SPG",
+    "HP": 6500,
+    "DPS": 180,
+    "Speed": "Slow",
+    "Range": "Long",
+    "Armor": "55%",
+    "Aura Buff": "+10% DPS and +10% HP to Heavy Tank and SPG units within 2 tiles",
+    "Special Ability": "Iwo Jima Doctrine: Kuribayashi unit never retreats. When destroyed he triggers an explosion dealing 800 damage to all enemy units within 3 tiles. Every death costs the attacker."
+   },
+   {
+    "Nation": "Japan",
+    "General": "Minoru Genda",
+    "Primary Class": "Fighter",
+    "Secondary Class": "Ground Attack",
+    "HP": 2800,
+    "DPS": 260,
+    "Speed": "Very Fast",
+    "Range": "Long",
+    "Armor": "8%",
+    "Aura Buff": "+10% DPS and +10% HP to Fighter and Ground Attack units within 2 tiles",
+    "Special Ability": "Strategic Strike: Genda reveals all enemy air defenses (CIWS, SAM, AA Guns) exact positions and HP before the raid. Air wave can be planned around precise defense locations."
+   },
+   {
+    "Nation": "Japan",
+    "General": "Takeichi Nishi",
+    "Primary Class": "Medium Tank",
+    "Secondary Class": "Heavy Tank",
+    "HP": 5500,
+    "DPS": 200,
+    "Speed": "Fast",
+    "Range": "Medium",
+    "Armor": "48%",
+    "Aura Buff": "+10% DPS and +10% HP to Medium Tank and Heavy Tank units within 2 tiles",
+    "Special Ability": "Baron's Charge: All Japanese Medium and Heavy Tanks within aura gain the Banzai Charge buff for the entire raid rather than only when below 30% HP."
+   },
+   {
+    "Nation": "Japan",
+    "General": "Takeo Kurita",
+    "Primary Class": "SPG",
+    "Secondary Class": "Heavy Tank",
+    "HP": 7000,
+    "DPS": 240,
+    "Speed": "Medium",
+    "Range": "Very Long",
+    "Armor": "45%",
+    "Aura Buff": "+10% DPS and +10% HP to SPG and Heavy Tank units within 2 tiles",
+    "Special Ability": "Leyte Gulf Barrage: At raid start Kurita calls off-map naval gunfire that hits 4 random enemy buildings for 1500 damage each before ground units advance."
+   },
+   {
+    "Nation": "Japan",
+    "General": "Yoshijiro Umezu",
+    "Primary Class": "Medium Tank",
+    "Secondary Class": "Heavy Tank",
+    "HP": 5000,
+    "DPS": 185,
+    "Speed": "Medium",
+    "Range": "Medium",
+    "Armor": "35%",
+    "Aura Buff": "+10% DPS and +10% HP to Medium Tank and Heavy Tank units within 2 tiles",
+    "Special Ability": "Total Mobilization: For this raid Army Camp capacity is increased by 20. Additional units can be fielded beyond normal limits representing Umezu total war mobilization doctrine."
+   },
+   {
+    "Nation": "Japan",
+    "General": "Kenryo Sato",
+    "Primary Class": "SPG",
+    "Secondary Class": "Tank Destroyer",
+    "HP": 3800,
+    "DPS": 225,
+    "Speed": "Medium",
+    "Range": "Very Long",
+    "Armor": "25%",
+    "Aura Buff": "+10% DPS and +10% HP to SPG and Tank Destroyer units within 2 tiles",
+    "Special Ability": "Fire Plan: Before the raid select one enemy defense tower. That tower is suppressed (cannot fire) for the first 30 seconds of the raid."
+   }
+  ]
+ },
+ "Germany": {
+  "LEADERS - Choose One Active Leader": [
+   {
+    "Name": "Erwin Rommel",
+    "Nickname": "The Desert Fox",
+    "Passive Buff": "+20% speed to all ground units. +10% DPS to Tank Destroyers.",
+    "Active Ability (once per raid)": "Ghost Division: All German units become invisible to enemy defenses for 8 seconds after breaching the first wall. Defenses cannot target them during this window.",
+    "Unlock Requirement": "500 trophies | Tier III required",
+    "Historical Note": "Rommel was famous for rapid unpredictable advances that outpaced enemy intelligence. His 7th Panzer Division moved so fast it was called the Ghost Division."
+   },
+   {
+    "Name": "Heinz Guderian",
+    "Nickname": "Father of Blitzkrieg",
+    "Passive Buff": "+25% movement speed to all tanks. Barracks trains ground units 15% faster.",
+    "Active Ability (once per raid)": "Blitzkrieg Master: For 20 seconds all German tanks ignore walls entirely - they pass through as if walls do not exist. Destroys wall HP on passage.",
+    "Unlock Requirement": "1500 trophies | Tier III required",
+    "Historical Note": "Guderian invented and perfected armored warfare doctrine. His concept of fast deep penetration warfare became the foundation of modern armored tactics."
+   },
+   {
+    "Name": "Erich von Manstein",
+    "Nickname": "Master of Maneuver",
+    "Passive Buff": "+15% HP to all Heavy Tanks. +10% DPS to all ground units when attacking from the flank zones.",
+    "Active Ability (once per raid)": "Backhand Blow: Instantly teleports all units in one deployment zone to an adjacent zone. Catches defenders off guard and reshuffles attack vectors mid-raid.",
+    "Unlock Requirement": "3000 trophies | Tier IV required",
+    "Historical Note": "Manstein was considered the finest operational mind of WW2. His Backhand Blow tactic - allowing enemy advance then striking flanks - was tactically brilliant."
+   },
+   {
+    "Name": "Albert Kesselring",
+    "Nickname": "Smiling Albert",
+    "Passive Buff": "+20% HP to all German air units. AA Towers on home base gain +15% fire rate.",
+    "Active Ability (once per raid)": "Mediterranean Iron: All German air units in the second wave arrive 10 seconds early bypassing the 50% ground loss trigger if ground losses reach 35% instead.",
+    "Unlock Requirement": "3000 trophies | Tier IV required",
+    "Historical Note": "Kesselring commanded Luftwaffe forces and later Italian theater ground forces. Famous for conducting brilliant defensive campaigns with limited resources."
+   },
+   {
+    "Name": "Otto Carius",
+    "Nickname": "Tiger Ace",
+    "Passive Buff": "+30% DPS to all Heavy Tanks. Heavy Tanks gain immunity to the first Critical Hit taken.",
+    "Active Ability (once per raid)": "Tiger Ace: Select one Heavy Tank in the formation. That tank becomes Otto Carius himself - gains 3x HP, 2x DPS, and an aura that boosts adjacent units +20% DPS for the entire raid.",
+    "Unlock Requirement": "Nation Prestige required | Tier V required",
+    "Historical Note": "Otto Carius was one of the most successful tank commanders in history with over 150 confirmed kills. His Tiger I became legendary on the Eastern Front."
+   }
+  ],
+  "GENERALS - Choose 3 for Roster, Bring 2 per Raid": [
+   {
+    "Name + Title": "Hermann Balck - Panzer General",
+    "Commands": "Medium Tank / Heavy Tank",
+    "Stats": "HP 4500 | DPS 180 | Fast | Range Long | Armor 35%",
+    "Special Ability": "Balck Maneuver: Once per raid all Medium Tanks in the formation immediately reposition to the opposite flank. Catches defenses targeting them off guard.",
+    "Aura Buff": "+10% DPS and +10% HP to Medium Tank and Heavy Tank units within 2 tiles",
+    "Historical Note": "Considered by many historians the finest German division commander of WW2. Balck destroyed multiple Soviet armies with minimal losses through aggressive maneuvering."
+   },
+   {
+    "Name + Title": "Hans-Ulrich Rudel - Stuka Ace",
+    "Commands": "Ground Attack / Jet Attack",
+    "Stats": "HP 3000 | DPS 280 | Very Fast | Range Long | Armor 10%",
+    "Special Ability": "Tank Buster: Rudel targets the highest-HP enemy defense tower and destroys it in a single diving attack before the main raid begins. Air unit only.",
+    "Aura Buff": "+10% DPS and +10% HP to Ground Attack and Jet Attack units within 2 tiles",
+    "Historical Note": "The most decorated German serviceman of WW2. Flew 2530 combat missions and destroyed 519 tanks. Lost a leg and continued flying. Irreplaceable combat pilot."
+   },
+   {
+    "Name + Title": "Michael Wittmann - Tiger Ace",
+    "Commands": "Heavy Tank / Tank Destroyer",
+    "Stats": "HP 6000 | DPS 220 | Medium | Range Medium | Armor 55%",
+    "Special Ability": "Villers-Bocage: Wittmann unit fires on ALL enemy units within range simultaneously once per raid dealing 500 damage to each. Represents his single-handed destruction of an entire British column.",
+    "Aura Buff": "+10% DPS and +10% HP to Heavy Tank and Tank Destroyer units within 2 tiles",
+    "Historical Note": "Destroyed over 138 Allied tanks. At Villers-Bocage he single-handedly halted an entire British armored column with one Tiger I. Most lethal tank commander in history."
+   },
+   {
+    "Name + Title": "Erich Hartmann - Blonde Knight",
+    "Commands": "Fighter / Jet Fighter",
+    "Stats": "HP 2800 | DPS 320 | Extreme | Range Long | Armor 5%",
+    "Special Ability": "Black Devil: Hartmann unit is invisible to enemy AA systems for the first 20 seconds of the air wave. Enemy AA cannot target him during this window.",
+    "Aura Buff": "+10% DPS and +10% HP to Fighter and Jet Fighter units within 2 tiles",
+    "Historical Note": "The highest-scoring fighter ace in history with 352 aerial victories. His tactic of closing to point-blank range before firing made him nearly impossible to counter."
+   },
+   {
+    "Name + Title": "Hasso von Manteuffel - Panther Commander",
+    "Commands": "Medium Tank / Heavy Tank",
+    "Stats": "HP 5000 | DPS 200 | Fast | Range Medium | Armor 40%",
+    "Special Ability": "Night Attack: All units in Manteuffel aura radius gain +25% attack speed for the first 30 seconds of the raid representing his famous night assault doctrine.",
+    "Aura Buff": "+10% DPS and +10% HP to Medium Tank and Heavy Tank units within 2 tiles",
+    "Historical Note": "Commanded the elite Grossdeutschland Division and later 5th Panzer Army at the Battle of the Bulge. Master of the night attack and rapid armored exploitation."
+   },
+   {
+    "Name + Title": "Kurt Student - Father of Paratroopers",
+    "Commands": "Light Tank / Special",
+    "Stats": "HP 2600 | DPS 150 | Very Fast | Range Short | Armor 12%",
+    "Special Ability": "Fallschirmjager Drop: Student's transports air-land 3 Light Tanks directly inside the enemy base at a random interior location, bypassing all walls and perimeter defenses.",
+    "Aura Buff": "+10% DPS and +10% HP to Light Tank and Special units within 2 tiles",
+    "Historical Note": "Founded the German airborne forces and commanded the assault on Crete, the first major airborne invasion in history."
+   },
+   {
+    "Name + Title": "Sepp Dietrich - SS Panzer Commander",
+    "Commands": "Heavy Tank / Medium Tank",
+    "Stats": "HP 5500 | DPS 210 | Medium | Range Medium | Armor 45%",
+    "Special Ability": "SS Leibstandarte: All Heavy Tanks within aura radius gain immunity to the first 3 hits taken. Represents the elite SS armored formations fanatical resistance.",
+    "Aura Buff": "+10% DPS and +10% HP to Heavy Tank and Medium Tank units within 2 tiles",
+    "Historical Note": "Commanded the 1st SS Panzer Division Leibstandarte. Fought from Poland to the Ardennes. His division was consistently among the most effective armored formations."
+   }
+  ]
+ },
+ "USSR": {
+  "LEADERS - Choose One Active Leader": [
+   {
+    "Name": "Georgy Zhukov",
+    "Nickname": "Marshal of Victory",
+    "Passive Buff": "+20% HP to all Soviet units. Resource buildings gain +15% HP on home base.",
+    "Active Ability (once per raid)": "Soviet Hammer: Call in an artillery barrage on the enemy base. 5 random buildings take 2000 damage each. Happens instantly at raid start before units advance.",
+    "Unlock Requirement": "500 trophies | Tier II required",
+    "Historical Note": "Zhukov was the most decorated Soviet commander and architect of the great offensives that crushed Nazi Germany. The Battle of Kursk and Berlin fell under his direction."
+   },
+   {
+    "Name": "Ivan Konev",
+    "Nickname": "Marshal of the Tanks",
+    "Passive Buff": "+15% DPS to all Medium and Heavy Tanks. +10% movement speed to all ground units.",
+    "Active Ability (once per raid)": "Steel Flood: Deploy 5 additional T-34/85 units for free from the North zone. These units do not count toward Army Camp capacity for this raid only.",
+    "Unlock Requirement": "500 trophies | Tier III required",
+    "Historical Note": "Konev commanded the First Ukrainian Front and raced Zhukov to Berlin. His armored offensives were characterized by massive tank concentrations and relentless pressure."
+   },
+   {
+    "Name": "Vasily Chuikov",
+    "Nickname": "Defender of Stalingrad",
+    "Passive Buff": "+25% HP to all Soviet units. Home base defense towers gain +10% DPS.",
+    "Active Ability (once per raid)": "Not One Step Back: For 30 seconds all Soviet ground units cannot be killed - they fight at 1 HP until the ability expires then any unit below 100 HP is destroyed simultaneously.",
+    "Unlock Requirement": "1500 trophies | Tier III required",
+    "Historical Note": "Chuikov commanded the 62nd Army at Stalingrad and refused to yield the city. His close-quarters tactics - hugging the enemy to neutralize artillery - were revolutionary."
+   },
+   {
+    "Name": "Konstantin Rokossovsky",
+    "Nickname": "The Gentleman Marshal",
+    "Passive Buff": "+20% DPS to all units. SPG units gain +25% range.",
+    "Active Ability (once per raid)": "Operation Bagration: All four deployment zones activate simultaneously with a speed boost - units from all active zones gain +30% speed for the first 45 seconds of the raid.",
+    "Unlock Requirement": "3000 trophies | Tier IV required",
+    "Historical Note": "Rokossovsky planned and executed Operation Bagration - the largest Soviet offensive of WW2 that destroyed Army Group Centre. Coordinated multi-front attacks were his specialty."
+   },
+   {
+    "Name": "Alexander Vasilevsky",
+    "Nickname": "Chief of the General Staff",
+    "Passive Buff": "+15% to all unit stats simultaneously. Research Point gains increased by 10%.",
+    "Active Ability (once per raid)": "Strategic Reserve: Once per raid call in 3 units of any type already in your roster as emergency reinforcements from the East zone regardless of which zones are active.",
+    "Unlock Requirement": "Nation Prestige required | Tier V required",
+    "Historical Note": "Vasilevsky coordinated Soviet strategic operations across multiple fronts simultaneously. He planned more major operations than any other Soviet commander."
+   }
+  ],
+  "GENERALS - Choose 3 for Roster, Bring 2 per Raid": [
+   {
+    "Name + Title": "Pavel Rotmistrov - Tank Marshal",
+    "Commands": "Medium Tank / Heavy Tank",
+    "Stats": "HP 5000 | DPS 195 | Medium | Range Medium | Armor 38%",
+    "Special Ability": "Prokhorovka Charge: All Soviet tanks in formation gain +40% DPS for 15 seconds at the cost of losing all armor bonus during that window. All or nothing attack.",
+    "Aura Buff": "+10% DPS and +10% HP to Medium Tank and Heavy Tank units within 2 tiles",
+    "Historical Note": "Commanded Soviet armor at the Battle of Prokhorovka - the largest tank battle in history. His aggressive charge doctrine was costly but achieved strategic results."
+   },
+   {
+    "Name + Title": "Vasily Zaitsev - Stalingrad Sniper",
+    "Commands": "Tank Destroyer / SPG",
+    "Stats": "HP 2500 | DPS 350 | Slow | Range Extreme | Armor 15%",
+    "Special Ability": "One Shot One Kill: Zaitsev unit fires once at the highest-HP enemy building dealing 5000 flat damage regardless of armor or HP. One guaranteed critical strike per raid.",
+    "Aura Buff": "+10% DPS and +10% HP to Tank Destroyer and SPG units within 2 tiles",
+    "Historical Note": "The legendary Stalingrad sniper with over 225 confirmed kills. His psychological impact on German forces was enormous. Subject of Enemy at the Gates film."
+   },
+   {
+    "Name + Title": "Dmitry Lelyushenko - Tank Army Commander",
+    "Commands": "Light Tank / Medium Tank",
+    "Stats": "HP 4000 | DPS 170 | Fast | Range Medium | Armor 25%",
+    "Special Ability": "Speed of Lightning: All Light Tanks in formation gain +50% movement speed for 45 seconds. They reach the enemy base before defenses can fully respond.",
+    "Aura Buff": "+10% DPS and +10% HP to Light Tank and Medium Tank units within 2 tiles",
+    "Historical Note": "Commanded multiple tank armies on the Eastern Front. Known for rapid exploitation of breakthroughs and deep penetration raids that paralyzed German supply lines."
+   },
+   {
+    "Name + Title": "Alexander Pokryshkin - Three-Time Hero",
+    "Commands": "Fighter / Ground Attack",
+    "Stats": "HP 3200 | DPS 300 | Very Fast | Range Long | Armor 8%",
+    "Special Ability": "Falcon Tactics: All Soviet fighter units in the air wave gain +30% DPS and attack in a coordinated formation that clears all AA gun towers simultaneously.",
+    "Aura Buff": "+10% DPS and +10% HP to Fighter and Ground Attack units within 2 tiles",
+    "Historical Note": "The second-highest Soviet ace with 59 aerial victories. Developed new Soviet air tactics that transformed the VVS from an inferior force into a dominant one."
+   },
+   {
+    "Name + Title": "Semyon Timoshenko - People Commissar of Defense",
+    "Commands": "Heavy Tank / SPG",
+    "Stats": "HP 4800 | DPS 185 | Slow | Range Long | Armor 42%",
+    "Special Ability": "Soviet Doctrine: All SPG units in formation fire a coordinated barrage at the start of the raid dealing 1000 damage to 3 randomly selected enemy defense towers before ground units advance.",
+    "Aura Buff": "+10% DPS and +10% HP to Heavy Tank and SPG units within 2 tiles",
+    "Historical Note": "Commanded Soviet forces in the Winter War with Finland and early Eastern Front. As Commissar of Defense he reorganized the Red Army after catastrophic early losses."
+   },
+   {
+    "Name + Title": "Ivan Kozhedub - Top Soviet Ace",
+    "Commands": "Fighter / Jet Fighter",
+    "Stats": "HP 3000 | DPS 310 | Extreme | Range Long | Armor 6%",
+    "Special Ability": "La-7 Master: Kozhedub unit deals +50% damage to enemy air defense towers (CIWS, SAM, AA Guns) specifically. The ultimate air defense suppressor.",
+    "Aura Buff": "+10% DPS and +10% HP to Fighter and Jet Fighter units within 2 tiles",
+    "Historical Note": "The top Allied ace of WW2 with 64 aerial victories including two P-51 Mustangs he mistook for German aircraft. Never shot down despite 330 combat sorties."
+   },
+   {
+    "Name + Title": "Mikhail Katukov - Guards Tank Army",
+    "Commands": "Medium Tank / Heavy Tank",
+    "Stats": "HP 5200 | DPS 205 | Medium | Range Medium | Armor 40%",
+    "Special Ability": "Elastic Defense: When Katukov unit falls below 50% HP it retreats to the rear of the formation grid and the unit directly behind moves to the front automatically.",
+    "Aura Buff": "+10% DPS and +10% HP to Medium Tank and Heavy Tank units within 2 tiles",
+    "Historical Note": "Commander of the 1st Guards Tank Army. Pioneer of elastic defense tactics that absorbed German armor offensives and created counterattack opportunities."
+   }
+  ]
+ },
+ "USA": {
+  "LEADERS - Choose One Active Leader": [
+   {
+    "Name": "George S. Patton",
+    "Nickname": "Old Blood and Guts",
+    "Passive Buff": "+25% movement speed to all ground units. +15% DPS to Medium and Heavy Tanks.",
+    "Active Ability (once per raid)": "Ivory Handle Pistols: Patton personally leads the charge - all US ground units gain +30% DPS and +20% speed for 15 seconds. Cannot be blocked or countered.",
+    "Unlock Requirement": "500 trophies | Tier II required",
+    "Historical Note": "Patton was the fastest-moving army commander in history. His Third Army advanced faster than any force in the European Theater. Feared by German commanders above all others."
+   },
+   {
+    "Name": "Dwight D. Eisenhower",
+    "Nickname": "Supreme Commander",
+    "Passive Buff": "+10% to all unit stats. Alliance war raid bonuses increased by 15%.",
+    "Active Ability (once per raid)": "Supreme Command: Choose any one enemy defense tower and disable it completely for the entire raid. It cannot fire. Represents Eisenhower coordinating precision intelligence strikes.",
+    "Unlock Requirement": "500 trophies | Tier III required",
+    "Historical Note": "Eisenhower coordinated the largest military alliance in history. His ability to manage competing personalities and direct resources made Operation Overlord possible."
+   },
+   {
+    "Name": "Omar Bradley",
+    "Nickname": "The Soldier General",
+    "Passive Buff": "+20% HP to all US ground units. Army Camp capacity increased by 10 for the raid.",
+    "Active Ability (once per raid)": "GI Doctrine: Medium Tanks cost 50% less Oil this raid. All ground units gain +15% HP from Bradley inspiring the common soldier.",
+    "Unlock Requirement": "1500 trophies | Tier III required",
+    "Historical Note": "Bradley commanded 1.3 million men - the largest American field army ever. He was beloved by his troops for understanding the common soldier perspective."
+   },
+   {
+    "Name": "Curtis LeMay",
+    "Nickname": "Iron Eagle",
+    "Passive Buff": "+30% DPS to all US air units. Air units trigger at 40% ground losses instead of 50%.",
+    "Active Ability (once per raid)": "Strategic Air Command: All US air units arrive simultaneously in one massive wave rather than in launch order. Every aircraft hits the base at the same second.",
+    "Unlock Requirement": "3000 trophies | Tier IV required",
+    "Historical Note": "LeMay transformed US strategic bombing into a precision science. His doctrine of maximum concentrated air power in minimum time defined US air doctrine through the Cold War."
+   },
+   {
+    "Name": "Creighton Abrams",
+    "Nickname": "Father of the Abrams",
+    "Passive Buff": "+25% DPS and +20% HP to all Heavy Tanks. The M1A2 Abrams gains a unique gold commander hatch skin.",
+    "Active Ability (once per raid)": "Abrams Doctrine: The heaviest tank in your formation becomes the Commander Tank - it gains 4x HP, spawns with full armor, and its destruction triggers a free replacement unit mid-raid.",
+    "Unlock Requirement": "Nation Prestige required | Tier V required",
+    "Historical Note": "Abrams was the finest American tank commander of WW2 and later Army Chief of Staff. The M1 Abrams MBT was named in his honor - the highest tribute to an armor officer."
+   }
+  ],
+  "GENERALS - Choose 3 for Roster, Bring 2 per Raid": [
+   {
+    "Name + Title": "John S. Wood - Armored Spearhead",
+    "Commands": "Heavy Tank / Medium Tank",
+    "Stats": "HP 5800 | DPS 215 | Fast | Range Medium | Armor 50%",
+    "Special Ability": "Lead from the Front: Wood unit always places itself in the front row of the formation regardless of where the player positions it. All units within aura gain +20% DPS.",
+    "Aura Buff": "+10% DPS and +10% HP to Heavy Tank and Medium Tank units within 2 tiles",
+    "Historical Note": "Commanded the 4th Armored Division, which spearheaded the breakout across France and the push toward Bastogne. Known for leading from the front."
+   },
+   {
+    "Name + Title": "Jimmy Doolittle - Tokyo Raider",
+    "Commands": "Ground Attack / Bomber",
+    "Stats": "HP 2500 | DPS 290 | Very Fast | Range Long | Armor 5%",
+    "Special Ability": "Doolittle Raid: One ground attack unit in the formation makes an additional solo strike run on the enemy Command Center specifically dealing 3000 direct damage before the main raid begins.",
+    "Aura Buff": "+10% DPS and +10% HP to Ground Attack and Bomber units within 2 tiles",
+    "Historical Note": "Led the famous Doolittle Raid on Tokyo in 1942 - the first air attack on the Japanese homeland. Later commanded the Eighth Air Force in Europe."
+   },
+   {
+    "Name + Title": "John Gavin - Jumping General",
+    "Commands": "Light Tank / Special",
+    "Stats": "HP 3500 | DPS 165 | Very Fast | Range Short | Armor 15%",
+    "Special Ability": "All American: three air-landed Light Tanks deploy inside the enemy base at a random interior location at raid start and attack from within. Represents 82nd Airborne glider landings.",
+    "Aura Buff": "+10% DPS and +10% HP to Light Tank and Special units within 2 tiles",
+    "Historical Note": "Commanded the 82nd Airborne Division in Normandy and the Netherlands. Famous for jumping alongside his troops."
+   },
+   {
+    "Name + Title": "John Boyd - OODA Loop",
+    "Commands": "Fighter / Jet Fighter",
+    "Stats": "HP 3200 | DPS 295 | Extreme | Range Long | Armor 8%",
+    "Special Ability": "OODA Loop: US air units in this raid react 2 seconds faster to AA fire - they begin evasive maneuvers before defenses can lock on reducing air unit losses by 30%.",
+    "Aura Buff": "+10% DPS and +10% HP to Fighter and Jet Fighter units within 2 tiles",
+    "Historical Note": "Fighter pilot and military theorist who developed the OODA Loop concept - Observe Orient Decide Act. His theories transformed US air combat doctrine and modern military strategy."
+   },
+   {
+    "Name + Title": "Lewis Chesty Puller - Most Decorated Marine",
+    "Commands": "Heavy Tank / Medium Tank",
+    "Stats": "HP 6200 | DPS 195 | Medium | Range Medium | Armor 48%",
+    "Special Ability": "Never Retreat: All US units within Puller aura radius cannot trigger retreat behavior. They fight to destruction. DPS increases +5% for every unit destroyed within the aura radius.",
+    "Aura Buff": "+10% DPS and +10% HP to Heavy Tank and Medium Tank units within 2 tiles",
+    "Historical Note": "The most decorated Marine in US history with five Navy Crosses. Famous quote when surrounded: We are surrounded. That simplifies our problem of getting to these people and killing them."
+   },
+   {
+    "Name + Title": "Francis Gabreski - Gabby",
+    "Commands": "Fighter / Jet Fighter",
+    "Stats": "HP 2800 | DPS 305 | Extreme | Range Long | Armor 6%",
+    "Special Ability": "Double Ace: Gabreski unit destroys the first two air defense towers it encounters instantly before engaging subsequent targets. Clears the path for all following air units.",
+    "Aura Buff": "+10% DPS and +10% HP to Fighter and Jet Fighter units within 2 tiles",
+    "Historical Note": "Top US ace in the European Theater with 28 aerial victories. Also flew in Korea adding 6.5 MiG kills. One of only seven pilots to be an ace in both WW2 and Korea."
+   },
+   {
+    "Name + Title": "Matthew Ridgway - Airborne Steadier",
+    "Commands": "Heavy Tank / Medium Tank",
+    "Stats": "HP 5500 | DPS 200 | Medium | Range Medium | Armor 42%",
+    "Special Ability": "Steady the Line: All US units within aura radius that fall below 25% HP automatically receive a one-time 500 HP repair. Ridgway steadies the line when the battle is hardest.",
+    "Aura Buff": "+10% DPS and +10% HP to Heavy Tank and Medium Tank units within 2 tiles",
+    "Historical Note": "Commanded XVIII Airborne Corps and later the Eighth Army in Korea, where he restored fighting spirit after the 1950 retreat."
+   }
+  ]
+ },
+ "Britain": {
+  "LEADERS - Choose One Active Leader": [
+   {
+    "Name": "Bernard Montgomery",
+    "Nickname": "Monty",
+    "Passive Buff": "+15% DPS to all British units. Defense towers on home base gain +10% HP.",
+    "Active Ability (once per raid)": "Master of the Set Piece: Before raid launch reveal the exact HP of every enemy defense tower. Formation planning becomes perfectly informed. Lasts for the planning phase only.",
+    "Unlock Requirement": "500 trophies | Tier II required",
+    "Historical Note": "Montgomery was the most methodical British commander of WW2. His set-piece battle doctrine involved meticulous preparation and overwhelming force at the chosen point of attack."
+   },
+   {
+    "Name": "Winston Churchill",
+    "Nickname": "The Bulldog",
+    "Passive Buff": "+20% HP to all British units. Finest Hour mechanic triggers at 30% CC HP instead of 25%.",
+    "Active Ability (once per raid)": "We Shall Never Surrender: When any British building is destroyed this raid all remaining British defense towers gain +5% fire rate stacking up to +40% total. Punishes attackers for every building they take.",
+    "Unlock Requirement": "500 trophies | Tier III required",
+    "Historical Note": "Churchill was not a battlefield commander but his Iron will shaped British military doctrine. As a young man he participated in the last British cavalry charge. His defiance defined the British war effort."
+   },
+   {
+    "Name": "Harold Alexander",
+    "Nickname": "The Diplomat General",
+    "Passive Buff": "+15% to all unit stats when fighting alongside alliance members in war raids.",
+    "Active Ability (once per raid)": "Coalition Warfare: Request one donated unit from alliance War Bunker to deploy in your formation for this raid at no Oil cost. The unit fights alongside your army.",
+    "Unlock Requirement": "1500 trophies | Tier III required",
+    "Historical Note": "Alexander commanded Allied forces in the Mediterranean and was famous for his ability to coordinate fractious Allied commanders. He was the consummate coalition warfare officer."
+   },
+   {
+    "Name": "Arthur Harris",
+    "Nickname": "Bomber Harris",
+    "Passive Buff": "+35% DPS to all British bomber and ground attack aircraft.",
+    "Active Ability (once per raid)": "Area Bombing: British bombers in this raid each make two passes instead of one. Each bomber drops payload twice on different targets. Doubles bomber raid effectiveness.",
+    "Unlock Requirement": "3000 trophies | Tier IV required",
+    "Historical Note": "Air Chief Marshal Harris commanded RAF Bomber Command and prosecuted the strategic bombing campaign against Germany. His doctrine of area bombing remains controversial but effective."
+   },
+   {
+    "Name": "Francis de Guingand",
+    "Nickname": "The Staff Officer",
+    "Passive Buff": "+10% to all unit stats. RP earned from this raid increased by 25%.",
+    "Active Ability (once per raid)": "Operational Planning: The enemy base Intel is fully revealed for this raid regardless of Intel Center level. See exact resource amounts defense HP and building positions.",
+    "Unlock Requirement": "Nation Prestige required | Tier V required",
+    "Historical Note": "De Guingand was Montgomery chief of staff and one of the finest operational planners of WW2. His behind-the-scenes coordination made Montgomery battlefield successes possible."
+   }
+  ],
+  "GENERALS - Choose 3 for Roster, Bring 2 per Raid": [
+   {
+    "Name + Title": "William Slim - Uncle Bill",
+    "Commands": "Medium Tank / Heavy Tank",
+    "Stats": "HP 5200 | DPS 190 | Medium | Range Medium | Armor 38%",
+    "Special Ability": "Forgotten Army: British units within Slim aura radius continue fighting at full effectiveness even when overall army losses exceed 60%. No morale penalty.",
+    "Aura Buff": "+10% DPS and +10% HP to Medium Tank and Heavy Tank units within 2 tiles",
+    "Historical Note": "Commanded the 14th Army in Burma - the Forgotten Army. Transformed a demoralized force into the most effective fighting machine Britain produced. Defeated Japan in Burma."
+   },
+   {
+    "Name + Title": "Douglas Bader - Legless Ace",
+    "Commands": "Fighter / Ground Attack",
+    "Stats": "HP 3000 | DPS 285 | Very Fast | Range Long | Armor 8%",
+    "Special Ability": "Big Wing: All British fighter and ground attack aircraft launch simultaneously in the first wave rather than sequentially. Maximum concentrated air power at the opening moment.",
+    "Aura Buff": "+10% DPS and +10% HP to Fighter and Ground Attack units within 2 tiles",
+    "Historical Note": "Lost both legs in a prewar flying accident and talked his way back into combat flying. Shot down and captured but kept trying to escape. 22 aerial victories. Inspirational figure."
+   },
+   {
+    "Name + Title": "David Stirling - Founder of the SAS",
+    "Commands": "Tank Destroyer / Light Tank",
+    "Stats": "HP 3500 | DPS 220 | Fast | Range Long | Armor 20%",
+    "Special Ability": "Who Dares Wins: Stirling unit bypasses all walls and mines entirely - it is never affected by terrain obstacles. Moves directly to its target regardless of layout.",
+    "Aura Buff": "+10% DPS and +10% HP to Tank Destroyer and Light Tank units within 2 tiles",
+    "Historical Note": "Founded the Special Air Service in 1941. His small team raids behind enemy lines destroyed more aircraft than the entire RAF during his operational period. Captured but escaped repeatedly."
+   },
+   {
+    "Name + Title": "Guy Gibson - Dam Buster",
+    "Commands": "Bomber / Ground Attack",
+    "Stats": "HP 2800 | DPS 340 | Fast | Range Very Long | Armor 5%",
+    "Special Ability": "Bouncing Bomb: Gibson bomber unit targets enemy walls specifically and destroys a 3-tile section of wall in a single pass. Creates a massive breach for following ground units.",
+    "Aura Buff": "+10% DPS and +10% HP to Bomber and Ground Attack units within 2 tiles",
+    "Historical Note": "Led the famous Dambusters raid against German Ruhr dams using Barnes Wallis bouncing bomb. Awarded Victoria Cross. Killed in action 1944 age 26."
+   },
+   {
+    "Name + Title": "Orde Wingate - Chindit Founder",
+    "Commands": "Light Tank / Tank Destroyer",
+    "Stats": "HP 4000 | DPS 175 | Fast | Range Medium | Armor 22%",
+    "Special Ability": "Long Range Penetration: Wingate unit and adjacent units in the formation grid enter the enemy base from the rear zone automatically regardless of which zones the player has deployed from.",
+    "Aura Buff": "+10% DPS and +10% HP to Light Tank and Tank Destroyer units within 2 tiles",
+    "Historical Note": "Founded the Chindits, long-range penetration groups that operated behind Japanese lines in Burma."
+   },
+   {
+    "Name + Title": "Richard O Connor - Desert Warrior",
+    "Commands": "Tank Destroyer / Medium Tank",
+    "Stats": "HP 4800 | DPS 205 | Fast | Range Long | Armor 30%",
+    "Special Ability": "Operation Compass: All Tank Destroyers in formation gain +25% range and +20% DPS for the first 60 seconds of the raid representing O Connor stunning desert offensive.",
+    "Aura Buff": "+10% DPS and +10% HP to Tank Destroyer and Medium Tank units within 2 tiles",
+    "Historical Note": "Led Operation Compass in 1940 - with just two divisions he destroyed 10 Italian divisions and advanced 500 miles in two months. One of the most decisive campaigns of the war."
+   },
+   {
+    "Name + Title": "Colin Campbell Mitchell - Mad Mitch",
+    "Commands": "Heavy Tank / Medium Tank",
+    "Stats": "HP 5000 | DPS 195 | Medium | Range Medium | Armor 40%",
+    "Special Ability": "Pipes of War: Mitchell unit enters with bagpipe audio cue (cosmetic) and all British Heavy Tanks within aura gain +15% attack speed and +10% DPS.",
+    "Aura Buff": "+10% DPS and +10% HP to Heavy Tank and Medium Tank units within 2 tiles",
+    "Historical Note": "Led the Argyll and Sutherland Highlanders recapture of the Crater district in Aden 1967. Controversial but highly effective officer who inspired fierce loyalty."
+   }
+  ]
+ },
+ "Japan": {
+  "LEADERS - Choose One Active Leader": [
+   {
+    "Name": "Isoroku Yamamoto",
+    "Nickname": "Admiral of the Fleet",
+    "Passive Buff": "+25% DPS to all Japanese air units. Kamikaze Strike available from Air Hangar Lv1 instead of Lv3.",
+    "Active Ability (once per raid)": "Tora Tora Tora: All Japanese air units deploy at raid start simultaneously with the ground units rather than waiting for the 50% trigger. Full combined arms from second zero.",
+    "Unlock Requirement": "500 trophies | Tier II required",
+    "Historical Note": "Yamamoto planned and executed the Pearl Harbor attack and the Midway operation. He understood airpower before any other naval commander. Famous quote: I fear we have awakened a sleeping giant."
+   },
+   {
+    "Name": "Tomoyuki Yamashita",
+    "Nickname": "Tiger of Malaya",
+    "Passive Buff": "+20% speed to all Japanese ground units. +15% DPS when attacking from flank zones.",
+    "Active Ability (once per raid)": "Lightning Conquest: All Japanese units in the formation gain free movement through the enemy outer wall for 10 seconds. The wall is not damaged - units phase through it. Represents Yamashita outflanking Singapore defenses.",
+    "Unlock Requirement": "500 trophies | Tier III required",
+    "Historical Note": "Yamashita conquered Malaya and Singapore in 70 days with a force half the size of the defenders. His Lightning War through difficult jungle terrain was considered impossible by British commanders."
+   },
+   {
+    "Name": "Hideki Tojo",
+    "Nickname": "The Razor",
+    "Passive Buff": "+15% to all Japanese unit stats. Training time for all units reduced by 20%.",
+    "Active Ability (once per raid)": "Iron Will: Japanese units cannot trigger Banzai Charge involuntarily this raid. Instead the player manually activates Banzai Charge on all units simultaneously at a chosen moment dealing maximum coordinated damage.",
+    "Unlock Requirement": "1500 trophies | Tier III required",
+    "Historical Note": "Tojo was Prime Minister and Army Minister simultaneously. His administrative iron discipline kept Japanese military production running under extreme resource constraints throughout the war."
+   },
+   {
+    "Name": "Mitsuru Ushijima",
+    "Nickname": "Defender of Okinawa",
+    "Passive Buff": "+30% HP to all Japanese units. Home base defense towers gain +20% HP.",
+    "Active Ability (once per raid)": "Last Stronghold: All Japanese units in the raid gain regenerating HP - recovering 2% max HP per second for the first 60 seconds of the raid. Represents Ushijima tenacious defense doctrine.",
+    "Unlock Requirement": "3000 trophies | Tier IV required",
+    "Historical Note": "Ushijima commanded the defense of Okinawa and inflicted the heaviest US naval casualties of the Pacific War. His in-depth defense doctrine made Okinawa the bloodiest Pacific battle."
+   },
+   {
+    "Name": "Jinichi Kusaka",
+    "Nickname": "Eagle of the Pacific",
+    "Passive Buff": "+30% DPS to all Japanese air units. Air units gain +15% speed.",
+    "Active Ability (once per raid)": "Divine Wind: The Kamikaze Strike this raid deals 8x damage instead of 5x and cannot be intercepted by CIWS or SAM systems. The sacrifice is absolute.",
+    "Unlock Requirement": "Nation Prestige required | Tier V required",
+    "Historical Note": "Kusaka commanded Japanese naval air forces and oversaw the formal Kamikaze program. Under his direction the Kamikaze corps became the most effective anti-ship weapon Japan possessed in the final year of the war."
+   }
+  ],
+  "GENERALS - Choose 3 for Roster, Bring 2 per Raid": [
+   {
+    "Name + Title": "Saburo Sakai - Samurai Ace",
+    "Commands": "Fighter / Jet Fighter",
+    "Stats": "HP 3200 | DPS 310 | Extreme | Range Long | Armor 5%",
+    "Special Ability": "Zero Master: Sakai unit is immune to all AA ground fire. Only SAM systems and CIWS can target him. Represents his ability to take extreme damage and survive.",
+    "Aura Buff": "+10% DPS and +10% HP to Fighter and Jet Fighter units within 2 tiles",
+    "Historical Note": "64 confirmed aerial victories. Shot through the head over Guadalcanal, half blinded, flew 4 hours back to base and landed safely. Survived the entire war despite severe wounds."
+   },
+   {
+    "Name + Title": "Tadamichi Kuribayashi - Defender of Iwo Jima",
+    "Commands": "Heavy Tank / SPG",
+    "Stats": "HP 6500 | DPS 180 | Slow | Range Long | Armor 55%",
+    "Special Ability": "Iwo Jima Doctrine: Kuribayashi unit never retreats. When destroyed he triggers an explosion dealing 800 damage to all enemy units within 3 tiles. Every death costs the attacker.",
+    "Aura Buff": "+10% DPS and +10% HP to Heavy Tank and SPG units within 2 tiles",
+    "Historical Note": "Commanded the defense of Iwo Jima. Inflicted the highest US Marine casualties of any Pacific battle. His defense-in-depth doctrine held for 36 days against overwhelming force."
+   },
+   {
+    "Name + Title": "Minoru Genda - Architect of Pearl Harbor",
+    "Commands": "Fighter / Ground Attack",
+    "Stats": "HP 2800 | DPS 260 | Very Fast | Range Long | Armor 8%",
+    "Special Ability": "Strategic Strike: Genda reveals all enemy air defenses (CIWS, SAM, AA Guns) exact positions and HP before the raid. Air wave can be planned around precise defense locations.",
+    "Aura Buff": "+10% DPS and +10% HP to Fighter and Ground Attack units within 2 tiles",
+    "Historical Note": "Planned the Pearl Harbor attack and led Japanese fighter operations. Later became Chief of Staff of the Japan Air Self-Defense Force after the war."
+   },
+   {
+    "Name + Title": "Takeichi Nishi - Baron Nishi",
+    "Commands": "Medium Tank / Heavy Tank",
+    "Stats": "HP 5500 | DPS 200 | Fast | Range Medium | Armor 48%",
+    "Special Ability": "Baron's Charge: All Japanese Medium and Heavy Tanks within aura gain the Banzai Charge buff for the entire raid rather than only when below 30% HP.",
+    "Aura Buff": "+10% DPS and +10% HP to Medium Tank and Heavy Tank units within 2 tiles",
+    "Historical Note": "Olympic show-jumping gold medalist (1932) who commanded the 26th Tank Regiment at Iwo Jima."
+   },
+   {
+    "Name + Title": "Takeo Kurita - Leyte Gulf Commander",
+    "Commands": "SPG / Heavy Tank",
+    "Stats": "HP 7000 | DPS 240 | Medium | Range Very Long | Armor 45%",
+    "Special Ability": "Leyte Gulf Barrage: At raid start Kurita calls off-map naval gunfire that hits 4 random enemy buildings for 1500 damage each before ground units advance.",
+    "Aura Buff": "+10% DPS and +10% HP to SPG and Heavy Tank units within 2 tiles",
+    "Historical Note": "Commanded the Center Force at Leyte Gulf, the largest naval battle of WW2. In game he fields as long-range artillery with a naval-gunfire call."
+   },
+   {
+    "Name + Title": "Yoshijiro Umezu - Chief of Army General Staff",
+    "Commands": "Medium Tank / Heavy Tank",
+    "Stats": "HP 5000 | DPS 185 | Medium | Range Medium | Armor 35%",
+    "Special Ability": "Total Mobilization: For this raid Army Camp capacity is increased by 20. Additional units can be fielded beyond normal limits representing Umezu total war mobilization doctrine.",
+    "Aura Buff": "+10% DPS and +10% HP to Medium Tank and Heavy Tank units within 2 tiles",
+    "Historical Note": "Chief of the Imperial Japanese Army General Staff at the end of WW2. Signed the formal surrender documents aboard USS Missouri representing the Japanese Army."
+   },
+   {
+    "Name + Title": "Kenryo Sato - The Razor Bureaucrat",
+    "Commands": "SPG / Tank Destroyer",
+    "Stats": "HP 3800 | DPS 225 | Medium | Range Very Long | Armor 25%",
+    "Special Ability": "Fire Plan: Before the raid select one enemy defense tower. That tower is suppressed (cannot fire) for the first 30 seconds of the raid.",
+    "Aura Buff": "+10% DPS and +10% HP to SPG and Tank Destroyer units within 2 tiles",
+    "Historical Note": "Senior Imperial Japanese Army staff officer. Design placeholder: ability is generic fire-support planning. Swap for a better-documented commander if desired."
+   }
+  ]
+ }
+}

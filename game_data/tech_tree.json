@@ -1,0 +1,1645 @@
+{
+ "tier_unlock": {
+  "Same costs apply to each nation. First nation Tier I is free. All other unlocks require all gates to be met.": [
+   {
+    "Tier": "TIER I Early War",
+    "CC Required": "CC1",
+    "Research Lab": "Lv 1",
+    "Trophies": "0 (free for starting nation)",
+    "Gold Cost": 0,
+    "Steel Cost": 0,
+    "Unlock Time": "Instant",
+    "Nation": "All nations",
+    "Note": "Free for chosen nation. Others pay 500 RP to activate."
+   },
+   {
+    "Tier": "TIER II Mid War",
+    "CC Required": "CC3",
+    "Research Lab": "Lv 2",
+    "Trophies": "100 trophies",
+    "Gold Cost": 50000,
+    "Steel Cost": 15000,
+    "Unlock Time": "4 hr",
+    "Nation": "All nations",
+    "Note": "First real gate. Requires some raiding progress."
+   },
+   {
+    "Tier": "TIER III Late War",
+    "CC Required": "CC5",
+    "Research Lab": "Lv 3",
+    "Trophies": "500 trophies",
+    "Gold Cost": 250000,
+    "Steel Cost": 80000,
+    "Unlock Time": "1 day",
+    "Nation": "All nations",
+    "Note": "Late War era. Significant resource investment."
+   },
+   {
+    "Tier": "TIER IV Cold War",
+    "CC Required": "CC7",
+    "Research Lab": "Lv 4",
+    "Trophies": "1500 trophies",
+    "Gold Cost": 1000000,
+    "Steel Cost": 350000,
+    "Unlock Time": "2 days",
+    "Nation": "All nations",
+    "Note": "Cold War gate. Requires established mid-game base."
+   },
+   {
+    "Tier": "TIER V Modern Era",
+    "CC Required": "CC9 + Dark Barracks",
+    "Research Lab": "Lv 5",
+    "Trophies": "3000 trophies",
+    "Gold Cost": 4000000,
+    "Steel Cost": 1500000,
+    "Unlock Time": "4 days",
+    "Nation": "All nations",
+    "Note": "Modern era. Hard gate. Needs CC9 (not CC8) so it agrees with the Buildings workbook; Dark Barracks itself is built at CC8."
+   }
+  ]
+ },
+ "tier_rp": {
+  "1": 3050,
+  "2": 6600,
+  "3": 16300,
+  "4": 35600,
+  "5": 77000
+ },
+ "units": [
+  {
+   "nation": "Germany",
+   "unit_id": "Ger_panzer_i",
+   "tier": 1,
+   "rp_cost": 200,
+   "gold_to_train_first": 500,
+   "prerequisite_id": null,
+   "prerequisite_rule": "None - first vehicle"
+  },
+  {
+   "nation": "Germany",
+   "unit_id": "Ger_panzer_ii",
+   "tier": 1,
+   "rp_cost": 350,
+   "gold_to_train_first": 900,
+   "prerequisite_id": "Ger_panzer_i",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "Germany",
+   "unit_id": "Ger_sd_kfz_222",
+   "tier": 1,
+   "rp_cost": 400,
+   "gold_to_train_first": 800,
+   "prerequisite_id": "Ger_panzer_i",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "Germany",
+   "unit_id": "Ger_flakpanzer_i",
+   "tier": 1,
+   "rp_cost": 450,
+   "gold_to_train_first": 850,
+   "prerequisite_id": "Ger_panzer_i",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "Germany",
+   "unit_id": "Ger_bison_sig_33",
+   "tier": 1,
+   "rp_cost": 500,
+   "gold_to_train_first": 950,
+   "prerequisite_id": "Ger_panzer_i",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "Germany",
+   "unit_id": "Ger_bf_109_b",
+   "tier": 1,
+   "rp_cost": 550,
+   "gold_to_train_first": 1200,
+   "prerequisite_id": "Ger_panzer_i",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "Germany",
+   "unit_id": "Ger_hs_123",
+   "tier": 1,
+   "rp_cost": 500,
+   "gold_to_train_first": 1100,
+   "prerequisite_id": "Ger_bf_109_b",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "Germany",
+   "unit_id": "Ger_panzer_iii",
+   "tier": 2,
+   "rp_cost": 800,
+   "gold_to_train_first": 1700,
+   "prerequisite_id": null,
+   "prerequisite_rule": "Any Tier I vehicle"
+  },
+  {
+   "nation": "Germany",
+   "unit_id": "Ger_panzer_iv_f1",
+   "tier": 2,
+   "rp_cost": 900,
+   "gold_to_train_first": 2000,
+   "prerequisite_id": "Ger_panzer_iii",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "Germany",
+   "unit_id": "Ger_stug_iii",
+   "tier": 2,
+   "rp_cost": 1000,
+   "gold_to_train_first": 1800,
+   "prerequisite_id": "Ger_panzer_iii",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "Germany",
+   "unit_id": "Ger_marder_ii",
+   "tier": 2,
+   "rp_cost": 850,
+   "gold_to_train_first": 1600,
+   "prerequisite_id": "Ger_stug_iii",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "Germany",
+   "unit_id": "Ger_sd_kfz_7_1",
+   "tier": 2,
+   "rp_cost": 900,
+   "gold_to_train_first": 1500,
+   "prerequisite_id": "Ger_flakpanzer_i",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "Germany",
+   "unit_id": "Ger_bf_109_e",
+   "tier": 2,
+   "rp_cost": 1000,
+   "gold_to_train_first": 2500,
+   "prerequisite_id": "Ger_bf_109_b",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "Germany",
+   "unit_id": "Ger_ju_87_stuka",
+   "tier": 2,
+   "rp_cost": 950,
+   "gold_to_train_first": 2200,
+   "prerequisite_id": "Ger_hs_123",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "Germany",
+   "unit_id": "Ger_panther",
+   "tier": 3,
+   "rp_cost": 2000,
+   "gold_to_train_first": 3500,
+   "prerequisite_id": "Ger_panzer_iv_f1",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "Germany",
+   "unit_id": "Ger_tiger_i",
+   "tier": 3,
+   "rp_cost": 2500,
+   "gold_to_train_first": 5000,
+   "prerequisite_id": "Ger_panther",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "Germany",
+   "unit_id": "Ger_jagdpanzer_iv",
+   "tier": 3,
+   "rp_cost": 2200,
+   "gold_to_train_first": 4000,
+   "prerequisite_id": "Ger_stug_iii",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "Germany",
+   "unit_id": "Ger_nashorn",
+   "tier": 3,
+   "rp_cost": 2100,
+   "gold_to_train_first": 3800,
+   "prerequisite_id": "Ger_marder_ii",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "Germany",
+   "unit_id": "Ger_wirbelwind",
+   "tier": 3,
+   "rp_cost": 1800,
+   "gold_to_train_first": 3000,
+   "prerequisite_id": "Ger_sd_kfz_7_1",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "Germany",
+   "unit_id": "Ger_fw_190_a",
+   "tier": 3,
+   "rp_cost": 2500,
+   "gold_to_train_first": 4200,
+   "prerequisite_id": "Ger_ju_87_stuka",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "Germany",
+   "unit_id": "Ger_bf_109_g",
+   "tier": 3,
+   "rp_cost": 2800,
+   "gold_to_train_first": 4500,
+   "prerequisite_id": "Ger_bf_109_e",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "Germany",
+   "unit_id": "Ger_tiger_ii",
+   "tier": 4,
+   "rp_cost": 5000,
+   "gold_to_train_first": 7500,
+   "prerequisite_id": "Ger_tiger_i",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "Germany",
+   "unit_id": "Ger_jagdtiger",
+   "tier": 4,
+   "rp_cost": 4800,
+   "gold_to_train_first": 7000,
+   "prerequisite_id": "Ger_jagdpanzer_iv",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "Germany",
+   "unit_id": "Ger_leopard_1",
+   "tier": 4,
+   "rp_cost": 4500,
+   "gold_to_train_first": 6500,
+   "prerequisite_id": "Ger_panther",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "Germany",
+   "unit_id": "Ger_kanonenjagdpanzer",
+   "tier": 4,
+   "rp_cost": 4200,
+   "gold_to_train_first": 6000,
+   "prerequisite_id": "Ger_nashorn",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "Germany",
+   "unit_id": "Ger_gepard",
+   "tier": 4,
+   "rp_cost": 4000,
+   "gold_to_train_first": 6800,
+   "prerequisite_id": "Ger_wirbelwind",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "Germany",
+   "unit_id": "Ger_me_262_a",
+   "tier": 4,
+   "rp_cost": 5500,
+   "gold_to_train_first": 7000,
+   "prerequisite_id": "Ger_bf_109_g",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "Germany",
+   "unit_id": "Ger_bo_105_pah",
+   "tier": 4,
+   "rp_cost": 5000,
+   "gold_to_train_first": 8000,
+   "prerequisite_id": "Ger_me_262_a",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "Germany",
+   "unit_id": "Ger_leopard_2a5",
+   "tier": 5,
+   "rp_cost": 10000,
+   "gold_to_train_first": 12000,
+   "prerequisite_id": "Ger_leopard_1",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "Germany",
+   "unit_id": "Ger_leopard_2a7",
+   "tier": 5,
+   "rp_cost": 12000,
+   "gold_to_train_first": 15000,
+   "prerequisite_id": "Ger_leopard_2a5",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "Germany",
+   "unit_id": "Ger_puma_ifv",
+   "tier": 5,
+   "rp_cost": 8000,
+   "gold_to_train_first": 10000,
+   "prerequisite_id": "Ger_leopard_1",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "Germany",
+   "unit_id": "Ger_typ_2000_destroyer",
+   "tier": 5,
+   "rp_cost": 9000,
+   "gold_to_train_first": 11000,
+   "prerequisite_id": "Ger_kanonenjagdpanzer",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "Germany",
+   "unit_id": "Ger_ozelot_aa",
+   "tier": 5,
+   "rp_cost": 8500,
+   "gold_to_train_first": 10500,
+   "prerequisite_id": "Ger_gepard",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "Germany",
+   "unit_id": "Ger_eurofighter",
+   "tier": 5,
+   "rp_cost": 13000,
+   "gold_to_train_first": 16000,
+   "prerequisite_id": "Ger_me_262_a",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "Germany",
+   "unit_id": "Ger_tornado_ids",
+   "tier": 5,
+   "rp_cost": 12000,
+   "gold_to_train_first": 15000,
+   "prerequisite_id": "Ger_eurofighter",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "USSR",
+   "unit_id": "USS_t_26",
+   "tier": 1,
+   "rp_cost": 200,
+   "gold_to_train_first": 500,
+   "prerequisite_id": null,
+   "prerequisite_rule": "None - first vehicle"
+  },
+  {
+   "nation": "USSR",
+   "unit_id": "USS_ba_64",
+   "tier": 1,
+   "rp_cost": 350,
+   "gold_to_train_first": 700,
+   "prerequisite_id": "USS_t_26",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "USSR",
+   "unit_id": "USS_t_60",
+   "tier": 1,
+   "rp_cost": 400,
+   "gold_to_train_first": 750,
+   "prerequisite_id": "USS_t_26",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "USSR",
+   "unit_id": "USS_su_76",
+   "tier": 1,
+   "rp_cost": 500,
+   "gold_to_train_first": 900,
+   "prerequisite_id": "USS_t_26",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "USSR",
+   "unit_id": "USS_zis_43_aa",
+   "tier": 1,
+   "rp_cost": 450,
+   "gold_to_train_first": 850,
+   "prerequisite_id": "USS_t_26",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "USSR",
+   "unit_id": "USS_yak_1",
+   "tier": 1,
+   "rp_cost": 550,
+   "gold_to_train_first": 1200,
+   "prerequisite_id": "USS_t_26",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "USSR",
+   "unit_id": "USS_il_2_sturmovik",
+   "tier": 1,
+   "rp_cost": 600,
+   "gold_to_train_first": 1300,
+   "prerequisite_id": "USS_yak_1",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "USSR",
+   "unit_id": "USS_t_34_76",
+   "tier": 2,
+   "rp_cost": 900,
+   "gold_to_train_first": 1900,
+   "prerequisite_id": null,
+   "prerequisite_rule": "Any Tier I vehicle"
+  },
+  {
+   "nation": "USSR",
+   "unit_id": "USS_kv_1",
+   "tier": 2,
+   "rp_cost": 1000,
+   "gold_to_train_first": 2200,
+   "prerequisite_id": "USS_t_34_76",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "USSR",
+   "unit_id": "USS_t_50",
+   "tier": 2,
+   "rp_cost": 800,
+   "gold_to_train_first": 1500,
+   "prerequisite_id": "USS_t_26",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "USSR",
+   "unit_id": "USS_su_122",
+   "tier": 2,
+   "rp_cost": 950,
+   "gold_to_train_first": 1800,
+   "prerequisite_id": "USS_su_76",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "USSR",
+   "unit_id": "USS_m4a2_soviet",
+   "tier": 2,
+   "rp_cost": 850,
+   "gold_to_train_first": 1700,
+   "prerequisite_id": "USS_t_34_76",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "USSR",
+   "unit_id": "USS_yak_7b",
+   "tier": 2,
+   "rp_cost": 1000,
+   "gold_to_train_first": 2400,
+   "prerequisite_id": "USS_yak_1",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "USSR",
+   "unit_id": "USS_pe_2",
+   "tier": 2,
+   "rp_cost": 1100,
+   "gold_to_train_first": 2600,
+   "prerequisite_id": "USS_il_2_sturmovik",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "USSR",
+   "unit_id": "USS_t_34_85",
+   "tier": 3,
+   "rp_cost": 2200,
+   "gold_to_train_first": 3300,
+   "prerequisite_id": "USS_t_34_76",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "USSR",
+   "unit_id": "USS_is_2",
+   "tier": 3,
+   "rp_cost": 2500,
+   "gold_to_train_first": 4800,
+   "prerequisite_id": "USS_kv_1",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "USSR",
+   "unit_id": "USS_isu_152",
+   "tier": 3,
+   "rp_cost": 2400,
+   "gold_to_train_first": 4500,
+   "prerequisite_id": "USS_su_122",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "USSR",
+   "unit_id": "USS_su_100",
+   "tier": 3,
+   "rp_cost": 2000,
+   "gold_to_train_first": 3800,
+   "prerequisite_id": "USS_isu_152",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "USSR",
+   "unit_id": "USS_t_70",
+   "tier": 3,
+   "rp_cost": 1800,
+   "gold_to_train_first": 2800,
+   "prerequisite_id": "USS_t_50",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "USSR",
+   "unit_id": "USS_la_7",
+   "tier": 3,
+   "rp_cost": 2800,
+   "gold_to_train_first": 4400,
+   "prerequisite_id": "USS_yak_7b",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "USSR",
+   "unit_id": "USS_il_10",
+   "tier": 3,
+   "rp_cost": 2600,
+   "gold_to_train_first": 4200,
+   "prerequisite_id": "USS_pe_2",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "USSR",
+   "unit_id": "USS_is_3",
+   "tier": 4,
+   "rp_cost": 5200,
+   "gold_to_train_first": 7200,
+   "prerequisite_id": "USS_is_2",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "USSR",
+   "unit_id": "USS_t_54",
+   "tier": 4,
+   "rp_cost": 4800,
+   "gold_to_train_first": 6800,
+   "prerequisite_id": "USS_t_34_85",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "USSR",
+   "unit_id": "USS_t_72",
+   "tier": 4,
+   "rp_cost": 5000,
+   "gold_to_train_first": 7000,
+   "prerequisite_id": "USS_t_54",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "USSR",
+   "unit_id": "USS_zsu_23_4_shilka",
+   "tier": 4,
+   "rp_cost": 4500,
+   "gold_to_train_first": 6500,
+   "prerequisite_id": "USS_zis_43_aa",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "USSR",
+   "unit_id": "USS_2s3_akatsiya",
+   "tier": 4,
+   "rp_cost": 4800,
+   "gold_to_train_first": 7000,
+   "prerequisite_id": "USS_su_100",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "USSR",
+   "unit_id": "USS_mig_21",
+   "tier": 4,
+   "rp_cost": 5500,
+   "gold_to_train_first": 7000,
+   "prerequisite_id": "USS_la_7",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "USSR",
+   "unit_id": "USS_ka_50_black_shark",
+   "tier": 4,
+   "rp_cost": 5200,
+   "gold_to_train_first": 8000,
+   "prerequisite_id": "USS_mig_21",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "USSR",
+   "unit_id": "USS_t_90m",
+   "tier": 5,
+   "rp_cost": 11000,
+   "gold_to_train_first": 13000,
+   "prerequisite_id": "USS_is_3",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "USSR",
+   "unit_id": "USS_t_80bvm",
+   "tier": 5,
+   "rp_cost": 10500,
+   "gold_to_train_first": 12500,
+   "prerequisite_id": "USS_t_72",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "USSR",
+   "unit_id": "USS_2s25_sprut",
+   "tier": 5,
+   "rp_cost": 9000,
+   "gold_to_train_first": 11000,
+   "prerequisite_id": "USS_su_100",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "USSR",
+   "unit_id": "USS_tos_1a_buratino",
+   "tier": 5,
+   "rp_cost": 10000,
+   "gold_to_train_first": 12000,
+   "prerequisite_id": "USS_2s3_akatsiya",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "USSR",
+   "unit_id": "USS_tunguska_m1",
+   "tier": 5,
+   "rp_cost": 9500,
+   "gold_to_train_first": 11500,
+   "prerequisite_id": "USS_zsu_23_4_shilka",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "USSR",
+   "unit_id": "USS_su_57_felon",
+   "tier": 5,
+   "rp_cost": 13000,
+   "gold_to_train_first": 16000,
+   "prerequisite_id": "USS_mig_21",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "USSR",
+   "unit_id": "USS_su_25_frogfoot",
+   "tier": 5,
+   "rp_cost": 11000,
+   "gold_to_train_first": 14000,
+   "prerequisite_id": "USS_su_57_felon",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "USA",
+   "unit_id": "USA_m3_stuart",
+   "tier": 1,
+   "rp_cost": 200,
+   "gold_to_train_first": 500,
+   "prerequisite_id": null,
+   "prerequisite_rule": "None - first vehicle"
+  },
+  {
+   "nation": "USA",
+   "unit_id": "USA_m8_greyhound",
+   "tier": 1,
+   "rp_cost": 350,
+   "gold_to_train_first": 700,
+   "prerequisite_id": "USA_m3_stuart",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "USA",
+   "unit_id": "USA_m3_gmc",
+   "tier": 1,
+   "rp_cost": 400,
+   "gold_to_train_first": 800,
+   "prerequisite_id": "USA_m3_stuart",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "USA",
+   "unit_id": "USA_m3_lee",
+   "tier": 1,
+   "rp_cost": 450,
+   "gold_to_train_first": 900,
+   "prerequisite_id": "USA_m3_stuart",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "USA",
+   "unit_id": "USA_m15_cgmc",
+   "tier": 1,
+   "rp_cost": 400,
+   "gold_to_train_first": 750,
+   "prerequisite_id": "USA_m3_stuart",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "USA",
+   "unit_id": "USA_p_40_warhawk",
+   "tier": 1,
+   "rp_cost": 550,
+   "gold_to_train_first": 1200,
+   "prerequisite_id": "USA_m3_stuart",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "USA",
+   "unit_id": "USA_sbd_dauntless",
+   "tier": 1,
+   "rp_cost": 500,
+   "gold_to_train_first": 1100,
+   "prerequisite_id": "USA_p_40_warhawk",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "USA",
+   "unit_id": "USA_m4_sherman",
+   "tier": 2,
+   "rp_cost": 900,
+   "gold_to_train_first": 2000,
+   "prerequisite_id": null,
+   "prerequisite_rule": "Any Tier I vehicle"
+  },
+  {
+   "nation": "USA",
+   "unit_id": "USA_m10_wolverine",
+   "tier": 2,
+   "rp_cost": 850,
+   "gold_to_train_first": 1800,
+   "prerequisite_id": "USA_m4_sherman",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "USA",
+   "unit_id": "USA_m7_priest",
+   "tier": 2,
+   "rp_cost": 900,
+   "gold_to_train_first": 1900,
+   "prerequisite_id": "USA_m3_gmc",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "USA",
+   "unit_id": "USA_m5_stuart",
+   "tier": 2,
+   "rp_cost": 800,
+   "gold_to_train_first": 1500,
+   "prerequisite_id": "USA_m3_stuart",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "USA",
+   "unit_id": "USA_m16_mgmc",
+   "tier": 2,
+   "rp_cost": 900,
+   "gold_to_train_first": 1700,
+   "prerequisite_id": "USA_m15_cgmc",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "USA",
+   "unit_id": "USA_p_47_thunderbolt",
+   "tier": 2,
+   "rp_cost": 1100,
+   "gold_to_train_first": 2400,
+   "prerequisite_id": "USA_sbd_dauntless",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "USA",
+   "unit_id": "USA_p_51_mustang",
+   "tier": 2,
+   "rp_cost": 1000,
+   "gold_to_train_first": 2500,
+   "prerequisite_id": "USA_p_40_warhawk",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "USA",
+   "unit_id": "USA_m26_pershing",
+   "tier": 3,
+   "rp_cost": 2400,
+   "gold_to_train_first": 4600,
+   "prerequisite_id": "USA_m4_sherman",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "USA",
+   "unit_id": "USA_m36_jackson",
+   "tier": 3,
+   "rp_cost": 2200,
+   "gold_to_train_first": 4000,
+   "prerequisite_id": "USA_m10_wolverine",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "USA",
+   "unit_id": "USA_m4a3e8_easy_eight",
+   "tier": 3,
+   "rp_cost": 2000,
+   "gold_to_train_first": 3500,
+   "prerequisite_id": "USA_m4_sherman",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "USA",
+   "unit_id": "USA_m40_gmc",
+   "tier": 3,
+   "rp_cost": 2100,
+   "gold_to_train_first": 3800,
+   "prerequisite_id": "USA_m7_priest",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "USA",
+   "unit_id": "USA_m19_mgmc",
+   "tier": 3,
+   "rp_cost": 1900,
+   "gold_to_train_first": 3200,
+   "prerequisite_id": "USA_m16_mgmc",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "USA",
+   "unit_id": "USA_f6f_hellcat",
+   "tier": 3,
+   "rp_cost": 2600,
+   "gold_to_train_first": 4200,
+   "prerequisite_id": "USA_p_51_mustang",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "USA",
+   "unit_id": "USA_b_25_mitchell",
+   "tier": 3,
+   "rp_cost": 2800,
+   "gold_to_train_first": 4500,
+   "prerequisite_id": "USA_p_47_thunderbolt",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "USA",
+   "unit_id": "USA_m60a3_patton",
+   "tier": 4,
+   "rp_cost": 4800,
+   "gold_to_train_first": 6800,
+   "prerequisite_id": "USA_m26_pershing",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "USA",
+   "unit_id": "USA_m103",
+   "tier": 4,
+   "rp_cost": 5200,
+   "gold_to_train_first": 7500,
+   "prerequisite_id": "USA_m60a3_patton",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "USA",
+   "unit_id": "USA_m109_paladin",
+   "tier": 4,
+   "rp_cost": 4500,
+   "gold_to_train_first": 6500,
+   "prerequisite_id": "USA_m40_gmc",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "USA",
+   "unit_id": "USA_m551_sheridan",
+   "tier": 4,
+   "rp_cost": 4200,
+   "gold_to_train_first": 6500,
+   "prerequisite_id": "USA_m5_stuart",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "USA",
+   "unit_id": "USA_m163_vulcan",
+   "tier": 4,
+   "rp_cost": 4200,
+   "gold_to_train_first": 6200,
+   "prerequisite_id": "USA_m19_mgmc",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "USA",
+   "unit_id": "USA_ah_1_cobra",
+   "tier": 4,
+   "rp_cost": 5000,
+   "gold_to_train_first": 7800,
+   "prerequisite_id": "USA_f6f_hellcat",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "USA",
+   "unit_id": "USA_f_4_phantom",
+   "tier": 4,
+   "rp_cost": 5500,
+   "gold_to_train_first": 7000,
+   "prerequisite_id": "USA_f6f_hellcat",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "USA",
+   "unit_id": "USA_m1a2_abrams",
+   "tier": 5,
+   "rp_cost": 11000,
+   "gold_to_train_first": 14000,
+   "prerequisite_id": "USA_m103",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "USA",
+   "unit_id": "USA_m2_bradley",
+   "tier": 5,
+   "rp_cost": 9000,
+   "gold_to_train_first": 11000,
+   "prerequisite_id": "USA_m60a3_patton",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "USA",
+   "unit_id": "USA_m1128_stryker_mgs",
+   "tier": 5,
+   "rp_cost": 9500,
+   "gold_to_train_first": 11500,
+   "prerequisite_id": "USA_m36_jackson",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "USA",
+   "unit_id": "USA_m270_mlrs",
+   "tier": 5,
+   "rp_cost": 10000,
+   "gold_to_train_first": 12500,
+   "prerequisite_id": "USA_m109_paladin",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "USA",
+   "unit_id": "USA_m6_linebacker",
+   "tier": 5,
+   "rp_cost": 9000,
+   "gold_to_train_first": 11000,
+   "prerequisite_id": "USA_m163_vulcan",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "USA",
+   "unit_id": "USA_f_22_raptor",
+   "tier": 5,
+   "rp_cost": 14000,
+   "gold_to_train_first": 17000,
+   "prerequisite_id": "USA_f_4_phantom",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "USA",
+   "unit_id": "USA_a_10_warthog",
+   "tier": 5,
+   "rp_cost": 12000,
+   "gold_to_train_first": 15000,
+   "prerequisite_id": "USA_f_22_raptor",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "Britain",
+   "unit_id": "Bri_crusader_mk_i",
+   "tier": 1,
+   "rp_cost": 200,
+   "gold_to_train_first": 500,
+   "prerequisite_id": null,
+   "prerequisite_rule": "None - first vehicle"
+  },
+  {
+   "nation": "Britain",
+   "unit_id": "Bri_dingo_scout_car",
+   "tier": 1,
+   "rp_cost": 300,
+   "gold_to_train_first": 650,
+   "prerequisite_id": "Bri_crusader_mk_i",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "Britain",
+   "unit_id": "Bri_matilda_ii",
+   "tier": 1,
+   "rp_cost": 500,
+   "gold_to_train_first": 1000,
+   "prerequisite_id": "Bri_crusader_mk_i",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "Britain",
+   "unit_id": "Bri_valentine_mk_i",
+   "tier": 1,
+   "rp_cost": 400,
+   "gold_to_train_first": 800,
+   "prerequisite_id": "Bri_crusader_mk_i",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "Britain",
+   "unit_id": "Bri_qf_25_pdr",
+   "tier": 1,
+   "rp_cost": 450,
+   "gold_to_train_first": 900,
+   "prerequisite_id": "Bri_crusader_mk_i",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "Britain",
+   "unit_id": "Bri_hurricane_mk_i",
+   "tier": 1,
+   "rp_cost": 550,
+   "gold_to_train_first": 1200,
+   "prerequisite_id": "Bri_crusader_mk_i",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "Britain",
+   "unit_id": "Bri_blenheim_mk_iv",
+   "tier": 1,
+   "rp_cost": 500,
+   "gold_to_train_first": 1100,
+   "prerequisite_id": "Bri_hurricane_mk_i",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "Britain",
+   "unit_id": "Bri_cromwell",
+   "tier": 2,
+   "rp_cost": 900,
+   "gold_to_train_first": 1950,
+   "prerequisite_id": null,
+   "prerequisite_rule": "Any Tier I vehicle"
+  },
+  {
+   "nation": "Britain",
+   "unit_id": "Bri_valentine_mk_ix",
+   "tier": 2,
+   "rp_cost": 850,
+   "gold_to_train_first": 1800,
+   "prerequisite_id": "Bri_cromwell",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "Britain",
+   "unit_id": "Bri_archer",
+   "tier": 2,
+   "rp_cost": 900,
+   "gold_to_train_first": 1700,
+   "prerequisite_id": "Bri_cromwell",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "Britain",
+   "unit_id": "Bri_crusader_aa_mk_i",
+   "tier": 2,
+   "rp_cost": 800,
+   "gold_to_train_first": 1500,
+   "prerequisite_id": "Bri_crusader_mk_i",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "Britain",
+   "unit_id": "Bri_deacon_aec",
+   "tier": 2,
+   "rp_cost": 850,
+   "gold_to_train_first": 1600,
+   "prerequisite_id": "Bri_archer",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "Britain",
+   "unit_id": "Bri_spitfire_mk_v",
+   "tier": 2,
+   "rp_cost": 1000,
+   "gold_to_train_first": 2400,
+   "prerequisite_id": "Bri_hurricane_mk_i",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "Britain",
+   "unit_id": "Bri_hurricane_mk_iv",
+   "tier": 2,
+   "rp_cost": 950,
+   "gold_to_train_first": 2200,
+   "prerequisite_id": "Bri_blenheim_mk_iv",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "Britain",
+   "unit_id": "Bri_churchill_mk_iv",
+   "tier": 3,
+   "rp_cost": 2300,
+   "gold_to_train_first": 4900,
+   "prerequisite_id": "Bri_matilda_ii",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "Britain",
+   "unit_id": "Bri_firefly",
+   "tier": 3,
+   "rp_cost": 2200,
+   "gold_to_train_first": 4200,
+   "prerequisite_id": "Bri_archer",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "Britain",
+   "unit_id": "Bri_comet",
+   "tier": 3,
+   "rp_cost": 2000,
+   "gold_to_train_first": 3600,
+   "prerequisite_id": "Bri_cromwell",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "Britain",
+   "unit_id": "Bri_achilles",
+   "tier": 3,
+   "rp_cost": 2100,
+   "gold_to_train_first": 3900,
+   "prerequisite_id": "Bri_firefly",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "Britain",
+   "unit_id": "Bri_crusader_aa_mk_iii",
+   "tier": 3,
+   "rp_cost": 1900,
+   "gold_to_train_first": 3200,
+   "prerequisite_id": "Bri_crusader_aa_mk_i",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "Britain",
+   "unit_id": "Bri_spitfire_mk_ix",
+   "tier": 3,
+   "rp_cost": 2700,
+   "gold_to_train_first": 4300,
+   "prerequisite_id": "Bri_spitfire_mk_v",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "Britain",
+   "unit_id": "Bri_typhoon_mk_ib",
+   "tier": 3,
+   "rp_cost": 2500,
+   "gold_to_train_first": 4100,
+   "prerequisite_id": "Bri_hurricane_mk_iv",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "Britain",
+   "unit_id": "Bri_centurion_mk3",
+   "tier": 4,
+   "rp_cost": 4800,
+   "gold_to_train_first": 6800,
+   "prerequisite_id": "Bri_comet",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "Britain",
+   "unit_id": "Bri_conqueror",
+   "tier": 4,
+   "rp_cost": 5200,
+   "gold_to_train_first": 7500,
+   "prerequisite_id": "Bri_churchill_mk_iv",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "Britain",
+   "unit_id": "Bri_chieftain_mk5",
+   "tier": 4,
+   "rp_cost": 5400,
+   "gold_to_train_first": 7800,
+   "prerequisite_id": "Bri_conqueror",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "Britain",
+   "unit_id": "Bri_fv4005",
+   "tier": 4,
+   "rp_cost": 4800,
+   "gold_to_train_first": 7000,
+   "prerequisite_id": "Bri_firefly",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "Britain",
+   "unit_id": "Bri_marksman_aa",
+   "tier": 4,
+   "rp_cost": 4400,
+   "gold_to_train_first": 6400,
+   "prerequisite_id": "Bri_crusader_aa_mk_i",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "Britain",
+   "unit_id": "Bri_harrier_gr1",
+   "tier": 4,
+   "rp_cost": 5500,
+   "gold_to_train_first": 7200,
+   "prerequisite_id": "Bri_spitfire_mk_ix",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "Britain",
+   "unit_id": "Bri_phantom_fgr2",
+   "tier": 4,
+   "rp_cost": 5500,
+   "gold_to_train_first": 7000,
+   "prerequisite_id": "Bri_spitfire_mk_ix",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "Britain",
+   "unit_id": "Bri_challenger_2",
+   "tier": 5,
+   "rp_cost": 11000,
+   "gold_to_train_first": 13500,
+   "prerequisite_id": "Bri_conqueror",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "Britain",
+   "unit_id": "Bri_challenger_2_tes",
+   "tier": 5,
+   "rp_cost": 13000,
+   "gold_to_train_first": 16000,
+   "prerequisite_id": "Bri_challenger_2",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "Britain",
+   "unit_id": "Bri_warrior_ifv",
+   "tier": 5,
+   "rp_cost": 9000,
+   "gold_to_train_first": 11000,
+   "prerequisite_id": "Bri_centurion_mk3",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "Britain",
+   "unit_id": "Bri_as_90_braveheart",
+   "tier": 5,
+   "rp_cost": 10000,
+   "gold_to_train_first": 12500,
+   "prerequisite_id": "Bri_fv4005",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "Britain",
+   "unit_id": "Bri_stormer_hvm",
+   "tier": 5,
+   "rp_cost": 9500,
+   "gold_to_train_first": 11500,
+   "prerequisite_id": "Bri_marksman_aa",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "Britain",
+   "unit_id": "Bri_typhoon_fgr4",
+   "tier": 5,
+   "rp_cost": 13000,
+   "gold_to_train_first": 16000,
+   "prerequisite_id": "Bri_phantom_fgr2",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "Britain",
+   "unit_id": "Bri_apache_ah1",
+   "tier": 5,
+   "rp_cost": 11500,
+   "gold_to_train_first": 14500,
+   "prerequisite_id": "Bri_typhoon_fgr4",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "Japan",
+   "unit_id": "Jap_type_94_tk",
+   "tier": 1,
+   "rp_cost": 200,
+   "gold_to_train_first": 500,
+   "prerequisite_id": null,
+   "prerequisite_rule": "None - first vehicle"
+  },
+  {
+   "nation": "Japan",
+   "unit_id": "Jap_type_97_te_ke",
+   "tier": 1,
+   "rp_cost": 300,
+   "gold_to_train_first": 650,
+   "prerequisite_id": "Jap_type_94_tk",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "Japan",
+   "unit_id": "Jap_type_89_i_go",
+   "tier": 1,
+   "rp_cost": 400,
+   "gold_to_train_first": 800,
+   "prerequisite_id": "Jap_type_94_tk",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "Japan",
+   "unit_id": "Jap_type_94_37mm_aa",
+   "tier": 1,
+   "rp_cost": 400,
+   "gold_to_train_first": 750,
+   "prerequisite_id": "Jap_type_94_tk",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "Japan",
+   "unit_id": "Jap_type_92_jyu_sokosha",
+   "tier": 1,
+   "rp_cost": 450,
+   "gold_to_train_first": 900,
+   "prerequisite_id": "Jap_type_94_tk",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "Japan",
+   "unit_id": "Jap_a5m_claude",
+   "tier": 1,
+   "rp_cost": 500,
+   "gold_to_train_first": 1100,
+   "prerequisite_id": "Jap_type_94_tk",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "Japan",
+   "unit_id": "Jap_b5n_kate",
+   "tier": 1,
+   "rp_cost": 500,
+   "gold_to_train_first": 1100,
+   "prerequisite_id": "Jap_a5m_claude",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "Japan",
+   "unit_id": "Jap_type_97_chi_ha",
+   "tier": 2,
+   "rp_cost": 850,
+   "gold_to_train_first": 1800,
+   "prerequisite_id": null,
+   "prerequisite_rule": "Any Tier I vehicle"
+  },
+  {
+   "nation": "Japan",
+   "unit_id": "Jap_ho_ni_iii",
+   "tier": 2,
+   "rp_cost": 900,
+   "gold_to_train_first": 1700,
+   "prerequisite_id": "Jap_type_97_chi_ha",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "Japan",
+   "unit_id": "Jap_type_95_ha_go",
+   "tier": 2,
+   "rp_cost": 800,
+   "gold_to_train_first": 1500,
+   "prerequisite_id": "Jap_type_94_tk",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "Japan",
+   "unit_id": "Jap_type_98_ke_ni",
+   "tier": 2,
+   "rp_cost": 850,
+   "gold_to_train_first": 1600,
+   "prerequisite_id": "Jap_type_95_ha_go",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "Japan",
+   "unit_id": "Jap_type_88_75mm_aa",
+   "tier": 2,
+   "rp_cost": 900,
+   "gold_to_train_first": 1700,
+   "prerequisite_id": "Jap_type_94_37mm_aa",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "Japan",
+   "unit_id": "Jap_ki_43_hayabusa",
+   "tier": 2,
+   "rp_cost": 1000,
+   "gold_to_train_first": 2300,
+   "prerequisite_id": "Jap_a5m_claude",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "Japan",
+   "unit_id": "Jap_d3a_val",
+   "tier": 2,
+   "rp_cost": 950,
+   "gold_to_train_first": 2100,
+   "prerequisite_id": "Jap_b5n_kate",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "Japan",
+   "unit_id": "Jap_type_3_chi_nu",
+   "tier": 3,
+   "rp_cost": 2000,
+   "gold_to_train_first": 3500,
+   "prerequisite_id": "Jap_type_97_chi_ha",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "Japan",
+   "unit_id": "Jap_type_5_chi_ri",
+   "tier": 3,
+   "rp_cost": 2200,
+   "gold_to_train_first": 3900,
+   "prerequisite_id": "Jap_type_3_chi_nu",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "Japan",
+   "unit_id": "Jap_ho_ni_i",
+   "tier": 3,
+   "rp_cost": 2000,
+   "gold_to_train_first": 3600,
+   "prerequisite_id": "Jap_ho_ni_iii",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "Japan",
+   "unit_id": "Jap_type_4_chi_to",
+   "tier": 3,
+   "rp_cost": 2100,
+   "gold_to_train_first": 3700,
+   "prerequisite_id": "Jap_type_3_chi_nu",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "Japan",
+   "unit_id": "Jap_type_98_20mm_aa",
+   "tier": 3,
+   "rp_cost": 1800,
+   "gold_to_train_first": 3000,
+   "prerequisite_id": "Jap_type_88_75mm_aa",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "Japan",
+   "unit_id": "Jap_n1k2_shiden_kai",
+   "tier": 3,
+   "rp_cost": 2700,
+   "gold_to_train_first": 4300,
+   "prerequisite_id": "Jap_ki_43_hayabusa",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "Japan",
+   "unit_id": "Jap_ki_84_hayate",
+   "tier": 3,
+   "rp_cost": 2600,
+   "gold_to_train_first": 4100,
+   "prerequisite_id": "Jap_d3a_val",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "Japan",
+   "unit_id": "Jap_type_61",
+   "tier": 4,
+   "rp_cost": 4500,
+   "gold_to_train_first": 6500,
+   "prerequisite_id": "Jap_type_5_chi_ri",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "Japan",
+   "unit_id": "Jap_type_74",
+   "tier": 4,
+   "rp_cost": 4800,
+   "gold_to_train_first": 6800,
+   "prerequisite_id": "Jap_type_61",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "Japan",
+   "unit_id": "Jap_type_60_atm",
+   "tier": 4,
+   "rp_cost": 4500,
+   "gold_to_train_first": 6500,
+   "prerequisite_id": "Jap_ho_ni_i",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "Japan",
+   "unit_id": "Jap_type_87_aw",
+   "tier": 4,
+   "rp_cost": 4300,
+   "gold_to_train_first": 6300,
+   "prerequisite_id": "Jap_type_98_20mm_aa",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "Japan",
+   "unit_id": "Jap_type_75_sph",
+   "tier": 4,
+   "rp_cost": 4600,
+   "gold_to_train_first": 6700,
+   "prerequisite_id": "Jap_ho_ni_i",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "Japan",
+   "unit_id": "Jap_f_1_mitsubishi",
+   "tier": 4,
+   "rp_cost": 5200,
+   "gold_to_train_first": 7000,
+   "prerequisite_id": "Jap_ki_84_hayate",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "Japan",
+   "unit_id": "Jap_oh_1_ninja",
+   "tier": 4,
+   "rp_cost": 5000,
+   "gold_to_train_first": 7800,
+   "prerequisite_id": "Jap_f_1_mitsubishi",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "Japan",
+   "unit_id": "Jap_type_90",
+   "tier": 5,
+   "rp_cost": 10500,
+   "gold_to_train_first": 13000,
+   "prerequisite_id": "Jap_type_74",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "Japan",
+   "unit_id": "Jap_type_10",
+   "tier": 5,
+   "rp_cost": 12000,
+   "gold_to_train_first": 15000,
+   "prerequisite_id": "Jap_type_90",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "Japan",
+   "unit_id": "Jap_type_16_mcv",
+   "tier": 5,
+   "rp_cost": 9500,
+   "gold_to_train_first": 11500,
+   "prerequisite_id": "Jap_type_60_atm",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "Japan",
+   "unit_id": "Jap_type_99_sph",
+   "tier": 5,
+   "rp_cost": 10000,
+   "gold_to_train_first": 12500,
+   "prerequisite_id": "Jap_type_75_sph",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "Japan",
+   "unit_id": "Jap_type_93_shorad",
+   "tier": 5,
+   "rp_cost": 9500,
+   "gold_to_train_first": 11500,
+   "prerequisite_id": "Jap_type_87_aw",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "Japan",
+   "unit_id": "Jap_f_15j_eagle",
+   "tier": 5,
+   "rp_cost": 13000,
+   "gold_to_train_first": 16000,
+   "prerequisite_id": "Jap_f_1_mitsubishi",
+   "prerequisite_rule": null
+  },
+  {
+   "nation": "Japan",
+   "unit_id": "Jap_ah_64djp_apache",
+   "tier": 5,
+   "rp_cost": 11500,
+   "gold_to_train_first": 14500,
+   "prerequisite_id": "Jap_oh_1_ninja",
+   "prerequisite_rule": null
+  }
+ ]
+}

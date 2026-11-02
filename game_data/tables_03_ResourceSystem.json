@@ -1,0 +1,660 @@
+{
+ "Resource Overview": {
+  "Three resources: Gold (currency) | Oil (vehicle fuel) | Steel (construction)": [
+   {
+    "Resource": "Gold",
+    "Symbol": "G",
+    "Primary Role": "Universal currency",
+    "Earned By": "Passive collectors + raiding bases",
+    "Spent On": "Training units, upgrades, speed-ups",
+    "Stored In": "Gold Vault"
+   },
+   {
+    "Resource": "Oil",
+    "Symbol": "O",
+    "Primary Role": "Vehicle fuel - gates raids",
+    "Earned By": "Oil Derricks + raiding",
+    "Spent On": "Deploying vehicles per raid",
+    "Stored In": "Oil Tank"
+   },
+   {
+    "Resource": "Steel",
+    "Symbol": "S",
+    "Primary Role": "Construction material",
+    "Earned By": "Steel Mills + raiding",
+    "Spent On": "Building and upgrading structures",
+    "Stored In": "Steel Depot"
+   }
+  ],
+  "_notes": {
+   "Gold is king": "Gold does everything - training, building, upgrading. Collectors are slow; raiding is the fast path. Creates PvP pressure naturally.",
+   "Oil creates real stakes": "Oil is consumed every time you deploy vehicles on a raid. No Oil = no attack. A well-raided base loses its ability to retaliate. Forces active play.",
+   "Steel is the long game": "Steel upgrades are expensive and slow. A base with maxed Steel Depots is a high-value target. Supply lines matter.",
+   "Steal percentages": "Attacker steals 20% Gold, 25% Oil (most exposed), 15% Steel of the LOOTABLE amount in storage, limited by the Loot Cap for the defender's CC (see Economy Monetization workbook). Oil Tanks have the lowest HP.",
+   "No premium resource": "Gold, Oil and Steel are earned through play only. A premium currency (War Bonds) is added in the Economy and Monetization workbook; it never replaces earned resources."
+  }
+ },
+ "Passive Generation": {
+  "GOLD MINE": [
+   {
+    "Level": "Lv 1",
+    "Gen per Hr": 200,
+    "Local Storage": 2000,
+    "Upgrade Cost G": 500,
+    "Upgrade Time": "5 min",
+    "HP": 400,
+    "Designer Note": "Starting collector."
+   },
+   {
+    "Level": "Lv 2",
+    "Gen per Hr": 400,
+    "Local Storage": 4000,
+    "Upgrade Cost G": 1000,
+    "Upgrade Time": "30 min",
+    "HP": 600,
+    "Designer Note": "Doubles output."
+   },
+   {
+    "Level": "Lv 3",
+    "Gen per Hr": 800,
+    "Local Storage": 8000,
+    "Upgrade Cost G": 2500,
+    "Upgrade Time": "2 hr",
+    "HP": 800,
+    "Designer Note": "Gold shaft animation upgrade."
+   },
+   {
+    "Level": "Lv 4",
+    "Gen per Hr": 1600,
+    "Local Storage": 16000,
+    "Upgrade Cost G": 6000,
+    "Upgrade Time": "6 hr",
+    "HP": 1000,
+    "Designer Note": "Attracting raider attention."
+   },
+   {
+    "Level": "Lv 5",
+    "Gen per Hr": 3200,
+    "Local Storage": 32000,
+    "Upgrade Cost G": 12000,
+    "Upgrade Time": "12 hr",
+    "HP": 1200,
+    "Designer Note": null
+   },
+   {
+    "Level": "Lv 6",
+    "Gen per Hr": 6000,
+    "Local Storage": 60000,
+    "Upgrade Cost G": 25000,
+    "Upgrade Time": "1 day",
+    "HP": 1400,
+    "Designer Note": null
+   },
+   {
+    "Level": "Lv 7",
+    "Gen per Hr": 10000,
+    "Local Storage": 100000,
+    "Upgrade Cost G": 50000,
+    "Upgrade Time": "2 days",
+    "HP": 1600,
+    "Designer Note": null
+   },
+   {
+    "Level": "Lv 8",
+    "Gen per Hr": 16000,
+    "Local Storage": 160000,
+    "Upgrade Cost G": 100000,
+    "Upgrade Time": "4 days",
+    "HP": 1800,
+    "Designer Note": "Max level. Prime raid target."
+   }
+  ],
+  "OIL DERRICK": [
+   {
+    "Level": "Lv 1",
+    "Gen per Hr": 150,
+    "Local Storage": 1500,
+    "Upgrade Cost G": 400,
+    "Upgrade Time": "5 min",
+    "HP": 350,
+    "Designer Note": "Slowest - Oil is scarce by design."
+   },
+   {
+    "Level": "Lv 2",
+    "Gen per Hr": 280,
+    "Local Storage": 2800,
+    "Upgrade Cost G": 800,
+    "Upgrade Time": "30 min",
+    "HP": 500,
+    "Designer Note": null
+   },
+   {
+    "Level": "Lv 3",
+    "Gen per Hr": 500,
+    "Local Storage": 5000,
+    "Upgrade Cost G": 2000,
+    "Upgrade Time": "2 hr",
+    "HP": 650,
+    "Designer Note": "Pump jack animation upgrade."
+   },
+   {
+    "Level": "Lv 4",
+    "Gen per Hr": 900,
+    "Local Storage": 9000,
+    "Upgrade Cost G": 4500,
+    "Upgrade Time": "6 hr",
+    "HP": 800,
+    "Designer Note": null
+   },
+   {
+    "Level": "Lv 5",
+    "Gen per Hr": 1600,
+    "Local Storage": 16000,
+    "Upgrade Cost G": 9000,
+    "Upgrade Time": "12 hr",
+    "HP": 950,
+    "Designer Note": null
+   },
+   {
+    "Level": "Lv 6",
+    "Gen per Hr": 2800,
+    "Local Storage": 28000,
+    "Upgrade Cost G": 18000,
+    "Upgrade Time": "1 day",
+    "HP": 1100,
+    "Designer Note": null
+   },
+   {
+    "Level": "Lv 7",
+    "Gen per Hr": 4500,
+    "Local Storage": 45000,
+    "Upgrade Cost G": 35000,
+    "Upgrade Time": "2 days",
+    "HP": 1250,
+    "Designer Note": null
+   },
+   {
+    "Level": "Lv 8",
+    "Gen per Hr": 7000,
+    "Local Storage": 70000,
+    "Upgrade Cost G": 70000,
+    "Upgrade Time": "4 days",
+    "HP": 1400,
+    "Designer Note": "Max. Lowest HP - easiest raid target."
+   }
+  ],
+  "STEEL MILL": [
+   {
+    "Level": "Lv 1",
+    "Gen per Hr": 100,
+    "Local Storage": 1000,
+    "Upgrade Cost G": 600,
+    "Upgrade Time": "5 min",
+    "HP": 450,
+    "Designer Note": "Slowest resource - for big builds only."
+   },
+   {
+    "Level": "Lv 2",
+    "Gen per Hr": 200,
+    "Local Storage": 2000,
+    "Upgrade Cost G": 1200,
+    "Upgrade Time": "30 min",
+    "HP": 650,
+    "Designer Note": null
+   },
+   {
+    "Level": "Lv 3",
+    "Gen per Hr": 380,
+    "Local Storage": 3800,
+    "Upgrade Cost G": 3000,
+    "Upgrade Time": "2 hr",
+    "HP": 850,
+    "Designer Note": "Furnace glow animation upgrade."
+   },
+   {
+    "Level": "Lv 4",
+    "Gen per Hr": 700,
+    "Local Storage": 7000,
+    "Upgrade Cost G": 7000,
+    "Upgrade Time": "6 hr",
+    "HP": 1050,
+    "Designer Note": null
+   },
+   {
+    "Level": "Lv 5",
+    "Gen per Hr": 1200,
+    "Local Storage": 12000,
+    "Upgrade Cost G": 14000,
+    "Upgrade Time": "12 hr",
+    "HP": 1250,
+    "Designer Note": null
+   },
+   {
+    "Level": "Lv 6",
+    "Gen per Hr": 2000,
+    "Local Storage": 20000,
+    "Upgrade Cost G": 28000,
+    "Upgrade Time": "1 day",
+    "HP": 1450,
+    "Designer Note": null
+   },
+   {
+    "Level": "Lv 7",
+    "Gen per Hr": 3200,
+    "Local Storage": 32000,
+    "Upgrade Cost G": 55000,
+    "Upgrade Time": "2 days",
+    "HP": 1650,
+    "Designer Note": null
+   },
+   {
+    "Level": "Lv 8",
+    "Gen per Hr": 5000,
+    "Local Storage": 50000,
+    "Upgrade Cost G": 110000,
+    "Upgrade Time": "4 days",
+    "HP": 1850,
+    "Designer Note": "Max. Highest upgrade cost building."
+   }
+  ]
+ },
+ "Storage Buildings": {
+  "GOLD VAULT - Steal Rate: 20%": [
+   {
+    "Level": "Lv 1",
+    "Max Capacity": 20000,
+    "Building HP": 800,
+    "Upgrade Cost G": 2000,
+    "Upgrade Time": "5 min",
+    "Designer Note": "Holds early overflow."
+   },
+   {
+    "Level": "Lv 2",
+    "Max Capacity": 50000,
+    "Building HP": 1400,
+    "Upgrade Cost G": 5000,
+    "Upgrade Time": "1 hr",
+    "Designer Note": null
+   },
+   {
+    "Level": "Lv 3",
+    "Max Capacity": 120000,
+    "Building HP": 2200,
+    "Upgrade Cost G": 12000,
+    "Upgrade Time": "4 hr",
+    "Designer Note": null
+   },
+   {
+    "Level": "Lv 4",
+    "Max Capacity": 300000,
+    "Building HP": 3200,
+    "Upgrade Cost G": 28000,
+    "Upgrade Time": "12 hr",
+    "Designer Note": null
+   },
+   {
+    "Level": "Lv 5",
+    "Max Capacity": 700000,
+    "Building HP": 4500,
+    "Upgrade Cost G": 65000,
+    "Upgrade Time": "1 day",
+    "Designer Note": null
+   },
+   {
+    "Level": "Lv 6",
+    "Max Capacity": 1500000,
+    "Building HP": 6000,
+    "Upgrade Cost G": 140000,
+    "Upgrade Time": "2 days",
+    "Designer Note": null
+   },
+   {
+    "Level": "Lv 7",
+    "Max Capacity": 3000000,
+    "Building HP": 8000,
+    "Upgrade Cost G": 300000,
+    "Upgrade Time": "3 days",
+    "Designer Note": null
+   },
+   {
+    "Level": "Lv 8",
+    "Max Capacity": 6000000,
+    "Building HP": 10000,
+    "Upgrade Cost G": 600000,
+    "Upgrade Time": "5 days",
+    "Designer Note": "Max vault. End-game raid target."
+   }
+  ],
+  "OIL TANK - Steal Rate: 25%": [
+   {
+    "Level": "Lv 1",
+    "Max Capacity": 15000,
+    "Building HP": 500,
+    "Upgrade Cost G": 1500,
+    "Upgrade Time": "5 min",
+    "Designer Note": "Lowest HP storage - Oil is meant to be raided."
+   },
+   {
+    "Level": "Lv 2",
+    "Max Capacity": 35000,
+    "Building HP": 900,
+    "Upgrade Cost G": 3500,
+    "Upgrade Time": "1 hr",
+    "Designer Note": null
+   },
+   {
+    "Level": "Lv 3",
+    "Max Capacity": 80000,
+    "Building HP": 1400,
+    "Upgrade Cost G": 8000,
+    "Upgrade Time": "4 hr",
+    "Designer Note": null
+   },
+   {
+    "Level": "Lv 4",
+    "Max Capacity": 180000,
+    "Building HP": 2000,
+    "Upgrade Cost G": 18000,
+    "Upgrade Time": "12 hr",
+    "Designer Note": null
+   },
+   {
+    "Level": "Lv 5",
+    "Max Capacity": 400000,
+    "Building HP": 2800,
+    "Upgrade Cost G": 40000,
+    "Upgrade Time": "1 day",
+    "Designer Note": null
+   },
+   {
+    "Level": "Lv 6",
+    "Max Capacity": 800000,
+    "Building HP": 3800,
+    "Upgrade Cost G": 85000,
+    "Upgrade Time": "2 days",
+    "Designer Note": null
+   },
+   {
+    "Level": "Lv 7",
+    "Max Capacity": 1600000,
+    "Building HP": 5000,
+    "Upgrade Cost G": 180000,
+    "Upgrade Time": "3 days",
+    "Designer Note": null
+   },
+   {
+    "Level": "Lv 8",
+    "Max Capacity": 3000000,
+    "Building HP": 6500,
+    "Upgrade Cost G": 350000,
+    "Upgrade Time": "5 days",
+    "Designer Note": "Max. Highest steal rate at 25%."
+   }
+  ],
+  "STEEL DEPOT - Steal Rate: 15%": [
+   {
+    "Level": "Lv 1",
+    "Max Capacity": 10000,
+    "Building HP": 700,
+    "Upgrade Cost G": 2500,
+    "Upgrade Time": "5 min",
+    "Designer Note": "Slow to fill - Steel is long-term."
+   },
+   {
+    "Level": "Lv 2",
+    "Max Capacity": 25000,
+    "Building HP": 1200,
+    "Upgrade Cost G": 6000,
+    "Upgrade Time": "1 hr",
+    "Designer Note": null
+   },
+   {
+    "Level": "Lv 3",
+    "Max Capacity": 60000,
+    "Building HP": 1900,
+    "Upgrade Cost G": 14000,
+    "Upgrade Time": "4 hr",
+    "Designer Note": null
+   },
+   {
+    "Level": "Lv 4",
+    "Max Capacity": 140000,
+    "Building HP": 2800,
+    "Upgrade Cost G": 32000,
+    "Upgrade Time": "12 hr",
+    "Designer Note": null
+   },
+   {
+    "Level": "Lv 5",
+    "Max Capacity": 320000,
+    "Building HP": 4000,
+    "Upgrade Cost G": 70000,
+    "Upgrade Time": "1 day",
+    "Designer Note": null
+   },
+   {
+    "Level": "Lv 6",
+    "Max Capacity": 700000,
+    "Building HP": 5500,
+    "Upgrade Cost G": 150000,
+    "Upgrade Time": "2 days",
+    "Designer Note": null
+   },
+   {
+    "Level": "Lv 7",
+    "Max Capacity": 1500000,
+    "Building HP": 7200,
+    "Upgrade Cost G": 320000,
+    "Upgrade Time": "3 days",
+    "Designer Note": null
+   },
+   {
+    "Level": "Lv 8",
+    "Max Capacity": 3000000,
+    "Building HP": 9000,
+    "Upgrade Cost G": 650000,
+    "Upgrade Time": "5 days",
+    "Designer Note": "Max. Lowest steal rate at 15%."
+   }
+  ]
+ },
+ "Raid Economy": {
+  "STEAL RATES (of lootable storage)": [
+   {
+    "Resource": "Gold",
+    "Steal %": "20%",
+    "Example (1M lootable)": "200,000 Gold stolen",
+    "Storage Building": "Gold Vault",
+    "Design Reason": "Standard rate. Hurts but not catastrophic from a single raid."
+   },
+   {
+    "Resource": "Oil",
+    "Steal %": "25%",
+    "Example (1M lootable)": "250,000 Oil stolen",
+    "Storage Building": "Oil Tank",
+    "Design Reason": "Highest rate and lowest HP storage. Cripples raid capacity fast."
+   },
+   {
+    "Resource": "Steel",
+    "Steal %": "15%",
+    "Example (1M lootable)": "150,000 Steel stolen",
+    "Storage Building": "Steel Depot",
+    "Design Reason": "Lowest rate. Losing too much Steel would kill late-game progression."
+   }
+  ],
+  "OIL PER DEPLOYED UNIT (rule replaces the old partial table)": [
+   {
+    "Unit Class": "Light Tank",
+    "Oil factor x Gold cost": 0.65,
+    "Housing": 2,
+    "Oil range Tier I": "40-60",
+    "Oil range Tier V": "470-490"
+   },
+   {
+    "Unit Class": "Medium Tank",
+    "Oil factor x Gold cost": 0.6,
+    "Housing": 5,
+    "Oil range Tier I": "70-95",
+    "Oil range Tier V": "n/a"
+   },
+   {
+    "Unit Class": "Heavy Tank",
+    "Oil factor x Gold cost": 0.58,
+    "Housing": 8,
+    "Oil range Tier I": "160",
+    "Oil range Tier V": "580-695"
+   },
+   {
+    "Unit Class": "Tank Destroyer",
+    "Oil factor x Gold cost": 0.62,
+    "Housing": 5,
+    "Oil range Tier I": "70",
+    "Oil range Tier V": "495-545"
+   },
+   {
+    "Unit Class": "SPG",
+    "Oil factor x Gold cost": 0.6,
+    "Housing": 6,
+    "Oil range Tier I": "50-95",
+    "Oil range Tier V": "590-630"
+   },
+   {
+    "Unit Class": "AA Tank",
+    "Oil factor x Gold cost": 0.5,
+    "Housing": 4,
+    "Oil range Tier I": "30-70",
+    "Oil range Tier V": "400-475"
+   },
+   {
+    "Unit Class": "Fighter",
+    "Oil factor x Gold cost": 0.6,
+    "Housing": 5,
+    "Oil range Tier I": "110-145",
+    "Oil range Tier V": "n/a"
+   },
+   {
+    "Unit Class": "Ground Attack",
+    "Oil factor x Gold cost": 0.7,
+    "Housing": 6,
+    "Oil range Tier I": "155-320",
+    "Oil range Tier V": "n/a"
+   },
+   {
+    "Unit Class": "Bomber",
+    "Oil factor x Gold cost": 0.7,
+    "Housing": 8,
+    "Oil range Tier I": "170-195",
+    "Oil range Tier V": "n/a"
+   },
+   {
+    "Unit Class": "Jet Fighter",
+    "Oil factor x Gold cost": 0.75,
+    "Housing": 8,
+    "Oil range Tier I": "n/a",
+    "Oil range Tier V": "790-900"
+   },
+   {
+    "Unit Class": "Jet Attack",
+    "Oil factor x Gold cost": 0.75,
+    "Housing": 9,
+    "Oil range Tier I": "n/a",
+    "Oil range Tier V": "750-825"
+   },
+   {
+    "Unit Class": "Helicopter",
+    "Oil factor x Gold cost": 0.7,
+    "Housing": 8,
+    "Oil range Tier I": "n/a",
+    "Oil range Tier V": "645-650"
+   }
+  ],
+  "RAID WIN CONDITIONS": [
+   {
+    "Outcome": "Perfect Victory",
+    "Condition": "Destroy 100% of base",
+    "Resources Stolen": "Full steal",
+    "Oil Refund": "Full refund",
+    "Trophy Change": "+30"
+   },
+   {
+    "Outcome": "Major Victory",
+    "Condition": "Destroy 75% or more",
+    "Resources Stolen": "Full steal",
+    "Oil Refund": "50% refund",
+    "Trophy Change": "+20"
+   },
+   {
+    "Outcome": "Victory",
+    "Condition": "Destroy Command Center",
+    "Resources Stolen": "Full steal",
+    "Oil Refund": "25% refund",
+    "Trophy Change": "+15"
+   },
+   {
+    "Outcome": "Partial Victory",
+    "Condition": "Destroy 50% or more of buildings",
+    "Resources Stolen": "50% of steal",
+    "Oil Refund": "No refund",
+    "Trophy Change": "+5"
+   },
+   {
+    "Outcome": "Defeat",
+    "Condition": "Less than 50% of base destroyed",
+    "Resources Stolen": "No steal",
+    "Oil Refund": "No refund",
+    "Trophy Change": "-10"
+   },
+   {
+    "Outcome": "Timeout",
+    "Condition": "Time expired before 50% destroyed",
+    "Resources Stolen": "No steal",
+    "Oil Refund": "No refund",
+    "Trophy Change": "-5"
+   }
+  ]
+ },
+ "Balance Notes": {
+  "ECONOMY BALANCE - Design Rules and Anti-Exploit Systems": [
+   {
+    "Rule": "Shield System",
+    "Rationale": "After being raided: 12-hour shield. Cannot be raided but also cannot attack others. Attacking manually breaks shield early. Prevents shield-farming."
+   },
+   {
+    "Rule": "Raid Matchmaking",
+    "Rationale": "Players matched within 20% of total stored resource value. Trophy system provides secondary layer. Prevents rich players farming beginners."
+   },
+   {
+    "Rule": "Loot Cap and Protected Storage",
+    "Rationale": "Loot per raid = min(steal% x lootable amount, Loot Cap for defender CC). Each storage building protects 10% of its capacity (never lootable). Replaces the old '10% of reserves' cap, which contradicted the 20/25/15% steal rates."
+   },
+   {
+    "Rule": "Oil Debt Prevention",
+    "Rationale": "If player has less than 500 Oil they cannot be raided for Oil. Prevents players being permanently locked out of raiding."
+   },
+   {
+    "Rule": "New Player Peace Shield",
+    "Rationale": "3-day peace shield on new account. Passive income only. Lets players build before PvP exposure."
+   },
+   {
+    "Rule": "Diminishing Returns",
+    "Rationale": "Raiding same player twice in 24 hrs: steal drops 50%. Third raid: drops to 10%. Prevents targeted griefing."
+   },
+   {
+    "Rule": "Resource Overflow Spoilage",
+    "Rationale": "Collectors stop at 150% of local storage capacity. Encourages daily logins. Prevents total AFK farming."
+   },
+   {
+    "Rule": "Black Market Gold Sink",
+    "Rationale": "Excess Gold can buy small Oil or Steel packages at premium rate. Prevents Gold hoarding and helps resource-poor players recover."
+   },
+   {
+    "Rule": "War Spoils Streak Bonus",
+    "Rationale": "5 wins in a row grants 25% bonus steal on 6th raid. Rewards active attackers. Streak resets on any defeat or timeout."
+   },
+   {
+    "Rule": "Collector HP Design",
+    "Rationale": "Destroying a collector in a raid disables it for 30 min repair time. Intentional - economic warfare is a valid strategy alongside direct destruction."
+   }
+  ]
+ }
+}

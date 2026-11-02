@@ -1,0 +1,1843 @@
+{
+ "System Overview": {
+  "Each nation has its own independent tech tree. Tiers are gated by time, resources, and trophies.": [
+   {
+    "TOPIC": "Nation Trees",
+    "RULE": "5 nations each have a separate tech tree. Players unlock each nation independently. Progress is never lost when switching."
+   },
+   {
+    "TOPIC": "Starting Nation",
+    "RULE": "Player picks one nation at account creation. That nation starts with Tier I free. All other nations must be unlocked from Tier I upward."
+   },
+   {
+    "TOPIC": "Tier Gates",
+    "RULE": "Each tier requires all four: Command Center and Research Lab at required level, Gold and Steel cost paid, trophy count reached, and unlock time waited."
+   },
+   {
+    "TOPIC": "Individual Vehicles",
+    "RULE": "Within an unlocked tier, vehicles are unlocked one at a time using Research Points. Players choose which vehicles to research first within the tier."
+   },
+   {
+    "TOPIC": "Research Points",
+    "RULE": "RP is a soft currency earned through gameplay only and is never sold. Each vehicle costs a set RP amount. RP earn rate scales with Command Center level (see RP Earn Rates tab)."
+   },
+   {
+    "TOPIC": "Tier Prerequisite",
+    "RULE": "Cannot unlock Tier III without completing Tier II. All vehicles in a tier must be researched before the next tier opens."
+   },
+   {
+    "TOPIC": "Nation Bonus",
+    "RULE": "Each nation grants a passive bonus to all its vehicles. Germany +15% armor. USSR +20% HP. USA +15% air. Britain +10% TD range. Japan +20% speed."
+   },
+   {
+    "TOPIC": "Prestige",
+    "RULE": "After maxing all 5 tiers, players can Prestige. Resets the tree but grants permanent +5% stat bonus and unique cosmetic flag."
+   },
+   {
+    "TOPIC": "Multi-Nation",
+    "RULE": "Players can run multiple nations simultaneously. A base can field vehicles from any unlocked nation. Encourages long-term investment."
+   },
+   {
+    "TOPIC": "Dark Barracks Gate",
+    "RULE": "Tier V needs ALL of: Command Center Lv9, Research Lab Lv5, and a Dark Barracks. Dark Barracks can be built at CC8 but Tier V units cannot be trained until CC9."
+   },
+   {
+    "TOPIC": "Unit names",
+    "RULE": "Names on these tabs match the Unit Roster workbook exactly. Roster is the source of truth."
+   }
+  ]
+ },
+ "Tier Unlock Costs": {
+  "Same costs apply to each nation. First nation Tier I is free. All other unlocks require all gates to be met.": [
+   {
+    "Tier": "TIER I Early War",
+    "CC Required": "CC1",
+    "Research Lab": "Lv 1",
+    "Trophies": "0 (free for starting nation)",
+    "Gold Cost": 0,
+    "Steel Cost": 0,
+    "Unlock Time": "Instant",
+    "Nation": "All nations",
+    "Note": "Free for chosen nation. Others pay 500 RP to activate."
+   },
+   {
+    "Tier": "TIER II Mid War",
+    "CC Required": "CC3",
+    "Research Lab": "Lv 2",
+    "Trophies": "100 trophies",
+    "Gold Cost": 50000,
+    "Steel Cost": 15000,
+    "Unlock Time": "4 hr",
+    "Nation": "All nations",
+    "Note": "First real gate. Requires some raiding progress."
+   },
+   {
+    "Tier": "TIER III Late War",
+    "CC Required": "CC5",
+    "Research Lab": "Lv 3",
+    "Trophies": "500 trophies",
+    "Gold Cost": 250000,
+    "Steel Cost": 80000,
+    "Unlock Time": "1 day",
+    "Nation": "All nations",
+    "Note": "Late War era. Significant resource investment."
+   },
+   {
+    "Tier": "TIER IV Cold War",
+    "CC Required": "CC7",
+    "Research Lab": "Lv 4",
+    "Trophies": "1500 trophies",
+    "Gold Cost": 1000000,
+    "Steel Cost": 350000,
+    "Unlock Time": "2 days",
+    "Nation": "All nations",
+    "Note": "Cold War gate. Requires established mid-game base."
+   },
+   {
+    "Tier": "TIER V Modern Era",
+    "CC Required": "CC9 + Dark Barracks",
+    "Research Lab": "Lv 5",
+    "Trophies": "3000 trophies",
+    "Gold Cost": 4000000,
+    "Steel Cost": 1500000,
+    "Unlock Time": "4 days",
+    "Nation": "All nations",
+    "Note": "Modern era. Hard gate. Needs CC9 (not CC8) so it agrees with the Buildings workbook; Dark Barracks itself is built at CC8."
+   }
+  ]
+ },
+ "RP Earn Rates": {
+  "RP is earned through gameplay only. Yellow cells are editable inputs; everything below recalculates.": [
+   {
+    "Activity": "Perfect Victory raid 100%",
+    "RP Earned (base)": 150,
+    "Frequency": "Per raid",
+    "Designer Note": "Best RP source. Rewards aggressive complete raids.",
+    "col4": null
+   },
+   {
+    "Activity": "Major Victory raid 75% or more",
+    "RP Earned (base)": 100,
+    "Frequency": "Per raid",
+    "Designer Note": "Still strong for near-perfect raids.",
+    "col4": null
+   },
+   {
+    "Activity": "Victory - destroy Command Center",
+    "RP Earned (base)": 75,
+    "Frequency": "Per raid",
+    "Designer Note": "Core reward for successful raids.",
+    "col4": null
+   },
+   {
+    "Activity": "Partial Victory 50% or more",
+    "RP Earned (base)": 40,
+    "Frequency": "Per raid",
+    "Designer Note": "Small reward. Encourages finishing.",
+    "col4": null
+   },
+   {
+    "Activity": "Successfully defend your base",
+    "RP Earned (base)": 50,
+    "Frequency": "Per defense",
+    "Designer Note": "Passive RP. Rewards building a strong base.",
+    "col4": null
+   },
+   {
+    "Activity": "Daily login bonus",
+    "RP Earned (base)": 25,
+    "Frequency": "Once per day",
+    "Designer Note": "Encourages daily engagement.",
+    "col4": null
+   },
+   {
+    "Activity": "Daily mission - complete 3 raids",
+    "RP Earned (base)": 80,
+    "Frequency": "Once per day",
+    "Designer Note": "Mission system drives daily activity.",
+    "col4": null
+   },
+   {
+    "Activity": "Daily mission - earn 10k Gold",
+    "RP Earned (base)": 50,
+    "Frequency": "Once per day",
+    "Designer Note": "Resource-based mission variety.",
+    "col4": null
+   },
+   {
+    "Activity": "Weekly mission - win 15 raids",
+    "RP Earned (base)": 500,
+    "Frequency": "Once per week",
+    "Designer Note": "Major weekly reward for active players.",
+    "col4": null
+   },
+   {
+    "Activity": "Alliance war victory",
+    "RP Earned (base)": 300,
+    "Frequency": "Per war",
+    "Designer Note": "Bonus for alliance participation.",
+    "col4": null
+   },
+   {
+    "Activity": "Trophy milestone bonus",
+    "RP Earned (base)": 200,
+    "Frequency": "Per milestone",
+    "Designer Note": "Awarded at 100, 500, 1500, and 3000 trophies.",
+    "col4": null
+   },
+   {
+    "Activity": "First raid of the day",
+    "RP Earned (base)": 30,
+    "Frequency": "Once per day",
+    "Designer Note": "Encourages at least one daily raid.",
+    "col4": null
+   },
+   {
+    "Activity": "Raid streak bonus 5 in a row",
+    "RP Earned (base)": 100,
+    "Frequency": "Per streak",
+    "Designer Note": "Rewards consecutive successful raiding.",
+    "col4": null
+   }
+  ],
+  "RAID OUTCOME MIX (assumed)": [
+   {
+    "Outcome": "Perfect Victory",
+    "Share of Raids": 0.1,
+    "RP per Raid": 150,
+    "Weighted RP": 15.0,
+    "col4": null
+   },
+   {
+    "Outcome": "Major Victory",
+    "Share of Raids": 0.15,
+    "RP per Raid": 100,
+    "Weighted RP": 15.0,
+    "col4": null
+   },
+   {
+    "Outcome": "Victory",
+    "Share of Raids": 0.3,
+    "RP per Raid": 75,
+    "Weighted RP": 22.5,
+    "col4": null
+   },
+   {
+    "Outcome": "Partial Victory",
+    "Share of Raids": 0.15,
+    "RP per Raid": 40,
+    "Weighted RP": 6.0,
+    "col4": null
+   },
+   {
+    "Outcome": "Defeat or Timeout",
+    "Share of Raids": 0.3,
+    "RP per Raid": 0,
+    "Weighted RP": 0.0,
+    "col4": null
+   },
+   {
+    "Outcome": "Average RP per raid",
+    "Share of Raids": 1.0,
+    "RP per Raid": null,
+    "Weighted RP": 58.5,
+    "col4": null
+   }
+  ],
+  "DAILY RP INCOME (before CC multiplier)": [
+   {
+    "Item": "Raids per day",
+    "Casual player": 5,
+    "Active player": 15,
+    "Note": "Casual 5, active 15.",
+    "col4": null
+   },
+   {
+    "Item": "Raid RP",
+    "Casual player": 292.5,
+    "Active player": 877.5,
+    "Note": "Raids x average RP per raid.",
+    "col4": null
+   },
+   {
+    "Item": "Defenses won per day",
+    "Casual player": 1,
+    "Active player": 2,
+    "Note": null,
+    "col4": null
+   },
+   {
+    "Item": "Defense RP",
+    "Casual player": 50.0,
+    "Active player": 100.0,
+    "Note": "Defenses x RP per defense.",
+    "col4": null
+   },
+   {
+    "Item": "Login, first raid, daily missions",
+    "Casual player": 185,
+    "Active player": 185,
+    "Note": "Login 25 + first raid 30 + missions 80 + 50.",
+    "col4": null
+   },
+   {
+    "Item": "Weekly mission per day",
+    "Casual player": 71.42857142857143,
+    "Active player": 71.42857142857143,
+    "Note": "Weekly 500 RP spread over 7 days.",
+    "col4": null
+   },
+   {
+    "Item": "TOTAL RP per day (base)",
+    "Casual player": 598.9285714285714,
+    "Active player": 1233.9285714285713,
+    "Note": "Multiplied by CC multiplier below.",
+    "col4": null
+   }
+  ],
+  "RP MULTIPLIER BY COMMAND CENTER LEVEL": [
+   {
+    "CC Bracket": "CC 1-2",
+    "RP Multiplier": 1.0,
+    "Tier usually being researched": "Tier I",
+    "Why": "Higher-league opponents pay more RP per raid.",
+    "col4": null
+   },
+   {
+    "CC Bracket": "CC 3-4",
+    "RP Multiplier": 1.25,
+    "Tier usually being researched": "Tier II",
+    "Why": null,
+    "col4": null
+   },
+   {
+    "CC Bracket": "CC 5-6",
+    "RP Multiplier": 1.5,
+    "Tier usually being researched": "Tier III",
+    "Why": null,
+    "col4": null
+   },
+   {
+    "CC Bracket": "CC 7-8",
+    "RP Multiplier": 2.0,
+    "Tier usually being researched": "Tier IV",
+    "Why": null,
+    "col4": null
+   },
+   {
+    "CC Bracket": "CC 9-10",
+    "RP Multiplier": 2.5,
+    "Tier usually being researched": "Tier V",
+    "Why": null,
+    "col4": null
+   }
+  ],
+  "TIME TO FINISH EACH TIER (one nation)": [
+   {
+    "Tier": "TIER I Early War",
+    "RP Required (largest nation tree)": 3050,
+    "Multiplier": 1.0,
+    "Casual days": 5.092426952892069,
+    "Active days": 2.4717800289435603
+   },
+   {
+    "Tier": "TIER II Mid War",
+    "RP Required (largest nation tree)": 6600,
+    "Multiplier": 1.25,
+    "Casual days": 8.815742397137745,
+    "Active days": 4.279015918958032
+   },
+   {
+    "Tier": "TIER III Late War",
+    "RP Required (largest nation tree)": 16300,
+    "Multiplier": 1.5,
+    "Casual days": 18.143510236533494,
+    "Active days": 8.806560540279788
+   },
+   {
+    "Tier": "TIER IV Cold War",
+    "RP Required (largest nation tree)": 35600,
+    "Multiplier": 2.0,
+    "Casual days": 29.71973762671437,
+    "Active days": 14.425470332850942
+   },
+   {
+    "Tier": "TIER V Modern Era",
+    "RP Required (largest nation tree)": 77000,
+    "Multiplier": 2.5,
+    "Casual days": 51.42516398330351,
+    "Active days": 24.960926193921853
+   },
+   {
+    "Tier": "TOTAL (all 5 tiers)",
+    "RP Required (largest nation tree)": 138550,
+    "Multiplier": null,
+    "Casual days": 113.19658119658119,
+    "Active days": 54.943753014954176
+   }
+  ],
+  "_notes": {
+   "Notes": "Days are RP-time only. Resource cost and unlock timers run in parallel and may be the real gate. Multi-nation play multiplies this, which is intended long-term content."
+  }
+ },
+ "Germany": {
+  "TIER I Early War | 7 vehicles | 2,950 RP to complete": [
+   {
+    "Vehicle": "Panzer I",
+    "Class": "Light Tank",
+    "RP Cost": 200,
+    "Gold to Train First": 500,
+    "Prerequisite": "None - first vehicle",
+    "Running RP Total": 200
+   },
+   {
+    "Vehicle": "Panzer II",
+    "Class": "Light Tank",
+    "RP Cost": 350,
+    "Gold to Train First": 900,
+    "Prerequisite": "Panzer I",
+    "Running RP Total": 550
+   },
+   {
+    "Vehicle": "Sd.Kfz. 222",
+    "Class": "Light Tank",
+    "RP Cost": 400,
+    "Gold to Train First": 800,
+    "Prerequisite": "Panzer I",
+    "Running RP Total": 950
+   },
+   {
+    "Vehicle": "Flakpanzer I",
+    "Class": "AA Tank",
+    "RP Cost": 450,
+    "Gold to Train First": 850,
+    "Prerequisite": "Panzer I",
+    "Running RP Total": 1400
+   },
+   {
+    "Vehicle": "Bison (sIG 33)",
+    "Class": "SPG",
+    "RP Cost": 500,
+    "Gold to Train First": 950,
+    "Prerequisite": "Panzer I",
+    "Running RP Total": 1900
+   },
+   {
+    "Vehicle": "Bf 109 B",
+    "Class": "Fighter",
+    "RP Cost": 550,
+    "Gold to Train First": 1200,
+    "Prerequisite": "Panzer I",
+    "Running RP Total": 2450
+   },
+   {
+    "Vehicle": "Hs 123",
+    "Class": "Ground Attack",
+    "RP Cost": 500,
+    "Gold to Train First": 1100,
+    "Prerequisite": "Bf 109 B",
+    "Running RP Total": 2950
+   }
+  ],
+  "TIER II Mid War | 7 vehicles | 6,400 RP to complete": [
+   {
+    "Vehicle": "Panzer III",
+    "Class": "Medium Tank",
+    "RP Cost": 800,
+    "Gold to Train First": 1700,
+    "Prerequisite": "Any Tier I vehicle",
+    "Running RP Total": 3750
+   },
+   {
+    "Vehicle": "Panzer IV F1",
+    "Class": "Medium Tank",
+    "RP Cost": 900,
+    "Gold to Train First": 2000,
+    "Prerequisite": "Panzer III",
+    "Running RP Total": 4650
+   },
+   {
+    "Vehicle": "StuG III",
+    "Class": "Tank Destroyer",
+    "RP Cost": 1000,
+    "Gold to Train First": 1800,
+    "Prerequisite": "Panzer III",
+    "Running RP Total": 5650
+   },
+   {
+    "Vehicle": "Marder II",
+    "Class": "Tank Destroyer",
+    "RP Cost": 850,
+    "Gold to Train First": 1600,
+    "Prerequisite": "StuG III",
+    "Running RP Total": 6500
+   },
+   {
+    "Vehicle": "Sd.Kfz. 7/1",
+    "Class": "AA Tank",
+    "RP Cost": 900,
+    "Gold to Train First": 1500,
+    "Prerequisite": "Flakpanzer I",
+    "Running RP Total": 7400
+   },
+   {
+    "Vehicle": "Bf 109 E",
+    "Class": "Fighter",
+    "RP Cost": 1000,
+    "Gold to Train First": 2500,
+    "Prerequisite": "Bf 109 B",
+    "Running RP Total": 8400
+   },
+   {
+    "Vehicle": "Ju 87 Stuka",
+    "Class": "Ground Attack",
+    "RP Cost": 950,
+    "Gold to Train First": 2200,
+    "Prerequisite": "Hs 123",
+    "Running RP Total": 9350
+   }
+  ],
+  "TIER III Late War | 7 vehicles | 15,900 RP to complete": [
+   {
+    "Vehicle": "Panther",
+    "Class": "Medium Tank",
+    "RP Cost": 2000,
+    "Gold to Train First": 3500,
+    "Prerequisite": "Panzer IV F1",
+    "Running RP Total": 11350
+   },
+   {
+    "Vehicle": "Tiger I",
+    "Class": "Heavy Tank",
+    "RP Cost": 2500,
+    "Gold to Train First": 5000,
+    "Prerequisite": "Panther",
+    "Running RP Total": 13850
+   },
+   {
+    "Vehicle": "Jagdpanzer IV",
+    "Class": "Tank Destroyer",
+    "RP Cost": 2200,
+    "Gold to Train First": 4000,
+    "Prerequisite": "StuG III",
+    "Running RP Total": 16050
+   },
+   {
+    "Vehicle": "Nashorn",
+    "Class": "Tank Destroyer",
+    "RP Cost": 2100,
+    "Gold to Train First": 3800,
+    "Prerequisite": "Marder II",
+    "Running RP Total": 18150
+   },
+   {
+    "Vehicle": "Wirbelwind",
+    "Class": "AA Tank",
+    "RP Cost": 1800,
+    "Gold to Train First": 3000,
+    "Prerequisite": "Sd.Kfz. 7/1",
+    "Running RP Total": 19950
+   },
+   {
+    "Vehicle": "Fw 190 A",
+    "Class": "Ground Attack",
+    "RP Cost": 2500,
+    "Gold to Train First": 4200,
+    "Prerequisite": "Ju 87 Stuka",
+    "Running RP Total": 22450
+   },
+   {
+    "Vehicle": "Bf 109 G",
+    "Class": "Fighter",
+    "RP Cost": 2800,
+    "Gold to Train First": 4500,
+    "Prerequisite": "Bf 109 E",
+    "Running RP Total": 25250
+   }
+  ],
+  "TIER IV Cold War | 7 vehicles | 33,000 RP to complete": [
+   {
+    "Vehicle": "Tiger II",
+    "Class": "Heavy Tank",
+    "RP Cost": 5000,
+    "Gold to Train First": 7500,
+    "Prerequisite": "Tiger I",
+    "Running RP Total": 30250
+   },
+   {
+    "Vehicle": "Jagdtiger",
+    "Class": "Tank Destroyer",
+    "RP Cost": 4800,
+    "Gold to Train First": 7000,
+    "Prerequisite": "Jagdpanzer IV",
+    "Running RP Total": 35050
+   },
+   {
+    "Vehicle": "Leopard 1",
+    "Class": "Medium Tank",
+    "RP Cost": 4500,
+    "Gold to Train First": 6500,
+    "Prerequisite": "Panther",
+    "Running RP Total": 39550
+   },
+   {
+    "Vehicle": "Kanonenjagdpanzer",
+    "Class": "Tank Destroyer",
+    "RP Cost": 4200,
+    "Gold to Train First": 6000,
+    "Prerequisite": "Nashorn",
+    "Running RP Total": 43750
+   },
+   {
+    "Vehicle": "Gepard",
+    "Class": "AA Tank",
+    "RP Cost": 4000,
+    "Gold to Train First": 6800,
+    "Prerequisite": "Wirbelwind",
+    "Running RP Total": 47750
+   },
+   {
+    "Vehicle": "Me 262 A",
+    "Class": "Jet Fighter",
+    "RP Cost": 5500,
+    "Gold to Train First": 7000,
+    "Prerequisite": "Bf 109 G",
+    "Running RP Total": 53250
+   },
+   {
+    "Vehicle": "BO-105 PAH",
+    "Class": "Helicopter",
+    "RP Cost": 5000,
+    "Gold to Train First": 8000,
+    "Prerequisite": "Me 262 A",
+    "Running RP Total": 58250
+   }
+  ],
+  "TIER V Modern Era | 7 vehicles | 72,500 RP to complete": [
+   {
+    "Vehicle": "Leopard 2A5",
+    "Class": "Heavy Tank",
+    "RP Cost": 10000,
+    "Gold to Train First": 12000,
+    "Prerequisite": "Leopard 1",
+    "Running RP Total": 68250
+   },
+   {
+    "Vehicle": "Leopard 2A7",
+    "Class": "Heavy Tank",
+    "RP Cost": 12000,
+    "Gold to Train First": 15000,
+    "Prerequisite": "Leopard 2A5",
+    "Running RP Total": 80250
+   },
+   {
+    "Vehicle": "Puma IFV",
+    "Class": "Light Tank",
+    "RP Cost": 8000,
+    "Gold to Train First": 10000,
+    "Prerequisite": "Leopard 1",
+    "Running RP Total": 88250
+   },
+   {
+    "Vehicle": "Typ 2000 Destroyer",
+    "Class": "Tank Destroyer",
+    "RP Cost": 9000,
+    "Gold to Train First": 11000,
+    "Prerequisite": "Kanonenjagdpanzer",
+    "Running RP Total": 97250
+   },
+   {
+    "Vehicle": "Ozelot AA",
+    "Class": "AA Tank",
+    "RP Cost": 8500,
+    "Gold to Train First": 10500,
+    "Prerequisite": "Gepard",
+    "Running RP Total": 105750
+   },
+   {
+    "Vehicle": "Eurofighter",
+    "Class": "Jet Fighter",
+    "RP Cost": 13000,
+    "Gold to Train First": 16000,
+    "Prerequisite": "Me 262 A",
+    "Running RP Total": 118750
+   },
+   {
+    "Vehicle": "Tornado IDS",
+    "Class": "Jet Attack",
+    "RP Cost": 12000,
+    "Gold to Train First": 15000,
+    "Prerequisite": "Eurofighter",
+    "Running RP Total": 130750
+   }
+  ]
+ },
+ "USSR": {
+  "TIER I Early War | 7 vehicles | 3,050 RP to complete": [
+   {
+    "Vehicle": "T-26",
+    "Class": "Light Tank",
+    "RP Cost": 200,
+    "Gold to Train First": 500,
+    "Prerequisite": "None - first vehicle",
+    "Running RP Total": 200
+   },
+   {
+    "Vehicle": "BA-64",
+    "Class": "Light Tank",
+    "RP Cost": 350,
+    "Gold to Train First": 700,
+    "Prerequisite": "T-26",
+    "Running RP Total": 550
+   },
+   {
+    "Vehicle": "T-60",
+    "Class": "Light Tank",
+    "RP Cost": 400,
+    "Gold to Train First": 750,
+    "Prerequisite": "T-26",
+    "Running RP Total": 950
+   },
+   {
+    "Vehicle": "SU-76",
+    "Class": "SPG",
+    "RP Cost": 500,
+    "Gold to Train First": 900,
+    "Prerequisite": "T-26",
+    "Running RP Total": 1450
+   },
+   {
+    "Vehicle": "ZiS-43 AA",
+    "Class": "AA Tank",
+    "RP Cost": 450,
+    "Gold to Train First": 850,
+    "Prerequisite": "T-26",
+    "Running RP Total": 1900
+   },
+   {
+    "Vehicle": "Yak-1",
+    "Class": "Fighter",
+    "RP Cost": 550,
+    "Gold to Train First": 1200,
+    "Prerequisite": "T-26",
+    "Running RP Total": 2450
+   },
+   {
+    "Vehicle": "Il-2 Sturmovik",
+    "Class": "Ground Attack",
+    "RP Cost": 600,
+    "Gold to Train First": 1300,
+    "Prerequisite": "Yak-1",
+    "Running RP Total": 3050
+   }
+  ],
+  "TIER II Mid War | 7 vehicles | 6,600 RP to complete": [
+   {
+    "Vehicle": "T-34/76",
+    "Class": "Medium Tank",
+    "RP Cost": 900,
+    "Gold to Train First": 1900,
+    "Prerequisite": "Any Tier I vehicle",
+    "Running RP Total": 3950
+   },
+   {
+    "Vehicle": "KV-1",
+    "Class": "Heavy Tank",
+    "RP Cost": 1000,
+    "Gold to Train First": 2200,
+    "Prerequisite": "T-34/76",
+    "Running RP Total": 4950
+   },
+   {
+    "Vehicle": "T-50",
+    "Class": "Light Tank",
+    "RP Cost": 800,
+    "Gold to Train First": 1500,
+    "Prerequisite": "T-26",
+    "Running RP Total": 5750
+   },
+   {
+    "Vehicle": "SU-122",
+    "Class": "SPG",
+    "RP Cost": 950,
+    "Gold to Train First": 1800,
+    "Prerequisite": "SU-76",
+    "Running RP Total": 6700
+   },
+   {
+    "Vehicle": "M4A2 (Soviet)",
+    "Class": "Medium Tank",
+    "RP Cost": 850,
+    "Gold to Train First": 1700,
+    "Prerequisite": "T-34/76",
+    "Running RP Total": 7550
+   },
+   {
+    "Vehicle": "Yak-7B",
+    "Class": "Fighter",
+    "RP Cost": 1000,
+    "Gold to Train First": 2400,
+    "Prerequisite": "Yak-1",
+    "Running RP Total": 8550
+   },
+   {
+    "Vehicle": "Pe-2",
+    "Class": "Bomber",
+    "RP Cost": 1100,
+    "Gold to Train First": 2600,
+    "Prerequisite": "Il-2 Sturmovik",
+    "Running RP Total": 9650
+   }
+  ],
+  "TIER III Late War | 7 vehicles | 16,300 RP to complete": [
+   {
+    "Vehicle": "T-34/85",
+    "Class": "Medium Tank",
+    "RP Cost": 2200,
+    "Gold to Train First": 3300,
+    "Prerequisite": "T-34/76",
+    "Running RP Total": 11850
+   },
+   {
+    "Vehicle": "IS-2",
+    "Class": "Heavy Tank",
+    "RP Cost": 2500,
+    "Gold to Train First": 4800,
+    "Prerequisite": "KV-1",
+    "Running RP Total": 14350
+   },
+   {
+    "Vehicle": "ISU-152",
+    "Class": "Tank Destroyer",
+    "RP Cost": 2400,
+    "Gold to Train First": 4500,
+    "Prerequisite": "SU-122",
+    "Running RP Total": 16750
+   },
+   {
+    "Vehicle": "SU-100",
+    "Class": "Tank Destroyer",
+    "RP Cost": 2000,
+    "Gold to Train First": 3800,
+    "Prerequisite": "ISU-152",
+    "Running RP Total": 18750
+   },
+   {
+    "Vehicle": "T-70",
+    "Class": "Light Tank",
+    "RP Cost": 1800,
+    "Gold to Train First": 2800,
+    "Prerequisite": "T-50",
+    "Running RP Total": 20550
+   },
+   {
+    "Vehicle": "La-7",
+    "Class": "Fighter",
+    "RP Cost": 2800,
+    "Gold to Train First": 4400,
+    "Prerequisite": "Yak-7B",
+    "Running RP Total": 23350
+   },
+   {
+    "Vehicle": "Il-10",
+    "Class": "Ground Attack",
+    "RP Cost": 2600,
+    "Gold to Train First": 4200,
+    "Prerequisite": "Pe-2",
+    "Running RP Total": 25950
+   }
+  ],
+  "TIER IV Cold War | 7 vehicles | 35,000 RP to complete": [
+   {
+    "Vehicle": "IS-3",
+    "Class": "Heavy Tank",
+    "RP Cost": 5200,
+    "Gold to Train First": 7200,
+    "Prerequisite": "IS-2",
+    "Running RP Total": 31150
+   },
+   {
+    "Vehicle": "T-54",
+    "Class": "Medium Tank",
+    "RP Cost": 4800,
+    "Gold to Train First": 6800,
+    "Prerequisite": "T-34/85",
+    "Running RP Total": 35950
+   },
+   {
+    "Vehicle": "T-72",
+    "Class": "Medium Tank",
+    "RP Cost": 5000,
+    "Gold to Train First": 7000,
+    "Prerequisite": "T-54",
+    "Running RP Total": 40950
+   },
+   {
+    "Vehicle": "ZSU-23-4 Shilka",
+    "Class": "AA Tank",
+    "RP Cost": 4500,
+    "Gold to Train First": 6500,
+    "Prerequisite": "ZiS-43 AA",
+    "Running RP Total": 45450
+   },
+   {
+    "Vehicle": "2S3 Akatsiya",
+    "Class": "SPG",
+    "RP Cost": 4800,
+    "Gold to Train First": 7000,
+    "Prerequisite": "SU-100",
+    "Running RP Total": 50250
+   },
+   {
+    "Vehicle": "MiG-21",
+    "Class": "Jet Fighter",
+    "RP Cost": 5500,
+    "Gold to Train First": 7000,
+    "Prerequisite": "La-7",
+    "Running RP Total": 55750
+   },
+   {
+    "Vehicle": "Ka-50 Black Shark",
+    "Class": "Helicopter",
+    "RP Cost": 5200,
+    "Gold to Train First": 8000,
+    "Prerequisite": "MiG-21",
+    "Running RP Total": 60950
+   }
+  ],
+  "TIER V Modern Era | 7 vehicles | 74,000 RP to complete": [
+   {
+    "Vehicle": "T-90M",
+    "Class": "Heavy Tank",
+    "RP Cost": 11000,
+    "Gold to Train First": 13000,
+    "Prerequisite": "IS-3",
+    "Running RP Total": 71950
+   },
+   {
+    "Vehicle": "T-80BVM",
+    "Class": "Heavy Tank",
+    "RP Cost": 10500,
+    "Gold to Train First": 12500,
+    "Prerequisite": "T-72",
+    "Running RP Total": 82450
+   },
+   {
+    "Vehicle": "2S25 Sprut",
+    "Class": "Tank Destroyer",
+    "RP Cost": 9000,
+    "Gold to Train First": 11000,
+    "Prerequisite": "SU-100",
+    "Running RP Total": 91450
+   },
+   {
+    "Vehicle": "TOS-1A Buratino",
+    "Class": "SPG",
+    "RP Cost": 10000,
+    "Gold to Train First": 12000,
+    "Prerequisite": "2S3 Akatsiya",
+    "Running RP Total": 101450
+   },
+   {
+    "Vehicle": "Tunguska M1",
+    "Class": "AA Tank",
+    "RP Cost": 9500,
+    "Gold to Train First": 11500,
+    "Prerequisite": "ZSU-23-4 Shilka",
+    "Running RP Total": 110950
+   },
+   {
+    "Vehicle": "Su-57 Felon",
+    "Class": "Jet Fighter",
+    "RP Cost": 13000,
+    "Gold to Train First": 16000,
+    "Prerequisite": "MiG-21",
+    "Running RP Total": 123950
+   },
+   {
+    "Vehicle": "Su-25 Frogfoot",
+    "Class": "Jet Attack",
+    "RP Cost": 11000,
+    "Gold to Train First": 14000,
+    "Prerequisite": "Su-57 Felon",
+    "Running RP Total": 134950
+   }
+  ]
+ },
+ "USA": {
+  "TIER I Early War | 7 vehicles | 2,850 RP to complete": [
+   {
+    "Vehicle": "M3 Stuart",
+    "Class": "Light Tank",
+    "RP Cost": 200,
+    "Gold to Train First": 500,
+    "Prerequisite": "None - first vehicle",
+    "Running RP Total": 200
+   },
+   {
+    "Vehicle": "M8 Greyhound",
+    "Class": "Light Tank",
+    "RP Cost": 350,
+    "Gold to Train First": 700,
+    "Prerequisite": "M3 Stuart",
+    "Running RP Total": 550
+   },
+   {
+    "Vehicle": "M3 GMC",
+    "Class": "Tank Destroyer",
+    "RP Cost": 400,
+    "Gold to Train First": 800,
+    "Prerequisite": "M3 Stuart",
+    "Running RP Total": 950
+   },
+   {
+    "Vehicle": "M3 Lee",
+    "Class": "Medium Tank",
+    "RP Cost": 450,
+    "Gold to Train First": 900,
+    "Prerequisite": "M3 Stuart",
+    "Running RP Total": 1400
+   },
+   {
+    "Vehicle": "M15 CGMC",
+    "Class": "AA Tank",
+    "RP Cost": 400,
+    "Gold to Train First": 750,
+    "Prerequisite": "M3 Stuart",
+    "Running RP Total": 1800
+   },
+   {
+    "Vehicle": "P-40 Warhawk",
+    "Class": "Fighter",
+    "RP Cost": 550,
+    "Gold to Train First": 1200,
+    "Prerequisite": "M3 Stuart",
+    "Running RP Total": 2350
+   },
+   {
+    "Vehicle": "SBD Dauntless",
+    "Class": "Ground Attack",
+    "RP Cost": 500,
+    "Gold to Train First": 1100,
+    "Prerequisite": "P-40 Warhawk",
+    "Running RP Total": 2850
+   }
+  ],
+  "TIER II Mid War | 7 vehicles | 6,450 RP to complete": [
+   {
+    "Vehicle": "M4 Sherman",
+    "Class": "Medium Tank",
+    "RP Cost": 900,
+    "Gold to Train First": 2000,
+    "Prerequisite": "Any Tier I vehicle",
+    "Running RP Total": 3750
+   },
+   {
+    "Vehicle": "M10 Wolverine",
+    "Class": "Tank Destroyer",
+    "RP Cost": 850,
+    "Gold to Train First": 1800,
+    "Prerequisite": "M4 Sherman",
+    "Running RP Total": 4600
+   },
+   {
+    "Vehicle": "M7 Priest",
+    "Class": "SPG",
+    "RP Cost": 900,
+    "Gold to Train First": 1900,
+    "Prerequisite": "M3 GMC",
+    "Running RP Total": 5500
+   },
+   {
+    "Vehicle": "M5 Stuart",
+    "Class": "Light Tank",
+    "RP Cost": 800,
+    "Gold to Train First": 1500,
+    "Prerequisite": "M3 Stuart",
+    "Running RP Total": 6300
+   },
+   {
+    "Vehicle": "M16 MGMC",
+    "Class": "AA Tank",
+    "RP Cost": 900,
+    "Gold to Train First": 1700,
+    "Prerequisite": "M15 CGMC",
+    "Running RP Total": 7200
+   },
+   {
+    "Vehicle": "P-47 Thunderbolt",
+    "Class": "Ground Attack",
+    "RP Cost": 1100,
+    "Gold to Train First": 2400,
+    "Prerequisite": "SBD Dauntless",
+    "Running RP Total": 8300
+   },
+   {
+    "Vehicle": "P-51 Mustang",
+    "Class": "Fighter",
+    "RP Cost": 1000,
+    "Gold to Train First": 2500,
+    "Prerequisite": "P-40 Warhawk",
+    "Running RP Total": 9300
+   }
+  ],
+  "TIER III Late War | 7 vehicles | 16,000 RP to complete": [
+   {
+    "Vehicle": "M26 Pershing",
+    "Class": "Heavy Tank",
+    "RP Cost": 2400,
+    "Gold to Train First": 4600,
+    "Prerequisite": "M4 Sherman",
+    "Running RP Total": 11700
+   },
+   {
+    "Vehicle": "M36 Jackson",
+    "Class": "Tank Destroyer",
+    "RP Cost": 2200,
+    "Gold to Train First": 4000,
+    "Prerequisite": "M10 Wolverine",
+    "Running RP Total": 13900
+   },
+   {
+    "Vehicle": "M4A3E8 Easy Eight",
+    "Class": "Medium Tank",
+    "RP Cost": 2000,
+    "Gold to Train First": 3500,
+    "Prerequisite": "M4 Sherman",
+    "Running RP Total": 15900
+   },
+   {
+    "Vehicle": "M40 GMC",
+    "Class": "SPG",
+    "RP Cost": 2100,
+    "Gold to Train First": 3800,
+    "Prerequisite": "M7 Priest",
+    "Running RP Total": 18000
+   },
+   {
+    "Vehicle": "M19 MGMC",
+    "Class": "AA Tank",
+    "RP Cost": 1900,
+    "Gold to Train First": 3200,
+    "Prerequisite": "M16 MGMC",
+    "Running RP Total": 19900
+   },
+   {
+    "Vehicle": "F6F Hellcat",
+    "Class": "Fighter",
+    "RP Cost": 2600,
+    "Gold to Train First": 4200,
+    "Prerequisite": "P-51 Mustang",
+    "Running RP Total": 22500
+   },
+   {
+    "Vehicle": "B-25 Mitchell",
+    "Class": "Bomber",
+    "RP Cost": 2800,
+    "Gold to Train First": 4500,
+    "Prerequisite": "P-47 Thunderbolt",
+    "Running RP Total": 25300
+   }
+  ],
+  "TIER IV Cold War | 7 vehicles | 33,400 RP to complete": [
+   {
+    "Vehicle": "M60A3 Patton",
+    "Class": "Medium Tank",
+    "RP Cost": 4800,
+    "Gold to Train First": 6800,
+    "Prerequisite": "M26 Pershing",
+    "Running RP Total": 30100
+   },
+   {
+    "Vehicle": "M103",
+    "Class": "Heavy Tank",
+    "RP Cost": 5200,
+    "Gold to Train First": 7500,
+    "Prerequisite": "M60A3 Patton",
+    "Running RP Total": 35300
+   },
+   {
+    "Vehicle": "M109 Paladin",
+    "Class": "SPG",
+    "RP Cost": 4500,
+    "Gold to Train First": 6500,
+    "Prerequisite": "M40 GMC",
+    "Running RP Total": 39800
+   },
+   {
+    "Vehicle": "M163 Vulcan",
+    "Class": "AA Tank",
+    "RP Cost": 4200,
+    "Gold to Train First": 6200,
+    "Prerequisite": "M19 MGMC",
+    "Running RP Total": 44000
+   },
+   {
+    "Vehicle": "M551 Sheridan",
+    "Class": "Light Tank",
+    "RP Cost": 4200,
+    "Gold to Train First": 6500,
+    "Prerequisite": "M5 Stuart",
+    "Running RP Total": 48200
+   },
+   {
+    "Vehicle": "AH-1 Cobra",
+    "Class": "Helicopter",
+    "RP Cost": 5000,
+    "Gold to Train First": 7800,
+    "Prerequisite": "F6F Hellcat",
+    "Running RP Total": 53200
+   },
+   {
+    "Vehicle": "F-4 Phantom",
+    "Class": "Jet Fighter",
+    "RP Cost": 5500,
+    "Gold to Train First": 7000,
+    "Prerequisite": "F6F Hellcat",
+    "Running RP Total": 58700
+   }
+  ],
+  "TIER V Modern Era | 7 vehicles | 74,500 RP to complete": [
+   {
+    "Vehicle": "M1A2 Abrams",
+    "Class": "Heavy Tank",
+    "RP Cost": 11000,
+    "Gold to Train First": 14000,
+    "Prerequisite": "M103",
+    "Running RP Total": 69700
+   },
+   {
+    "Vehicle": "M2 Bradley",
+    "Class": "Light Tank",
+    "RP Cost": 9000,
+    "Gold to Train First": 11000,
+    "Prerequisite": "M60A3 Patton",
+    "Running RP Total": 78700
+   },
+   {
+    "Vehicle": "M1128 Stryker MGS",
+    "Class": "Tank Destroyer",
+    "RP Cost": 9500,
+    "Gold to Train First": 11500,
+    "Prerequisite": "M36 Jackson",
+    "Running RP Total": 88200
+   },
+   {
+    "Vehicle": "M270 MLRS",
+    "Class": "SPG",
+    "RP Cost": 10000,
+    "Gold to Train First": 12500,
+    "Prerequisite": "M109 Paladin",
+    "Running RP Total": 98200
+   },
+   {
+    "Vehicle": "M6 Linebacker",
+    "Class": "AA Tank",
+    "RP Cost": 9000,
+    "Gold to Train First": 11000,
+    "Prerequisite": "M163 Vulcan",
+    "Running RP Total": 107200
+   },
+   {
+    "Vehicle": "F-22 Raptor",
+    "Class": "Jet Fighter",
+    "RP Cost": 14000,
+    "Gold to Train First": 17000,
+    "Prerequisite": "F-4 Phantom",
+    "Running RP Total": 121200
+   },
+   {
+    "Vehicle": "A-10 Warthog",
+    "Class": "Jet Attack",
+    "RP Cost": 12000,
+    "Gold to Train First": 15000,
+    "Prerequisite": "F-22 Raptor",
+    "Running RP Total": 133200
+   }
+  ]
+ },
+ "Britain": {
+  "TIER I Early War | 7 vehicles | 2,900 RP to complete": [
+   {
+    "Vehicle": "Crusader Mk I",
+    "Class": "Light Tank",
+    "RP Cost": 200,
+    "Gold to Train First": 500,
+    "Prerequisite": "None - first vehicle",
+    "Running RP Total": 200
+   },
+   {
+    "Vehicle": "Dingo Scout Car",
+    "Class": "Light Tank",
+    "RP Cost": 300,
+    "Gold to Train First": 650,
+    "Prerequisite": "Crusader Mk I",
+    "Running RP Total": 500
+   },
+   {
+    "Vehicle": "Matilda II",
+    "Class": "Heavy Tank",
+    "RP Cost": 500,
+    "Gold to Train First": 1000,
+    "Prerequisite": "Crusader Mk I",
+    "Running RP Total": 1000
+   },
+   {
+    "Vehicle": "Valentine Mk I",
+    "Class": "Medium Tank",
+    "RP Cost": 400,
+    "Gold to Train First": 800,
+    "Prerequisite": "Crusader Mk I",
+    "Running RP Total": 1400
+   },
+   {
+    "Vehicle": "QF 25-pdr",
+    "Class": "SPG",
+    "RP Cost": 450,
+    "Gold to Train First": 900,
+    "Prerequisite": "Crusader Mk I",
+    "Running RP Total": 1850
+   },
+   {
+    "Vehicle": "Hurricane Mk I",
+    "Class": "Fighter",
+    "RP Cost": 550,
+    "Gold to Train First": 1200,
+    "Prerequisite": "Crusader Mk I",
+    "Running RP Total": 2400
+   },
+   {
+    "Vehicle": "Blenheim Mk IV",
+    "Class": "Bomber",
+    "RP Cost": 500,
+    "Gold to Train First": 1100,
+    "Prerequisite": "Hurricane Mk I",
+    "Running RP Total": 2900
+   }
+  ],
+  "TIER II Mid War | 7 vehicles | 6,250 RP to complete": [
+   {
+    "Vehicle": "Cromwell",
+    "Class": "Medium Tank",
+    "RP Cost": 900,
+    "Gold to Train First": 1950,
+    "Prerequisite": "Any Tier I vehicle",
+    "Running RP Total": 3800
+   },
+   {
+    "Vehicle": "Valentine Mk IX",
+    "Class": "Medium Tank",
+    "RP Cost": 850,
+    "Gold to Train First": 1800,
+    "Prerequisite": "Cromwell",
+    "Running RP Total": 4650
+   },
+   {
+    "Vehicle": "Archer",
+    "Class": "Tank Destroyer",
+    "RP Cost": 900,
+    "Gold to Train First": 1700,
+    "Prerequisite": "Cromwell",
+    "Running RP Total": 5550
+   },
+   {
+    "Vehicle": "Crusader AA Mk I",
+    "Class": "AA Tank",
+    "RP Cost": 800,
+    "Gold to Train First": 1500,
+    "Prerequisite": "Crusader Mk I",
+    "Running RP Total": 6350
+   },
+   {
+    "Vehicle": "Deacon AEC",
+    "Class": "Tank Destroyer",
+    "RP Cost": 850,
+    "Gold to Train First": 1600,
+    "Prerequisite": "Archer",
+    "Running RP Total": 7200
+   },
+   {
+    "Vehicle": "Spitfire Mk V",
+    "Class": "Fighter",
+    "RP Cost": 1000,
+    "Gold to Train First": 2400,
+    "Prerequisite": "Hurricane Mk I",
+    "Running RP Total": 8200
+   },
+   {
+    "Vehicle": "Hurricane Mk IV",
+    "Class": "Ground Attack",
+    "RP Cost": 950,
+    "Gold to Train First": 2200,
+    "Prerequisite": "Blenheim Mk IV",
+    "Running RP Total": 9150
+   }
+  ],
+  "TIER III Late War | 7 vehicles | 15,700 RP to complete": [
+   {
+    "Vehicle": "Churchill Mk IV",
+    "Class": "Heavy Tank",
+    "RP Cost": 2300,
+    "Gold to Train First": 4900,
+    "Prerequisite": "Matilda II",
+    "Running RP Total": 11450
+   },
+   {
+    "Vehicle": "Firefly",
+    "Class": "Tank Destroyer",
+    "RP Cost": 2200,
+    "Gold to Train First": 4200,
+    "Prerequisite": "Archer",
+    "Running RP Total": 13650
+   },
+   {
+    "Vehicle": "Comet",
+    "Class": "Medium Tank",
+    "RP Cost": 2000,
+    "Gold to Train First": 3600,
+    "Prerequisite": "Cromwell",
+    "Running RP Total": 15650
+   },
+   {
+    "Vehicle": "Achilles",
+    "Class": "Tank Destroyer",
+    "RP Cost": 2100,
+    "Gold to Train First": 3900,
+    "Prerequisite": "Firefly",
+    "Running RP Total": 17750
+   },
+   {
+    "Vehicle": "Crusader AA Mk III",
+    "Class": "AA Tank",
+    "RP Cost": 1900,
+    "Gold to Train First": 3200,
+    "Prerequisite": "Crusader AA Mk I",
+    "Running RP Total": 19650
+   },
+   {
+    "Vehicle": "Spitfire Mk IX",
+    "Class": "Fighter",
+    "RP Cost": 2700,
+    "Gold to Train First": 4300,
+    "Prerequisite": "Spitfire Mk V",
+    "Running RP Total": 22350
+   },
+   {
+    "Vehicle": "Typhoon Mk Ib",
+    "Class": "Ground Attack",
+    "RP Cost": 2500,
+    "Gold to Train First": 4100,
+    "Prerequisite": "Hurricane Mk IV",
+    "Running RP Total": 24850
+   }
+  ],
+  "TIER IV Cold War | 7 vehicles | 35,600 RP to complete": [
+   {
+    "Vehicle": "Centurion Mk3",
+    "Class": "Medium Tank",
+    "RP Cost": 4800,
+    "Gold to Train First": 6800,
+    "Prerequisite": "Comet",
+    "Running RP Total": 29650
+   },
+   {
+    "Vehicle": "Conqueror",
+    "Class": "Heavy Tank",
+    "RP Cost": 5200,
+    "Gold to Train First": 7500,
+    "Prerequisite": "Churchill Mk IV",
+    "Running RP Total": 34850
+   },
+   {
+    "Vehicle": "Chieftain Mk5",
+    "Class": "Heavy Tank",
+    "RP Cost": 5400,
+    "Gold to Train First": 7800,
+    "Prerequisite": "Conqueror",
+    "Running RP Total": 40250
+   },
+   {
+    "Vehicle": "FV4005",
+    "Class": "Tank Destroyer",
+    "RP Cost": 4800,
+    "Gold to Train First": 7000,
+    "Prerequisite": "Firefly",
+    "Running RP Total": 45050
+   },
+   {
+    "Vehicle": "Marksman AA",
+    "Class": "AA Tank",
+    "RP Cost": 4400,
+    "Gold to Train First": 6400,
+    "Prerequisite": "Crusader AA Mk I",
+    "Running RP Total": 49450
+   },
+   {
+    "Vehicle": "Harrier GR1",
+    "Class": "Jet Attack",
+    "RP Cost": 5500,
+    "Gold to Train First": 7200,
+    "Prerequisite": "Spitfire Mk IX",
+    "Running RP Total": 54950
+   },
+   {
+    "Vehicle": "Phantom FGR2",
+    "Class": "Jet Fighter",
+    "RP Cost": 5500,
+    "Gold to Train First": 7000,
+    "Prerequisite": "Spitfire Mk IX",
+    "Running RP Total": 60450
+   }
+  ],
+  "TIER V Modern Era | 7 vehicles | 77,000 RP to complete": [
+   {
+    "Vehicle": "Challenger 2",
+    "Class": "Heavy Tank",
+    "RP Cost": 11000,
+    "Gold to Train First": 13500,
+    "Prerequisite": "Conqueror",
+    "Running RP Total": 71450
+   },
+   {
+    "Vehicle": "Challenger 2 TES",
+    "Class": "Heavy Tank",
+    "RP Cost": 13000,
+    "Gold to Train First": 16000,
+    "Prerequisite": "Challenger 2",
+    "Running RP Total": 84450
+   },
+   {
+    "Vehicle": "Warrior IFV",
+    "Class": "Light Tank",
+    "RP Cost": 9000,
+    "Gold to Train First": 11000,
+    "Prerequisite": "Centurion Mk3",
+    "Running RP Total": 93450
+   },
+   {
+    "Vehicle": "AS-90 Braveheart",
+    "Class": "SPG",
+    "RP Cost": 10000,
+    "Gold to Train First": 12500,
+    "Prerequisite": "FV4005",
+    "Running RP Total": 103450
+   },
+   {
+    "Vehicle": "Stormer HVM",
+    "Class": "AA Tank",
+    "RP Cost": 9500,
+    "Gold to Train First": 11500,
+    "Prerequisite": "Marksman AA",
+    "Running RP Total": 112950
+   },
+   {
+    "Vehicle": "Typhoon FGR4",
+    "Class": "Jet Fighter",
+    "RP Cost": 13000,
+    "Gold to Train First": 16000,
+    "Prerequisite": "Phantom FGR2",
+    "Running RP Total": 125950
+   },
+   {
+    "Vehicle": "Apache AH1",
+    "Class": "Helicopter",
+    "RP Cost": 11500,
+    "Gold to Train First": 14500,
+    "Prerequisite": "Typhoon FGR4",
+    "Running RP Total": 137450
+   }
+  ]
+ },
+ "Japan": {
+  "TIER I Early War | 7 vehicles | 2,750 RP to complete": [
+   {
+    "Vehicle": "Type 94 TK",
+    "Class": "Light Tank",
+    "RP Cost": 200,
+    "Gold to Train First": 500,
+    "Prerequisite": "None - first vehicle",
+    "Running RP Total": 200
+   },
+   {
+    "Vehicle": "Type 97 Te-Ke",
+    "Class": "Light Tank",
+    "RP Cost": 300,
+    "Gold to Train First": 650,
+    "Prerequisite": "Type 94 TK",
+    "Running RP Total": 500
+   },
+   {
+    "Vehicle": "Type 89 I-Go",
+    "Class": "Medium Tank",
+    "RP Cost": 400,
+    "Gold to Train First": 800,
+    "Prerequisite": "Type 94 TK",
+    "Running RP Total": 900
+   },
+   {
+    "Vehicle": "Type 94 37mm AA",
+    "Class": "AA Tank",
+    "RP Cost": 400,
+    "Gold to Train First": 750,
+    "Prerequisite": "Type 94 TK",
+    "Running RP Total": 1300
+   },
+   {
+    "Vehicle": "Type 92 Jyu-Sokosha",
+    "Class": "SPG",
+    "RP Cost": 450,
+    "Gold to Train First": 900,
+    "Prerequisite": "Type 94 TK",
+    "Running RP Total": 1750
+   },
+   {
+    "Vehicle": "A5M Claude",
+    "Class": "Fighter",
+    "RP Cost": 500,
+    "Gold to Train First": 1100,
+    "Prerequisite": "Type 94 TK",
+    "Running RP Total": 2250
+   },
+   {
+    "Vehicle": "B5N Kate",
+    "Class": "Bomber",
+    "RP Cost": 500,
+    "Gold to Train First": 1100,
+    "Prerequisite": "A5M Claude",
+    "Running RP Total": 2750
+   }
+  ],
+  "TIER II Mid War | 7 vehicles | 6,250 RP to complete": [
+   {
+    "Vehicle": "Type 97 Chi-Ha",
+    "Class": "Medium Tank",
+    "RP Cost": 850,
+    "Gold to Train First": 1800,
+    "Prerequisite": "Any Tier I vehicle",
+    "Running RP Total": 3600
+   },
+   {
+    "Vehicle": "Ho-Ni III",
+    "Class": "Tank Destroyer",
+    "RP Cost": 900,
+    "Gold to Train First": 1700,
+    "Prerequisite": "Type 97 Chi-Ha",
+    "Running RP Total": 4500
+   },
+   {
+    "Vehicle": "Type 95 Ha-Go",
+    "Class": "Light Tank",
+    "RP Cost": 800,
+    "Gold to Train First": 1500,
+    "Prerequisite": "Type 94 TK",
+    "Running RP Total": 5300
+   },
+   {
+    "Vehicle": "Type 98 Ke-Ni",
+    "Class": "Light Tank",
+    "RP Cost": 850,
+    "Gold to Train First": 1600,
+    "Prerequisite": "Type 95 Ha-Go",
+    "Running RP Total": 6150
+   },
+   {
+    "Vehicle": "Type 88 75mm AA",
+    "Class": "AA Tank",
+    "RP Cost": 900,
+    "Gold to Train First": 1700,
+    "Prerequisite": "Type 94 37mm AA",
+    "Running RP Total": 7050
+   },
+   {
+    "Vehicle": "Ki-43 Hayabusa",
+    "Class": "Fighter",
+    "RP Cost": 1000,
+    "Gold to Train First": 2300,
+    "Prerequisite": "A5M Claude",
+    "Running RP Total": 8050
+   },
+   {
+    "Vehicle": "D3A Val",
+    "Class": "Ground Attack",
+    "RP Cost": 950,
+    "Gold to Train First": 2100,
+    "Prerequisite": "B5N Kate",
+    "Running RP Total": 9000
+   }
+  ],
+  "TIER III Late War | 7 vehicles | 15,400 RP to complete": [
+   {
+    "Vehicle": "Type 3 Chi-Nu",
+    "Class": "Medium Tank",
+    "RP Cost": 2000,
+    "Gold to Train First": 3500,
+    "Prerequisite": "Type 97 Chi-Ha",
+    "Running RP Total": 11000
+   },
+   {
+    "Vehicle": "Type 5 Chi-Ri",
+    "Class": "Medium Tank",
+    "RP Cost": 2200,
+    "Gold to Train First": 3900,
+    "Prerequisite": "Type 3 Chi-Nu",
+    "Running RP Total": 13200
+   },
+   {
+    "Vehicle": "Ho-Ni I",
+    "Class": "SPG",
+    "RP Cost": 2000,
+    "Gold to Train First": 3600,
+    "Prerequisite": "Ho-Ni III",
+    "Running RP Total": 15200
+   },
+   {
+    "Vehicle": "Type 4 Chi-To",
+    "Class": "Medium Tank",
+    "RP Cost": 2100,
+    "Gold to Train First": 3700,
+    "Prerequisite": "Type 3 Chi-Nu",
+    "Running RP Total": 17300
+   },
+   {
+    "Vehicle": "Type 98 20mm AA",
+    "Class": "AA Tank",
+    "RP Cost": 1800,
+    "Gold to Train First": 3000,
+    "Prerequisite": "Type 88 75mm AA",
+    "Running RP Total": 19100
+   },
+   {
+    "Vehicle": "N1K2 Shiden-Kai",
+    "Class": "Fighter",
+    "RP Cost": 2700,
+    "Gold to Train First": 4300,
+    "Prerequisite": "Ki-43 Hayabusa",
+    "Running RP Total": 21800
+   },
+   {
+    "Vehicle": "Ki-84 Hayate",
+    "Class": "Ground Attack",
+    "RP Cost": 2600,
+    "Gold to Train First": 4100,
+    "Prerequisite": "D3A Val",
+    "Running RP Total": 24400
+   }
+  ],
+  "TIER IV Cold War | 7 vehicles | 32,900 RP to complete": [
+   {
+    "Vehicle": "Type 61",
+    "Class": "Medium Tank",
+    "RP Cost": 4500,
+    "Gold to Train First": 6500,
+    "Prerequisite": "Type 5 Chi-Ri",
+    "Running RP Total": 28900
+   },
+   {
+    "Vehicle": "Type 74",
+    "Class": "Medium Tank",
+    "RP Cost": 4800,
+    "Gold to Train First": 6800,
+    "Prerequisite": "Type 61",
+    "Running RP Total": 33700
+   },
+   {
+    "Vehicle": "Type 60 ATM",
+    "Class": "Tank Destroyer",
+    "RP Cost": 4500,
+    "Gold to Train First": 6500,
+    "Prerequisite": "Ho-Ni I",
+    "Running RP Total": 38200
+   },
+   {
+    "Vehicle": "Type 87 AW",
+    "Class": "AA Tank",
+    "RP Cost": 4300,
+    "Gold to Train First": 6300,
+    "Prerequisite": "Type 98 20mm AA",
+    "Running RP Total": 42500
+   },
+   {
+    "Vehicle": "Type 75 SPH",
+    "Class": "SPG",
+    "RP Cost": 4600,
+    "Gold to Train First": 6700,
+    "Prerequisite": "Ho-Ni I",
+    "Running RP Total": 47100
+   },
+   {
+    "Vehicle": "F-1 Mitsubishi",
+    "Class": "Jet Attack",
+    "RP Cost": 5200,
+    "Gold to Train First": 7000,
+    "Prerequisite": "Ki-84 Hayate",
+    "Running RP Total": 52300
+   },
+   {
+    "Vehicle": "OH-1 Ninja",
+    "Class": "Helicopter",
+    "RP Cost": 5000,
+    "Gold to Train First": 7800,
+    "Prerequisite": "F-1 Mitsubishi",
+    "Running RP Total": 57300
+   }
+  ],
+  "TIER V Modern Era | 7 vehicles | 76,000 RP to complete": [
+   {
+    "Vehicle": "Type 90",
+    "Class": "Heavy Tank",
+    "RP Cost": 10500,
+    "Gold to Train First": 13000,
+    "Prerequisite": "Type 74",
+    "Running RP Total": 67800
+   },
+   {
+    "Vehicle": "Type 10",
+    "Class": "Heavy Tank",
+    "RP Cost": 12000,
+    "Gold to Train First": 15000,
+    "Prerequisite": "Type 90",
+    "Running RP Total": 79800
+   },
+   {
+    "Vehicle": "Type 16 MCV",
+    "Class": "Tank Destroyer",
+    "RP Cost": 9500,
+    "Gold to Train First": 11500,
+    "Prerequisite": "Type 60 ATM",
+    "Running RP Total": 89300
+   },
+   {
+    "Vehicle": "Type 99 SPH",
+    "Class": "SPG",
+    "RP Cost": 10000,
+    "Gold to Train First": 12500,
+    "Prerequisite": "Type 75 SPH",
+    "Running RP Total": 99300
+   },
+   {
+    "Vehicle": "Type 93 SHORAD",
+    "Class": "AA Tank",
+    "RP Cost": 9500,
+    "Gold to Train First": 11500,
+    "Prerequisite": "Type 87 AW",
+    "Running RP Total": 108800
+   },
+   {
+    "Vehicle": "F-15J Eagle",
+    "Class": "Jet Fighter",
+    "RP Cost": 13000,
+    "Gold to Train First": 16000,
+    "Prerequisite": "F-1 Mitsubishi",
+    "Running RP Total": 121800
+   },
+   {
+    "Vehicle": "AH-64DJP Apache",
+    "Class": "Helicopter",
+    "RP Cost": 11500,
+    "Gold to Train First": 14500,
+    "Prerequisite": "OH-1 Ninja",
+    "Running RP Total": 133300
+   }
+  ]
+ }
+}

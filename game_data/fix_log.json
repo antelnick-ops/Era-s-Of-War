@@ -1,0 +1,134 @@
+{
+ "fix_log": [
+  {
+   "area": "Roster",
+   "issue": "USA Tier IV had 4 ground + 3 air units instead of 5 ground + 2 air.",
+   "fix": "A-6 Intruder replaced by M551 Sheridan (Light Tank) so all 25 tiers are 5 ground + 2 air. Jet Attack returns at Tier V with the A-10."
+  },
+  {
+   "area": "Roster",
+   "issue": "USA had M19 MGMC listed twice (Tier II and Tier III).",
+   "fix": "Tier II unit renamed to M16 MGMC (real quad-.50 half-track); Tier III keeps M19 MGMC."
+  },
+  {
+   "area": "Roster",
+   "issue": "All 45 air units (fighters, ground attack, jets) had HP = 0 so they could not be damaged.",
+   "fix": "Air HP set from DPS x class factor (see Overview). Helicopters already had HP."
+  },
+  {
+   "area": "Roster",
+   "issue": "No Housing or Oil values per unit, so Army Camp capacity and Oil cost could not be applied.",
+   "fix": "Added Housing and Oil per Deploy columns to every unit (rules on Overview tab)."
+  },
+  {
+   "area": "Roster",
+   "issue": "Roster contained emoji characters, a corruption risk on mobile Excel.",
+   "fix": "Removed all emoji; file rebuilt with xlsxwriter."
+  },
+  {
+   "area": "Tech tree",
+   "issue": "RP pacing: old estimate said Tier V takes ~85 days casual, but real income (~375 RP/day) would take ~200 days, and the tab's tier totals (2900/6650/16100/34600/75500) did not match the trees (3,050/6,600/16,300/35,600/77,000).",
+   "fix": "Rebuilt RP Earn Rates as a formula model: raid outcome mix, daily income, and an RP multiplier by CC bracket (x1 to x2.5). Result: about 113 days casual / 55 days active to finish one nation. All inputs editable."
+  },
+  {
+   "area": "Tech tree",
+   "issue": "Unit names differed from roster (e.g. Bison SPG, Typ 2000 TD, Type 92 SPG, Ka-50, Type 88 AA).",
+   "fix": "All 9 mismatched names normalized to the roster; validator confirms every tech-tree unit exists in the roster and vice versa."
+  },
+  {
+   "area": "Tech tree",
+   "issue": "Tier V gate said CC8 but Buildings workbook gives Tier V at CC9.",
+   "fix": "Tier V gate is now CC9 + Dark Barracks everywhere."
+  },
+  {
+   "area": "Tech tree",
+   "issue": "Tier header RP totals did not match the unit rows.",
+   "fix": "Totals and running totals are recomputed from unit rows."
+  },
+  {
+   "area": "Leaders",
+   "issue": "Omar Bradley's ability referred to infantry, which do not exist.",
+   "fix": "Now halves Oil cost of Medium Tanks."
+  },
+  {
+   "area": "Generals",
+   "issue": "Four infantry-class generals (Kurt Student, John Gavin, Matthew Ridgway, Orde Wingate) in a game with no infantry.",
+   "fix": "Student and Gavin are now Light Tank / Special (air-landed Light Tanks). Ridgway is Heavy/Medium Tank. Wingate is Light Tank/Tank Destroyer. 'Special' is a general-only class."
+  },
+  {
+   "area": "Generals",
+   "issue": "Hiroshi Nishiyama (Japan) is not a real person.",
+   "fix": "Replaced with Takeichi Nishi (Baron Nishi), real commander of the 26th Tank Regiment at Iwo Jima."
+  },
+  {
+   "area": "Generals",
+   "issue": "Creighton Abrams was both a USA leader and a general.",
+   "fix": "General replaced with John S. Wood (real 4th Armored Division commander). Abrams remains the leader."
+  },
+  {
+   "area": "Generals",
+   "issue": "Kurita was class Naval but there are no naval units.",
+   "fix": "Now SPG / Heavy Tank with an off-map naval gunfire ability."
+  },
+  {
+   "area": "Generals",
+   "issue": "Kenryo Sato's ability (intelligence chief) was a stretch for the historical record.",
+   "fix": "Ability changed to generic fire-plan suppression and flagged as a placeholder in Open Decisions."
+  },
+  {
+   "area": "Generals",
+   "issue": "General Comparison tab had mislabeled columns: 'Armor' showed range and 'Aura Radius' showed armor. Per-nation aura text was generic.",
+   "fix": "Columns relabeled to Range and Armor with an Aura Buff column; every general now shows a concrete aura (+10% DPS and +10% HP to its two classes within 2 tiles)."
+  },
+  {
+   "area": "Defenses",
+   "issue": "Defenses workbook listed 28 real-world systems while the Buildings workbook listed 16 defense buildings with different unlock levels.",
+   "fix": "Buildings is now the single source of truth for gameplay stats and unlock levels. All 28 real systems are mapped to a Game Slot as nation skins (Defense Variant Map tab); each nation shows its own real-world systems. Defenses workbook is now reference only."
+  },
+  {
+   "area": "Buildings",
+   "issue": "Command Center tab described grid growth (+2x2, +4x4...) that did not match the Base Layout grid sizes, and its unlock lists did not match the Building Count table.",
+   "fix": "Both columns on the CC tab are now generated from the Building Count and Base Layout tables."
+  },
+  {
+   "area": "Buildings",
+   "issue": "Tier V trained in both Barracks Lv8 / Air Hangar Lv7-8 and the Dark Barracks.",
+   "fix": "Tier V (ground and air) now trains in the Dark Barracks only; Barracks and Hangar top out at Tier IV."
+  },
+  {
+   "area": "Buildings",
+   "issue": "Resource Buildings tab disagreed with the Resource System workbook (e.g. Gold Mine Lv1 HP 2000 vs 400, Oil Derrick upgrade costs).",
+   "fix": "Resource System workbook is the single source of truth; Buildings tab now only lists counts and points to it."
+  },
+  {
+   "area": "Buildings",
+   "issue": "Defense unlock levels and counts inside the Defense Buildings tab could disagree with the Building Count table.",
+   "fix": "Unlock CC and max count are now taken from the Building Count table."
+  },
+  {
+   "area": "Buildings",
+   "issue": "Dragon Teeth (Tier 7 wall) was described as 'cannot be destroyed' but had 22,000 HP, and Tier 8 HESCO had less HP (18,000) and was cheaper than Tier 7.",
+   "fix": "Dragon Teeth is destructible (22,000 HP) with splash immunity. HESCO raised to 26,000 HP, 15,000 Gold, 8,500 Steel so walls rise strictly in HP and cost."
+  },
+  {
+   "area": "Economy",
+   "issue": "Offline-protection cap (max 10% of reserves per raid) contradicted the steal rates of 20% Gold / 25% Oil / 15% Steel.",
+   "fix": "Replaced by one rule: loot = min(steal% x lootable, Loot Cap by defender CC) with 10% of each storage protected. Loot Cap table is in the Economy Monetization workbook."
+  },
+  {
+   "area": "Economy",
+   "issue": "Oil deployment cost table covered only 11 class/tier combinations, and units had no housing.",
+   "fix": "Oil is now a per-unit rule shown on every roster row; housing added per class."
+  },
+  {
+   "area": "Monetization",
+   "issue": "No in-game purchase design existed.",
+   "fix": "Added War Bonds (premium currency) with 6 top-up packs, speed-up curve, Engineer Crews, shields, capped resource packs, cosmetics, Starter Pack, War Pass and subscription, and a formula-driven revenue model."
+  },
+  {
+   "area": "Monetization",
+   "issue": "Design never defined builders (parallel construction), so upgrade timers had no limit.",
+   "fix": "Added Engineer Crews: 2 free, crews 3-5 unlock at CC3/5/7 and are bought with WB. This is a new rule needing your approval."
+  }
+ ]
+}

@@ -1,0 +1,437 @@
+{
+ "premium_currency": "war_bonds",
+ "packs": [
+  {
+   "id": "wb_pack_1",
+   "name": "Pocket Change",
+   "price_usd": 0.99,
+   "base_wb": 99,
+   "bonus_pct": 0.0,
+   "total_wb": 99,
+   "first_purchase_wb": 198
+  },
+  {
+   "id": "wb_pack_2",
+   "name": "Ammo Crate",
+   "price_usd": 4.99,
+   "base_wb": 499,
+   "bonus_pct": 0.1,
+   "total_wb": 549,
+   "first_purchase_wb": 1048
+  },
+  {
+   "id": "wb_pack_3",
+   "name": "Supply Truck",
+   "price_usd": 9.99,
+   "base_wb": 999,
+   "bonus_pct": 0.2,
+   "total_wb": 1199,
+   "first_purchase_wb": 2198
+  },
+  {
+   "id": "wb_pack_4",
+   "name": "Armored Convoy",
+   "price_usd": 19.99,
+   "base_wb": 1999,
+   "bonus_pct": 0.25,
+   "total_wb": 2499,
+   "first_purchase_wb": 4498
+  },
+  {
+   "id": "wb_pack_5",
+   "name": "War Chest",
+   "price_usd": 49.99,
+   "base_wb": 4999,
+   "bonus_pct": 0.3,
+   "total_wb": 6499,
+   "first_purchase_wb": 11498
+  },
+  {
+   "id": "wb_pack_6",
+   "name": "Strategic Reserve",
+   "price_usd": 99.99,
+   "base_wb": 9999,
+   "bonus_pct": 0.4,
+   "total_wb": 13999,
+   "first_purchase_wb": 23998
+  }
+ ],
+ "speedup_anchors": [
+  {
+   "minutes": 0,
+   "wb": 0
+  },
+  {
+   "minutes": 1,
+   "wb": 1
+  },
+  {
+   "minutes": 60,
+   "wb": 20
+  },
+  {
+   "minutes": 1440,
+   "wb": 260
+  },
+  {
+   "minutes": 10080,
+   "wb": 1000
+  },
+  {
+   "minutes": 43200,
+   "wb": 3600
+  }
+ ],
+ "speedup_table": [
+  {
+   "minutes": 5,
+   "wb": 3
+  },
+  {
+   "minutes": 30,
+   "wb": 11
+  },
+  {
+   "minutes": 60,
+   "wb": 20
+  },
+  {
+   "minutes": 120,
+   "wb": 31
+  },
+  {
+   "minutes": 360,
+   "wb": 73
+  },
+  {
+   "minutes": 720,
+   "wb": 135
+  },
+  {
+   "minutes": 1440,
+   "wb": 260
+  },
+  {
+   "minutes": 2880,
+   "wb": 384
+  },
+  {
+   "minutes": 4320,
+   "wb": 507
+  },
+  {
+   "minutes": 5760,
+   "wb": 630
+  },
+  {
+   "minutes": 8640,
+   "wb": 877
+  },
+  {
+   "minutes": 10080,
+   "wb": 1000
+  }
+ ],
+ "crews": [
+  {
+   "crew": 1,
+   "needs_cc": 1,
+   "wb": 0
+  },
+  {
+   "crew": 2,
+   "needs_cc": 1,
+   "wb": 0
+  },
+  {
+   "crew": 3,
+   "needs_cc": 3,
+   "wb": 250
+  },
+  {
+   "crew": 4,
+   "needs_cc": 5,
+   "wb": 500
+  },
+  {
+   "crew": 5,
+   "needs_cc": 7,
+   "wb": 1000
+  }
+ ],
+ "shields": [
+  {
+   "name": "1 day shield",
+   "days": 1,
+   "wb": 100
+  },
+  {
+   "name": "2 day shield",
+   "days": 2,
+   "wb": 150
+  },
+  {
+   "name": "7 day shield",
+   "days": 7,
+   "wb": 400
+  }
+ ],
+ "resource_packs": [
+  {
+   "bracket": "CC 1-2",
+   "gold_per_100wb": 10000,
+   "oil_per_100wb": 6670,
+   "steel_per_100wb": 4000
+  },
+  {
+   "bracket": "CC 3-4",
+   "gold_per_100wb": 30000,
+   "oil_per_100wb": 20000,
+   "steel_per_100wb": 12000
+  },
+  {
+   "bracket": "CC 5-6",
+   "gold_per_100wb": 120000,
+   "oil_per_100wb": 80000,
+   "steel_per_100wb": 48000
+  },
+  {
+   "bracket": "CC 7-8",
+   "gold_per_100wb": 400000,
+   "oil_per_100wb": 266670,
+   "steel_per_100wb": 160000
+  },
+  {
+   "bracket": "CC 9-10",
+   "gold_per_100wb": 1200000,
+   "oil_per_100wb": 800000,
+   "steel_per_100wb": 480000
+  }
+ ],
+ "resource_pack_rules": {
+  "fills_free_storage_only": true,
+  "per_resource_cooldown_hours": 24
+ },
+ "oil_divisor": 1.5,
+ "steel_divisor": 2.5,
+ "cosmetics": [
+  {
+   "item": "Vehicle camo (single)",
+   "wb": 300,
+   "type": "Cosmetic"
+  },
+  {
+   "item": "Vehicle camo set (one tier)",
+   "wb": 1200,
+   "type": "Cosmetic"
+  },
+  {
+   "item": "Base skin",
+   "wb": 800,
+   "type": "Cosmetic"
+  },
+  {
+   "item": "Wall skin",
+   "wb": 400,
+   "type": "Cosmetic"
+  },
+  {
+   "item": "Commander portrait",
+   "wb": 600,
+   "type": "Cosmetic"
+  },
+  {
+   "item": "Raid victory banner",
+   "wb": 250,
+   "type": "Cosmetic"
+  },
+  {
+   "item": "Extra formation templates (+5)",
+   "wb": 150,
+   "type": "Convenience"
+  },
+  {
+   "item": "Name change",
+   "wb": 200,
+   "type": "Convenience"
+  }
+ ],
+ "free_wb": [
+  {
+   "source": "Tutorial completion",
+   "wb": 100,
+   "frequency": "Once"
+  },
+  {
+   "source": "Daily mission set",
+   "wb": 5,
+   "frequency": "Daily"
+  },
+  {
+   "source": "League promotion (each)",
+   "wb": 50,
+   "frequency": "Per league"
+  },
+  {
+   "source": "Achievement chest",
+   "wb": 25,
+   "frequency": "Per achievement"
+  },
+  {
+   "source": "Alliance war win",
+   "wb": 20,
+   "frequency": "Per war"
+  },
+  {
+   "source": "Season Pass free track",
+   "wb": 100,
+   "frequency": "Per season"
+  },
+  {
+   "source": "Clear storage cluttering (obstacles)",
+   "wb": 3,
+   "frequency": "Per obstacle"
+  }
+ ],
+ "loot_caps": [
+  {
+   "cc": 1,
+   "gold": 8000,
+   "oil": 6000,
+   "steel": 3000
+  },
+  {
+   "cc": 2,
+   "gold": 20000,
+   "oil": 15000,
+   "steel": 8000
+  },
+  {
+   "cc": 3,
+   "gold": 60000,
+   "oil": 45000,
+   "steel": 20000
+  },
+  {
+   "cc": 4,
+   "gold": 150000,
+   "oil": 110000,
+   "steel": 50000
+  },
+  {
+   "cc": 5,
+   "gold": 400000,
+   "oil": 300000,
+   "steel": 130000
+  },
+  {
+   "cc": 6,
+   "gold": 800000,
+   "oil": 600000,
+   "steel": 250000
+  },
+  {
+   "cc": 7,
+   "gold": 1800000,
+   "oil": 1300000,
+   "steel": 550000
+  },
+  {
+   "cc": 8,
+   "gold": 3500000,
+   "oil": 2500000,
+   "steel": 1100000
+  },
+  {
+   "cc": 9,
+   "gold": 6000000,
+   "oil": 4400000,
+   "steel": 2000000
+  },
+  {
+   "cc": 10,
+   "gold": 10000000,
+   "oil": 7500000,
+   "steel": 3500000
+  }
+ ],
+ "protected_storage_pct": 0.1,
+ "steal_rates": {
+  "gold": 0.2,
+  "oil": 0.25,
+  "steel": 0.15
+ },
+ "offers": [
+  {
+   "name": "Starter Pack",
+   "price_usd": 2.99,
+   "contents": "300 WB + 50,000 Gold + 25,000 Oil + 8,000 Steel + 1 free speed-up token (1 hr) + Starter camo",
+   "shown_when": "After tutorial, CC2",
+   "limit": "Once per account",
+   "type": "One-time"
+  },
+  {
+   "name": "Engineer Bundle",
+   "price_usd": 6.99,
+   "contents": "Engineer Crew 3 + 150 WB + 12h shield token",
+   "shown_when": "CC3 reached",
+   "limit": "Once per account",
+   "type": "One-time"
+  },
+  {
+   "name": "First Purchase Bonus",
+   "price_usd": 0.0,
+   "contents": "Each top-up pack gives double base WB the first time it is bought",
+   "shown_when": "In shop",
+   "limit": "Once per pack",
+   "type": "Bonus"
+  },
+  {
+   "name": "War Pass (Season Pass)",
+   "price_usd": 4.99,
+   "contents": "30-day season. Premium track: 600 WB drip, exclusive camo, 3 resource packs, +5 formation templates, 2 shield tokens. Free track still exists.",
+   "shown_when": "Always in shop",
+   "limit": "1 per season",
+   "type": "Pass"
+  },
+  {
+   "name": "Quartermaster Subscription",
+   "price_usd": 4.99,
+   "contents": "20 WB per day for 30 days (600 WB) + 1 free 12h shield per week + badge. Cosmetic and convenience only.",
+   "shown_when": "Always in shop",
+   "limit": "Auto-renews, cancel anytime",
+   "type": "Subscription"
+  },
+  {
+   "name": "Command Bundle",
+   "price_usd": 19.99,
+   "contents": "Choice of leader alternate portrait + nation camo set (1 tier) + 1,500 WB",
+   "shown_when": "CC5 reached",
+   "limit": "Once per nation",
+   "type": "One-time"
+  },
+  {
+   "name": "Comeback Pack",
+   "price_usd": 3.99,
+   "contents": "200 WB + 100,000 resources scaled to CC + 24h shield",
+   "shown_when": "Returning after 14 days away",
+   "limit": "Once per return",
+   "type": "One-time"
+  },
+  {
+   "name": "Event Bundle",
+   "price_usd": 9.99,
+   "contents": "Seasonal limited camo + 700 WB",
+   "shown_when": "Events",
+   "limit": "Once per event",
+   "type": "Limited"
+  }
+ ],
+ "store_fee": 0.15,
+ "never_sold": [
+  "research_points",
+  "trophies",
+  "units",
+  "stat_boosts"
+ ]
+}
