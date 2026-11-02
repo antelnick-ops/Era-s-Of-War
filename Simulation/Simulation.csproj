@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!--
+    Plain C# game-rules library. NO UnityEngine references allowed here.
+    netstandard2.1 + C# 9 so the same DLL runs in Unity 6 and in dotnet test.
+    After every build the DLL is copied into the Unity project's Plugins folder.
+  -->
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <LangVersion>9.0</LangVersion>
+    <Nullable>disable</Nullable>
+    <AssemblyName>Simulation</AssemblyName>
+    <RootNamespace>ErasOfWar.Simulation</RootNamespace>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <DebugType>portable</DebugType>
+    <!-- %27 is an escaped apostrophe: the Unity folder is "Era's of War" -->
+    <UnityPluginDir>$(MSBuildThisFileDirectory)..\Era%27s of War\Assets\Plugins\Simulation\</UnityPluginDir>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Unity side gets the same assembly (13.0.0.0) from com.unity.nuget.newtonsoft-json -->
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <!-- Copy Simulation.dll (+ pdb) into Unity. Non-fatal so an open Unity editor can't break dotnet test. -->
+  <Target Name="CopyToUnity" AfterTargets="Build" Condition="'$(SkipUnityCopy)' != 'true'">
+    <MakeDir Directories="$(UnityPluginDir)" ContinueOnError="WarnAndContinue" />
+    <Copy SourceFiles="$(TargetPath);$(TargetDir)$(TargetName).pdb"
+          DestinationFolder="$(UnityPluginDir)"
+          SkipUnchangedFiles="true"
+          Retries="2"
+          ContinueOnError="WarnAndContinue" />
+  </Target>
+
+</Project>

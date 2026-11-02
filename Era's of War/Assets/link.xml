@@ -1,0 +1,7 @@
+<!--
+  Keep the Simulation data classes from being stripped in IL2CPP (mobile) builds.
+  Newtonsoft creates them by reflection, so the linker can't see they are used.
+-->
+<linker>
+  <assembly fullname="Simulation" preserve="all" />
+</linker>
