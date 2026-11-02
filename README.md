@@ -28,6 +28,14 @@ dotnet test
 This builds `Simulation`, runs `Simulation.Tests`, and copies `Simulation.dll` into
 `Era's of War/Assets/Plugins/Simulation/` so Unity picks up the latest rules.
 
+Unity Play Mode smoke test (Unity must be closed, or use Window > General > Test Runner > PlayMode):
+
+```
+"C:\Program Files\Unity\Hub\Editor\6000.6.7f1\Editor\Unity.exe" -batchmode -projectPath "Era's of War" -runTests -testPlatform PlayMode -testResults playmode-results.xml
+```
+
+It loads the Base scene and presses HUD buttons; any error or exception fails it. Your real save is moved aside and restored.
+
 ## Validate game data
 After any change to `game_data/` or `design_workbooks/`:
 
@@ -45,6 +53,14 @@ Exit code 0 means all checks pass.
 
 In the editor, data is read straight from the repo's `game_data/`. Device builds will read it from
 StreamingAssets (a later milestone).
+
+## Base screen (Prompt 02)
+- Scene: `Assets/Scenes/Base.unity` (first in Build Settings). URP **2D Renderer** (`Assets/Settings/Renderer2D.asset`),
+  orthographic camera, portrait only. Re-create with **Eras of War > Set Up 2D Base Scene** (safe to re-run).
+- Rules (bounds, overlap, CC gating, count limits, wall tiles, max level) are in `Simulation/Base/` and tested.
+  Unity (`Assets/Scripts/Base/`) only draws colored squares and turns touches into requests.
+- Save file: `base.json` in `Application.persistentDataPath`
+  (editor on Windows: `%USERPROFILE%\AppData\LocalLow\DefaultCompany\Eras of War\`). Delete it or use **Reset base** to start over.
 
 ## How Unity uses Simulation
 `Simulation.csproj` has a post-build step that copies `Simulation.dll` (+ pdb) into

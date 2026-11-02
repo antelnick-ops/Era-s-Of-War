@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 
 namespace ErasOfWar.Simulation.Data
 {
@@ -18,6 +19,9 @@ namespace ErasOfWar.Simulation.Data
         public const string ConstantsFile = "constants.json";
         public const string LeadersFile = "leaders.json";
         public const string GeneralsFile = "generals.json";
+        public const string ResourceTablesFile = "tables_03_ResourceSystem.json";
+        public const string BuildingTablesFile = "tables_04_Buildings.json";
+        public const string BaseLayoutTablesFile = "tables_07_BaseLayout.json";
 
         // Unknown JSON fields are an error, so a renamed workbook column fails loudly instead of silently reading 0.
         private static readonly JsonSerializerSettings Settings = new JsonSerializerSettings
@@ -46,7 +50,19 @@ namespace ErasOfWar.Simulation.Data
                 Parse<EconomyDef>(readFile, EconomyFile),
                 Parse<ConstantsDef>(readFile, ConstantsFile),
                 Parse<List<LeaderDef>>(readFile, LeadersFile),
-                Parse<List<GeneralDef>>(readFile, GeneralsFile));
+                Parse<List<GeneralDef>>(readFile, GeneralsFile),
+                new Dictionary<string, TableFile>
+                {
+                    [ResourceTablesFile] = ParseTable(readFile, ResourceTablesFile),
+                    [BuildingTablesFile] = ParseTable(readFile, BuildingTablesFile),
+                    [BaseLayoutTablesFile] = ParseTable(readFile, BaseLayoutTablesFile),
+                });
+        }
+
+        private static TableFile ParseTable(Func<string, string> readFile, string fileName)
+        {
+            var root = Parse<JObject>(readFile, fileName);
+            return new TableFile(fileName, root);
         }
 
         /// <summary>

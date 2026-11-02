@@ -16,14 +16,19 @@ namespace ErasOfWar.Simulation.Data
 
         public IReadOnlyDictionary<string, UnitDef> UnitsById { get; }
 
+        /// <summary>Raw workbook exports by file name (e.g. "tables_04_Buildings.json").</summary>
+        public IReadOnlyDictionary<string, TableFile> Tables { get; }
+
         public GameData(
             IReadOnlyList<UnitDef> units,
             TechTreeDef techTree,
             EconomyDef economy,
             ConstantsDef constants,
             IReadOnlyList<LeaderDef> leaders,
-            IReadOnlyList<GeneralDef> generals)
+            IReadOnlyList<GeneralDef> generals,
+            IReadOnlyDictionary<string, TableFile> tables = null)
         {
+            Tables = tables ?? new Dictionary<string, TableFile>();
             Units = units ?? throw new ArgumentNullException(nameof(units));
             TechTree = techTree ?? throw new ArgumentNullException(nameof(techTree));
             Economy = economy ?? throw new ArgumentNullException(nameof(economy));
@@ -40,6 +45,11 @@ namespace ErasOfWar.Simulation.Data
             }
             UnitsById = byId;
         }
+
+        public TableFile Table(string fileName) =>
+            Tables.TryGetValue(fileName, out var t)
+                ? t
+                : throw new GameDataException($"{fileName} was not loaded");
 
         public bool TryGetUnit(string id, out UnitDef unit) =>
             UnitsById.TryGetValue(id ?? "", out unit);
