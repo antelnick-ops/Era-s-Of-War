@@ -1,6 +1,6 @@
 # Fix Log
 
-26 fixes applied across the design workbooks. Cross-checks that confirm them are in `tools/validate.py`.
+29 fixes applied across the design workbooks. Cross-checks that confirm them are in `tools/validate.py`.
 
 | Area | Problem found | Fix |
 |---|---|---|
@@ -26,6 +26,9 @@
 | Buildings | Resource Buildings tab disagreed with the Resource System workbook (e.g. Gold Mine Lv1 HP 2000 vs 400, Oil Derrick upgrade costs). | Resource System workbook is the single source of truth; Buildings tab now only lists counts and points to it. |
 | Buildings | Defense unlock levels and counts inside the Defense Buildings tab could disagree with the Building Count table. | Unlock CC and max count are now taken from the Building Count table. |
 | Buildings | Dragon Teeth (Tier 7 wall) was described as 'cannot be destroyed' but had 22,000 HP, and Tier 8 HESCO had less HP (18,000) and was cheaper than Tier 7. | Dragon Teeth is destructible (22,000 HP) with splash immunity. HESCO raised to 26,000 HP, 15,000 Gold, 8,500 Steel so walls rise strictly in HP and cost. |
+| Buildings | Patriot SAM was named 'Patriot SAM' in the Building Count table but 'Patriot SAM Battery' elsewhere, so the validator skipped it. | Renamed to 'Patriot SAM Battery' everywhere; its unlock CC and count are now checked like every other defense. |
+| Buildings | Training building level tables were titled with notes ('Max count: ...') instead of building names. | Each table now has its building name as the title and the note as a separate Note row. |
+| Buildings | No rule limited building level by Command Center level (a Gold Mine could reach Lv 8 at CC1). | New Building Level Caps tab and game_data/building_rules.json: collectors and storage max level = CC+1 (cap 8); Barracks and Air Hangar = CC (cap 8); Dark Barracks 2/4/5 at CC8/9/10; defenses = CC - unlock CC + 3 (cap per tower); Research Lab, Army Camp and Intel Center keep their per-level CC requirements. |
 | Economy | Offline-protection cap (max 10% of reserves per raid) contradicted the steal rates of 20% Gold / 25% Oil / 15% Steel. | Replaced by one rule: loot = min(steal% x lootable, Loot Cap by defender CC) with 10% of each storage protected. Loot Cap table is in the Economy Monetization workbook. |
 | Economy | Oil deployment cost table covered only 11 class/tier combinations, and units had no housing. | Oil is now a per-unit rule shown on every roster row; housing added per class. |
 | Monetization | No in-game purchase design existed. | Added War Bonds (premium currency) with 6 top-up packs, speed-up curve, Engineer Crews, shields, capped resource packs, cosmetics, Starter Pack, War Pass and subscription, and a formula-driven revenue model. |

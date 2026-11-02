@@ -1,0 +1,369 @@
+{
+ "notes": "Max building level by Command Center level. 0 = not buildable yet.",
+ "cc_levels": [
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10
+ ],
+ "groups": [
+  {
+   "group": "Gold Mine, Oil Derrick, Steel Mill, Gold Vault, Oil Tank, Steel Depot",
+   "rule": "CC + 1, max 8",
+   "max_level_by_cc": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    8,
+    8,
+    8
+   ]
+  },
+  {
+   "group": "Barracks, Air Hangar",
+   "rule": "CC level, max 8",
+   "max_level_by_cc": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    8,
+    8
+   ]
+  },
+  {
+   "group": "Dark Barracks",
+   "rule": "Built at CC8: Lv2 at CC8, Lv4 at CC9, Lv5 at CC10",
+   "max_level_by_cc": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    4,
+    5
+   ]
+  },
+  {
+   "group": "Research Lab",
+   "rule": "Per-level CC requirement (Support Buildings tab)",
+   "max_level_by_cc": [
+    1,
+    1,
+    2,
+    2,
+    3,
+    3,
+    4,
+    4,
+    5,
+    5
+   ]
+  },
+  {
+   "group": "Army Camp",
+   "rule": "Level N needs CC N (Support Buildings tab)",
+   "max_level_by_cc": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    8,
+    8
+   ]
+  },
+  {
+   "group": "Intel Center",
+   "rule": "Per-level CC requirement (Support Buildings tab)",
+   "max_level_by_cc": [
+    0,
+    1,
+    2,
+    3,
+    3,
+    4,
+    4,
+    5,
+    5,
+    5
+   ]
+  },
+  {
+   "group": "Machine Gun Nest",
+   "rule": "CC - 2 + 3, max 8",
+   "max_level_by_cc": [
+    0,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    8,
+    8,
+    8
+   ]
+  },
+  {
+   "group": "Cannon Tower",
+   "rule": "CC - 2 + 3, max 8",
+   "max_level_by_cc": [
+    0,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    8,
+    8,
+    8
+   ]
+  },
+  {
+   "group": "Mortar Tower",
+   "rule": "CC - 3 + 3, max 8",
+   "max_level_by_cc": [
+    0,
+    0,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    8,
+    8
+   ]
+  },
+  {
+   "group": "Sniper Tower",
+   "rule": "CC - 3 + 3, max 8",
+   "max_level_by_cc": [
+    0,
+    0,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    8,
+    8
+   ]
+  },
+  {
+   "group": "AA Gun Tower",
+   "rule": "CC - 4 + 3, max 8",
+   "max_level_by_cc": [
+    0,
+    0,
+    0,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    8
+   ]
+  },
+  {
+   "group": "Bomb Tower",
+   "rule": "CC - 4 + 3, max 8",
+   "max_level_by_cc": [
+    0,
+    0,
+    0,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    8
+   ]
+  },
+  {
+   "group": "Flame Tower",
+   "rule": "CC - 6 + 3, max 8",
+   "max_level_by_cc": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    3,
+    4,
+    5,
+    6,
+    7
+   ]
+  },
+  {
+   "group": "Rocket Battery",
+   "rule": "CC - 5 + 3, max 8",
+   "max_level_by_cc": [
+    0,
+    0,
+    0,
+    0,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+   ]
+  },
+  {
+   "group": "CIWS Tower",
+   "rule": "CC - 7 + 3, max 6",
+   "max_level_by_cc": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    3,
+    4,
+    5,
+    6
+   ]
+  },
+  {
+   "group": "Patriot SAM Battery",
+   "rule": "CC - 8 + 3, max 5",
+   "max_level_by_cc": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    3,
+    4,
+    5
+   ]
+  },
+  {
+   "group": "THAAD Battery",
+   "rule": "CC - 9 + 3, max 3",
+   "max_level_by_cc": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    3,
+    3
+   ]
+  },
+  {
+   "group": "Laser Tower",
+   "rule": "CC - 9 + 3, max 5",
+   "max_level_by_cc": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    3,
+    4
+   ]
+  },
+  {
+   "group": "S-400 SAM",
+   "rule": "CC - 10 + 3, max 3",
+   "max_level_by_cc": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    3
+   ]
+  },
+  {
+   "group": "EW Jamming Tower",
+   "rule": "CC - 10 + 3, max 3",
+   "max_level_by_cc": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    3
+   ]
+  },
+  {
+   "group": "88mm Flak Tower",
+   "rule": "CC - 3 + 3, max 8",
+   "max_level_by_cc": [
+    0,
+    0,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    8,
+    8
+   ]
+  },
+  {
+   "group": "Minefield Zone",
+   "rule": "CC + 1, max 5",
+   "max_level_by_cc": [
+    2,
+    3,
+    4,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5
+   ]
+  }
+ ]
+}

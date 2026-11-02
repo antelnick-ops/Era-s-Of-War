@@ -20,11 +20,10 @@ namespace ErasOfWar.Simulation.Tests
         }
 
         [Test]
-        public void OnlyKnownDataWarnings()
+        public void DataHasNoWarnings()
         {
-            // The one known mismatch: WTBB_07 says "Patriot SAM Battery", WTBB_04 count table says "Patriot SAM".
-            Assert.That(C.Warnings, Has.Count.EqualTo(1));
-            Assert.That(C.Warnings[0], Does.Contain("Patriot SAM"));
+            // Names, level tables and counts all line up across WTBB_03/04/07 (Patriot name fixed 2026-11-02).
+            Assert.That(C.Warnings, Is.Empty);
         }
 
         [TestCase("command_center", 4, 4)]

@@ -21,6 +21,9 @@ Things that were fixes with a judgment call, or new rules I had to add so the ga
 14. **Tier labels.** Tiers are power tiers, not strict history (Tiger II sits in "Cold War" Tier IV). Fine for gameplay; rename tiers if it bugs you.
 15. **Defense towers.** The 28 real-world systems are now nation skins on the 16 defense buildings. Ground towers (Cannon, Mortar, Sniper, Bomb, Flame) have no real-world skins yet.
 
+## Approved Nov 2, 2026
+20. **Building level caps by Command Center level.** Collectors and storage max level = CC+1 (cap 8). Barracks and Air Hangar = CC level. Dark Barracks 2/4/5 at CC8/9/10. Defense towers = CC minus unlock CC plus 3 (each tower's own cap). Lab, Army Camp and Intel Center keep per-level CC requirements. File: game_data/building_rules.json.
+
 ## Build decisions I need you to confirm
 16. **Engine: Unity 6 LTS + C#.** Alternatives: Godot (lighter, fewer mobile purchase tools), Flutter+Flame (simpler but weaker for game feel).
 17. **Backend: Supabase** (you already have a Supabase setup for another project). Not needed until milestone 5.

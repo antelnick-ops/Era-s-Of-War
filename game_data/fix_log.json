@@ -111,6 +111,21 @@
    "fix": "Dragon Teeth is destructible (22,000 HP) with splash immunity. HESCO raised to 26,000 HP, 15,000 Gold, 8,500 Steel so walls rise strictly in HP and cost."
   },
   {
+   "area": "Buildings",
+   "issue": "Patriot SAM was named 'Patriot SAM' in the Building Count table but 'Patriot SAM Battery' elsewhere, so the validator skipped it.",
+   "fix": "Renamed to 'Patriot SAM Battery' everywhere; its unlock CC and count are now checked like every other defense."
+  },
+  {
+   "area": "Buildings",
+   "issue": "Training building level tables were titled with notes ('Max count: ...') instead of building names.",
+   "fix": "Each table now has its building name as the title and the note as a separate Note row."
+  },
+  {
+   "area": "Buildings",
+   "issue": "No rule limited building level by Command Center level (a Gold Mine could reach Lv 8 at CC1).",
+   "fix": "New Building Level Caps tab and game_data/building_rules.json: collectors and storage max level = CC+1 (cap 8); Barracks and Air Hangar = CC (cap 8); Dark Barracks 2/4/5 at CC8/9/10; defenses = CC - unlock CC + 3 (cap per tower); Research Lab, Army Camp and Intel Center keep their per-level CC requirements."
+  },
+  {
    "area": "Economy",
    "issue": "Offline-protection cap (max 10% of reserves per raid) contradicted the steal rates of 20% Gold / 25% Oil / 15% Steel.",
    "fix": "Replaced by one rule: loot = min(steal% x lootable, Loot Cap by defender CC) with 10% of each storage protected. Loot Cap table is in the Economy Monetization workbook."

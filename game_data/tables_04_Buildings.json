@@ -84,7 +84,7 @@
     "Upgrade Cost G": 5000000,
     "Upgrade Cost S": 1500000,
     "Upgrade Time": "3 days",
-    "Buildings Unlocked": "Dark Barracks x1; Army Camp up to x3; Rocket Battery up to x3; CIWS Tower up to x2; Patriot SAM x1; Intel Center Lv5",
+    "Buildings Unlocked": "Dark Barracks x1; Army Camp up to x3; Rocket Battery up to x3; CIWS Tower up to x2; Patriot SAM Battery x1; Intel Center Lv5",
     "Max Unit Tier": "Tier IV",
     "New Slots Unlocked": "Grid 35x35 (1001 usable tiles). 145 placeable wall tiles.",
     "Designer Note": "Dark Barracks opens premium units."
@@ -95,7 +95,7 @@
     "Upgrade Cost G": 9000000,
     "Upgrade Cost S": 3000000,
     "Upgrade Time": "4 days",
-    "Buildings Unlocked": "Gold Vault up to x3; Oil Tank up to x3; Steel Depot up to x3; AA Gun Tower up to x4; Patriot SAM up to x2; THAAD Battery x1; Laser Tower x1; Minefield Zone up to x6",
+    "Buildings Unlocked": "Gold Vault up to x3; Oil Tank up to x3; Steel Depot up to x3; AA Gun Tower up to x4; Patriot SAM Battery up to x2; THAAD Battery x1; Laser Tower x1; Minefield Zone up to x6",
     "Max Unit Tier": "Tier V",
     "New Slots Unlocked": "Grid 38x38 (1176 usable tiles). 170 placeable wall tiles.",
     "Designer Note": "Tier V modern units. Late game."
@@ -114,7 +114,7 @@
   ]
  },
  "Training Buildings": {
-  "Max count: CC3=2, CC6=3. Each Barracks runs an independent training queue.": [
+  "BARRACKS - Trains all ground vehicles (Light, Medium, Heavy Tank, TD, SPG, AA)": [
    {
     "Level": "Lv 1",
     "Units Available": "Tier I ground only",
@@ -196,7 +196,7 @@
     "Designer Note": "Max. Tier V ground units train in Dark Barracks only."
    }
   ],
-  "Max count: CC2=1, CC5=2, CC7=3. Aircraft train slower than ground units.": [
+  "AIR HANGAR - Trains all aircraft (Fighter, Ground Attack, Bomber, Jet, Helicopter)": [
    {
     "Level": "Lv 1",
     "Units Available": "Prop fighters only",
@@ -278,7 +278,7 @@
     "Designer Note": "Max. Tier V aircraft still train in Dark Barracks."
    }
   ],
-  "Max count: CC8=1, CC10=2. Trains the most powerful units. Costs Oil AND Gold to train.": [
+  "DARK BARRACKS - Trains Tier V vehicles only (built at CC8, Tier V units need CC9)": [
    {
     "Level": "Lv 1",
     "Units Available": "Tier V ground only",
@@ -329,7 +329,10 @@
     "col6": null,
     "Designer Note": "Max Dark Barracks. Prestige cosmetics."
    }
-  ]
+  ],
+  "_notes": {
+   "Note": "Max count: CC8=1, CC10=2. Trains the most powerful units. Costs Oil AND Gold to train."
+  }
  },
  "Resource Buildings": {
   "Full level tables for collectors and storage are in WTBB_03_ResourceSystem.xlsx (Passive Generation and Storage Buildings tabs). They are no longer duplicated here because the two copies disagreed on HP and upgrade cost.": [
@@ -475,7 +478,7 @@
     "DPS Range": "1 shot kill",
     "HP Range": "2000-8000 HP",
     "Designer Purpose": "Fires on any airborne threat. Long cooldown between shots.",
-    "Nation Skins": null
+    "Nation Skins": "See Defense Variant Map"
    },
    {
     "Building Name": "THAAD Battery",
@@ -626,6 +629,15 @@
     "USA": "Phalanx CIWS 20mm",
     "Britain": "Goalkeeper 30mm",
     "Japan": "Phalanx CIWS 20mm",
+    "Notes": null
+   },
+   {
+    "Game Slot": "Patriot SAM Battery",
+    "Germany": "Patriot PAC-3",
+    "USSR": "Pantsir-S1 Hybrid",
+    "USA": "Patriot PAC-3",
+    "Britain": "Patriot PAC-3",
+    "Japan": "Patriot PAC-3",
     "Notes": null
    },
    {
@@ -1439,7 +1451,7 @@
     "CC 10": "2"
    },
    {
-    "Building": "Patriot SAM",
+    "Building": "Patriot SAM Battery",
     "CC 1": "-",
     "CC 2": "-",
     "CC 3": "-",
@@ -1567,6 +1579,332 @@
     "CC 8": "1",
     "CC 9": "1",
     "CC 10": "1"
+   }
+  ]
+ },
+ "Building Level Caps": {
+  "Highest level a building can be upgraded to at each CC level. 0 means it cannot be built yet. Rules are in the Rule column. Source of truth for game_data/building_rules.json.": [
+   {
+    "Building Group": "Gold Mine, Oil Derrick, Steel Mill, Gold Vault, Oil Tank, Steel Depot",
+    "Rule": "CC + 1, max 8",
+    "CC 1": 2,
+    "CC 2": 3,
+    "CC 3": 4,
+    "CC 4": 5,
+    "CC 5": 6,
+    "CC 6": 7,
+    "CC 7": 8,
+    "CC 8": 8,
+    "CC 9": 8,
+    "CC 10": 8
+   },
+   {
+    "Building Group": "Barracks, Air Hangar",
+    "Rule": "CC level, max 8",
+    "CC 1": 1,
+    "CC 2": 2,
+    "CC 3": 3,
+    "CC 4": 4,
+    "CC 5": 5,
+    "CC 6": 6,
+    "CC 7": 7,
+    "CC 8": 8,
+    "CC 9": 8,
+    "CC 10": 8
+   },
+   {
+    "Building Group": "Dark Barracks",
+    "Rule": "Built at CC8: Lv2 at CC8, Lv4 at CC9, Lv5 at CC10",
+    "CC 1": 0,
+    "CC 2": 0,
+    "CC 3": 0,
+    "CC 4": 0,
+    "CC 5": 0,
+    "CC 6": 0,
+    "CC 7": 0,
+    "CC 8": 2,
+    "CC 9": 4,
+    "CC 10": 5
+   },
+   {
+    "Building Group": "Research Lab",
+    "Rule": "Per-level CC requirement (Support Buildings tab)",
+    "CC 1": 1,
+    "CC 2": 1,
+    "CC 3": 2,
+    "CC 4": 2,
+    "CC 5": 3,
+    "CC 6": 3,
+    "CC 7": 4,
+    "CC 8": 4,
+    "CC 9": 5,
+    "CC 10": 5
+   },
+   {
+    "Building Group": "Army Camp",
+    "Rule": "Level N needs CC N (Support Buildings tab)",
+    "CC 1": 1,
+    "CC 2": 2,
+    "CC 3": 3,
+    "CC 4": 4,
+    "CC 5": 5,
+    "CC 6": 6,
+    "CC 7": 7,
+    "CC 8": 8,
+    "CC 9": 8,
+    "CC 10": 8
+   },
+   {
+    "Building Group": "Intel Center",
+    "Rule": "Per-level CC requirement (Support Buildings tab)",
+    "CC 1": 0,
+    "CC 2": 1,
+    "CC 3": 2,
+    "CC 4": 3,
+    "CC 5": 3,
+    "CC 6": 4,
+    "CC 7": 4,
+    "CC 8": 5,
+    "CC 9": 5,
+    "CC 10": 5
+   },
+   {
+    "Building Group": "Machine Gun Nest",
+    "Rule": "CC - 2 + 3, max 8",
+    "CC 1": 0,
+    "CC 2": 3,
+    "CC 3": 4,
+    "CC 4": 5,
+    "CC 5": 6,
+    "CC 6": 7,
+    "CC 7": 8,
+    "CC 8": 8,
+    "CC 9": 8,
+    "CC 10": 8
+   },
+   {
+    "Building Group": "Cannon Tower",
+    "Rule": "CC - 2 + 3, max 8",
+    "CC 1": 0,
+    "CC 2": 3,
+    "CC 3": 4,
+    "CC 4": 5,
+    "CC 5": 6,
+    "CC 6": 7,
+    "CC 7": 8,
+    "CC 8": 8,
+    "CC 9": 8,
+    "CC 10": 8
+   },
+   {
+    "Building Group": "Mortar Tower",
+    "Rule": "CC - 3 + 3, max 8",
+    "CC 1": 0,
+    "CC 2": 0,
+    "CC 3": 3,
+    "CC 4": 4,
+    "CC 5": 5,
+    "CC 6": 6,
+    "CC 7": 7,
+    "CC 8": 8,
+    "CC 9": 8,
+    "CC 10": 8
+   },
+   {
+    "Building Group": "Sniper Tower",
+    "Rule": "CC - 3 + 3, max 8",
+    "CC 1": 0,
+    "CC 2": 0,
+    "CC 3": 3,
+    "CC 4": 4,
+    "CC 5": 5,
+    "CC 6": 6,
+    "CC 7": 7,
+    "CC 8": 8,
+    "CC 9": 8,
+    "CC 10": 8
+   },
+   {
+    "Building Group": "AA Gun Tower",
+    "Rule": "CC - 4 + 3, max 8",
+    "CC 1": 0,
+    "CC 2": 0,
+    "CC 3": 0,
+    "CC 4": 3,
+    "CC 5": 4,
+    "CC 6": 5,
+    "CC 7": 6,
+    "CC 8": 7,
+    "CC 9": 8,
+    "CC 10": 8
+   },
+   {
+    "Building Group": "Bomb Tower",
+    "Rule": "CC - 4 + 3, max 8",
+    "CC 1": 0,
+    "CC 2": 0,
+    "CC 3": 0,
+    "CC 4": 3,
+    "CC 5": 4,
+    "CC 6": 5,
+    "CC 7": 6,
+    "CC 8": 7,
+    "CC 9": 8,
+    "CC 10": 8
+   },
+   {
+    "Building Group": "Flame Tower",
+    "Rule": "CC - 6 + 3, max 8",
+    "CC 1": 0,
+    "CC 2": 0,
+    "CC 3": 0,
+    "CC 4": 0,
+    "CC 5": 0,
+    "CC 6": 3,
+    "CC 7": 4,
+    "CC 8": 5,
+    "CC 9": 6,
+    "CC 10": 7
+   },
+   {
+    "Building Group": "Rocket Battery",
+    "Rule": "CC - 5 + 3, max 8",
+    "CC 1": 0,
+    "CC 2": 0,
+    "CC 3": 0,
+    "CC 4": 0,
+    "CC 5": 3,
+    "CC 6": 4,
+    "CC 7": 5,
+    "CC 8": 6,
+    "CC 9": 7,
+    "CC 10": 8
+   },
+   {
+    "Building Group": "CIWS Tower",
+    "Rule": "CC - 7 + 3, max 6",
+    "CC 1": 0,
+    "CC 2": 0,
+    "CC 3": 0,
+    "CC 4": 0,
+    "CC 5": 0,
+    "CC 6": 0,
+    "CC 7": 3,
+    "CC 8": 4,
+    "CC 9": 5,
+    "CC 10": 6
+   },
+   {
+    "Building Group": "Patriot SAM Battery",
+    "Rule": "CC - 8 + 3, max 5",
+    "CC 1": 0,
+    "CC 2": 0,
+    "CC 3": 0,
+    "CC 4": 0,
+    "CC 5": 0,
+    "CC 6": 0,
+    "CC 7": 0,
+    "CC 8": 3,
+    "CC 9": 4,
+    "CC 10": 5
+   },
+   {
+    "Building Group": "THAAD Battery",
+    "Rule": "CC - 9 + 3, max 3",
+    "CC 1": 0,
+    "CC 2": 0,
+    "CC 3": 0,
+    "CC 4": 0,
+    "CC 5": 0,
+    "CC 6": 0,
+    "CC 7": 0,
+    "CC 8": 0,
+    "CC 9": 3,
+    "CC 10": 3
+   },
+   {
+    "Building Group": "Laser Tower",
+    "Rule": "CC - 9 + 3, max 5",
+    "CC 1": 0,
+    "CC 2": 0,
+    "CC 3": 0,
+    "CC 4": 0,
+    "CC 5": 0,
+    "CC 6": 0,
+    "CC 7": 0,
+    "CC 8": 0,
+    "CC 9": 3,
+    "CC 10": 4
+   },
+   {
+    "Building Group": "S-400 SAM",
+    "Rule": "CC - 10 + 3, max 3",
+    "CC 1": 0,
+    "CC 2": 0,
+    "CC 3": 0,
+    "CC 4": 0,
+    "CC 5": 0,
+    "CC 6": 0,
+    "CC 7": 0,
+    "CC 8": 0,
+    "CC 9": 0,
+    "CC 10": 3
+   },
+   {
+    "Building Group": "EW Jamming Tower",
+    "Rule": "CC - 10 + 3, max 3",
+    "CC 1": 0,
+    "CC 2": 0,
+    "CC 3": 0,
+    "CC 4": 0,
+    "CC 5": 0,
+    "CC 6": 0,
+    "CC 7": 0,
+    "CC 8": 0,
+    "CC 9": 0,
+    "CC 10": 3
+   },
+   {
+    "Building Group": "88mm Flak Tower",
+    "Rule": "CC - 3 + 3, max 8",
+    "CC 1": 0,
+    "CC 2": 0,
+    "CC 3": 3,
+    "CC 4": 4,
+    "CC 5": 5,
+    "CC 6": 6,
+    "CC 7": 7,
+    "CC 8": 8,
+    "CC 9": 8,
+    "CC 10": 8
+   },
+   {
+    "Building Group": "Minefield Zone",
+    "Rule": "CC + 1, max 5",
+    "CC 1": 2,
+    "CC 2": 3,
+    "CC 3": 4,
+    "CC 4": 5,
+    "CC 5": 5,
+    "CC 6": 5,
+    "CC 7": 5,
+    "CC 8": 5,
+    "CC 9": 5,
+    "CC 10": 5
+   },
+   {
+    "Building Group": "Alliance buildings",
+    "Rule": "See Alliance Buildings tab",
+    "CC 1": 0,
+    "CC 2": 0,
+    "CC 3": 0,
+    "CC 4": 0,
+    "CC 5": null,
+    "CC 6": null,
+    "CC 7": null,
+    "CC 8": null,
+    "CC 9": null,
+    "CC 10": null
    }
   ]
  }
